@@ -12,3 +12,41 @@
 25/02, 18:31:35 : INFO : glove-wiki-gigaword-300 downloaded
 25/02, 19:27:25 : INFO : word2vec-google-news-300 downloaded
 25/02, 19:27:25 : INFO : Done
+26/02 - 03:43:05 : INFO : Program started
+26/02 - 03:43:05 : INFO : Loading word models...
+26/02 - 03:43:05 : INFO : Loading ConceptNet NumberBatch
+26/02 - 03:43:06 : INFO : Loading Wiki
+26/02 - 03:43:06 : INFO : Loading Google News
+26/02 - 03:43:06 : INFO : Done
+27/02 - 16:59:53 : INFO : Program started
+27/02 - 16:59:53 : INFO : Loading word models...
+27/02 - 16:59:53 : INFO : Loading ConceptNet NumberBatch
+27/02 - 16:59:54 : INFO : Loading Wiki
+27/02 - 16:59:54 : INFO : Loading Google News
+27/02 - 16:59:54 : INFO : Loading Twitter
+27/02 - 17:14:37 : INFO : glove-twitter-200 downloaded
+27/02 - 17:14:37 : INFO : Done
+27/02 - 17:18:40 : INFO : Program started
+27/02 - 17:18:40 : INFO : Loading word models...
+27/02 - 17:18:40 : INFO : Loading ConceptNet NumberBatch
+27/02 - 17:18:40 : INFO : Loading Wiki
+27/02 - 17:18:41 : INFO : Loading Google News
+27/02 - 17:18:41 : INFO : Loading Twitter
+27/02 - 17:19:03 : INFO : Program started
+27/02 - 17:19:03 : INFO : Loading word models...
+27/02 - 17:19:03 : INFO : Loading ConceptNet NumberBatch
+27/02 - 17:19:04 : INFO : Loading Wiki
+27/02 - 17:19:04 : INFO : Loading Google News
+27/02 - 17:19:04 : INFO : Loading Twitter
+27/02 - 17:19:04 : INFO : Done
+27/02 - 17:22:24 : INFO : Program started
+27/02 - 17:22:24 : INFO : Loading word models...
+27/02 - 17:22:24 : INFO : Loading ConceptNet NumberBatch
+27/02 - 17:22:24 : INFO : Loading Wiki 300
+27/02 - 17:22:24 : INFO : Loading Google News 300
+27/02 - 17:22:24 : INFO : Loading Twitter 200
+27/02 - 17:22:24 : INFO : Loading Wiki 100
+27/02 - 17:25:32 : INFO : glove-wiki-gigaword-100 downloaded
+27/02 - 17:25:32 : INFO : Loading Twitter 100
+27/02 - 17:32:45 : INFO : glove-twitter-100 downloaded
+27/02 - 17:32:45 : INFO : Done

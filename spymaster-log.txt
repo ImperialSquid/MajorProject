@@ -1,0 +1,728 @@
+26/02 - 03:43:36 : INFO : Program started
+26/02 - 03:43:36 : INFO : Loading word models...
+26/02 - 03:43:36 : DEBUG : Loading ConceptNet NumberBatch
+26/02 - 03:43:36 : INFO : loading projection weights from C:\Users\benja/gensim-data\conceptnet-numberbatch-17-06-300\conceptnet-numberbatch-17-06-300.gz
+26/02 - 03:43:36 : DEBUG : {'uri': 'C:\\Users\\benja/gensim-data\\conceptnet-numberbatch-17-06-300\\conceptnet-numberbatch-17-06-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+26/02 - 03:52:39 : INFO : Program started
+26/02 - 03:52:39 : INFO : Loading word models...
+26/02 - 03:52:39 : DEBUG : Loading ConceptNet NumberBatch
+26/02 - 03:52:40 : INFO : loading projection weights from C:\Users\benja/gensim-data\conceptnet-numberbatch-17-06-300\conceptnet-numberbatch-17-06-300.gz
+26/02 - 03:52:40 : DEBUG : {'uri': 'C:\\Users\\benja/gensim-data\\conceptnet-numberbatch-17-06-300\\conceptnet-numberbatch-17-06-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+26/02 - 03:58:33 : INFO : Program started
+26/02 - 03:58:33 : INFO : Loading word models...
+26/02 - 03:58:33 : DEBUG : Loading Wiki
+26/02 - 03:58:34 : INFO : loading projection weights from C:\Users\benja/gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+26/02 - 03:58:34 : DEBUG : {'uri': 'C:\\Users\\benja/gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+26/02 - 03:59:17 : INFO : Program started
+26/02 - 03:59:17 : INFO : Loading word models...
+26/02 - 03:59:17 : DEBUG : Loading Wiki
+26/02 - 03:59:17 : INFO : loading projection weights from C:\Users\benja/gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+26/02 - 03:59:17 : DEBUG : {'uri': 'C:\\Users\\benja/gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+26/02 - 04:13:20 : INFO : loaded (400000, 300) matrix from C:\Users\benja/gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+26/02 - 04:13:20 : INFO : Done loading models
+26/02 - 04:18:07 : INFO : Program started
+26/02 - 04:18:07 : INFO : Loading word models...
+26/02 - 04:18:07 : DEBUG : Loading Wiki
+26/02 - 04:18:07 : INFO : loading projection weights from glove-wiki-gigaword-300
+26/02 - 04:18:07 : DEBUG : {'uri': 'glove-wiki-gigaword-300', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+26/02 - 04:25:45 : INFO : Program started
+26/02 - 04:25:45 : INFO : Loading word models...
+26/02 - 04:25:45 : DEBUG : Loading Wiki
+26/02 - 04:27:12 : INFO : Program started
+26/02 - 04:27:12 : INFO : Loading word models...
+26/02 - 04:27:12 : DEBUG : Loading Wiki
+26/02 - 04:27:12 : INFO : loading projection weights from C:\Users\benja\AppData\Local\Programs\Python\Python38\lib\site-packages\gensim\test\test_data\glove-wiki-gigaword-300
+26/02 - 04:27:12 : DEBUG : {'uri': 'C:\\Users\\benja\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\gensim\\test\\test_data\\glove-wiki-gigaword-300', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+26/02 - 04:39:08 : INFO : Program started
+26/02 - 04:39:08 : INFO : Loading word models...
+26/02 - 04:39:08 : DEBUG : Loading Wiki
+26/02 - 04:39:08 : INFO : loading projection weights from  C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+26/02 - 04:39:08 : DEBUG : {'uri': ' C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+26/02 - 04:40:03 : INFO : Program started
+26/02 - 04:40:03 : INFO : Loading word models...
+26/02 - 04:40:03 : DEBUG : Loading Wiki
+26/02 - 04:40:03 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+26/02 - 04:40:03 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+26/02 - 04:41:08 : INFO : Program started
+26/02 - 04:41:08 : INFO : Loading word models...
+26/02 - 04:41:08 : DEBUG : Loading Wiki
+26/02 - 04:41:08 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+26/02 - 04:41:08 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+26/02 - 04:42:50 : INFO : loaded (50000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+26/02 - 04:42:50 : INFO : Done loading models
+27/02 - 13:12:04 : INFO : Program started
+27/02 - 13:12:04 : INFO : Loading word models...
+27/02 - 13:12:04 : DEBUG : Loading Wiki
+27/02 - 13:12:04 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 13:12:04 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 13:13:24 : INFO : Program started
+27/02 - 13:13:24 : INFO : Loading word models...
+27/02 - 13:13:24 : DEBUG : Loading Wiki
+27/02 - 13:13:24 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 13:13:24 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 13:13:41 : INFO : Program started
+27/02 - 13:13:41 : INFO : Loading word models...
+27/02 - 13:13:41 : DEBUG : Loading Wiki
+27/02 - 13:13:41 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 13:13:41 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 13:25:55 : INFO : loaded (400000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 13:25:55 : INFO : Done loading models
+27/02 - 13:27:09 : INFO : Program started
+27/02 - 13:27:09 : INFO : Loading word models...
+27/02 - 13:27:09 : DEBUG : Loading Wiki
+27/02 - 13:27:09 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 13:27:09 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 13:29:57 : INFO : loaded (100000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 13:29:57 : INFO : Done loading models
+27/02 - 13:32:35 : INFO : Program started
+27/02 - 13:32:35 : INFO : Loading word models...
+27/02 - 13:32:35 : DEBUG : Loading Wiki
+27/02 - 13:32:35 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 13:32:35 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 13:38:44 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 13:38:44 : INFO : Done loading models
+27/02 - 13:52:14 : INFO : #####
+Program started
+27/02 - 13:52:14 : INFO : Loading word models...
+27/02 - 13:52:14 : DEBUG : Loading Wiki
+27/02 - 13:52:14 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 13:52:14 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 13:57:32 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 13:57:32 : INFO : Done loading models
+27/02 - 13:57:32 : INFO : Loading words and settings
+27/02 - 13:57:32 : DEBUG : Loading words
+27/02 - 13:57:32 : DEBUG : Done loading words
+27/02 - 13:57:32 : DEBUG : Loading settings
+27/02 - 14:02:26 : INFO : #####
+Program started
+27/02 - 14:02:26 : INFO : Loading word models...
+27/02 - 14:02:26 : DEBUG : Loading Wiki
+27/02 - 14:02:26 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 14:02:26 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 14:02:45 : INFO : #####
+Program started
+27/02 - 14:02:45 : INFO : Loading word models...
+27/02 - 14:02:45 : DEBUG : Loading Wiki
+27/02 - 14:02:45 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 14:02:45 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 14:03:07 : INFO : #####
+Program started
+27/02 - 14:03:07 : INFO : Loading word models...
+27/02 - 14:03:07 : DEBUG : Loading Wiki
+27/02 - 14:03:07 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 14:03:07 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 14:08:34 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 14:08:34 : INFO : Done loading models
+27/02 - 14:08:34 : INFO : Loading words and settings
+27/02 - 14:08:34 : DEBUG : Loading words
+27/02 - 14:08:34 : DEBUG : Done loading words
+27/02 - 14:08:34 : DEBUG : Loading settings
+27/02 - 14:09:42 : INFO : #####
+Program started
+27/02 - 14:09:42 : INFO : Loading word models...
+27/02 - 14:09:42 : DEBUG : Loading Wiki
+27/02 - 14:09:42 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 14:09:42 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 14:15:07 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 14:15:07 : INFO : Done loading models
+27/02 - 14:15:07 : INFO : Loading words and settings
+27/02 - 14:15:07 : DEBUG : Loading words
+27/02 - 14:15:07 : DEBUG : Done loading words
+27/02 - 14:15:07 : DEBUG : Loading settings
+27/02 - 14:22:03 : INFO : #####
+Program started
+27/02 - 14:22:03 : INFO : Loading word models...
+27/02 - 14:22:03 : DEBUG : Loading Wiki
+27/02 - 14:22:03 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 14:22:03 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 14:24:42 : INFO : loaded (100000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 14:24:42 : INFO : Done loading models
+27/02 - 14:24:42 : INFO : Loading words and settings
+27/02 - 14:24:42 : DEBUG : Loading words
+27/02 - 14:24:42 : DEBUG : Done loading words
+27/02 - 14:24:42 : DEBUG : Loading settings
+27/02 - 14:24:42 : DEBUG : Done loading settings
+27/02 - 14:24:42 : INFO : Done loading words and settings
+27/02 - 14:24:42 : INFO : Program ended
+#####
+27/02 - 14:30:33 : INFO : #####
+Program started
+27/02 - 14:30:33 : INFO : Loading word models...
+27/02 - 14:30:33 : DEBUG : Loading Wiki
+27/02 - 14:30:33 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 14:30:33 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 14:33:11 : INFO : loaded (100000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 14:33:11 : INFO : Done loading models
+27/02 - 14:33:11 : INFO : Loading words and settings
+27/02 - 14:33:11 : DEBUG : Loading words
+27/02 - 14:33:11 : DEBUG : Done loading words
+27/02 - 14:33:11 : DEBUG : Loading settings
+27/02 - 14:35:45 : INFO : #####
+Program started
+27/02 - 14:35:45 : INFO : Loading word models...
+27/02 - 14:35:45 : DEBUG : Loading Wiki
+27/02 - 14:35:45 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 14:35:45 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 14:38:23 : INFO : loaded (100000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 14:38:23 : INFO : Done loading models
+27/02 - 14:38:23 : INFO : Loading words and settings
+27/02 - 14:38:23 : DEBUG : Loading words
+27/02 - 14:38:23 : DEBUG : Done loading words
+27/02 - 14:38:23 : DEBUG : Loading settings
+27/02 - 14:38:23 : DEBUG : Done loading settings
+27/02 - 14:38:23 : INFO : Done loading words and settings
+27/02 - 14:38:23 : INFO : Program ended
+#####
+27/02 - 14:58:15 : INFO : #####
+Program started
+27/02 - 14:58:15 : INFO : Loading word models...
+27/02 - 14:58:15 : DEBUG : Loading Wiki
+27/02 - 14:58:15 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 14:58:15 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 15:00:56 : INFO : loaded (100000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 15:00:56 : INFO : Done loading models
+27/02 - 15:00:56 : INFO : Loading words and settings
+27/02 - 15:00:56 : DEBUG : Loading words
+27/02 - 15:00:56 : DEBUG : Done loading words
+27/02 - 15:00:56 : DEBUG : Loading settings
+27/02 - 15:00:56 : DEBUG : Done loading settings
+27/02 - 15:00:56 : INFO : Done loading words and settings
+27/02 - 15:00:56 : INFO : Program ended
+#####
+27/02 - 15:11:31 : INFO : ##### - Program started - #####
+27/02 - 15:11:31 : INFO : Loading word models...
+27/02 - 15:11:31 : DEBUG : Loading Wiki
+27/02 - 15:11:31 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 15:11:31 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 15:12:01 : INFO : ##### - Program started - #####
+27/02 - 15:12:01 : INFO : Loading word models...
+27/02 - 15:12:01 : DEBUG : Loading Wiki
+27/02 - 15:12:01 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 15:12:01 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 15:13:47 : INFO : loaded (50000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 15:13:47 : INFO : Done loading models
+27/02 - 15:13:47 : INFO : Loading words and settings
+27/02 - 15:13:47 : DEBUG : Loading words
+27/02 - 15:13:47 : DEBUG : Done loading words
+27/02 - 15:13:47 : DEBUG : Loading settings
+27/02 - 15:13:47 : DEBUG : Done loading settings
+27/02 - 15:13:47 : INFO : Done loading words and settings
+27/02 - 15:13:47 : INFO : Running 10 games
+27/02 - 15:13:47 : DEBUG : Game 0:
+27/02 - 15:13:47 : DEBUG : Game 1:
+27/02 - 15:13:47 : DEBUG : Game 2:
+27/02 - 15:13:47 : DEBUG : Game 3:
+27/02 - 15:13:47 : DEBUG : Game 4:
+27/02 - 15:13:47 : DEBUG : Game 5:
+27/02 - 15:13:47 : DEBUG : Game 6:
+27/02 - 15:13:47 : DEBUG : Game 7:
+27/02 - 15:13:47 : DEBUG : Game 8:
+27/02 - 15:13:47 : DEBUG : Game 9:
+27/02 - 15:13:47 : INFO : ##### - Program ended - #####
+27/02 - 15:28:06 : INFO : ##### - Program started - #####
+27/02 - 15:28:06 : INFO : Loading word models...
+27/02 - 15:28:06 : DEBUG : Loading Wiki
+27/02 - 15:28:06 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 15:28:06 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 15:29:29 : INFO : loaded (50000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 15:29:29 : INFO : Done loading models
+27/02 - 15:29:29 : INFO : Loading words and settings
+27/02 - 15:29:29 : DEBUG : Loading words
+27/02 - 15:29:29 : DEBUG : Done loading words
+27/02 - 15:29:29 : DEBUG : Loading settings
+27/02 - 15:29:29 : DEBUG : Done loading settings
+27/02 - 15:29:29 : INFO : Done loading words and settings
+27/02 - 15:29:29 : INFO : Running 1 games
+27/02 - 15:29:29 : DEBUG : Game 0:
+27/02 - 15:29:29 : INFO : ##### - Program ended - #####
+27/02 - 15:35:31 : INFO : ##### - Program started - #####
+27/02 - 15:35:31 : INFO : Loading word models...
+27/02 - 15:35:31 : DEBUG : Loading Wiki
+27/02 - 15:35:31 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 15:35:31 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 15:41:52 : INFO : ##### - Program started - #####
+27/02 - 15:41:52 : INFO : Loading word models...
+27/02 - 15:41:52 : DEBUG : Loading Wiki
+27/02 - 15:41:52 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 15:41:52 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 15:43:14 : INFO : loaded (50000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 15:43:14 : INFO : Done loading models
+27/02 - 15:43:14 : INFO : Loading words and settings
+27/02 - 15:43:14 : DEBUG : Loading words
+27/02 - 15:43:14 : DEBUG : Done loading words
+27/02 - 15:43:14 : DEBUG : Loading settings
+27/02 - 15:43:14 : DEBUG : Done loading settings
+27/02 - 15:43:14 : INFO : Done loading words and settings
+27/02 - 15:43:14 : INFO : Running 1 games
+27/02 - 15:43:14 : DEBUG : Game 0:
+27/02 - 15:43:14 : INFO : ##### - Program ended - #####
+27/02 - 15:50:50 : INFO : ##### - Program started - #####
+27/02 - 15:50:50 : INFO : Loading word models...
+27/02 - 15:50:50 : DEBUG : Loading Wiki
+27/02 - 15:50:50 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 15:50:50 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 15:52:06 : INFO : loaded (50000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 15:52:06 : INFO : Done loading models
+27/02 - 15:52:06 : INFO : Loading words and settings
+27/02 - 15:52:06 : DEBUG : Loading words
+27/02 - 15:52:06 : DEBUG : Done loading words
+27/02 - 15:52:06 : DEBUG : Loading settings
+27/02 - 15:52:06 : DEBUG : Done loading settings
+27/02 - 15:52:06 : INFO : Done loading words and settings
+27/02 - 15:52:06 : INFO : Running 1 games
+27/02 - 15:52:06 : DEBUG : Game 0:
+27/02 - 15:52:06 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 15:53:10 : INFO : ##### - Program started - #####
+27/02 - 15:53:10 : INFO : Loading word models...
+27/02 - 15:53:10 : DEBUG : Loading Wiki
+27/02 - 15:53:10 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 15:53:10 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 15:54:32 : INFO : loaded (50000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 15:54:32 : INFO : Done loading models
+27/02 - 15:54:32 : INFO : Loading words and settings
+27/02 - 15:54:32 : DEBUG : Loading words
+27/02 - 15:54:32 : DEBUG : Done loading words
+27/02 - 15:54:32 : DEBUG : Loading settings
+27/02 - 15:54:32 : DEBUG : Done loading settings
+27/02 - 15:54:32 : INFO : Done loading words and settings
+27/02 - 15:54:32 : INFO : Running 1 games
+27/02 - 15:54:32 : DEBUG : Game 0:
+27/02 - 15:54:32 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 15:54:32 : INFO : ##### - Program ended - #####
+27/02 - 16:04:22 : INFO : ##### - Program started - #####
+27/02 - 16:04:22 : INFO : Loading word models...
+27/02 - 16:04:22 : DEBUG : Loading Wiki
+27/02 - 16:04:22 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 16:04:22 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 16:04:49 : INFO : ##### - Program started - #####
+27/02 - 16:04:49 : INFO : Loading word models...
+27/02 - 16:04:49 : DEBUG : Loading Wiki
+27/02 - 16:04:49 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 16:04:49 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 16:06:06 : INFO : loaded (50000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 16:06:06 : INFO : Done loading models
+27/02 - 16:06:06 : INFO : Loading words and settings
+27/02 - 16:06:06 : DEBUG : Loading words
+27/02 - 16:06:06 : DEBUG : Done loading words
+27/02 - 16:06:06 : DEBUG : Loading settings
+27/02 - 16:06:06 : DEBUG : Done loading settings
+27/02 - 16:06:06 : INFO : Done loading words and settings
+27/02 - 16:06:06 : INFO : Running 1 games
+27/02 - 16:06:06 : DEBUG : Game 0:
+27/02 - 16:06:06 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 16:06:06 : INFO : ##### - Program ended - #####
+27/02 - 16:13:00 : INFO : ##### - Program started - #####
+27/02 - 16:13:00 : INFO : Loading word models...
+27/02 - 16:13:00 : DEBUG : Loading Google News
+27/02 - 16:13:00 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 16:13:00 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 16:14:47 : INFO : ##### - Program started - #####
+27/02 - 16:14:47 : INFO : Loading word models...
+27/02 - 16:14:47 : DEBUG : Loading ConceptNet NumberBatch
+27/02 - 16:14:47 : INFO : loading projection weights from C:\Users\benja\gensim-data\conceptnet-numberbatch-17-06-300\conceptnet-numberbatch-17-06-300.gz
+27/02 - 16:14:47 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\conceptnet-numberbatch-17-06-300\\conceptnet-numberbatch-17-06-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 16:20:39 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\conceptnet-numberbatch-17-06-300\conceptnet-numberbatch-17-06-300.gz
+27/02 - 16:20:39 : INFO : Done loading models
+27/02 - 16:20:39 : INFO : Loading words and settings
+27/02 - 16:20:39 : DEBUG : Loading words
+27/02 - 16:24:33 : INFO : ##### - Program started - #####
+27/02 - 16:24:33 : INFO : Loading word models...
+27/02 - 16:24:33 : DEBUG : Loading ConceptNet NumberBatch
+27/02 - 16:24:33 : INFO : loading projection weights from C:\Users\benja\gensim-data\conceptnet-numberbatch-17-06-300\conceptnet-numberbatch-17-06-300.gz
+27/02 - 16:24:33 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\conceptnet-numberbatch-17-06-300\\conceptnet-numberbatch-17-06-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 16:30:05 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\conceptnet-numberbatch-17-06-300\conceptnet-numberbatch-17-06-300.gz
+27/02 - 16:30:05 : DEBUG : Loading Wiki
+27/02 - 16:30:05 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 16:30:05 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 16:35:48 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+27/02 - 16:35:48 : INFO : Done loading models
+27/02 - 16:35:48 : INFO : Loading words and settings
+27/02 - 16:35:48 : DEBUG : Loading words
+27/02 - 16:35:48 : DEBUG : Done loading words
+27/02 - 16:35:48 : DEBUG : Loading settings
+27/02 - 16:35:48 : DEBUG : Done loading settings
+27/02 - 16:35:48 : INFO : Done loading words and settings
+27/02 - 16:35:48 : INFO : Running 1 games
+27/02 - 16:35:48 : DEBUG : Game 0:
+27/02 - 16:41:19 : INFO : ##### - Program started - #####
+27/02 - 16:41:19 : INFO : Loading word models...
+27/02 - 16:41:19 : DEBUG : Loading ConceptNet NumberBatch
+27/02 - 16:41:19 : INFO : loading projection weights from C:\Users\benja\gensim-data\conceptnet-numberbatch-17-06-300\conceptnet-numberbatch-17-06-300.gz
+27/02 - 16:41:19 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\conceptnet-numberbatch-17-06-300\\conceptnet-numberbatch-17-06-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 16:46:37 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\conceptnet-numberbatch-17-06-300\conceptnet-numberbatch-17-06-300.gz
+27/02 - 16:46:37 : INFO : Done loading models
+27/02 - 16:46:37 : INFO : Loading words and settings
+27/02 - 16:46:37 : DEBUG : Loading words
+27/02 - 16:46:37 : DEBUG : Done loading words
+27/02 - 16:46:37 : DEBUG : Loading settings
+27/02 - 16:46:37 : DEBUG : Done loading settings
+27/02 - 16:46:37 : INFO : Done loading words and settings
+27/02 - 16:46:37 : INFO : Running 1 games
+27/02 - 16:46:37 : DEBUG : Game 0:
+27/02 - 17:20:04 : INFO : ##### - Program started - #####
+27/02 - 17:20:04 : INFO : Loading word models...
+27/02 - 17:20:04 : DEBUG : Loading Twitter
+27/02 - 17:20:04 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-twitter-200\glove-twitter-200.gz
+27/02 - 17:20:04 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-twitter-200\\glove-twitter-200.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 17:50:48 : INFO : ##### - Program started - #####
+27/02 - 17:50:48 : INFO : Loading word models...
+27/02 - 17:50:48 : DEBUG : Loading Twitter
+27/02 - 17:50:48 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-twitter-100\glove-twitter-100.gz
+27/02 - 17:50:48 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-twitter-100\\glove-twitter-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 17:52:37 : INFO : loaded (200000, 100) matrix from C:\Users\benja\gensim-data\glove-twitter-100\glove-twitter-100.gz
+27/02 - 17:52:37 : INFO : Done loading models
+27/02 - 17:52:37 : INFO : Loading words and settings
+27/02 - 17:52:37 : DEBUG : Loading words
+27/02 - 17:52:37 : DEBUG : Done loading words
+27/02 - 17:52:37 : DEBUG : Loading settings
+27/02 - 17:52:37 : DEBUG : Done loading settings
+27/02 - 17:52:37 : INFO : Done loading words and settings
+27/02 - 17:52:37 : INFO : Running 1 games
+27/02 - 17:52:37 : DEBUG : Game 0:
+27/02 - 17:52:37 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 17:52:38 : INFO : ##### - Program ended - #####
+27/02 - 18:36:29 : INFO : ##### - Program started - #####
+27/02 - 18:36:29 : INFO : Loading word models...
+27/02 - 18:36:29 : DEBUG : Loading Google News
+27/02 - 18:36:29 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 18:36:29 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 18:36:51 : INFO : ##### - Program started - #####
+27/02 - 18:36:51 : INFO : Loading word models...
+27/02 - 18:36:51 : DEBUG : Loading Google News
+27/02 - 18:36:51 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 18:36:51 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 18:37:26 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 18:37:26 : INFO : Done loading models
+27/02 - 18:37:26 : INFO : Loading words and settings
+27/02 - 18:37:26 : DEBUG : Loading words
+27/02 - 18:37:26 : DEBUG : Done loading words
+27/02 - 18:37:26 : DEBUG : Loading settings
+27/02 - 18:37:26 : DEBUG : Done loading settings
+27/02 - 18:37:26 : INFO : Done loading words and settings
+27/02 - 18:37:26 : INFO : Running 1 games
+27/02 - 18:37:26 : DEBUG : Game 0:
+27/02 - 18:37:26 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 18:41:34 : INFO : ##### - Program started - #####
+27/02 - 18:41:34 : INFO : Loading word models...
+27/02 - 18:41:34 : DEBUG : Loading Google News
+27/02 - 18:41:34 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 18:41:34 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 18:42:10 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 18:42:10 : INFO : Done loading models
+27/02 - 18:42:10 : INFO : Loading words and settings
+27/02 - 18:42:10 : DEBUG : Loading words
+27/02 - 18:42:10 : DEBUG : Done loading words
+27/02 - 18:42:10 : DEBUG : Loading settings
+27/02 - 18:42:10 : DEBUG : Done loading settings
+27/02 - 18:42:10 : INFO : Done loading words and settings
+27/02 - 18:42:10 : INFO : Running 1 games
+27/02 - 18:42:10 : DEBUG : Game 0:
+27/02 - 18:42:10 : DEBUG : Team red: silk ,quilt ,lock ,glamorous ,idea ,steady ,machine ,number
+27/02 - 18:42:10 : DEBUG : Team blue: order ,friction ,complex ,advice ,greedy ,jumpy ,daffy ,zipper
+27/02 - 18:42:10 : DEBUG : Team black: insurance
+27/02 - 18:42:10 : DEBUG : Team grey: ghost ,quirky ,oven ,sister ,caption ,death ,tomatoes ,infamous
+27/02 - 18:42:10 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 18:43:52 : INFO : ##### - Program started - #####
+27/02 - 18:43:52 : INFO : Loading word models...
+27/02 - 18:43:52 : DEBUG : Loading Google News
+27/02 - 18:43:52 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 18:43:52 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 18:45:42 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 18:45:42 : INFO : Done loading models
+27/02 - 18:45:42 : INFO : Loading words and settings
+27/02 - 18:45:42 : DEBUG : Loading words
+27/02 - 18:45:42 : DEBUG : Done loading words
+27/02 - 18:45:42 : DEBUG : Loading settings
+27/02 - 18:45:42 : DEBUG : Done loading settings
+27/02 - 18:45:42 : INFO : Done loading words and settings
+27/02 - 18:45:42 : INFO : Running 1 games
+27/02 - 18:45:42 : DEBUG : Game 0:
+27/02 - 18:45:58 : DEBUG : Team red: land, exciting, rule, childlike, soap, friction, large, love
+27/02 - 18:46:04 : DEBUG : Team blue: nutritious, bumpy, caption, jumpy, show, soup, burst, advice
+27/02 - 18:46:05 : DEBUG : Team black: complex
+27/02 - 18:46:07 : DEBUG : Team grey: quirky, idea, responsible, hurried, box, act, reaction, machine
+27/02 - 18:48:09 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 20:03:27 : INFO : ##### - Program started - #####
+27/02 - 20:03:27 : INFO : Loading word models...
+27/02 - 20:03:27 : DEBUG : Loading Google News
+27/02 - 20:03:27 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:03:27 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 20:04:02 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:04:02 : INFO : Done loading models
+27/02 - 20:04:02 : INFO : Loading words and settings
+27/02 - 20:04:02 : DEBUG : Loading words
+27/02 - 20:04:02 : DEBUG : Done loading words
+27/02 - 20:04:02 : DEBUG : Loading settings
+27/02 - 20:04:02 : DEBUG : Done loading settings
+27/02 - 20:04:02 : INFO : Done loading words and settings
+27/02 - 20:04:02 : INFO : Running 1 games
+27/02 - 20:04:02 : DEBUG : Game 0:
+27/02 - 20:04:02 : DEBUG : Team red: land, instrument, zipper, machine, exciting, drop, control, nutritious
+27/02 - 20:04:02 : DEBUG : Team blue: idea, sea, hurried, childlike, club, glamorous, soup, complex
+27/02 - 20:04:02 : DEBUG : Team black: sister
+27/02 - 20:04:02 : DEBUG : Team grey: abandoned, pancake, discovery, death, love, sweater, steady, snakes
+27/02 - 20:04:02 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 20:04:25 : INFO : ##### - Program started - #####
+27/02 - 20:04:25 : INFO : Loading word models...
+27/02 - 20:04:25 : DEBUG : Loading Google News
+27/02 - 20:04:25 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:04:25 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 20:06:03 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:06:03 : INFO : Done loading models
+27/02 - 20:06:03 : INFO : Loading words and settings
+27/02 - 20:06:03 : DEBUG : Loading words
+27/02 - 20:06:03 : DEBUG : Done loading words
+27/02 - 20:06:03 : DEBUG : Loading settings
+27/02 - 20:06:03 : DEBUG : Done loading settings
+27/02 - 20:06:03 : INFO : Done loading words and settings
+27/02 - 20:06:03 : INFO : Running 1 games
+27/02 - 20:06:03 : DEBUG : Game 0:
+27/02 - 20:06:13 : DEBUG : Team red: bridge, quicksand, false, number, glamorous, idea, woman, greedy
+27/02 - 20:06:19 : DEBUG : Team blue: silk, abandoned, oven, childlike, petite, tomatoes, distribution, ultra
+27/02 - 20:06:20 : DEBUG : Team black: basket
+27/02 - 20:06:22 : DEBUG : Team grey: advice, drop, shocking, club, act, machine, nutritious, sweater
+27/02 - 20:08:46 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 20:15:31 : INFO : ##### - Program started - #####
+27/02 - 20:15:31 : INFO : Loading word models...
+27/02 - 20:15:31 : DEBUG : Loading Google News
+27/02 - 20:15:31 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:15:31 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 20:16:07 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:16:07 : INFO : Done loading models
+27/02 - 20:16:07 : INFO : Loading words and settings
+27/02 - 20:16:07 : DEBUG : Loading words
+27/02 - 20:16:07 : DEBUG : Done loading words
+27/02 - 20:16:07 : DEBUG : Loading settings
+27/02 - 20:16:07 : DEBUG : Done loading settings
+27/02 - 20:16:07 : INFO : Done loading words and settings
+27/02 - 20:16:07 : INFO : Running 1 games
+27/02 - 20:16:07 : DEBUG : Game 0:
+27/02 - 20:16:07 : DEBUG : Team red: instrument, greedy, exciting, thread, snakes, watery, jumpy, quirky
+27/02 - 20:16:07 : DEBUG : Team blue: pancake, false, tub, glamorous, rule, responsible, sister, drop
+27/02 - 20:16:07 : DEBUG : Team black: love
+27/02 - 20:16:07 : DEBUG : Team grey: advice, ultra, quilt, machine, distribution, friction, silk, effect
+27/02 - 20:16:07 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 20:16:09 : INFO : ##### - Program ended - #####
+27/02 - 20:18:24 : INFO : ##### - Program started - #####
+27/02 - 20:18:24 : INFO : Loading word models...
+27/02 - 20:18:24 : DEBUG : Loading Google News
+27/02 - 20:18:24 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:18:24 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 20:18:59 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:18:59 : INFO : Done loading models
+27/02 - 20:18:59 : INFO : Loading words and settings
+27/02 - 20:18:59 : DEBUG : Loading words
+27/02 - 20:18:59 : DEBUG : Done loading words
+27/02 - 20:18:59 : DEBUG : Loading settings
+27/02 - 20:18:59 : DEBUG : Done loading settings
+27/02 - 20:18:59 : INFO : Done loading words and settings
+27/02 - 20:18:59 : INFO : Running 1 games
+27/02 - 20:18:59 : DEBUG : Game 0:
+27/02 - 20:18:59 : DEBUG : Team red: ghost, order, glamorous, ultra, idea, show, shocking, abandoned
+27/02 - 20:18:59 : DEBUG : Team blue: snakes, distribution, sweater, discovery, oven, death, guide, caption
+27/02 - 20:18:59 : DEBUG : Team black: burst
+27/02 - 20:18:59 : DEBUG : Team grey: land, greedy, thread, number, muddled, silk, hurried, zipper
+27/02 - 20:18:59 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 20:19:40 : INFO : ##### - Program started - #####
+27/02 - 20:19:40 : INFO : Loading word models...
+27/02 - 20:19:40 : DEBUG : Loading Google News
+27/02 - 20:19:40 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:19:40 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 20:21:19 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:21:19 : INFO : Done loading models
+27/02 - 20:21:19 : INFO : Loading words and settings
+27/02 - 20:21:19 : DEBUG : Loading words
+27/02 - 20:21:19 : DEBUG : Done loading words
+27/02 - 20:21:19 : DEBUG : Loading settings
+27/02 - 20:21:19 : DEBUG : Done loading settings
+27/02 - 20:21:19 : INFO : Done loading words and settings
+27/02 - 20:21:19 : INFO : Running 1 games
+27/02 - 20:21:19 : DEBUG : Game 0:
+27/02 - 20:21:19 : DEBUG : Team red: quirky, idea, soap, love, rule, rainstorm, box, land
+27/02 - 20:21:19 : DEBUG : Team blue: infamous, lock, sweater, snakes, instrument, greedy, advice, hurried
+27/02 - 20:21:19 : DEBUG : Team black: incredible
+27/02 - 20:21:19 : DEBUG : Team grey: nutritious, club, machine, sticks, false, responsible, distribution, quilt
+27/02 - 20:23:03 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 20:25:03 : INFO : ##### - Program started - #####
+27/02 - 20:25:03 : INFO : Loading word models...
+27/02 - 20:25:03 : DEBUG : Loading Google News
+27/02 - 20:25:03 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:25:03 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 20:25:37 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:25:37 : INFO : Done loading models
+27/02 - 20:25:37 : INFO : Loading words and settings
+27/02 - 20:25:37 : DEBUG : Loading words
+27/02 - 20:25:37 : DEBUG : Done loading words
+27/02 - 20:25:37 : DEBUG : Loading settings
+27/02 - 20:25:37 : DEBUG : Done loading settings
+27/02 - 20:25:37 : INFO : Done loading words and settings
+27/02 - 20:25:37 : INFO : Running 1 games
+27/02 - 20:25:37 : DEBUG : Game 0:
+27/02 - 20:25:37 : DEBUG : Team red: quirky, woman, order, shocking, glamorous, false, infamous, jumpy
+27/02 - 20:25:37 : DEBUG : Team blue: complex, guide, ghost, muddled, box, land, exciting, silk
+27/02 - 20:25:37 : DEBUG : Team black: drop
+27/02 - 20:25:37 : DEBUG : Team grey: idea, machine, reaction, death, discovery, tomatoes, responsible, sweater
+27/02 - 20:25:37 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 20:25:39 : INFO : ##### - Program ended - #####
+27/02 - 20:41:22 : INFO : ##### - Program started - #####
+27/02 - 20:41:22 : INFO : Loading word models...
+27/02 - 20:41:22 : DEBUG : Loading Google News
+27/02 - 20:41:22 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:41:22 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 20:41:59 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:41:59 : INFO : Done loading models
+27/02 - 20:41:59 : INFO : Loading words and settings
+27/02 - 20:41:59 : DEBUG : Loading words
+27/02 - 20:41:59 : DEBUG : Done loading words
+27/02 - 20:41:59 : DEBUG : Loading settings
+27/02 - 20:41:59 : DEBUG : Done loading settings
+27/02 - 20:41:59 : INFO : Done loading words and settings
+27/02 - 20:41:59 : INFO : Running 1 games
+27/02 - 20:41:59 : DEBUG : Game 0:
+27/02 - 20:41:59 : DEBUG : Team red: glamorous, lock, bumpy, pancake, order, tomatoes, sister, determined
+27/02 - 20:41:59 : DEBUG : Team blue: zipper, act, rainstorm, drop, quilt, shocking, energetic, control
+27/02 - 20:41:59 : DEBUG : Team black: daffy
+27/02 - 20:41:59 : DEBUG : Team grey: exciting, hurried, greedy, petite, infamous, soap, false, discovery
+27/02 - 20:41:59 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 20:42:01 : DEBUG : Hints:
+27/02 - 20:42:42 : INFO : ##### - Program started - #####
+27/02 - 20:42:42 : INFO : Loading word models...
+27/02 - 20:42:42 : DEBUG : Loading Google News
+27/02 - 20:42:42 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:42:42 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 20:43:20 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:43:20 : INFO : Done loading models
+27/02 - 20:43:20 : INFO : Loading words and settings
+27/02 - 20:43:20 : DEBUG : Loading words
+27/02 - 20:43:20 : DEBUG : Done loading words
+27/02 - 20:43:20 : DEBUG : Loading settings
+27/02 - 20:43:20 : DEBUG : Done loading settings
+27/02 - 20:43:20 : INFO : Done loading words and settings
+27/02 - 20:43:20 : INFO : Running 1 games
+27/02 - 20:43:20 : DEBUG : Game 0:
+27/02 - 20:43:20 : DEBUG : Team red: act, death, infamous, drop, nutritious, instrument, exciting, tomatoes
+27/02 - 20:43:20 : DEBUG : Team blue: complex, lock, quilt, large, insurance, bridge, soap, oven
+27/02 - 20:43:20 : DEBUG : Team black: daffy
+27/02 - 20:43:20 : DEBUG : Team grey: number, abandoned, muddled, hurried, burst, energetic, steady, silk
+27/02 - 20:43:20 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 20:43:23 : DEBUG : Hints:
+27/02 - 20:44:20 : INFO : ##### - Program started - #####
+27/02 - 20:44:20 : INFO : Loading word models...
+27/02 - 20:44:20 : DEBUG : Loading Google News
+27/02 - 20:44:20 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:44:20 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 20:44:56 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:44:56 : INFO : Done loading models
+27/02 - 20:44:56 : INFO : Loading words and settings
+27/02 - 20:44:56 : DEBUG : Loading words
+27/02 - 20:44:56 : DEBUG : Done loading words
+27/02 - 20:44:56 : DEBUG : Loading settings
+27/02 - 20:44:56 : DEBUG : Done loading settings
+27/02 - 20:44:56 : INFO : Done loading words and settings
+27/02 - 20:44:56 : INFO : Running 1 games
+27/02 - 20:44:56 : DEBUG : Game 0:
+27/02 - 20:44:56 : DEBUG : Team red: shocking, petite, death, snakes, incredible, responsible, sea, glamorous
+27/02 - 20:44:56 : DEBUG : Team blue: rock, club, ghost, love, steady, distribution, effect, burst
+27/02 - 20:44:56 : DEBUG : Team black: land
+27/02 - 20:44:56 : DEBUG : Team grey: oven, tub, hurried, box, insurance, soap, idea, false
+27/02 - 20:44:56 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 20:44:58 : DEBUG : Hints:
+27/02 - 20:44:58 : DEBUG : shocking: startling - 0.301//distressing - 0.297//troubling - 0.282//embarrassing - 0.278//disturbing - 0.273
+27/02 - 20:44:58 : DEBUG : petite: Petite - 0.289//demure - 0.207//matronly - 0.199//svelte - 0.198//#'#_tall - 0.189
+27/02 - 20:44:58 : DEBUG : death: deaths - 0.274//slaying - 0.233//homicide - 0.219//murder - 0.214//Pathologist - 0.198
+27/02 - 20:44:58 : DEBUG : snakes: reptiles - 0.283//tarantulas - 0.281//poisonous_snakes - 0.263//spiders - 0.258//venomous_snakes - 0.256
+27/02 - 20:44:58 : DEBUG : incredible: amazing - 0.313//extraordinary - 0.309//astounding - 0.305//remarkable - 0.288//astonishing - 0.271
+27/02 - 20:44:58 : DEBUG : responsible: solely_responsible - 0.225//culpable - 0.218//Responsible - 0.216//accountable - 0.213//criminally_responsible - 0.198
+27/02 - 20:44:58 : DEBUG : sea: seas - 0.218//WHOI - 0.186//Rear_Admiral - 0.184//gray_whales - 0.179//ocean - 0.172
+27/02 - 20:44:58 : DEBUG : glamorous: glamourous - 0.363//demure - 0.212//fashionably - 0.207//Glamorous - 0.207//dressy - 0.205
+27/02 - 20:44:58 : INFO : ##### - Program ended - #####
+27/02 - 20:48:35 : INFO : ##### - Program started - #####
+27/02 - 20:48:35 : INFO : Loading word models...
+27/02 - 20:48:35 : DEBUG : Loading Google News
+27/02 - 20:48:35 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:48:35 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 20:49:10 : INFO : loaded (200000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:49:10 : INFO : Done loading models
+27/02 - 20:49:10 : INFO : Loading words and settings
+27/02 - 20:49:10 : DEBUG : Loading words
+27/02 - 20:49:10 : DEBUG : Done loading words
+27/02 - 20:49:10 : DEBUG : Loading settings
+27/02 - 20:49:10 : DEBUG : Done loading settings
+27/02 - 20:49:10 : INFO : Done loading words and settings
+27/02 - 20:49:10 : INFO : Running 1 games
+27/02 - 20:49:10 : DEBUG : Game 0:
+27/02 - 20:49:10 : DEBUG : Team red: steady, rainstorm, discovery, lock, machine, distribution, soap, incredible
+27/02 - 20:49:10 : DEBUG : Team blue: tub, club, reaction, determined, idea, quicksand, exciting, basket
+27/02 - 20:49:10 : DEBUG : Team black: tomatoes
+27/02 - 20:49:10 : DEBUG : Team grey: thread, number, caption, false, quilt, hurried, ghost, bridge
+27/02 - 20:49:10 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 20:49:12 : DEBUG : Hints:
+27/02 - 20:49:12 : DEBUG : steady: Steady - 0.415//steadier - 0.308//rapid - 0.280//uninterrupted - 0.265//constant - 0.260
+27/02 - 20:49:12 : DEBUG : rainstorm: downpour - 0.442//rainstorms - 0.431//torrential_downpour - 0.411//torrential_rains - 0.411//heavy_downpour - 0.410
+27/02 - 20:49:12 : DEBUG : discovery: discoveries - 0.403//discoverers - 0.311//discoverer - 0.295//discovering - 0.275//unearthing - 0.263
+27/02 - 20:49:12 : DEBUG : lock: locking - 0.479//locks - 0.391//Locking - 0.391//Lock - 0.371//locked - 0.364
+27/02 - 20:49:12 : DEBUG : machine: machines - 0.483//Machine - 0.341//Machines - 0.302//Computerized - 0.294//machinery - 0.281
+27/02 - 20:49:12 : DEBUG : distribution: Distribution - 0.471//distribute - 0.412//distributing - 0.383//distributors - 0.346//distributor - 0.330
+27/02 - 20:49:12 : DEBUG : soap: soaps - 0.467//Soap - 0.416//detergents - 0.274//detergent - 0.273//Hollyoaks - 0.269
+27/02 - 20:49:12 : DEBUG : incredible: astounding - 0.488//amazing - 0.488//unparalleled - 0.446//phenomenal - 0.445//extraordinary - 0.442
+27/02 - 20:49:12 : INFO : ##### - Program ended - #####
+27/02 - 20:50:08 : INFO : ##### - Program started - #####
+27/02 - 20:50:08 : INFO : Loading word models...
+27/02 - 20:50:08 : DEBUG : Loading Google News
+27/02 - 20:50:08 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:50:08 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 20:51:42 : INFO : loaded (500000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 20:51:42 : INFO : Done loading models
+27/02 - 20:51:42 : INFO : Loading words and settings
+27/02 - 20:51:42 : DEBUG : Loading words
+27/02 - 20:51:42 : DEBUG : Done loading words
+27/02 - 20:51:42 : DEBUG : Loading settings
+27/02 - 20:51:42 : DEBUG : Done loading settings
+27/02 - 20:51:42 : INFO : Done loading words and settings
+27/02 - 20:51:42 : INFO : Running 1 games
+27/02 - 20:51:42 : DEBUG : Game 0:
+27/02 - 20:51:42 : DEBUG : Team red: woman, distribution, quicksand, soap, jumpy, greedy, land, oven
+27/02 - 20:51:42 : DEBUG : Team blue: icicle, determined, tub, box, reaction, death, sea, energetic
+27/02 - 20:51:42 : DEBUG : Team black: act
+27/02 - 20:51:42 : DEBUG : Team grey: complex, tomatoes, soup, false, responsible, order, rainstorm, snakes
+27/02 - 20:51:42 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 20:51:50 : DEBUG : Hints:
+27/02 - 20:51:50 : DEBUG : woman: teenage_girl - 0.381//man - 0.368//girl - 0.359//women - 0.353//businesswoman - 0.345
+27/02 - 20:51:50 : DEBUG : distribution: Distribution - 0.461//distribute - 0.365//distributing - 0.361//distributors - 0.314//distributor - 0.309
+27/02 - 20:51:50 : DEBUG : quicksand: mire - 0.315//quagmire - 0.303//quagmires - 0.290//morass - 0.287//By_MARCUS_HERSH - 0.245
+27/02 - 20:51:50 : DEBUG : soap: soaps - 0.483//Soap - 0.413//Soaps - 0.310//Footballers_Wives - 0.284//Desperate_Housewives - 0.278
+27/02 - 20:51:50 : DEBUG : jumpy: jittery - 0.379//nervous - 0.317//twitchy - 0.315//antsy - 0.298//Nervous - 0.271
+27/02 - 20:51:50 : DEBUG : greedy: money_grubbing - 0.413//Greedy - 0.390//fat_cats - 0.379//avaricious - 0.368//fatcats - 0.346
+27/02 - 20:51:50 : DEBUG : land: lands - 0.428//undeveloped_land - 0.398//farmland - 0.398//acres - 0.393//acre_parcel - 0.390
+27/02 - 20:51:50 : DEBUG : oven: slow_cooker - 0.393//Oven - 0.362//ovens - 0.358//preheat_oven - 0.347//convection_ovens - 0.343
+27/02 - 20:51:50 : INFO : ##### - Program ended - #####
+27/02 - 22:53:35 : INFO : ##### - Program started - #####
+27/02 - 22:53:35 : INFO : Loading word models...
+27/02 - 22:53:35 : DEBUG : Loading Google News
+27/02 - 22:53:35 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 22:53:35 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+27/02 - 22:55:00 : INFO : loaded (500000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+27/02 - 22:55:00 : INFO : Done loading models
+27/02 - 22:55:00 : INFO : Loading words and settings
+27/02 - 22:55:00 : DEBUG : Loading words
+27/02 - 22:55:00 : DEBUG : Done loading words
+27/02 - 22:55:00 : DEBUG : Loading settings
+27/02 - 22:55:00 : DEBUG : Done loading settings
+27/02 - 22:55:00 : INFO : Done loading words and settings
+27/02 - 22:55:00 : INFO : Running 1 games
+27/02 - 22:55:00 : DEBUG : Game 0:
+27/02 - 22:55:00 : DEBUG : Team red: laser, stadium, force, server, crash, knife, square, wall
+27/02 - 22:55:00 : DEBUG : Team blue: hood, bed, hole, sock, van, glass, casino, boom
+27/02 - 22:55:00 : DEBUG : Team black: soldier
+27/02 - 22:55:00 : DEBUG : Team grey: bond, vacuum, arm, dance, bridge, palm, bugle, trip
+27/02 - 22:55:00 : INFO : precomputing L2-norms of word weight vectors
+27/02 - 22:55:06 : DEBUG : Hints:
+27/02 - 22:55:06 : DEBUG : laser: lasers - 0.340//By_Aparajita_Ghosh - 0.299//Laser - 0.291//Lasers - 0.281//spectroscopy - 0.255
+27/02 - 22:55:06 : DEBUG : stadium: stadiums - 0.322//Stadium - 0.303//By_Aparajita_Ghosh - 0.294//Stadiums - 0.293//seater_stadium - 0.260
+27/02 - 22:55:06 : DEBUG : force: By_Aparajita_Ghosh - 0.280//Fouled_Out_None - 0.232//compel - 0.205//J.Johnson_###-### - 0.204//By_n.krishna - 0.196
+27/02 - 22:55:06 : DEBUG : server: servers - 0.395//Server - 0.353//Servers - 0.334//DNS_DHCP - 0.302//ISA_Server - 0.294
+27/02 - 22:55:06 : DEBUG : crash: By_Aparajita_Ghosh - 0.318//crashes - 0.270//collision - 0.261//Fouled_Out_None - 0.259//Crashes - 0.256
+27/02 - 22:55:06 : DEBUG : knife: By_Aparajita_Ghosh - 0.322//J.Johnson_###-### - 0.275//knives - 0.243//MarketTalk@dowjones.com - 0.227//Hight_Quality - 0.216
+27/02 - 22:55:06 : DEBUG : square: By_Aparajita_Ghosh - 0.311//J.Johnson_###-### - 0.232//MarketTalk@dowjones.com - 0.215//Occupying - 0.201//By_HoldtheFrontPage_staff - 0.201
+27/02 - 22:55:06 : DEBUG : wall: By_Aparajita_Ghosh - 0.326//J.Johnson_###-### - 0.285//By_HoldtheFrontPage_staff - 0.253//Fouled_Out_None - 0.239//MarketTalk@dowjones.com - 0.200
+27/02 - 22:55:06 : INFO : ##### - Program ended - #####
