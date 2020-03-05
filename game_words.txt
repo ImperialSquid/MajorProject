@@ -309,12 +309,12 @@ dwarf
 bell
 change
 tap
-emabassy
+embassy
 comic
 press
 cross
 laser
-washoington
+washington
 canada
 eye
 bottle

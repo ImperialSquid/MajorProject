@@ -1303,3 +1303,35 @@ Program started
 05/03 - 10:50:43 : DEBUG : Found value for blue: 8
 05/03 - 10:50:43 : DEBUG : Found value for black: 1
 05/03 - 10:50:43 : INFO : Team sizes: black:1 - blue:8 - grey:8 - red:8
+05/03 - 11:22:23 : INFO : SpyMaster Initialised
+05/03 - 11:22:23 : INFO : Getting teams sizes...
+05/03 - 11:22:23 : DEBUG : Found value for red: 8
+05/03 - 11:22:23 : DEBUG : Found value for blue: 8
+05/03 - 11:22:23 : DEBUG : Found value for black: 1
+05/03 - 11:22:23 : INFO : Done loading team sizes
+05/03 - 11:22:23 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+05/03 - 11:22:23 : INFO : Loading word model...
+05/03 - 11:22:23 : DEBUG : Loading Wiki 100
+05/03 - 11:22:23 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+05/03 - 11:22:23 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+05/03 - 11:25:56 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+05/03 - 11:25:56 : INFO : Done loading models
+05/03 - 11:25:56 : INFO : Loading game words...
+05/03 - 11:25:56 : INFO : Done loading game words
+05/03 - 11:25:56 : DEBUG : Loaded 394 words, 6 missing (missing word(s): ice cream, scuba diver, loch ness, new york, emabassy, washoington)
+05/03 - 11:27:42 : INFO : SpyMaster Initialised
+05/03 - 11:27:42 : INFO : Getting teams sizes...
+05/03 - 11:27:42 : DEBUG : Found value for red: 8
+05/03 - 11:27:42 : DEBUG : Found value for blue: 8
+05/03 - 11:27:42 : DEBUG : Found value for black: 1
+05/03 - 11:27:42 : INFO : Done loading team sizes
+05/03 - 11:27:42 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+05/03 - 11:27:42 : INFO : Loading word model...
+05/03 - 11:27:42 : DEBUG : Loading Wiki 100
+05/03 - 11:27:42 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+05/03 - 11:27:42 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+05/03 - 11:31:13 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+05/03 - 11:31:13 : INFO : Done loading models
+05/03 - 11:31:13 : INFO : Loading game words...
+05/03 - 11:31:13 : INFO : Done loading game words
+05/03 - 11:31:13 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
