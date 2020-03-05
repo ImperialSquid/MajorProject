@@ -726,3 +726,553 @@ Program started
 27/02 - 22:55:06 : DEBUG : square: By_Aparajita_Ghosh - 0.311//J.Johnson_###-### - 0.232//MarketTalk@dowjones.com - 0.215//Occupying - 0.201//By_HoldtheFrontPage_staff - 0.201
 27/02 - 22:55:06 : DEBUG : wall: By_Aparajita_Ghosh - 0.326//J.Johnson_###-### - 0.285//By_HoldtheFrontPage_staff - 0.253//Fouled_Out_None - 0.239//MarketTalk@dowjones.com - 0.200
 27/02 - 22:55:06 : INFO : ##### - Program ended - #####
+28/02 - 13:57:40 : INFO : ##### - Program started - #####
+28/02 - 13:57:40 : INFO : Loading word models...
+28/02 - 13:57:40 : DEBUG : Loading Twitter 100
+28/02 - 13:57:40 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-twitter-100\glove-twitter-100.gz
+28/02 - 13:57:40 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-twitter-100\\glove-twitter-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+28/02 - 14:04:05 : INFO : loaded (500000, 100) matrix from C:\Users\benja\gensim-data\glove-twitter-100\glove-twitter-100.gz
+28/02 - 14:04:05 : INFO : Done loading models
+28/02 - 14:04:05 : INFO : Loading words and settings
+28/02 - 14:04:05 : DEBUG : Loading words
+28/02 - 14:04:05 : DEBUG : Done loading words
+28/02 - 14:04:05 : DEBUG : Loading settings
+28/02 - 14:04:05 : DEBUG : Done loading settings
+28/02 - 14:04:05 : INFO : Done loading words and settings
+28/02 - 14:04:05 : INFO : Running 1 games
+28/02 - 14:04:05 : DEBUG : Game 0:
+28/02 - 14:04:05 : DEBUG : Team red: box, mercury, fair, king, mouse, spot, knight, fire
+28/02 - 14:04:05 : DEBUG : Team blue: queen, czech, temple, pie, bat, day, heart, sink
+28/02 - 14:04:05 : DEBUG : Team black: pirate
+28/02 - 14:04:05 : DEBUG : Team grey: shoe, berry, bow, fall, vacuum, pistol, post, air
+28/02 - 14:04:05 : INFO : precomputing L2-norms of word weight vectors
+28/02 - 14:04:12 : DEBUG : Hints:
+28/02 - 14:04:14 : INFO : ##### - Program ended - #####
+28/02 - 14:18:11 : INFO : ##### - Program started - #####
+28/02 - 14:18:11 : INFO : Loading word models...
+28/02 - 14:18:11 : DEBUG : Loading Wiki 100
+28/02 - 14:18:11 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+28/02 - 14:18:11 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+28/02 - 14:22:07 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+28/02 - 14:22:07 : INFO : Done loading models
+28/02 - 14:22:07 : INFO : Loading words and settings
+28/02 - 14:22:07 : DEBUG : Loading words
+28/02 - 14:22:07 : DEBUG : Done loading words
+28/02 - 14:22:07 : DEBUG : Loading settings
+28/02 - 14:22:07 : DEBUG : Done loading settings
+28/02 - 14:22:07 : INFO : Done loading words and settings
+28/02 - 14:22:07 : INFO : Running 1 games
+28/02 - 14:22:07 : DEBUG : Game 0:
+28/02 - 14:22:07 : DEBUG : Team red: tag, pan, flute, link, giant, forest, teacher, stream
+28/02 - 14:22:07 : DEBUG : Team blue: rabbit, hook, australia, rock, root, organ, jet, church
+28/02 - 14:22:07 : DEBUG : Team black: india
+28/02 - 14:22:07 : DEBUG : Team grey: engine, center, millionaire, mouse, olympus, boot, crown, tokyo
+28/02 - 14:22:07 : INFO : precomputing L2-norms of word weight vectors
+28/02 - 14:22:09 : DEBUG : Hints:
+28/02 - 14:22:09 : DEBUG : tag: motohashi - 0.654//al-rawi - 0.636//leonas - 0.634//alush - 0.631//rodil - 0.631
+28/02 - 14:22:09 : DEBUG : pan: xueming - 0.644//hayrettin - 0.636//sefik - 0.629//rabani - 0.627//golemi - 0.625
+28/02 - 14:22:09 : DEBUG : flute: ___________________________________________________________ - 0.684//brett.clanton@chron.com - 0.671//zety - 0.666//rungfapaisarn - 0.664//abrenica - 0.656
+28/02 - 14:22:09 : DEBUG : link: coblence - 0.648//tatishchev - 0.643//nbcsports.com - 0.635//jikiri - 0.634//sagiv - 0.632
+28/02 - 14:22:09 : DEBUG : giant: mcmeans - 0.674//dzhemal - 0.647//kamijo - 0.643//atentamente - 0.639//michielsen - 0.636
+28/02 - 14:22:09 : DEBUG : forest: fangorn - 0.691//ceman - 0.627//frenchs - 0.625//hanneke - 0.614//zuccaro - 0.604
+28/02 - 14:22:09 : DEBUG : teacher: rodil - 0.645//mcmeans - 0.643//xueming - 0.635//desutter - 0.629//bekim - 0.620
+28/02 - 14:22:09 : DEBUG : stream: seacourt - 0.635//sadamitsu - 0.633//rhue - 0.629//rungfapaisarn - 0.629//attabani - 0.626
+28/02 - 14:22:09 : INFO : ##### - Program ended - #####
+28/02 - 14:27:28 : INFO : ##### - Program started - #####
+28/02 - 14:27:28 : INFO : Loading word models...
+28/02 - 14:27:28 : DEBUG : Loading Wiki 100
+28/02 - 14:27:28 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+28/02 - 14:27:28 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+28/02 - 14:31:53 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+28/02 - 14:31:53 : INFO : Done loading models
+28/02 - 14:31:53 : INFO : Loading words and settings
+28/02 - 14:31:53 : DEBUG : Loading words
+28/02 - 14:31:53 : DEBUG : Done loading words
+28/02 - 14:31:53 : DEBUG : Loading settings
+28/02 - 14:31:53 : DEBUG : Done loading settings
+28/02 - 14:31:53 : INFO : Done loading words and settings
+28/02 - 14:31:53 : INFO : Running 1 games
+28/02 - 14:31:53 : DEBUG : Game 0:
+28/02 - 14:31:53 : DEBUG : Team red: bank, hollywood, code, witch, australia, maple, horn, berry
+28/02 - 14:31:53 : DEBUG : Team blue: air, tooth, kiwi, tube, carrot, grace, pan, bat
+28/02 - 14:31:53 : DEBUG : Team black: jam
+28/02 - 14:31:53 : DEBUG : Team grey: giant, swing, press, trunk, trip, brush, ball, mine
+28/02 - 14:31:53 : INFO : precomputing L2-norms of word weight vectors
+28/02 - 14:31:55 : DEBUG : Hints:
+28/02 - 14:31:55 : DEBUG : bank: 	skvortsova - 0.539	//	sobin - 0.535	//	bielmeier - 0.532	//	darmin - 0.518	//	slaski - 0.515
+28/02 - 14:31:55 : DEBUG : hollywood: 	vörösmarty - 0.548	//	estudillo - 0.538	//	batiatus - 0.526	//	svoge - 0.523	//	dodin - 0.519
+28/02 - 14:31:55 : DEBUG : code: 	self-modifying - 0.576	//	bivalvia - 0.569	//	iccs - 0.529	//	86a - 0.527	//	o’hanlon - 0.526
+28/02 - 14:31:55 : DEBUG : witch: 	skvortsova - 0.599	//	callisthenes - 0.582	//	khazaria - 0.580	//	egami - 0.576	//	ouzounian - 0.574
+28/02 - 14:31:55 : DEBUG : australia: 	skvortsova - 0.529	//	eb/streymur - 0.518	//	bivalvia - 0.510	//	greenawalt - 0.497	//	willms - 0.496
+28/02 - 14:31:55 : DEBUG : maple: 	gee-gees - 0.578	//	courlander - 0.577	//	carryduff - 0.574	//	kanneh - 0.571	//	yaquis - 0.571
+28/02 - 14:31:55 : DEBUG : horn: 	kretzschmar - 0.606	//	skvortsova - 0.575	//	prasquier - 0.570	//	teissier - 0.569	//	lawder - 0.565
+28/02 - 14:31:55 : DEBUG : berry: 	casler - 0.607	//	vigouroux - 0.606	//	nissenson - 0.602	//	estreicher - 0.598	//	oberhauser - 0.594
+28/02 - 14:31:55 : INFO : ##### - Program ended - #####
+28/02 - 14:33:50 : INFO : ##### - Program started - #####
+28/02 - 14:33:50 : INFO : Loading word models...
+28/02 - 14:33:50 : DEBUG : Loading Wiki 100
+28/02 - 14:33:50 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+28/02 - 14:33:50 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+28/02 - 14:34:19 : INFO : loaded (50000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+28/02 - 14:34:19 : INFO : Done loading models
+28/02 - 14:34:19 : INFO : Loading words and settings
+28/02 - 14:34:19 : DEBUG : Loading words
+28/02 - 14:34:19 : DEBUG : Done loading words
+28/02 - 14:34:19 : DEBUG : Loading settings
+28/02 - 14:34:19 : DEBUG : Done loading settings
+28/02 - 14:34:19 : INFO : Done loading words and settings
+28/02 - 14:34:19 : INFO : Running 1 games
+28/02 - 14:34:19 : DEBUG : Game 0:
+28/02 - 14:34:19 : DEBUG : Team red: alien, key, cap, novel, undertaker, charge, england, grace
+28/02 - 14:34:19 : DEBUG : Team blue: kangaroo, ground, shark, knight, boom, straw, fighter, europe
+28/02 - 14:34:19 : DEBUG : Team black: dress
+28/02 - 14:34:19 : DEBUG : Team grey: olympus, missile, berry, draft, canada, string, comic, date
+28/02 - 14:34:19 : INFO : precomputing L2-norms of word weight vectors
+28/02 - 14:34:19 : DEBUG : Hints:
+28/02 - 14:34:19 : DEBUG : alien: 	afp03 - 0.478	//	afp04 - 0.466	//	imre - 0.354	//	homicidal - 0.338	//	joann - 0.316
+28/02 - 14:34:19 : DEBUG : key: 	afp03 - 0.383	//	naroff - 0.345	//	competencies - 0.337	//	unlocking - 0.332	//	bovespa - 0.329
+28/02 - 14:34:19 : DEBUG : cap: 	afp03 - 0.490	//	afp04 - 0.400	//	rsm - 0.375	//	dwp - 0.333	//	hatem - 0.314
+28/02 - 14:34:19 : DEBUG : novel: 	ovid - 0.423	//	afp03 - 0.414	//	co-author - 0.395	//	eder - 0.391	//	afp04 - 0.383
+28/02 - 14:34:19 : DEBUG : undertaker: 	afp03 - 0.497	//	afp04 - 0.400	//	schaffer - 0.364	//	jha - 0.344	//	bei - 0.333
+28/02 - 14:34:19 : DEBUG : charge: 	naroff - 0.376	//	afp03 - 0.368	//	schaffer - 0.325	//	dui - 0.318	//	dereliction - 0.310
+28/02 - 14:34:19 : DEBUG : england: 	afp03 - 0.424	//	louth - 0.401	//	harford - 0.385	//	eusebius - 0.365	//	cavan - 0.360
+28/02 - 14:34:19 : DEBUG : grace: 	afp03 - 0.454	//	afp04 - 0.376	//	alva - 0.367	//	rosalie - 0.366	//	naroff - 0.364
+28/02 - 14:34:19 : INFO : ##### - Program ended - #####
+02/03 - 10:49:17 : INFO : ##### - Program started - #####
+02/03 - 10:49:17 : INFO : Loading word models...
+02/03 - 10:49:17 : DEBUG : Loading Wiki 100
+02/03 - 10:49:17 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+02/03 - 10:49:17 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+02/03 - 10:53:32 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+02/03 - 10:53:32 : INFO : Done loading models
+02/03 - 10:53:32 : INFO : Loading words and settings
+02/03 - 10:53:32 : DEBUG : Loading words
+02/03 - 10:53:32 : DEBUG : Done loading words
+02/03 - 10:53:32 : DEBUG : Loading settings
+02/03 - 10:53:32 : DEBUG : Done loading settings
+02/03 - 10:53:32 : INFO : Done loading words and settings
+02/03 - 10:53:32 : INFO : Running 1 games
+02/03 - 10:53:32 : DEBUG : Game 0:
+02/03 - 10:53:32 : DEBUG : Team red: missile, stock, pan, paste, contract, mint, fair, wave
+02/03 - 10:53:32 : DEBUG : Team blue: seal, cold, tablet, sound, staff, mole, octopus, egypt
+02/03 - 10:53:32 : DEBUG : Team black: buck
+02/03 - 10:53:32 : DEBUG : Team grey: ivory, bow, ship, alps, tie, china, mine, leprechaun
+02/03 - 10:53:32 : INFO : precomputing L2-norms of word weight vectors
+02/03 - 10:54:21 : INFO : ##### - Program started - #####
+02/03 - 10:54:21 : INFO : Loading word models...
+02/03 - 10:54:21 : DEBUG : Loading Wiki 100
+02/03 - 10:54:21 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+02/03 - 10:54:21 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+02/03 - 10:59:14 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+02/03 - 10:59:14 : INFO : Done loading models
+02/03 - 10:59:14 : INFO : Loading words and settings
+02/03 - 10:59:14 : DEBUG : Loading words
+02/03 - 10:59:14 : DEBUG : Done loading words
+02/03 - 10:59:14 : DEBUG : Loading settings
+02/03 - 10:59:14 : DEBUG : Done loading settings
+02/03 - 10:59:14 : INFO : Done loading words and settings
+02/03 - 10:59:14 : INFO : Running 1 games
+02/03 - 10:59:14 : DEBUG : Game 0:
+02/03 - 10:59:14 : DEBUG : Team red: duck, opera, temple, poison, court, yard, arm, antartica
+02/03 - 10:59:14 : DEBUG : Team blue: round, cycle, space, bell, egypt, tube, teacher, ground
+02/03 - 10:59:14 : DEBUG : Team black: contract
+02/03 - 10:59:14 : DEBUG : Team grey: cliff, spine, witch, fish, tag, vacuum, england, needle
+02/03 - 10:59:14 : INFO : precomputing L2-norms of word weight vectors
+02/03 - 10:59:17 : DEBUG : Hints:
+02/03 - 10:59:17 : DEBUG : duck: 	zety - 0.693	//	brett.clanton@chron.com - 0.686	//	rungfapaisarn - 0.676	//	mongkolporn - 0.665	//	___________________________________________________________ - 0.662
+02/03 - 10:59:17 : DEBUG : opera: 	ligabue - 0.678	//	nasimi - 0.670	//	zety - 0.659	//	brett.clanton@chron.com - 0.648	//	kardelj - 0.647
+02/03 - 10:59:17 : DEBUG : temple: 	cholapuram - 0.684	//	sadashiva - 0.677	//	zety - 0.670	//	___________________________________________________________ - 0.670	//	eshmun - 0.667
+02/03 - 10:59:17 : DEBUG : poison: 	zety - 0.674	//	___________________________________________________________ - 0.669	//	rungfapaisarn - 0.664	//	brett.clanton@chron.com - 0.656	//	cobra-la - 0.655
+02/03 - 10:59:17 : DEBUG : court: 	llanarth - 0.654	//	nagamine - 0.624	//	keyrates - 0.621	//	nyako - 0.615	//	brancati - 0.614
+02/03 - 10:59:17 : DEBUG : yard: 	brett.clanton@chron.com - 0.683	//	fehim - 0.678	//	___________________________________________________________ - 0.665	//	rungfapaisarn - 0.660	//	zety - 0.659
+02/03 - 10:59:17 : DEBUG : antartica: 	zety - 0.798	//	brett.clanton@chron.com - 0.793	//	___________________________________________________________ - 0.784	//	tom.fowler@chron.com - 0.763	//	purva.patel@chron.com - 0.760
+02/03 - 10:59:17 : INFO : ##### - Program ended - #####
+02/03 - 11:00:29 : INFO : ##### - Program started - #####
+02/03 - 11:00:29 : INFO : Loading word models...
+02/03 - 11:00:29 : DEBUG : Loading Wiki 100
+02/03 - 11:00:29 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+02/03 - 11:00:29 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+02/03 - 11:05:38 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+02/03 - 11:05:38 : INFO : Done loading models
+02/03 - 11:05:38 : INFO : Loading words and settings
+02/03 - 11:05:38 : DEBUG : Loading words
+02/03 - 11:05:38 : DEBUG : Done loading words
+02/03 - 11:05:38 : DEBUG : Loading settings
+02/03 - 11:05:38 : DEBUG : Done loading settings
+02/03 - 11:05:38 : INFO : Done loading words and settings
+02/03 - 11:05:38 : INFO : Running 1 games
+02/03 - 11:05:38 : DEBUG : Game 0:
+02/03 - 11:05:38 : DEBUG : Team red: bomb, bed, ivory, part, shark, centaur, luck, alps
+02/03 - 11:05:38 : DEBUG : Team blue: space, robin, bug, cap, smuggler, stream, dress, port
+02/03 - 11:05:38 : DEBUG : Team black: egypt
+02/03 - 11:05:38 : DEBUG : Team grey: chair, pass, night, draft, tag, tower, moon, vet
+02/03 - 11:05:38 : INFO : precomputing L2-norms of word weight vectors
+02/03 - 11:05:40 : DEBUG : Hints:
+02/03 - 11:05:40 : DEBUG : bomb: 	bombs - 0.715	//	detonated - 0.676	//	exploded - 0.631	//	blasts - 0.620	//	detonate - 0.616
+02/03 - 11:05:40 : DEBUG : bed: 	bunk - 0.682	//	mattress - 0.645	//	headboard - 0.639	//	beds - 0.632	//	slept - 0.619
+02/03 - 11:05:40 : DEBUG : ivory: 	d'ivoire - 0.656	//	liberia - 0.646	//	leone - 0.612	//	liberian - 0.608	//	cote - 0.592
+02/03 - 11:05:40 : DEBUG : part: 	portion - 0.589	//	entire - 0.562	//	incorporated - 0.556	//	primarily - 0.551	//	significant - 0.545
+02/03 - 11:05:40 : DEBUG : shark: 	blacktip - 0.708	//	carcharhinus - 0.637	//	hammerhead - 0.628	//	megamouth - 0.622	//	whitetip - 0.616
+02/03 - 11:05:40 : DEBUG : centaur: 	charta - 0.566	//	mandu - 0.556	//	photoplay - 0.549	//	shriram - 0.536	//	wolfen - 0.535
+02/03 - 11:05:40 : DEBUG : luck: 	misfortune - 0.561	//	perseverance - 0.556	//	humility - 0.553	//	tidings - 0.540	//	knack - 0.532
+02/03 - 11:05:40 : DEBUG : alps: 	ortler - 0.749	//	graian - 0.735	//	cottian - 0.720	//	dinaric - 0.692	//	dolomites - 0.692
+02/03 - 11:05:40 : INFO : ##### - Program ended - #####
+02/03 - 11:13:13 : INFO : ##### - Program started - #####
+02/03 - 11:13:13 : INFO : Loading word models...
+02/03 - 11:13:13 : DEBUG : Loading Wiki 100
+02/03 - 11:13:13 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+02/03 - 11:13:13 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+02/03 - 11:17:36 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+02/03 - 11:17:36 : INFO : Done loading models
+02/03 - 11:17:36 : INFO : Loading words and settings
+02/03 - 11:17:36 : DEBUG : Loading words
+02/03 - 11:17:36 : DEBUG : Done loading words
+02/03 - 11:17:36 : DEBUG : Loading settings
+02/03 - 11:17:36 : DEBUG : Done loading settings
+02/03 - 11:17:36 : INFO : Done loading words and settings
+02/03 - 11:17:36 : INFO : Running 4 games
+02/03 - 11:17:36 : DEBUG : Game 0:
+02/03 - 11:17:36 : DEBUG : Team red: amazon, duck, bar, pan, laser, brush, key, london
+02/03 - 11:17:36 : DEBUG : Team blue: cap, glass, tokyo, circle, seal, stream, club, millionaire
+02/03 - 11:17:36 : DEBUG : Team black: centaur
+02/03 - 11:17:36 : DEBUG : Team grey: genius, point, cricket, china, greece, beat, agent, calf
+02/03 - 11:17:36 : INFO : precomputing L2-norms of word weight vectors
+02/03 - 11:17:39 : DEBUG : Hints:
+02/03 - 11:17:39 : DEBUG : amazon: 	bezos - 0.608	//	emusic - 0.575	//	amazon.com - 0.553	//	unbox - 0.527	//	appstore - 0.524
+02/03 - 11:17:39 : DEBUG : duck: 	confit - 0.636	//	daffy - 0.627	//	quacking - 0.619	//	lame - 0.609	//	darkwing - 0.601
+02/03 - 11:17:39 : DEBUG : bar: 	hiyya - 0.605	//	bars - 0.581	//	aftab-e - 0.546	//	tapas - 0.543	//	anti-roll - 0.524
+02/03 - 11:17:39 : DEBUG : pan: 	frying - 0.573	//	xiaozhu - 0.569	//	drippings - 0.546	//	sauté - 0.541	//	bundt - 0.516
+02/03 - 11:17:39 : DEBUG : laser: 	lasers - 0.721	//	femtosecond - 0.688	//	photocoagulation - 0.677	//	pulsed - 0.619	//	tunable - 0.600
+02/03 - 11:17:39 : DEBUG : brush: 	scrub - 0.594	//	sanding - 0.562	//	grate - 0.561	//	underbrush - 0.539	//	brushes - 0.523
+02/03 - 11:17:39 : DEBUG : key: 	crucial - 0.671	//	vital - 0.621	//	essential - 0.574	//	important - 0.544	//	pivotal - 0.532
+02/03 - 11:17:39 : DEBUG : london: 	sydney - 0.589	//	dublin - 0.586	//	melbourne - 0.579	//	glasgow - 0.569	//	southwark - 0.567
+02/03 - 11:17:39 : DEBUG : Game 1:
+02/03 - 11:17:39 : DEBUG : Team red: compound, log, degree, berry, hole, grass, hook, luck
+02/03 - 11:17:39 : DEBUG : Team blue: stock, king, lab, spot, duck, port, france, canada
+02/03 - 11:17:39 : DEBUG : Team black: ketchup
+02/03 - 11:17:39 : DEBUG : Team grey: pit, turkey, organ, hood, pirate, opera, mail, lock
+02/03 - 11:17:39 : DEBUG : Hints:
+02/03 - 11:17:39 : DEBUG : compound: 	compounds - 0.589	//	zhongnanhai - 0.565	//	organosulfur - 0.557	//	organophosphorus - 0.544	//	organotin - 0.527
+02/03 - 11:17:39 : DEBUG : log: 	logs - 0.565	//	hand-hewn - 0.539	//	two-room - 0.533	//	one-room - 0.520	//	dogtrot - 0.517
+02/03 - 11:17:39 : DEBUG : degree: 	doctorate - 0.676	//	bachelor - 0.665	//	b.a. - 0.649	//	undergraduate - 0.648	//	ph.d - 0.636
+02/03 - 11:17:39 : DEBUG : berry: 	gordy - 0.579	//	knott - 0.555	//	jayne - 0.537	//	charisse - 0.535	//	renee - 0.533
+02/03 - 11:17:39 : DEBUG : hole: 	holes - 0.687	//	putt - 0.671	//	birdie - 0.643	//	par-5 - 0.639	//	par-4 - 0.630
+02/03 - 11:17:39 : DEBUG : grass: 	zoysia - 0.625	//	tussock - 0.623	//	tussocks - 0.620	//	grasses - 0.619	//	miscanthus - 0.594
+02/03 - 11:17:39 : DEBUG : hook: 	hooks - 0.646	//	uppercut - 0.510	//	mistimed - 0.505	//	comebacker - 0.499	//	uppercuts - 0.497
+02/03 - 11:17:39 : DEBUG : luck: 	perseverance - 0.606	//	humility - 0.559	//	adversity - 0.559	//	misfortune - 0.551	//	toughness - 0.527
+02/03 - 11:17:40 : DEBUG : Game 2:
+02/03 - 11:17:40 : DEBUG : Team red: phoenix, death, rome, charge, ham, file, horseshoe, marble
+02/03 - 11:17:40 : DEBUG : Team blue: cloak, nail, hook, dice, comic, limousine, jet, undertaker
+02/03 - 11:17:40 : DEBUG : Team black: club
+02/03 - 11:17:40 : DEBUG : Team grey: lap, thief, net, torch, pirate, eagle, iron, pit
+02/03 - 11:17:40 : DEBUG : Hints:
+02/03 - 11:17:40 : DEBUG : phoenix: 	sacramento - 0.717	//	denver - 0.669	//	portland - 0.648	//	dallas - 0.647	//	orlando - 0.647
+02/03 - 11:17:40 : DEBUG : death: 	deaths - 0.634	//	died - 0.594	//	executions - 0.562	//	execution - 0.562	//	illness - 0.548
+02/03 - 11:17:40 : DEBUG : rome: 	naples - 0.593	//	padua - 0.559	//	vatican - 0.557	//	constantinople - 0.548	//	vienna - 0.548
+02/03 - 11:17:40 : DEBUG : charge: 	charges - 0.704	//	charged - 0.682	//	criminal - 0.568	//	guilty - 0.563	//	crimes - 0.556
+02/03 - 11:17:40 : DEBUG : ham: 	middlesbrough - 0.572	//	brom - 0.545	//	hocks - 0.530	//	burnley - 0.526	//	bromwich - 0.522
+02/03 - 11:17:40 : DEBUG : file: 	files - 0.717	//	onlytest - 0.645	//	pdf - 0.585	//	filing - 0.556	//	database - 0.539
+02/03 - 11:17:40 : DEBUG : horseshoe: 	kentmere - 0.524	//	waimea - 0.513	//	castaic - 0.510	//	inle - 0.508	//	placerita - 0.507
+02/03 - 11:17:40 : DEBUG : marble: 	travertine - 0.747	//	granite - 0.644	//	sarcophagi - 0.633	//	limestone - 0.605	//	polychrome - 0.591
+02/03 - 11:17:40 : DEBUG : Game 3:
+02/03 - 11:17:40 : DEBUG : Team red: cricket, hand, school, bell, mint, fan, note, boot
+02/03 - 11:17:40 : DEBUG : Team blue: deck, casino, octopus, buck, line, glass, block, mug
+02/03 - 11:17:40 : DEBUG : Team black: port
+02/03 - 11:17:40 : DEBUG : Team grey: table, match, van, train, pilot, palm, scientist, film
+02/03 - 11:17:41 : DEBUG : Hints:
+02/03 - 11:17:41 : DEBUG : cricket: 	cricketers - 0.627	//	twenty20 - 0.620	//	odi - 0.592	//	mcc - 0.587	//	wc2003-wis - 0.585
+02/03 - 11:17:41 : DEBUG : hand: 	hands - 0.619	//	fingers - 0.592	//	finger - 0.569	//	bandaged - 0.548	//	clasped - 0.540
+02/03 - 11:17:41 : DEBUG : school: 	elementary - 0.706	//	college - 0.683	//	graduate - 0.672	//	enrolled - 0.666	//	seminary - 0.654
+02/03 - 11:17:41 : DEBUG : bell: 	globemedia - 0.661	//	aliant - 0.635	//	biv - 0.604	//	expressvu - 0.603	//	p-63 - 0.564
+02/03 - 11:17:41 : DEBUG : mint: 	kremnica - 0.620	//	mackenna - 0.575	//	julep - 0.569	//	cilantro - 0.557	//	sprig - 0.537
+02/03 - 11:17:41 : DEBUG : fan: 	così - 0.518	//	fanbase - 0.490	//	rabid - 0.475	//	kuai - 0.472	//	fanatic - 0.471
+02/03 - 11:17:41 : DEBUG : note: 	notes - 0.602	//	quote - 0.555	//	promissory - 0.530	//	quotes - 0.502	//	* - 0.499
+02/03 - 11:17:41 : DEBUG : boot: 	scootin - 0.587	//	clik - 0.561	//	togs - 0.509	//	lickers - 0.507	//	mbr - 0.503
+02/03 - 11:17:41 : INFO : ##### - Program ended - #####
+02/03 - 11:32:38 : INFO : ##### - Program started - #####
+02/03 - 11:32:38 : INFO : Loading word models...
+02/03 - 11:32:38 : DEBUG : Loading Google News 300
+02/03 - 11:32:38 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+02/03 - 11:32:38 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+02/03 - 11:34:41 : INFO : loaded (500000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+02/03 - 11:34:41 : INFO : Done loading models
+02/03 - 11:34:41 : INFO : Loading words and settings
+02/03 - 11:34:41 : DEBUG : Loading words
+02/03 - 11:34:41 : DEBUG : Done loading words
+02/03 - 11:34:41 : DEBUG : Loading settings
+02/03 - 11:34:41 : DEBUG : Done loading settings
+02/03 - 11:34:41 : INFO : Done loading words and settings
+02/03 - 11:34:41 : INFO : Running 4 games
+02/03 - 11:34:41 : DEBUG : Game 0:
+02/03 - 11:34:41 : DEBUG : Team red: limousine, state, beat, laser, berry, germany, genius, spring
+02/03 - 11:34:41 : DEBUG : Team blue: stock, film, oil, contract, whip, spell, worm, spike
+02/03 - 11:34:41 : DEBUG : Team black: marble
+02/03 - 11:34:41 : DEBUG : Team grey: spine, china, bow, doctor, ruler, mole, brush, war
+02/03 - 11:34:41 : INFO : precomputing L2-norms of word weight vectors
+02/03 - 11:35:06 : DEBUG : Hints:
+02/03 - 11:35:06 : DEBUG : limousine: 	limo - 0.692	//	limousines - 0.589	//	chauffeured - 0.563	//	stretch_limo - 0.560	//	limos - 0.554
+02/03 - 11:35:06 : DEBUG : state: 	statewide - 0.528	//	thestate - 0.486	//	State - 0.472	//	district - 0.471	//	county - 0.463
+02/03 - 11:35:06 : DEBUG : beat: 	beating - 0.670	//	beaten - 0.578	//	beats - 0.540	//	defeated - 0.539	//	thumped - 0.534
+02/03 - 11:35:06 : DEBUG : laser: 	lasers - 0.739	//	laser_beam - 0.612	//	Laser - 0.595	//	Lasers - 0.515	//	infrared - 0.509
+02/03 - 11:35:06 : DEBUG : berry: 	berries - 0.649	//	blueberry - 0.620	//	blueberries - 0.607	//	raspberries - 0.607	//	cherries - 0.562
+02/03 - 11:35:06 : DEBUG : germany: 	german - 0.592	//	europe - 0.583	//	sweden - 0.550	//	european - 0.548	//	france - 0.522
+02/03 - 11:35:06 : DEBUG : genius: 	geniuses - 0.606	//	brilliance - 0.564	//	savant - 0.544	//	genious - 0.533	//	visionary - 0.480
+02/03 - 11:35:06 : DEBUG : spring: 	summer - 0.640	//	autumn - 0.553	//	winter - 0.542	//	springtime - 0.533	//	Spring - 0.499
+02/03 - 11:35:06 : DEBUG : Game 1:
+02/03 - 11:35:06 : DEBUG : Team red: hospital, staff, penguin, key, ninja, australia, spine, stream
+02/03 - 11:35:06 : DEBUG : Team blue: genius, berry, square, bond, trip, hawk, pan, novel
+02/03 - 11:35:06 : DEBUG : Team black: mexico
+02/03 - 11:35:06 : DEBUG : Team grey: ball, spring, queen, theater, buffalo, bow, press, spider
+02/03 - 11:35:10 : DEBUG : Hints:
+02/03 - 11:35:10 : DEBUG : hospital: 	Hospital - 0.734	//	hosptial - 0.684	//	hopsital - 0.665	//	hospitals - 0.652	//	intensive_care - 0.648
+02/03 - 11:35:10 : DEBUG : staff: 	staffers - 0.581	//	staffs - 0.572	//	Staff - 0.534	//	personnel - 0.516	//	employees - 0.461
+02/03 - 11:35:10 : DEBUG : penguin: 	penguins - 0.649	//	emperor_penguin - 0.465	//	polar_bear - 0.456	//	lemur - 0.453	//	gorilla - 0.443
+02/03 - 11:35:10 : DEBUG : key: 	crucial - 0.672	//	vital - 0.563	//	critical - 0.553	//	pivotal - 0.537	//	important - 0.521
+02/03 - 11:35:10 : DEBUG : ninja: 	ninjas - 0.600	//	Ninja - 0.581	//	kung_fu - 0.487	//	sword_wielding - 0.485	//	samurai - 0.476
+02/03 - 11:35:10 : DEBUG : australia: 	nz - 0.598	//	canada - 0.573	//	malaysia - 0.507	//	uk - 0.504	//	ireland - 0.496
+02/03 - 11:35:10 : DEBUG : spine: 	spinal - 0.601	//	spinal_cord - 0.580	//	spines - 0.573	//	spinal_column - 0.569	//	pelvis - 0.554
+02/03 - 11:35:10 : DEBUG : stream: 	streams - 0.671	//	streaming - 0.478	//	Streams - 0.458	//	steady_stream - 0.402	//	torrent - 0.372
+02/03 - 11:35:10 : DEBUG : Game 2:
+02/03 - 11:35:10 : DEBUG : Team red: seal, gold, car, sub, hand, cricket, round, charge
+02/03 - 11:35:10 : DEBUG : Team blue: tube, poison, telescope, mint, theater, rose, date, cycle
+02/03 - 11:35:10 : DEBUG : Team black: mass
+02/03 - 11:35:10 : DEBUG : Team grey: degree, spring, concert, cast, server, stick, paper, doctor
+02/03 - 11:35:13 : DEBUG : Hints:
+02/03 - 11:35:13 : DEBUG : seal: 	sealing - 0.622	//	sealed - 0.617	//	seals - 0.577	//	Sealing - 0.456	//	Seal - 0.404
+02/03 - 11:35:13 : DEBUG : gold: 	silver - 0.696	//	precious_metal - 0.581	//	Gold - 0.580	//	precious_metals - 0.499	//	bullion - 0.489
+02/03 - 11:35:13 : DEBUG : car: 	vehicle - 0.645	//	cars - 0.633	//	SUV - 0.611	//	Car - 0.606	//	Honda_Civic - 0.597
+02/03 - 11:35:13 : DEBUG : sub: 	Sub - 0.614	//	zonal - 0.348	//	comprising - 0.337	//	Ijara - 0.311	//	subs - 0.295
+02/03 - 11:35:13 : DEBUG : hand: 	hands - 0.506	//	Hands - 0.426	//	Hand - 0.412	//	finger - 0.369	//	handed - 0.360
+02/03 - 11:35:13 : DEBUG : cricket: 	cricketers - 0.728	//	cricketing - 0.726	//	Twenty##_cricket - 0.690	//	Cricket - 0.684	//	Test_cricket - 0.666
+02/03 - 11:35:13 : DEBUG : round: 	rounds - 0.567	//	Round - 0.545	//	firstround - 0.510	//	Defending_Champion - 0.423	//	Qualifying_Round - 0.412
+02/03 - 11:35:13 : DEBUG : charge: 	charges - 0.582	//	charged - 0.448	//	Charge - 0.444	//	charging - 0.411	//	Charges - 0.389
+02/03 - 11:35:13 : DEBUG : Game 3:
+02/03 - 11:35:13 : DEBUG : Team red: ring, swing, bolt, cliff, africa, angel, knight, pupil
+02/03 - 11:35:13 : DEBUG : Team blue: horse, net, drill, bottle, spider, cap, straw, pit
+02/03 - 11:35:13 : DEBUG : Team black: log
+02/03 - 11:35:13 : DEBUG : Team grey: boom, beach, green, car, robin, film, pirate, nail
+02/03 - 11:35:16 : DEBUG : Hints:
+02/03 - 11:35:16 : DEBUG : ring: 	rings - 0.571	//	squared_circle - 0.417	//	Ring - 0.382	//	JAPW - 0.355	//	cruiserweight_division - 0.353
+02/03 - 11:35:16 : DEBUG : swing: 	swinging - 0.492	//	swings - 0.481	//	Swing - 0.460	//	swung - 0.392	//	tilt - 0.362
+02/03 - 11:35:16 : DEBUG : bolt: 	bolts - 0.446	//	bolted - 0.357	//	bolting - 0.336	//	latches - 0.329	//	screws - 0.320
+02/03 - 11:35:16 : DEBUG : cliff: 	cliffs - 0.565	//	precipice - 0.482	//	rocky_cliff - 0.447	//	steep_cliffs - 0.443	//	ledge - 0.441
+02/03 - 11:35:16 : DEBUG : africa: 	african - 0.549	//	europe - 0.515	//	america - 0.512	//	nigeria - 0.508	//	sri_lanka - 0.505
+02/03 - 11:35:16 : DEBUG : angel: 	angels - 0.598	//	angel_investor - 0.439	//	angelic - 0.438	//	Angel - 0.424	//	guardian_angel - 0.421
+02/03 - 11:35:16 : DEBUG : knight: 	knights - 0.601	//	nobleman - 0.489	//	Cardinal_Richelieu - 0.440	//	knightly - 0.438	//	courtier - 0.427
+02/03 - 11:35:16 : DEBUG : pupil: 	pupils - 0.637	//	headteacher - 0.540	//	Pupil - 0.535	//	teacher - 0.532	//	headmaster - 0.496
+02/03 - 11:35:16 : INFO : ##### - Program ended - #####
+02/03 - 12:14:36 : INFO : ##### - Program started - #####
+02/03 - 12:14:36 : INFO : Loading word models...
+02/03 - 12:14:36 : DEBUG : Loading Google News 300
+02/03 - 12:14:36 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+02/03 - 12:14:36 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+02/03 - 12:16:08 : INFO : loaded (500000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+02/03 - 12:16:08 : INFO : Done loading models
+02/03 - 12:16:08 : INFO : Loading words and settings
+02/03 - 12:16:08 : DEBUG : Loading words
+02/03 - 12:16:08 : DEBUG : Done loading words
+02/03 - 12:16:08 : DEBUG : Loading settings
+02/03 - 12:16:08 : DEBUG : Done loading settings
+02/03 - 12:16:08 : INFO : Done loading words and settings
+02/03 - 12:16:08 : INFO : Running 6 games
+02/03 - 12:16:08 : DEBUG : Game 0:
+02/03 - 12:16:08 : DEBUG : Team red: stock, buck, forest, brush, tick, chest, fish, scorpion
+02/03 - 12:16:08 : DEBUG : Team blue: compound, club, hotel, spine, line, log, fly, button
+02/03 - 12:16:08 : DEBUG : Team black: engine
+02/03 - 12:16:08 : DEBUG : Team grey: shark, hole, opera, grass, ray, cap, ring, pilot
+02/03 - 12:16:08 : INFO : precomputing L2-norms of word weight vectors
+02/03 - 12:16:24 : DEBUG : Hints:
+02/03 - 12:16:24 : DEBUG : stock: 	shares - 0.578	//	Shares - 0.445	//	thinly_traded - 0.430	//	Stock - 0.427	//	stocks - 0.423
+02/03 - 12:16:24 : DEBUG : buck: 	bucks - 0.400	//	Bucking - 0.258	//	crooks - 0.257	//	moolah - 0.254	//	bucking - 0.253
+02/03 - 12:16:24 : DEBUG : forest: 	forests - 0.637	//	Forests - 0.532	//	forestland - 0.488	//	forestry - 0.470	//	forested - 0.469
+02/03 - 12:16:24 : DEBUG : brush: 	brushes - 0.432	//	brushing - 0.359	//	Brushing - 0.345	//	paintbrushes - 0.324	//	Brush - 0.324
+02/03 - 12:16:24 : DEBUG : tick: 	ticks - 0.493	//	ticked - 0.412	//	ticking - 0.389	//	Tick - 0.362	//	Ticking - 0.319
+02/03 - 12:16:24 : DEBUG : chest: 	abdomen - 0.468	//	upper_torso - 0.420	//	chests - 0.418	//	forehead - 0.381	//	buttocks - 0.375
+02/03 - 12:16:24 : DEBUG : fish: 	trout - 0.568	//	freshwater_fish - 0.548	//	catfish - 0.545	//	striped_bass - 0.541	//	fishes - 0.534
+02/03 - 12:16:24 : DEBUG : scorpion: 	scorpions - 0.486	//	serpent - 0.403	//	lizard - 0.385	//	centipedes - 0.381	//	monitor_lizard - 0.365
+02/03 - 12:16:24 : DEBUG : Game 1:
+02/03 - 12:16:24 : DEBUG : Team red: whip, war, time, lock, match, game, theater, centaur
+02/03 - 12:16:24 : DEBUG : Team blue: glove, button, mount, trip, car, mercury, undertaker, lion
+02/03 - 12:16:24 : DEBUG : Team black: dog
+02/03 - 12:16:24 : DEBUG : Team grey: alps, carrot, laser, death, kiwi, unicorn, queen, code
+02/03 - 12:16:26 : DEBUG : Hints:
+02/03 - 12:16:26 : DEBUG : whip: 	whips - 0.470	//	Whip - 0.376	//	whipping - 0.336	//	whipped - 0.326	//	Chief_Whip - 0.296
+02/03 - 12:16:26 : DEBUG : war: 	wars - 0.518	//	War - 0.491	//	Persian_Gulf_War - 0.441	//	hostilities - 0.408	//	conflict - 0.399
+02/03 - 12:16:26 : DEBUG : time: 	periods - 0.328	//	period - 0.328	//	since - 0.305	//	days - 0.296	//	Time - 0.288
+02/03 - 12:16:26 : DEBUG : lock: 	locking - 0.516	//	locks - 0.438	//	locked - 0.437	//	Locking - 0.435	//	Lock - 0.383
+02/03 - 12:16:26 : DEBUG : match: 	matches - 0.599	//	Matches - 0.437	//	quarterfinal - 0.425	//	semi_final - 0.419	//	Match - 0.412
+02/03 - 12:16:26 : DEBUG : game: 	games - 0.576	//	play - 0.445	//	matchup - 0.426	//	match - 0.413	//	game.The - 0.396
+02/03 - 12:16:26 : DEBUG : theater: 	Theater - 0.555	//	Theatre - 0.518	//	performing_arts - 0.477	//	repertory_theater - 0.467	//	productions - 0.465
+02/03 - 12:16:26 : DEBUG : centaur: 	Greek_mythology - 0.309	//	Roman_mythology - 0.289	//	mythological - 0.283	//	Greek_gods - 0.273	//	Theseus - 0.270
+02/03 - 12:16:26 : DEBUG : Game 2:
+02/03 - 12:16:26 : DEBUG : Team red: australia, iron, figure, telescope, africa, paste, ground, spider
+02/03 - 12:16:26 : DEBUG : Team blue: light, engine, snow, fan, fork, whale, capital, bolt
+02/03 - 12:16:26 : DEBUG : Team black: track
+02/03 - 12:16:26 : DEBUG : Team grey: pipe, charge, mole, cliff, glove, pupil, vet, pie
+02/03 - 12:16:28 : DEBUG : Hints:
+02/03 - 12:16:28 : DEBUG : australia: 	canada - 0.562	//	nz - 0.550	//	usa - 0.507	//	south_africa - 0.478	//	malaysia - 0.477
+02/03 - 12:16:28 : DEBUG : iron: 	irons - 0.321	//	manganese - 0.315	//	Fe - 0.291	//	chromium - 0.280	//	pitching_wedge - 0.278
+02/03 - 12:16:28 : DEBUG : figure: 	figures - 0.454	//	estimate - 0.296	//	estimations - 0.271	//	statistic - 0.260	//	figuring - 0.248
+02/03 - 12:16:28 : DEBUG : telescope: 	telescopes - 0.634	//	Telescope - 0.525	//	observatories - 0.510	//	observatory - 0.498	//	optical_telescope - 0.481
+02/03 - 12:16:28 : DEBUG : africa: 	african - 0.499	//	europe - 0.456	//	south_africa - 0.455	//	nigeria - 0.454	//	asia - 0.442
+02/03 - 12:16:28 : DEBUG : paste: 	Paste - 0.377	//	pastes - 0.365	//	pasted - 0.337	//	ENTER_key - 0.329	//	pasting - 0.315
+02/03 - 12:16:28 : DEBUG : ground: 	Ground - 0.353	//	soil - 0.219	//	floor - 0.209	//	Grounds - 0.208	//	aerially - 0.206
+02/03 - 12:16:28 : DEBUG : spider: 	spiders - 0.513	//	tarantula - 0.397	//	arachnid - 0.392	//	serpent - 0.365	//	widow_spider - 0.361
+02/03 - 12:16:28 : DEBUG : Game 3:
+02/03 - 12:16:28 : DEBUG : Team red: england, beach, paste, pool, pass, car, cast, vacuum
+02/03 - 12:16:28 : DEBUG : Team blue: plate, jam, compound, eye, poison, sound, figure, stadium
+02/03 - 12:16:28 : DEBUG : Team black: cat
+02/03 - 12:16:28 : DEBUG : Team grey: disease, nut, crash, boom, cricket, march, file, sub
+02/03 - 12:16:29 : DEBUG : Hints:
+02/03 - 12:16:29 : DEBUG : england: 	chelsea - 0.532	//	liverpool - 0.503	//	europe - 0.502	//	spain - 0.501	//	sweden - 0.501
+02/03 - 12:16:29 : DEBUG : beach: 	beaches - 0.583	//	beachside - 0.538	//	Beach - 0.535	//	beachfront - 0.529	//	sandy_beach - 0.499
+02/03 - 12:16:29 : DEBUG : paste: 	pastes - 0.370	//	Paste - 0.348	//	pasted - 0.316	//	pasting - 0.301	//	ENTER_key - 0.301
+02/03 - 12:16:29 : DEBUG : pool: 	pools - 0.565	//	Pool - 0.482	//	swimming_pool - 0.386	//	swimming_pools - 0.340	//	Pools - 0.340
+02/03 - 12:16:29 : DEBUG : pass: 	passes - 0.525	//	passing - 0.385	//	passed - 0.381	//	Passing - 0.334	//	Passes - 0.302
+02/03 - 12:16:29 : DEBUG : car: 	vehicle - 0.551	//	Ford_Focus - 0.530	//	Car - 0.526	//	cars - 0.520	//	Toyota_Camry - 0.502
+02/03 - 12:16:29 : DEBUG : cast: 	Cast - 0.544	//	casts - 0.530	//	casting - 0.528	//	casted - 0.488	//	Casting - 0.445
+02/03 - 12:16:29 : DEBUG : vacuum: 	vaccum - 0.521	//	vacuums - 0.434	//	Vacuum - 0.374	//	void - 0.330	//	voids - 0.283
+02/03 - 12:16:29 : DEBUG : Game 4:
+02/03 - 12:16:29 : DEBUG : Team red: light, square, switch, dwarf, concert, lock, pan, staff
+02/03 - 12:16:29 : DEBUG : Team blue: olive, buffalo, fall, grass, mass, lawyer, round, row
+02/03 - 12:16:29 : DEBUG : Team black: leprechaun
+02/03 - 12:16:29 : DEBUG : Team grey: tie, root, snowman, beat, ground, capital, string, horse
+02/03 - 12:16:31 : DEBUG : Hints:
+02/03 - 12:16:31 : DEBUG : light: 	illumination - 0.371	//	illuminate - 0.357	//	Light - 0.355	//	illuminating - 0.352	//	lights - 0.351
+02/03 - 12:16:31 : DEBUG : square: 	sq - 0.418	//	sq. - 0.389	//	sq._meters - 0.351	//	sqkm - 0.350	//	square_kilometer - 0.338
+02/03 - 12:16:31 : DEBUG : switch: 	switching - 0.594	//	switched - 0.508	//	Switching - 0.495	//	switches - 0.480	//	Switch - 0.476
+02/03 - 12:16:31 : DEBUG : dwarf: 	dwarfs - 0.555	//	dwarfed - 0.378	//	dwarfing - 0.359	//	rivaling - 0.355	//	eclipses - 0.332
+02/03 - 12:16:31 : DEBUG : concert: 	Concert - 0.598	//	concerts - 0.586	//	Concerts - 0.528	//	Tribute_Concert - 0.479	//	Benefit_Concert - 0.478
+02/03 - 12:16:31 : DEBUG : lock: 	locking - 0.537	//	Locking - 0.477	//	locks - 0.467	//	locked - 0.443	//	Lock - 0.437
+02/03 - 12:16:31 : DEBUG : pan: 	wok - 0.316	//	pans - 0.311	//	baking_dish - 0.288	//	baking_pan - 0.283	//	saute_pan - 0.281
+02/03 - 12:16:31 : DEBUG : staff: 	staffs - 0.504	//	staffers - 0.501	//	Staff - 0.409	//	personnel - 0.406	//	employees - 0.374
+02/03 - 12:16:31 : DEBUG : Game 5:
+02/03 - 12:16:31 : DEBUG : Team red: circle, horseshoe, capital, shoe, drop, train, time, snow
+02/03 - 12:16:31 : DEBUG : Team blue: church, deck, luck, lock, cloak, revolution, cat, bar
+02/03 - 12:16:31 : DEBUG : Team black: queen
+02/03 - 12:16:31 : DEBUG : Team grey: shot, opera, pilot, battery, tablet, dance, pin, spot
+02/03 - 12:16:33 : DEBUG : Hints:
+02/03 - 12:16:33 : DEBUG : circle: 	faceoff_circle - 0.343	//	faceoff_dot - 0.329	//	Circling - 0.321	//	clockwise - 0.311	//	faceoff_circles - 0.311
+02/03 - 12:16:33 : DEBUG : horseshoe: 	horseshoes - 0.407	//	horseshoe_pits - 0.289	//	Horseshoe - 0.279	//	horseshoe_pitching - 0.276	//	inflatable_rides - 0.274
+02/03 - 12:16:33 : DEBUG : capital: 	captial - 0.484	//	Capital - 0.346	//	liquidity - 0.332	//	liquidities - 0.322	//	investment - 0.313
+02/03 - 12:16:33 : DEBUG : shoe: 	footwear - 0.544	//	Shoe - 0.527	//	shoes - 0.516	//	sneaker - 0.506	//	athletic_footwear - 0.452
+02/03 - 12:16:33 : DEBUG : drop: 	decline - 0.523	//	dropped - 0.479	//	drops - 0.468	//	dropping - 0.449	//	rise - 0.444
+02/03 - 12:16:33 : DEBUG : train: 	trains - 0.641	//	Train - 0.526	//	Trains - 0.495	//	commuter_train - 0.475	//	TRAIN - 0.446
+02/03 - 12:16:33 : DEBUG : time: 	period - 0.341	//	months - 0.331	//	periods - 0.329	//	days - 0.321	//	weeks - 0.301
+02/03 - 12:16:33 : DEBUG : snow: 	snowfall - 0.642	//	heavy_snowfall - 0.615	//	snowfalls - 0.580	//	heavy_snowfalls - 0.553	//	snows - 0.544
+02/03 - 12:16:33 : INFO : ##### - Program ended - #####
+02/03 - 12:38:59 : INFO : ##### - Program started - #####
+02/03 - 12:38:59 : INFO : Loading word models...
+02/03 - 12:38:59 : DEBUG : Loading Wiki 100
+02/03 - 12:38:59 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+02/03 - 12:38:59 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+02/03 - 12:43:01 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+02/03 - 12:43:01 : INFO : Done loading models
+02/03 - 12:43:01 : INFO : Loading words and settings
+02/03 - 12:43:01 : DEBUG : Loading words
+02/03 - 12:43:01 : DEBUG : Done loading words
+02/03 - 12:43:01 : DEBUG : Loading settings
+02/03 - 12:43:01 : DEBUG : Done loading settings
+02/03 - 12:43:01 : INFO : Done loading words and settings
+02/03 - 12:43:01 : INFO : Running 3 games
+02/03 - 12:43:01 : DEBUG : Game 0:
+02/03 - 12:43:01 : DEBUG : Team red: pitch, foot, time, concert, calf, plate, cloak, chair
+02/03 - 12:43:01 : DEBUG : Team blue: bank, train, apple, sink, hospital, mole, moon, horn
+02/03 - 12:43:01 : DEBUG : Team black: fair
+02/03 - 12:43:01 : DEBUG : Team grey: genius, tooth, root, bolt, van, beat, england, stream
+02/03 - 12:43:01 : INFO : precomputing L2-norms of word weight vectors
+02/03 - 12:43:03 : DEBUG : Hints:
+02/03 - 12:43:03 : DEBUG : pitch: 	off-speed - 0.610	//	astro-turf - 0.608	//	11-a-side - 0.565	//	pitches - 0.558	//	batters - 0.541
+02/03 - 12:43:03 : DEBUG : foot: 	1,800-square - 0.703	//	2,600-square - 0.675	//	900-square - 0.663	//	13,000-square - 0.650	//	9,000-square - 0.648
+02/03 - 12:43:03 : DEBUG : time: 	elapsed - 0.581	//	trialling - 0.468	//	biding - 0.466	//	elapses - 0.448	//	oqt - 0.442
+02/03 - 12:43:03 : DEBUG : concert: 	hevy - 0.596	//	spirituel - 0.595	//	live8 - 0.591	//	recital - 0.569	//	galaction - 0.566
+02/03 - 12:43:03 : DEBUG : plate: 	cribriform - 0.627	//	indo-australian - 0.573	//	glacis - 0.556	//	flagellar - 0.549	//	tectonics - 0.546
+02/03 - 12:43:03 : DEBUG : cloak: 	cloaks - 0.662	//	invisibility - 0.618	//	intangibility - 0.616	//	artfulness - 0.602	//	sternness - 0.590
+02/03 - 12:43:03 : DEBUG : chair: 	slipcovered - 0.632	//	savilian - 0.623	//	vice-chair - 0.588	//	slouched - 0.572	//	laudian - 0.549
+02/03 - 12:43:03 : DEBUG : Game 1:
+02/03 - 12:43:03 : DEBUG : Team red: horn, phoenix, triangle, time, check, witch, calf, bolt
+02/03 - 12:43:03 : DEBUG : Team blue: piano, sock, dance, compound, shoe, ring, drill, pan
+02/03 - 12:43:03 : DEBUG : Team black: rabbit
+02/03 - 12:43:03 : DEBUG : Team grey: copper, agent, saturn, scorpion, cat, hawk, lemon, beijing
+02/03 - 12:43:03 : DEBUG : Hints:
+02/03 - 12:43:03 : DEBUG : horn: 	gyula - 0.528	//	gbeho - 0.519	//	gaylard - 0.506	//	strelow - 0.480	//	lourens - 0.478
+02/03 - 12:43:03 : DEBUG : phoenix: 	sacramento - 0.571	//	denver - 0.547	//	orlando - 0.540	//	tucson - 0.515	//	jacksonville - 0.512
+02/03 - 12:43:03 : DEBUG : triangle: 	orthocenter - 0.530	//	maungtaw - 0.511	//	equilateral - 0.509	//	duboce - 0.507	//	apremont - 0.499
+02/03 - 12:43:03 : DEBUG : time: 	elapsed - 0.456	//	period - 0.446	//	goals - 0.446	//	conceded - 0.445	//	succeeding - 0.438
+02/03 - 12:43:03 : DEBUG : check: 	checking - 0.523	//	refund - 0.522	//	checks - 0.518	//	verify - 0.482	//	refunds - 0.474
+02/03 - 12:43:03 : DEBUG : witch: 	busansky - 0.520	//	jadis - 0.514	//	ginzler - 0.495	//	margit - 0.481	//	klarion - 0.477
+02/03 - 12:43:03 : DEBUG : calf: 	career-threatening - 0.563	//	over-hunting - 0.522	//	ferbert - 0.516	//	burtini - 0.509	//	mandlate - 0.503
+02/03 - 12:43:03 : DEBUG : bolt: 	lokubandara - 0.555	//	frevert - 0.514	//	mouland - 0.509	//	sivasithamparam - 0.505	//	dismore - 0.504
+02/03 - 12:43:03 : DEBUG : Game 2:
+02/03 - 12:43:03 : DEBUG : Team red: chest, spider, turkey, pistol, post, whip, eye, knife
+02/03 - 12:43:03 : DEBUG : Team blue: switch, arm, drill, war, europe, gold, piano, fire
+02/03 - 12:43:03 : DEBUG : Team black: beach
+02/03 - 12:43:03 : DEBUG : Team grey: rose, mug, plastic, london, back, jack, fish, block
+02/03 - 12:43:04 : DEBUG : Hints:
+02/03 - 12:43:04 : DEBUG : chest: 	piousness - 0.599	//	ophthalmia - 0.591	//	erysipelas - 0.583	//	mckennan - 0.579	//	rúhíyyih - 0.578
+02/03 - 12:43:04 : DEBUG : spider: 	argiope - 0.697	//	cribellate - 0.693	//	shelob - 0.649	//	latrodectus - 0.613	//	mygalomorph - 0.612
+02/03 - 12:43:04 : DEBUG : turkey: 	babinet - 0.576	//	napthine - 0.557	//	ozgen - 0.551	//	kemalism - 0.551	//	stearnes - 0.550
+02/03 - 12:43:04 : DEBUG : pistol: 	9-mm - 0.641	//	22-caliber - 0.640	//	tec-9 - 0.629	//	m1911a1 - 0.610	//	c96 - 0.603
+02/03 - 12:43:04 : DEBUG : post: 	getler - 0.602	//	2995 - 0.522	//	partum - 0.517	//	desson - 0.507	//	herpetic - 0.506
+02/03 - 12:43:04 : DEBUG : whip: 	rough-skinned - 0.628	//	chingchai - 0.618	//	vaghela - 0.598	//	sundheim - 0.594	//	tuoh - 0.590
+02/03 - 12:43:04 : DEBUG : eye: 	agamotto - 0.668	//	all-seeing - 0.651	//	yamantaka - 0.632	//	beholder - 0.598	//	enucleation - 0.596
+02/03 - 12:43:04 : DEBUG : knife: 	man-bat - 0.638	//	tasslehoff - 0.622	//	tsukushi - 0.615	//	danika - 0.601	//	dirce - 0.598
+02/03 - 12:43:04 : INFO : ##### - Program ended - #####
+02/03 - 12:50:38 : INFO : ##### - Program started - #####
+02/03 - 12:50:38 : INFO : Loading word models...
+02/03 - 12:50:38 : DEBUG : Loading Wiki 100
+02/03 - 12:50:38 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+02/03 - 12:50:38 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+02/03 - 12:54:43 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+02/03 - 12:54:43 : INFO : Done loading models
+02/03 - 12:54:43 : INFO : Loading words and settings
+02/03 - 12:54:43 : DEBUG : Loading words
+02/03 - 12:54:43 : DEBUG : Done loading words
+02/03 - 12:54:43 : DEBUG : Loading settings
+02/03 - 12:54:43 : DEBUG : Done loading settings
+02/03 - 12:54:43 : INFO : Done loading words and settings
+02/03 - 12:54:43 : INFO : Running 3 games
+02/03 - 12:54:43 : DEBUG : Game 0:
+02/03 - 12:54:43 : DEBUG : Team red: satellite, dwarf, triangle, kid, leprechaun, king, pipe, ray
+02/03 - 12:54:43 : DEBUG : Team blue: london, ground, van, port, tie, ship, air, turkey
+02/03 - 12:54:43 : DEBUG : Team black: spot
+02/03 - 12:54:43 : DEBUG : Team grey: alien, england, cover, bomb, temple, lab, post, robot
+02/03 - 12:54:43 : INFO : precomputing L2-norms of word weight vectors
+02/03 - 12:54:45 : DEBUG : Hints:
+02/03 - 12:54:45 : DEBUG : satellite: 	ikonos - 0.687	//	orbcomm - 0.670	//	st-1 - 0.666	//	glonass-m - 0.648	//	worldspace - 0.643
+02/03 - 12:54:45 : DEBUG : dwarf: 	mistletoes - 0.611	//	fat-tailed - 0.599	//	dwarfish - 0.598	//	cattleya - 0.577	//	fothergilla - 0.569
+02/03 - 12:54:45 : DEBUG : triangle: 	right-angled - 0.653	//	duboce - 0.613	//	scalene - 0.585	//	luwero - 0.583	//	circumcircle - 0.582
+02/03 - 12:54:45 : DEBUG : kid: 	tomboy - 0.618	//	dude - 0.607	//	geeky - 0.592	//	bratty - 0.591	//	two-gun - 0.581
+02/03 - 12:54:45 : DEBUG : leprechaun: 	bayad - 0.634	//	milkmaid - 0.632	//	s-5 - 0.628	//	fer-de-lance - 0.622	//	blankie - 0.622
+02/03 - 12:54:45 : DEBUG : king: 	vajiravudh - 0.713	//	prajadhipok - 0.680	//	bimbisara - 0.656	//	yeongjo - 0.655	//	théoden - 0.652
+02/03 - 12:54:45 : DEBUG : pipe: 	meerschaum - 0.702	//	casavant - 0.618	//	fitters - 0.618	//	breccia - 0.592	//	pipes - 0.584
+02/03 - 12:54:45 : DEBUG : ray: 	sandip - 0.646	//	janisse - 0.606	//	vahts - 0.591	//	alvy - 0.590	//	gravell - 0.584
+02/03 - 12:54:45 : DEBUG : Game 1:
+02/03 - 12:54:45 : DEBUG : Team red: dice, compound, van, canada, skyscraper, ship, point, pound
+02/03 - 12:54:45 : DEBUG : Team blue: ground, rabbit, moscow, pirate, bell, nurse, link, crown
+02/03 - 12:54:45 : DEBUG : Team black: cast
+02/03 - 12:54:45 : DEBUG : Team grey: dwarf, capital, pitch, shoe, wind, figure, vet, buck
+02/03 - 12:54:45 : DEBUG : Hints:
+02/03 - 12:54:45 : DEBUG : dice: 	six-sided - 0.587	//	herbes - 0.583	//	pito - 0.582	//	vicepresidente - 0.568	//	ten-sided - 0.552
+02/03 - 12:54:45 : DEBUG : compound: 	compounds - 0.628	//	zhongnanhai - 0.598	//	organosulfur - 0.579	//	organophosphorus - 0.568	//	organotin - 0.565
+02/03 - 12:54:45 : DEBUG : van: 	tuyll - 0.733	//	zuylen - 0.707	//	braam - 0.676	//	looy - 0.674	//	veen - 0.662
+02/03 - 12:54:45 : DEBUG : canada: 	telesat - 0.551	//	finland - 0.543	//	alberta - 0.526	//	micronesia - 0.518	//	westjet - 0.506
+02/03 - 12:54:45 : DEBUG : skyscraper: 	highrise - 0.660	//	supertall - 0.646	//	high-rise - 0.642	//	skyscrapers - 0.600	//	athenee - 0.589
+02/03 - 12:54:45 : DEBUG : ship: 	vessel - 0.720	//	ships - 0.709	//	freighter - 0.689	//	warship - 0.666	//	trawler - 0.632
+02/03 - 12:54:45 : DEBUG : point: 	points - 0.645	//	dume - 0.535	//	inflection - 0.515	//	lisas - 0.492	//	lepreau - 0.492
+02/03 - 12:54:45 : DEBUG : pound: 	avoirdupois - 0.599	//	kilogram - 0.573	//	guilder - 0.549	//	kilo - 0.543	//	ounce - 0.532
+02/03 - 12:54:45 : DEBUG : Game 2:
+02/03 - 12:54:45 : DEBUG : Team red: well, canada, beach, ball, comic, gas, triangle, genius
+02/03 - 12:54:45 : DEBUG : Team blue: carrot, pool, point, tooth, ivory, giant, smuggler, duck
+02/03 - 12:54:45 : DEBUG : Team black: spy
+02/03 - 12:54:45 : DEBUG : Team grey: tokyo, pirate, tick, mine, cliff, copper, crown, lead
+02/03 - 12:54:46 : DEBUG : Hints:
+02/03 - 12:54:46 : DEBUG : well: 	especially - 0.663	//	both - 0.659	//	these - 0.658	//	particularly - 0.657	//	most - 0.654
+02/03 - 12:54:46 : DEBUG : canada: 	ontario - 0.589	//	quebec - 0.582	//	alberta - 0.542	//	manitoba - 0.526	//	finland - 0.523
+02/03 - 12:54:46 : DEBUG : beach: 	pompano - 0.658	//	lauderdale - 0.618	//	delray - 0.617	//	wasaga - 0.612	//	westhampton - 0.606
+02/03 - 12:54:46 : DEBUG : ball: 	flicked - 0.617	//	dribbled - 0.606	//	deflected - 0.596	//	fouled - 0.596	//	downfield - 0.593
+02/03 - 12:54:46 : DEBUG : comic: 	comic-book - 0.688	//	comics - 0.653	//	webcomic - 0.626	//	non-fiction - 0.624	//	humorous - 0.619
+02/03 - 12:54:46 : DEBUG : gas: 	electricity - 0.630	//	propane - 0.619	//	gasoline - 0.605	//	liquefied - 0.596	//	methane - 0.590
+02/03 - 12:54:46 : DEBUG : triangle: 	equilateral - 0.576	//	right-angled - 0.574	//	circumcircle - 0.562	//	isosceles - 0.550	//	luwero - 0.549
+02/03 - 12:54:46 : DEBUG : genius: 	visionary - 0.632	//	innovator - 0.542	//	transcendent - 0.517	//	intellect - 0.511	//	virtuosity - 0.508
+02/03 - 12:54:46 : INFO : ##### - Program ended - #####

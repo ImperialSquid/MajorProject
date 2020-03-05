@@ -50,3 +50,21 @@
 27/02 - 17:25:32 : INFO : Loading Twitter 100
 27/02 - 17:32:45 : INFO : glove-twitter-100 downloaded
 27/02 - 17:32:45 : INFO : Done
+28/02 - 13:56:31 : INFO : Program started
+28/02 - 13:56:31 : INFO : Loading word models...
+28/02 - 13:56:31 : INFO : Loading ConceptNet NumberBatch
+28/02 - 13:56:32 : INFO : Loading Wiki 300
+28/02 - 13:56:32 : INFO : Loading Google News 300
+28/02 - 13:56:32 : INFO : Loading Twitter 200
+28/02 - 13:56:32 : INFO : Loading Wiki 100
+28/02 - 13:56:33 : INFO : Loading Twitter 100
+28/02 - 13:56:33 : INFO : Done
+28/02 - 14:17:55 : INFO : Program started
+28/02 - 14:17:55 : INFO : Loading word models...
+28/02 - 14:17:55 : INFO : Loading ConceptNet NumberBatch
+28/02 - 14:17:55 : INFO : Loading Wiki 300
+28/02 - 14:17:55 : INFO : Loading Google News 300
+28/02 - 14:17:56 : INFO : Loading Twitter 200
+28/02 - 14:17:56 : INFO : Loading Wiki 100
+28/02 - 14:17:56 : INFO : Loading Twitter 100
+28/02 - 14:17:57 : INFO : Done
