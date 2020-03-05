@@ -1286,3 +1286,20 @@ Program started
 05/03 - 10:11:23 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
 05/03 - 10:11:23 : DEBUG : Done loading settings
 05/03 - 10:11:23 : INFO : Done loading words and settings
+05/03 - 10:49:15 : INFO : SpyMaster Initialised
+05/03 - 10:49:15 : INFO : Getting teams sizes...
+05/03 - 10:49:15 : DEBUG : Found value for red: 8
+05/03 - 10:49:15 : DEBUG : Found value for blue: 8
+05/03 - 10:49:15 : DEBUG : Found value for black: 1
+05/03 - 10:49:15 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+05/03 - 10:50:43 : INFO : SpyMaster Initialised
+05/03 - 10:50:43 : INFO : Getting teams sizes...
+05/03 - 10:50:43 : DEBUG : Found value for red: 8
+05/03 - 10:50:43 : DEBUG : Found value for blue: 8
+05/03 - 10:50:43 : DEBUG : Found value for black: 1
+05/03 - 10:50:43 : INFO : Team sizes: black:1 - blue:8 - grey:8 - red:8
+05/03 - 10:50:43 : INFO : Getting teams sizes...
+05/03 - 10:50:43 : DEBUG : Found value for red: 8
+05/03 - 10:50:43 : DEBUG : Found value for blue: 8
+05/03 - 10:50:43 : DEBUG : Found value for black: 1
+05/03 - 10:50:43 : INFO : Team sizes: black:1 - blue:8 - grey:8 - red:8

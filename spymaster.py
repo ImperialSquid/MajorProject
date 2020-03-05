@@ -1,22 +1,58 @@
 import logging as log
-import pprint as pp
-from random import shuffle
 
 from gensim.models import KeyedVectors
 
-log.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', datefmt="%d/%m - %H:%M:%S",
-                filename="spymaster-log.txt", level=log.DEBUG)
 
+class SpyMaster:
+    def __init__(self, teams_file="teams.txt", targets_file="targets.txt"):
+        log.info("SpyMaster Initialised")
+        self.teams = self.load_teams(teams_file)
+        self.word_model = self.load_word_model()
+
+    def load_teams(self, teams_file="teams.txt"):
+        log.info("Getting teams sizes...")
+
+        teams = {"red": 1, "blue": 1, "black": 0}
+        lines = [line.strip() for line in open(teams_file).readlines()]
+        splits = {line.split(":")[0]: line.split(":")[1] for line in lines}
+
+        for k in teams.keys():
+            try:
+                teams[k] = int(splits[k])
+                log.debug("Found value for {0}: {1}".format(k, teams[k]))
+            except KeyError as e:
+                log.debug("No value found for {}, using default".format(k))
+        teams["grey"] = max(0, 25 - sum(teams.values()))
+
+        log.info("Team sizes: {0}".format(" - ".join([k + ":" + str(teams[k]) for k in sorted(teams.keys())])))
+
+        return teams
+
+    def load_word_model(self, model_name):
+        log.info("Loading word model...")
+
+        if model_name == "word2vec-google-news-300":
+            log.debug("Loading Google News 300")
+            word_model = KeyedVectors.load_word2vec_format(
+                r"C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz", binary=True,
+                limit=500000)
+        elif model_name == "glove-twitter-100":
+            log.debug("Loading Twitter 100")
+            word_model = KeyedVectors.load_word2vec_format(
+                r"C:\Users\benja\gensim-data\glove-twitter-100\glove-twitter-100.gz", limit=500000)
+        else:
+            log.debug("Loading Wiki 100")
+            word_model = KeyedVectors.load_word2vec_format(
+                r"C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz", limit=500000)
+
+        log.info("Done loading models")
+
+        return word_model
+
+r"""
 log.info("##### - Program started - #####")
 
-log.info("Loading word models...")
-# log.debug("Loading Google News 300")
-# wordModel = KeyedVectors.load_word2vec_format(r"C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz", binary=True, limit=500000)
-# log.debug("Loading Twitter 100")
-# wordModel = KeyedVectors.load_word2vec_format(r"C:\Users\benja\gensim-data\glove-twitter-100\glove-twitter-100.gz", limit=500000)
-log.debug("Loading Wiki 100")
-wordModel = KeyedVectors.load_word2vec_format(r"C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz", limit=500000)
-log.info("Done loading models")
+
 
 log.info("Loading words and settings")
 log.debug("Loading words")
@@ -25,14 +61,6 @@ targetWords = [w for w in targetWords if w in wordModel.vocab]  # strips out wor
 print(len(targetWords), targetWords)
 log.debug("Done loading words")
 
-log.debug("Loading settings")
-teamSizes = [line.strip() for line in open("teams.txt").readlines()]
-teamSizes = {t.split(":")[0]: t.split(":")[1] for t in teamSizes}
-teamSizes = {k: int(teamSizes[k]) for k in teamSizes.keys()}
-teamSizes["grey"] = max(0, 25-sum(teamSizes.values()))
-log.debug("Team sizes: {0}".format(" - ".join([k+":"+str(teamSizes[k]) for k in sorted(teamSizes.keys())])))
-log.debug("Done loading settings")
-log.info("Done loading words and settings")
 
 gameRuns = 3
 log.info("Running {0} games".format(gameRuns))
@@ -60,3 +88,11 @@ for i in range(gameRuns):
     pp.pprint(hints)
 
 log.info("##### - Program ended - #####")
+
+"""
+
+if __name__ == "__main__":
+    log.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', datefmt="%d/%m - %H:%M:%S",
+                    filename="spymaster-log.txt", level=log.DEBUG)
+
+    sm = SpyMaster()
