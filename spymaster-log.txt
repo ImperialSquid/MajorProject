@@ -1276,3 +1276,13 @@ Program started
 02/03 - 12:54:46 : DEBUG : triangle: 	equilateral - 0.576	//	right-angled - 0.574	//	circumcircle - 0.562	//	isosceles - 0.550	//	luwero - 0.549
 02/03 - 12:54:46 : DEBUG : genius: 	visionary - 0.632	//	innovator - 0.542	//	transcendent - 0.517	//	intellect - 0.511	//	virtuosity - 0.508
 02/03 - 12:54:46 : INFO : ##### - Program ended - #####
+05/03 - 10:07:32 : INFO : ##### - Program started - #####
+05/03 - 10:07:32 : INFO : Loading word models...
+05/03 - 10:07:32 : DEBUG : Loading Wiki 100
+05/03 - 10:07:32 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+05/03 - 10:07:32 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+05/03 - 10:11:23 : INFO : ##### - Program started - #####
+05/03 - 10:11:23 : DEBUG : Loading settings
+05/03 - 10:11:23 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+05/03 - 10:11:23 : DEBUG : Done loading settings
+05/03 - 10:11:23 : INFO : Done loading words and settings
