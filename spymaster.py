@@ -1,5 +1,7 @@
 import logging as log
-
+from random import shuffle
+from itertools import combinations
+from nltk.stem import porter, lancaster, wordnet
 from gensim.models import KeyedVectors
 
 
@@ -34,7 +36,7 @@ class SpyMaster:
         log.debug("Team sizes: {0}".format(" - ".join([k + ":" + str(team_sizes[k]) for
                                                        k in sorted(team_sizes.keys())])))
         log.debug("Team weights: {0}".format(" - ".join([k + ":" + str(team_weights[k]) for
-                                                       k in sorted(team_weights.keys())])))
+                                                         k in sorted(team_weights.keys())])))
         log.info("Done loading team sizes and weights")
         return team_sizes, team_weights
 
@@ -60,11 +62,11 @@ class SpyMaster:
 
     def load_game_words(self, words_file="game_words.txt"):
         log.info("Loading game words...")
-        file_words = [w.replace(" ","_").strip() for w in open(words_file, "r").readlines()]
+        file_words = [w.replace(" ", "_").strip() for w in open(words_file, "r").readlines()]
         try:
             game_words = [w for w in file_words if w in self.word_model.vocab]
             missing = [w for w in file_words if w not in game_words]
-        except NameError:
+        except AttributeError:
             log.warning("No word model to filter game words by, assuming all are valid")
             game_words = file_words
             missing = []
@@ -73,38 +75,42 @@ class SpyMaster:
                                                                                 ", ".join(missing)))
         return game_words
 
-r"""
-gameRuns = 3
-log.info("Running {0} games".format(gameRuns))
-for i in range(gameRuns):
-    log.debug("Game {0}:".format(i))
+    def run_round(self):
+        log.info("Running round")
+        shuffle(self.game_words)
+        word_gen = iter(self.game_words)
+        team_words = {team: [next(word_gen) for words in range(self.team_sizes[team])]
+                      for team in sorted(self.team_sizes.keys())}
+        log.info("Team words:\n{0}".format("\n".join([team + ": " + ", ".join(team_words[team])
+                                                      for team in team_words.keys()])))
 
-    shuffle(targetWords)
-    nameGen = iter(targetWords)
-    teamNames = dict()
-    for team in teamSizes.keys():
-        teamNames[team] = [next(nameGen) for i in range(teamSizes[team])]
-        log.debug("Team {0}: {1}".format(team, ", ".join(teamNames[team])))
+    def get_hints_raw(self, team_words={}, reds=()):
+        hints_raw = self.word_model.most_similar(positive=[(red, self.team_weights["red"])
+                                                           for red in reds],
+                                                 negative=[(grey, self.team_weights["grey"])
+                                                           for grey in team_words["grey"]] +
+                                                          [(blue, self.team_weights["blue"])
+                                                           for blue in team_words["blue"]] +
+                                                          [(black, self.team_weights["black"])
+                                                           for black in team_words["black"]],
+                                                 topn=50)
+        hints_filtered = (raw for raw in hints_raw if self.check_legal(raw[0]))
+        return hints_filtered
 
-    hints = dict()
-    for red in teamNames["red"]:
-        hints[red] = wordModel.most_similar(positive=[(red, 30)],
-                                            negative=[(word, -1) for word in teamNames["grey"]] +
-                                                     [(word, -3) for word in teamNames["blue"]] +
-                                                     [(word, -7) for word in teamNames["black"]],
-                                            topn=5)
-    log.debug("Hints:")
-    for red in teamNames["red"]:
-        log.debug("{0}: \t{1}".format(red, "\t//\t".join([" - ".join([h[0], "{0:3.3f}".format(h[1])]) for h in hints[red]])))
-    print("Hints: ")
-    pp.pprint(hints)
+    def check_legal(self, hint):
+        # From the Codenames rules:
+        # You can't say any form of a visible word on the table
+        # You can't say part of a compound word on the table
 
-log.info("##### - Program ended - #####")
+        # TODO check compound using regex (won't cause collisions normally
+        #  since hint and board words will be valid words)
+        # TODO check forms using nltk stemmers
+        return True
 
-"""
 
 if __name__ == "__main__":
     log.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', datefmt="%d/%m - %H:%M:%S",
                     filename="spymaster-log.txt", level=log.DEBUG)
 
     sm = SpyMaster()
+    sm.run_round()

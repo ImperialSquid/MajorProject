@@ -1435,3 +1435,68 @@ Program started
 08/03 - 12:23:31 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
 08/03 - 12:23:31 : DEBUG : Team weights: black:-10 - blue:-3 - grey:-1 - red:30
 08/03 - 12:23:31 : INFO : Done loading team sizes
+08/03 - 12:59:58 : INFO : SpyMaster Initialised
+08/03 - 12:59:58 : INFO : Getting teams sizes and weights...
+08/03 - 12:59:58 : DEBUG : Found value for size_red: 8
+08/03 - 12:59:58 : DEBUG : Found value for size_blue: 8
+08/03 - 12:59:58 : DEBUG : Found value for size_black: 1
+08/03 - 12:59:58 : DEBUG : Found value for weight_red: 30
+08/03 - 12:59:58 : DEBUG : Found value for weight_grey: -1
+08/03 - 12:59:58 : DEBUG : Found value for weight_blue: -3
+08/03 - 12:59:58 : DEBUG : Found value for weight_black: -10
+08/03 - 12:59:58 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+08/03 - 12:59:58 : DEBUG : Team weights: black:-10 - blue:-3 - grey:-1 - red:30
+08/03 - 12:59:58 : INFO : Done loading team sizes and weights
+08/03 - 12:59:58 : INFO : Running round
+08/03 - 13:00:30 : INFO : SpyMaster Initialised
+08/03 - 13:00:30 : INFO : Getting teams sizes and weights...
+08/03 - 13:00:30 : DEBUG : Found value for size_red: 8
+08/03 - 13:00:30 : DEBUG : Found value for size_blue: 8
+08/03 - 13:00:30 : DEBUG : Found value for size_black: 1
+08/03 - 13:00:30 : DEBUG : Found value for weight_red: 30
+08/03 - 13:00:30 : DEBUG : Found value for weight_grey: -1
+08/03 - 13:00:30 : DEBUG : Found value for weight_blue: -3
+08/03 - 13:00:30 : DEBUG : Found value for weight_black: -10
+08/03 - 13:00:30 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+08/03 - 13:00:30 : DEBUG : Team weights: black:-10 - blue:-3 - grey:-1 - red:30
+08/03 - 13:00:30 : INFO : Done loading team sizes and weights
+08/03 - 13:00:30 : INFO : Loading game words...
+08/03 - 13:01:00 : INFO : SpyMaster Initialised
+08/03 - 13:01:00 : INFO : Getting teams sizes and weights...
+08/03 - 13:01:00 : DEBUG : Found value for size_red: 8
+08/03 - 13:01:00 : DEBUG : Found value for size_blue: 8
+08/03 - 13:01:00 : DEBUG : Found value for size_black: 1
+08/03 - 13:01:00 : DEBUG : Found value for weight_red: 30
+08/03 - 13:01:00 : DEBUG : Found value for weight_grey: -1
+08/03 - 13:01:00 : DEBUG : Found value for weight_blue: -3
+08/03 - 13:01:00 : DEBUG : Found value for weight_black: -10
+08/03 - 13:01:00 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+08/03 - 13:01:00 : DEBUG : Team weights: black:-10 - blue:-3 - grey:-1 - red:30
+08/03 - 13:01:00 : INFO : Done loading team sizes and weights
+08/03 - 13:01:00 : INFO : Loading game words...
+08/03 - 13:01:00 : WARNING : No word model to filter game words by, assuming all are valid
+08/03 - 13:01:00 : INFO : Done loading game words
+08/03 - 13:01:00 : DEBUG : Loaded 400 words, 0 missing (missing word(s): )
+08/03 - 13:01:00 : INFO : Running round
+08/03 - 13:02:05 : INFO : SpyMaster Initialised
+08/03 - 13:02:05 : INFO : Getting teams sizes and weights...
+08/03 - 13:02:05 : DEBUG : Found value for size_red: 8
+08/03 - 13:02:05 : DEBUG : Found value for size_blue: 8
+08/03 - 13:02:05 : DEBUG : Found value for size_black: 1
+08/03 - 13:02:05 : DEBUG : Found value for weight_red: 30
+08/03 - 13:02:05 : DEBUG : Found value for weight_grey: -1
+08/03 - 13:02:05 : DEBUG : Found value for weight_blue: -3
+08/03 - 13:02:05 : DEBUG : Found value for weight_black: -10
+08/03 - 13:02:05 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+08/03 - 13:02:05 : DEBUG : Team weights: black:-10 - blue:-3 - grey:-1 - red:30
+08/03 - 13:02:05 : INFO : Done loading team sizes and weights
+08/03 - 13:02:05 : INFO : Loading game words...
+08/03 - 13:02:05 : WARNING : No word model to filter game words by, assuming all are valid
+08/03 - 13:02:05 : INFO : Done loading game words
+08/03 - 13:02:05 : DEBUG : Loaded 400 words, 0 missing (missing word(s): )
+08/03 - 13:02:05 : INFO : Running round
+08/03 - 13:02:05 : INFO : Team words:
+red:fork, superhero, charge, theater, pin, game, fan, police
+blue:star, tokyo, berry, new_york, dog, part, sound, australia
+black:staff
+grey:compound, root, amazon, bugle, tail, rome, court, grace
