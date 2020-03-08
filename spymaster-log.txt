@@ -1335,3 +1335,103 @@ Program started
 05/03 - 11:31:13 : INFO : Loading game words...
 05/03 - 11:31:13 : INFO : Done loading game words
 05/03 - 11:31:13 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+08/03 - 11:45:35 : INFO : SpyMaster Initialised
+08/03 - 11:45:36 : INFO : Getting teams sizes...
+08/03 - 11:45:36 : DEBUG : Found value for red: 8
+08/03 - 11:45:36 : DEBUG : Found value for blue: 8
+08/03 - 11:45:36 : DEBUG : Found value for black: 1
+08/03 - 11:45:36 : INFO : Done loading team sizes
+08/03 - 11:45:36 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+08/03 - 11:45:36 : INFO : Loading word model...
+08/03 - 11:45:36 : DEBUG : Loading Wiki 100
+08/03 - 11:45:36 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+08/03 - 11:45:36 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+08/03 - 11:50:02 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+08/03 - 11:50:02 : INFO : Done loading models
+08/03 - 11:50:02 : INFO : Loading game words...
+08/03 - 11:50:02 : INFO : Done loading game words
+08/03 - 11:50:02 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+08/03 - 12:17:45 : INFO : SpyMaster Initialised
+08/03 - 12:17:45 : INFO : Getting teams sizes and weights...
+08/03 - 12:17:45 : DEBUG : Found value for size_red: 8
+08/03 - 12:17:45 : DEBUG : Found value for size_blue: 8
+08/03 - 12:17:45 : DEBUG : Found value for size_black: 1
+08/03 - 12:17:45 : DEBUG : Found value for weight_red: 30
+08/03 - 12:17:45 : DEBUG : Found value for weight_grey: -1
+08/03 - 12:17:45 : DEBUG : Found value for weight_blue: -3
+08/03 - 12:17:45 : DEBUG : Found value for weight_black: -10
+08/03 - 12:17:45 : DEBUG : Team sizes: black:1 - blue:8 - grey:0 - red:8
+08/03 - 12:17:45 : DEBUG : Team weights: ed:30 - lack:-10 - lue:-3 - rey:-1
+08/03 - 12:17:45 : INFO : Done loading team sizes
+08/03 - 12:19:48 : INFO : SpyMaster Initialised
+08/03 - 12:19:48 : INFO : Getting teams sizes and weights...
+08/03 - 12:19:48 : DEBUG : Found value for size_red: 8
+08/03 - 12:19:48 : DEBUG : Found value for size_blue: 8
+08/03 - 12:19:48 : DEBUG : Found value for size_black: 1
+08/03 - 12:19:48 : DEBUG : Found value for weight_red: 30
+08/03 - 12:19:48 : DEBUG : Found value for weight_grey: -1
+08/03 - 12:19:48 : DEBUG : Found value for weight_blue: -3
+08/03 - 12:19:48 : DEBUG : Found value for weight_black: -10
+08/03 - 12:19:48 : DEBUG : Team sizes: black:1 - blue:8 - grey:0 - red:8
+08/03 - 12:19:48 : DEBUG : Team weights: black:-10 - blue:-3 - grey:-1 - red:30
+08/03 - 12:19:48 : INFO : Done loading team sizes
+08/03 - 12:20:30 : INFO : SpyMaster Initialised
+08/03 - 12:20:30 : INFO : Getting teams sizes and weights...
+08/03 - 12:20:30 : DEBUG : Found value for size_red: 8
+08/03 - 12:20:30 : DEBUG : Found value for size_blue: 8
+08/03 - 12:20:30 : DEBUG : Found value for size_black: 1
+08/03 - 12:20:30 : DEBUG : Found value for weight_red: 30
+08/03 - 12:20:30 : DEBUG : Found value for weight_grey: -1
+08/03 - 12:20:30 : DEBUG : Found value for weight_blue: -3
+08/03 - 12:20:30 : DEBUG : Found value for weight_black: -10
+08/03 - 12:20:30 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+08/03 - 12:20:30 : DEBUG : Team weights: black:-10 - blue:-3 - grey:-1 - red:30
+08/03 - 12:20:30 : INFO : Done loading team sizes
+08/03 - 12:21:23 : INFO : SpyMaster Initialised
+08/03 - 12:21:23 : INFO : Getting teams sizes and weights...
+08/03 - 12:21:23 : DEBUG : Found value for size_red: 8
+08/03 - 12:21:23 : DEBUG : Found value for size_blue: 8
+08/03 - 12:21:23 : DEBUG : Found value for size_black: 1
+08/03 - 12:21:23 : DEBUG : Found value for weight_red: 30
+08/03 - 12:21:23 : DEBUG : Found value for weight_grey: -1
+08/03 - 12:21:23 : DEBUG : Found value for weight_blue: -3
+08/03 - 12:21:23 : DEBUG : Found value for weight_black: -10
+08/03 - 12:21:23 : DEBUG : Team sizes:	black:1	| blue:8	| grey:8	| red:8
+08/03 - 12:21:23 : DEBUG : Team weights:	black:-10	| blue:-3	| grey:-1	| red:30
+08/03 - 12:21:23 : INFO : Done loading team sizes
+08/03 - 12:21:50 : INFO : SpyMaster Initialised
+08/03 - 12:21:50 : INFO : Getting teams sizes and weights...
+08/03 - 12:21:50 : DEBUG : Found value for size_red: 8
+08/03 - 12:21:50 : DEBUG : Found value for size_blue: 8
+08/03 - 12:21:50 : DEBUG : Found value for size_black: 1
+08/03 - 12:21:50 : DEBUG : Found value for weight_red: 30
+08/03 - 12:21:50 : DEBUG : Found value for weight_grey: -1
+08/03 - 12:21:50 : DEBUG : Found value for weight_blue: -3
+08/03 - 12:21:50 : DEBUG : Found value for weight_black: -10
+08/03 - 12:21:50 : DEBUG : Team sizes: 	black:1	| blue:8	| grey:8	| red:8
+08/03 - 12:21:50 : DEBUG : Team weights: 	black:-10	| blue:-3	| grey:-1	| red:30
+08/03 - 12:21:50 : INFO : Done loading team sizes
+08/03 - 12:22:50 : INFO : SpyMaster Initialised
+08/03 - 12:22:50 : INFO : Getting teams sizes and weights...
+08/03 - 12:22:50 : DEBUG : Found value for size_red: 8
+08/03 - 12:22:50 : DEBUG : Found value for size_blue: 8
+08/03 - 12:22:50 : DEBUG : Found value for size_black: 1
+08/03 - 12:22:50 : DEBUG : Found value for weight_red: 30
+08/03 - 12:22:50 : DEBUG : Found value for weight_grey: -1
+08/03 - 12:22:50 : DEBUG : Found value for weight_blue: -3
+08/03 - 12:22:50 : DEBUG : Found value for weight_black: -10
+08/03 - 12:22:50 : DEBUG : Team sizes:   	black:1	| blue:8	| grey:8	| red:8
+08/03 - 12:22:50 : DEBUG : Team weights: 	black:-10	| blue:-3	| grey:-1	| red:30
+08/03 - 12:22:50 : INFO : Done loading team sizes
+08/03 - 12:23:31 : INFO : SpyMaster Initialised
+08/03 - 12:23:31 : INFO : Getting teams sizes and weights...
+08/03 - 12:23:31 : DEBUG : Found value for size_red: 8
+08/03 - 12:23:31 : DEBUG : Found value for size_blue: 8
+08/03 - 12:23:31 : DEBUG : Found value for size_black: 1
+08/03 - 12:23:31 : DEBUG : Found value for weight_red: 30
+08/03 - 12:23:31 : DEBUG : Found value for weight_grey: -1
+08/03 - 12:23:31 : DEBUG : Found value for weight_blue: -3
+08/03 - 12:23:31 : DEBUG : Found value for weight_black: -10
+08/03 - 12:23:31 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+08/03 - 12:23:31 : DEBUG : Team weights: black:-10 - blue:-3 - grey:-1 - red:30
+08/03 - 12:23:31 : INFO : Done loading team sizes

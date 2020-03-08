@@ -6,28 +6,37 @@ from gensim.models import KeyedVectors
 class SpyMaster:
     def __init__(self, teams_file="teams.txt", words_file="game_words.txt"):
         log.info("SpyMaster Initialised")
-        self.teams = self.load_teams(teams_file)
+        self.team_sizes, self.team_weights = self.load_teams(teams_file)
         self.word_model = self.load_word_model(model_name="")
         self.game_words = self.load_game_words(words_file)
 
     def load_teams(self, teams_file="teams.txt"):
-        log.info("Getting teams sizes...")
+        log.info("Getting teams sizes and weights...")
 
-        teams = {"red": 1, "blue": 1, "black": 0}
+        setts = {"size_red": 1, "size_blue": 1, "size_black": 0,
+                 "weight_red": 30, "weight_grey": -1, "weight_blue": -3, "weight_black": -10}  # sets default settings
         lines = [line.strip() for line in open(teams_file).readlines()]
-        splits = {line.split(":")[0]: line.split(":")[1] for line in lines}
+        splits = {line.split(":")[0]: line.split(":")[1] for line in lines}  # reads in a definitions list for settings
 
-        for k in teams.keys():
+        for k in setts.keys():  # reassign settings if a new one was found
             try:
-                teams[k] = int(splits[k])
-                log.debug("Found value for {0}: {1}".format(k, teams[k]))
+                setts[k] = int(splits[k])
+                log.debug("Found value for {0}: {1}".format(k, setts[k]))
             except KeyError as e:
-                log.warning("No value found for {}, using default".format(k))
-        teams["grey"] = max(0, 25 - sum(teams.values()))
+                log.warning("No value found for {0}, using default value {1}".format(k, setts[k]))
 
-        log.info("Done loading team sizes")
-        log.debug("Team sizes: {0}".format(" - ".join([k + ":" + str(teams[k]) for k in sorted(teams.keys())])))
-        return teams
+        team_sizes = {sett[5:]: setts[sett] for sett in setts.keys()
+                      if sett in ["size_red", "size_blue", "size_black"]}
+        team_sizes["grey"] = max(0, 25 - sum(team_sizes.values()))
+        team_weights = {sett[7:]: setts[sett] for sett in setts.keys()
+                        if sett in ["weight_red", "weight_grey", "weight_blue", "weight_black"]}
+
+        log.debug("Team sizes: {0}".format(" - ".join([k + ":" + str(team_sizes[k]) for
+                                                       k in sorted(team_sizes.keys())])))
+        log.debug("Team weights: {0}".format(" - ".join([k + ":" + str(team_weights[k]) for
+                                                       k in sorted(team_weights.keys())])))
+        log.info("Done loading team sizes and weights")
+        return team_sizes, team_weights
 
     def load_word_model(self, model_name):
         log.info("Loading word model...")
@@ -52,20 +61,19 @@ class SpyMaster:
     def load_game_words(self, words_file="game_words.txt"):
         log.info("Loading game words...")
         file_words = [w.replace(" ","_").strip() for w in open(words_file, "r").readlines()]
-        game_words = [w for w in file_words if w in self.word_model.vocab]
-        missing = [w for w in file_words if w not in game_words]
+        try:
+            game_words = [w for w in file_words if w in self.word_model.vocab]
+            missing = [w for w in file_words if w not in game_words]
+        except NameError:
+            log.warning("No word model to filter game words by, assuming all are valid")
+            game_words = file_words
+            missing = []
         log.info("Done loading game words")
         log.debug("Loaded {0} words, {1} missing (missing word(s): {2})".format(len(game_words), len(missing),
                                                                                 ", ".join(missing)))
         return game_words
 
 r"""
-log.info("Loading words and settings")
-log.debug("Loading words")
-print(len(targetWords), targetWords)
-log.debug("Done loading words")
-
-
 gameRuns = 3
 log.info("Running {0} games".format(gameRuns))
 for i in range(gameRuns):
