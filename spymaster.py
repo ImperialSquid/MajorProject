@@ -1,7 +1,8 @@
 import logging as log
 from random import shuffle
 from itertools import combinations
-from nltk.stem import porter, lancaster, wordnet
+from six import integer_types
+# from nltk.stem import porter, lancaster, wordnet
 from gensim.models import KeyedVectors
 
 
@@ -9,6 +10,7 @@ class SpyMaster:
     def __init__(self, teams_file="teams.txt", words_file="game_words.txt"):
         log.info("SpyMaster Initialised")
         self.team_sizes, self.team_weights = self.load_teams(teams_file)
+        self.team_words = dict()  # made as an attribute to save passing back and forth while running rounds
         self.word_model = self.load_word_model(model_name="")
         self.game_words = self.load_game_words(words_file)
 
@@ -24,7 +26,7 @@ class SpyMaster:
             try:
                 setts[k] = int(splits[k])
                 log.debug("Found value for {0}: {1}".format(k, setts[k]))
-            except KeyError as e:
+            except KeyError:
                 log.warning("No value found for {0}, using default value {1}".format(k, setts[k]))
 
         team_sizes = {sett[5:]: setts[sett] for sett in setts.keys()
@@ -79,32 +81,68 @@ class SpyMaster:
         log.info("Running round")
         shuffle(self.game_words)
         word_gen = iter(self.game_words)
-        team_words = {team: [next(word_gen) for words in range(self.team_sizes[team])]
-                      for team in sorted(self.team_sizes.keys())}
-        log.info("Team words:\n{0}".format("\n".join([team + ": " + ", ".join(team_words[team])
-                                                      for team in team_words.keys()])))
+        self.team_words = {team: [next(word_gen) for i in range(self.team_sizes[team])]
+                           for team in sorted(self.team_sizes.keys())}
+        log.info("Team words:\n{0}".format("\n".join([team + ": " + ", ".join(self.team_words[team])
+                                                      for team in self.team_words.keys()])))
 
-    def get_hints_raw(self, team_words={}, reds=()):
+        log.info("Finding hints for overlap levels")
+        max_overlap = 2
+        overlaps = dict()
+        for i in range(max_overlap):
+            log.info("Finding hints for {0} word(s)".format(str(i + 1)))
+            overlaps[i + 1] = self.get_best_hint_multi(i + 1)
+            log.info("Hint overlaps found: \n{0}\n{1}".format("{0:20} {1:20} {2:20}".format("Level", "Word", "Score"),
+                                                              "\n".join(["{0:20} {1:20} {2:20}".format(str(k),
+                                                                                                       overlaps[k][0],
+                                                                                                       overlaps[k][1])
+                                                                         for k in sorted(overlaps.keys())]
+                                                                        )))
+
+    def get_best_hint_multi(self, overlap=1):
+        if not isinstance(overlap, integer_types) or overlap < 1:
+            log.warning("Bad word overlap passed {}, set to 1".format(str(overlap)))
+            overlap = 1
+        multis = []
+        for multi in combinations(self.team_words["red"], overlap):
+            hint = self.get_best_hint(multi)
+            multis.append((multi, hint))  # multis = [ ((<target1.1>, <target1.2>, ...), hint1), ... ]
+            log.debug("Words: {0} \t\t Hint: {1}".format(", ".join(multi), hint[0]))
+
+        multis = sorted(multis, key=lambda x: x[1][1])
+        return multis[0]
+
+    def get_best_hint(self, reds):
+        hints = self.get_hints(reds=reds)
+        hints = sorted(hints, key=lambda x: x[1])
+        return hints[0]
+
+    def get_hints(self, reds):
         hints_raw = self.word_model.most_similar(positive=[(red, self.team_weights["red"])
                                                            for red in reds],
                                                  negative=[(grey, self.team_weights["grey"])
-                                                           for grey in team_words["grey"]] +
+                                                           for grey in self.team_words["grey"]] +
                                                           [(blue, self.team_weights["blue"])
-                                                           for blue in team_words["blue"]] +
+                                                           for blue in self.team_words["blue"]] +
                                                           [(black, self.team_weights["black"])
-                                                           for black in team_words["black"]],
-                                                 topn=50)
-        hints_filtered = (raw for raw in hints_raw if self.check_legal(raw[0]))
+                                                           for black in self.team_words["black"]],
+                                                 topn=20)
+        hints_filtered = [raw for raw in hints_raw if self.check_legal(raw[0])]
+        log.debug("Found {0} legal hints (of {1} searched) for {2}: (3)".format(len(hints_filtered), len(hints_raw),
+                                                                                ", ".join(reds),
+                                                                                " // ".join(
+                                                                                    ["{0}:{1:.5f}".format(h[0],
+                                                                                                          h[1])
+                                                                                     for h in hints_filtered])))
         return hints_filtered
 
     def check_legal(self, hint):
         # From the Codenames rules:
         # You can't say any form of a visible word on the table
         # You can't say part of a compound word on the table
-
         # TODO check compound using regex (won't cause collisions normally
         #  since hint and board words will be valid words)
-        # TODO check forms using nltk stemmers
+        # TODO check forms using nltk stemmers? lemmatizers?
         return True
 
 
