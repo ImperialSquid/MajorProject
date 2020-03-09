@@ -1,9 +1,14 @@
 import logging as log
+from itertools import combinations, chain
+from math import sqrt
 from random import shuffle
-from itertools import combinations
-from six import integer_types
-# from nltk.stem import porter, lancaster, wordnet
+
+import enchant
+import regex as re
+import spacy
 from gensim.models import KeyedVectors
+from nltk.stem.lancaster import LancasterStemmer
+from six import integer_types
 
 
 class SpyMaster:
@@ -13,6 +18,8 @@ class SpyMaster:
         self.team_words = dict()  # made as an attribute to save passing back and forth while running rounds
         self.word_model = self.load_word_model(model_name="")
         self.game_words = self.load_game_words(words_file)
+        self.ls = LancasterStemmer()
+        self.spacy_nlp = spacy.load("en_core_web_sm")
 
     def load_teams(self, teams_file="teams.txt"):
         log.info("Getting teams sizes and weights...")
@@ -57,7 +64,7 @@ class SpyMaster:
         else:
             log.debug("Loading Wiki 100")
             word_model = KeyedVectors.load_word2vec_format(
-                r"C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz", limit=500000)
+                r"C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz", limit=1000000)
 
         log.info("Done loading models")
         return word_model
@@ -92,12 +99,14 @@ class SpyMaster:
         for i in range(max_overlap):
             log.info("Finding hints for {0} word(s)".format(str(i + 1)))
             overlaps[i + 1] = self.get_best_hint_multi(i + 1)
-            log.info("Hint overlaps found: \n{0}\n{1}".format("{0:20} {1:20} {2:20}".format("Level", "Word", "Score"),
-                                                              "\n".join(["{0:20} {1:20} {2:20}".format(str(k),
-                                                                                                       overlaps[k][0],
-                                                                                                       overlaps[k][1])
-                                                                         for k in sorted(overlaps.keys())]
-                                                                        )))
+        log.info("Hint overlaps found: \n{0}\n{1}".format(
+            "{0:20} {1:30} {2:20} {3:20}".format("Level", "Word", "Hint", "Score"),
+            "\n".join(["{0:20} {1:30} {2:20} {3:20.5f}".format(str(k),
+                                                               ", ".join(overlaps[k][0]),
+                                                               overlaps[k][1][0],
+                                                               overlaps[k][1][1])
+                       for k in sorted(overlaps.keys())]
+                      )))
 
     def get_best_hint_multi(self, overlap=1):
         if not isinstance(overlap, integer_types) or overlap < 1:
@@ -107,18 +116,18 @@ class SpyMaster:
         for multi in combinations(self.team_words["red"], overlap):
             hint = self.get_best_hint(multi)
             multis.append((multi, hint))  # multis = [ ((<target1.1>, <target1.2>, ...), hint1), ... ]
-            log.debug("Words: {0} \t\t Hint: {1}".format(", ".join(multi), hint[0]))
+            log.debug("Words: {0} \t\t Hint: {1} \t\t Score: {2}".format(", ".join(multi), hint[0], hint[1]))
 
-        multis = sorted(multis, key=lambda x: x[1][1])
+        multis = sorted(multis, key=lambda x: x[1][1], reverse=True)
         return multis[0]
 
     def get_best_hint(self, reds):
         hints = self.get_hints(reds=reds)
-        hints = sorted(hints, key=lambda x: x[1])
+        hints = sorted(hints, key=lambda x: x[1], reverse=True)
         return hints[0]
 
     def get_hints(self, reds):
-        hints_raw = self.word_model.most_similar(positive=[(red, self.team_weights["red"])
+        hints_raw = self.word_model.most_similar(positive=[(red, int(self.team_weights["red"] / sqrt(len(reds))))
                                                            for red in reds],
                                                  negative=[(grey, self.team_weights["grey"])
                                                            for grey in self.team_words["grey"]] +
@@ -126,24 +135,35 @@ class SpyMaster:
                                                            for blue in self.team_words["blue"]] +
                                                           [(black, self.team_weights["black"])
                                                            for black in self.team_words["black"]],
-                                                 topn=20)
+                                                 topn=50)
         hints_filtered = [raw for raw in hints_raw if self.check_legal(raw[0])]
-        log.debug("Found {0} legal hints (of {1} searched) for {2}: (3)".format(len(hints_filtered), len(hints_raw),
+        log.debug("Found {0} legal hints (of {1} searched) for {2}: {3}".format(len(hints_filtered), len(hints_raw),
                                                                                 ", ".join(reds),
                                                                                 " // ".join(
-                                                                                    ["{0}:{1:.5f}".format(h[0],
-                                                                                                          h[1])
+                                                                                    ["{0}:{1:.5f}".format(h[0], h[1])
                                                                                      for h in hints_filtered])))
         return hints_filtered
 
     def check_legal(self, hint):
-        # From the Codenames rules:
-        # You can't say any form of a visible word on the table
-        # You can't say part of a compound word on the table
-        # TODO check compound using regex (won't cause collisions normally
-        #  since hint and board words will be valid words)
-        # TODO check forms using nltk stemmers? lemmatizers?
-        return True
+        board_words = [x for x in chain.from_iterable(self.team_words.values())]
+
+        doc = self.spacy_nlp(" ".join([word for word in board_words]))
+        hint_lemma_stem = self.ls.stem([token.lemma_ for token in self.spacy_nlp(hint)][0])
+        matches = [hint_lemma_stem == self.ls.stem(token.lemma_) for token in doc]
+        # list of Trues and Falses
+        # True = illegal due to same root
+
+        matches = matches + [re.match(".*{}.*".format(hint), bw) for bw in board_words]
+        # True = board word contained within hint
+
+        matches = matches + [re.match(".*{}.*".format(bw), hint) for bw in board_words]
+        # True = hint contained within board word
+
+        d = enchant.Dict("en_US")
+        matches.append(not d.check(hint))
+        # True = word not in US dictionary (Us not UK due to word model using Us dict)
+
+        return not any(matches)  # If and Trues exist the hint is not legal
 
 
 if __name__ == "__main__":
