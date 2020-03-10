@@ -1,7 +1,0 @@
-size_red:8
-size_blue:8
-size_black:1
-weight_red:40
-weight_grey:-1
-weight_blue:-4
-weight_black:-12

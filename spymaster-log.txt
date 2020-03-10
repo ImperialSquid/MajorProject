@@ -2047,3 +2047,299 @@ red: plot, cook, grass, pirate, deck, vet, olympus, cross
 Level                Word                           Hint                 Score               
 1                    deck                           forecastle                        0.62842
 2                    plot, pirate                   hijacking                         0.58471
+10/03 - 16:47:02 : INFO : SpyMaster initialising...
+10/03 - 16:47:02 : INFO : Loading settings for top_hints_per_word, max_levels from spymaster_settings.txt... 
+10/03 - 16:47:02 : DEBUG : Found value for top_hints_per_word: 3
+10/03 - 16:47:02 : DEBUG : Found value for max_levels: 3
+10/03 - 16:47:02 : INFO : Done loading settings from spymaster_settings.txt
+10/03 - 16:47:02 : INFO : Loading settings for weight_red, weight_grey, weight_blue, weight_black from team_weights.txt... 
+10/03 - 16:47:02 : WARNING : No value found for weight_red, using default value 30
+10/03 - 16:47:02 : WARNING : No value found for weight_grey, using default value -1
+10/03 - 16:47:02 : WARNING : No value found for weight_blue, using default value -3
+10/03 - 16:47:02 : WARNING : No value found for weight_black, using default value -10
+10/03 - 16:47:02 : INFO : Done loading settings from team_weights.txt
+10/03 - 16:47:02 : INFO : Loading word model...
+10/03 - 16:47:02 : DEBUG : Loading Wiki 100
+10/03 - 16:47:02 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 16:47:02 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+10/03 - 16:47:02 : INFO : loaded (100, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 16:47:02 : INFO : Done loading models
+10/03 - 16:47:06 : INFO : SpyMaster initialised!
+10/03 - 16:49:29 : INFO : SpyMaster initialising...
+10/03 - 16:49:29 : INFO : Loading settings for top_hints_per_word, max_levels from spymaster_settings.txt... 
+10/03 - 16:49:29 : DEBUG : Found value for top_hints_per_word: 3
+10/03 - 16:49:29 : DEBUG : Found value for max_levels: 3
+10/03 - 16:49:29 : INFO : Done loading settings from spymaster_settings.txt
+10/03 - 16:49:29 : INFO : Loading settings for red, grey, blue, black from team_weights.txt... 
+10/03 - 16:49:29 : DEBUG : Found value for red: 40
+10/03 - 16:49:29 : DEBUG : Found value for grey: -1
+10/03 - 16:49:29 : DEBUG : Found value for blue: -4
+10/03 - 16:49:29 : DEBUG : Found value for black: -12
+10/03 - 16:49:29 : INFO : Done loading settings from team_weights.txt
+10/03 - 16:49:29 : INFO : Loading word model...
+10/03 - 16:49:29 : DEBUG : Loading Wiki 100
+10/03 - 16:49:29 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 16:49:29 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+10/03 - 16:49:29 : INFO : loaded (100, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 16:49:29 : INFO : Done loading models
+10/03 - 16:49:32 : INFO : SpyMaster initialised!
+10/03 - 16:51:38 : INFO : SpyMaster initialising...
+10/03 - 16:51:38 : INFO : Loading settings for top_hints_per_word, max_levels from spymaster_settings.txt... 
+10/03 - 16:51:38 : DEBUG : Found value for top_hints_per_word: 3
+10/03 - 16:51:38 : DEBUG : Found value for max_levels: 3
+10/03 - 16:51:38 : INFO : Done loading settings from spymaster_settings.txt
+10/03 - 16:51:38 : INFO : Loading settings for red, grey, blue, black from team_weights.txt... 
+10/03 - 16:51:38 : DEBUG : Found value for red: 40
+10/03 - 16:51:38 : DEBUG : Found value for grey: -1
+10/03 - 16:51:38 : DEBUG : Found value for blue: -4
+10/03 - 16:51:38 : DEBUG : Found value for black: -12
+10/03 - 16:51:38 : INFO : Done loading settings from team_weights.txt
+10/03 - 16:51:38 : INFO : Loading word model...
+10/03 - 16:51:38 : DEBUG : Loading Wiki 100
+10/03 - 16:51:38 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 16:51:38 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+10/03 - 16:55:08 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 16:55:08 : INFO : Done loading models
+10/03 - 16:55:11 : INFO : SpyMaster initialised!
+10/03 - 16:55:11 : INFO : Running round with random teams...
+10/03 - 16:55:11 : DEBUG : Shuffling words
+10/03 - 16:55:11 : DEBUG : Loading team sizes...
+10/03 - 16:55:11 : INFO : Loading settings for red, blue, black, grey from team_sizes.txt... 
+10/03 - 16:55:11 : DEBUG : Found value for red: 8
+10/03 - 16:55:11 : DEBUG : Found value for blue: 8
+10/03 - 16:55:11 : DEBUG : Found value for black: 1
+10/03 - 16:55:11 : DEBUG : Found value for grey: 8
+10/03 - 16:55:11 : INFO : Done loading settings from team_sizes.txt
+10/03 - 16:55:11 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+10/03 - 16:55:11 : DEBUG : Generating team words...
+10/03 - 17:01:56 : INFO : SpyMaster initialising...
+10/03 - 17:01:56 : INFO : Loading settings for top_hints_per_word, max_levels from spymaster_settings.txt... 
+10/03 - 17:01:56 : DEBUG : Found value for top_hints_per_word: 3
+10/03 - 17:01:56 : DEBUG : Found value for max_levels: 3
+10/03 - 17:01:56 : INFO : Done loading settings from spymaster_settings.txt
+10/03 - 17:01:56 : INFO : Loading settings for red, grey, blue, black from team_weights.txt... 
+10/03 - 17:01:56 : DEBUG : Found value for red: 40
+10/03 - 17:01:56 : DEBUG : Found value for grey: -1
+10/03 - 17:01:56 : DEBUG : Found value for blue: -4
+10/03 - 17:01:56 : DEBUG : Found value for black: -12
+10/03 - 17:01:56 : INFO : Done loading settings from team_weights.txt
+10/03 - 17:01:56 : INFO : Loading word model...
+10/03 - 17:01:56 : DEBUG : Loading Wiki 100
+10/03 - 17:01:56 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 17:01:56 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+10/03 - 17:05:21 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 17:05:21 : INFO : Done loading models
+10/03 - 17:05:21 : INFO : Loading game words...
+10/03 - 17:05:21 : WARNING : No word model to filter game words by, assuming all are valid
+10/03 - 17:05:21 : INFO : Done loading game words
+10/03 - 17:05:21 : DEBUG : Loaded 400 words, 0 missing (missing word(s): )
+10/03 - 17:05:24 : INFO : SpyMaster initialised!
+10/03 - 17:05:24 : INFO : Running round with random teams...
+10/03 - 17:05:24 : DEBUG : Shuffling words
+10/03 - 17:05:24 : DEBUG : Loading team sizes...
+10/03 - 17:05:24 : INFO : Loading settings for red, blue, black, grey from team_sizes.txt... 
+10/03 - 17:05:24 : DEBUG : Found value for red: 8
+10/03 - 17:05:24 : DEBUG : Found value for blue: 8
+10/03 - 17:05:24 : DEBUG : Found value for black: 1
+10/03 - 17:05:24 : DEBUG : Found value for grey: 8
+10/03 - 17:05:24 : INFO : Done loading settings from team_sizes.txt
+10/03 - 17:05:24 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+10/03 - 17:05:24 : DEBUG : Generating team words...
+10/03 - 17:10:48 : INFO : SpyMaster initialising...
+10/03 - 17:10:48 : INFO : Loading settings for top_hints_per_word, max_levels from spymaster_settings.txt... 
+10/03 - 17:10:48 : DEBUG : Found value for top_hints_per_word: 3
+10/03 - 17:10:48 : DEBUG : Found value for max_levels: 3
+10/03 - 17:10:48 : INFO : Done loading settings from spymaster_settings.txt
+10/03 - 17:10:48 : INFO : Loading settings for red, grey, blue, black from team_weights.txt... 
+10/03 - 17:10:48 : DEBUG : Found value for red: 40
+10/03 - 17:10:48 : DEBUG : Found value for grey: -1
+10/03 - 17:10:48 : DEBUG : Found value for blue: -4
+10/03 - 17:10:48 : DEBUG : Found value for black: -12
+10/03 - 17:10:48 : INFO : Done loading settings from team_weights.txt
+10/03 - 17:10:48 : INFO : Loading word model...
+10/03 - 17:10:48 : DEBUG : Loading Wiki 100
+10/03 - 17:10:48 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 17:10:48 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+10/03 - 17:14:33 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 17:14:33 : INFO : Done loading models
+10/03 - 17:14:33 : INFO : Loading game words...
+10/03 - 17:14:33 : INFO : Done loading game words
+10/03 - 17:14:33 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+10/03 - 17:14:35 : INFO : SpyMaster initialised!
+10/03 - 17:14:35 : INFO : Running round with random teams...
+10/03 - 17:14:35 : DEBUG : Shuffling words
+10/03 - 17:14:35 : DEBUG : Loading team sizes...
+10/03 - 17:14:35 : INFO : Loading settings for red, blue, black, grey from team_sizes.txt... 
+10/03 - 17:14:35 : DEBUG : Found value for red: 8
+10/03 - 17:14:35 : DEBUG : Found value for blue: 8
+10/03 - 17:14:35 : DEBUG : Found value for black: 1
+10/03 - 17:14:35 : DEBUG : Found value for grey: 8
+10/03 - 17:14:35 : INFO : Done loading settings from team_sizes.txt
+10/03 - 17:14:35 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+10/03 - 17:14:35 : DEBUG : Generating team words...
+10/03 - 17:14:35 : CRITICAL : 
+10/03 - 17:22:51 : INFO : SpyMaster initialising...
+10/03 - 17:22:51 : INFO : Loading settings for top_hints_per_word, max_levels from spymaster_settings.txt... 
+10/03 - 17:22:51 : DEBUG : Found value for top_hints_per_word: 1
+10/03 - 17:22:51 : DEBUG : Found value for max_levels: 3
+10/03 - 17:22:51 : INFO : Done loading settings from spymaster_settings.txt
+10/03 - 17:22:51 : INFO : Loading settings for red, grey, blue, black from team_weights.txt... 
+10/03 - 17:22:51 : DEBUG : Found value for red: 40
+10/03 - 17:22:51 : DEBUG : Found value for grey: -1
+10/03 - 17:22:51 : DEBUG : Found value for blue: -4
+10/03 - 17:22:51 : DEBUG : Found value for black: -12
+10/03 - 17:22:51 : INFO : Done loading settings from team_weights.txt
+10/03 - 17:22:51 : INFO : Loading word model...
+10/03 - 17:22:51 : DEBUG : Loading Wiki 100
+10/03 - 17:22:51 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 17:22:51 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+10/03 - 17:26:40 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 17:26:40 : INFO : Done loading models
+10/03 - 17:26:40 : INFO : Loading game words...
+10/03 - 17:26:40 : INFO : Done loading game words
+10/03 - 17:26:40 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+10/03 - 17:26:42 : INFO : SpyMaster initialised!
+10/03 - 17:26:42 : INFO : Running round with random teams...
+10/03 - 17:26:42 : DEBUG : Shuffling words
+10/03 - 17:26:42 : DEBUG : Loading team sizes...
+10/03 - 17:26:42 : INFO : Loading settings for red, blue, black, grey from team_sizes.txt... 
+10/03 - 17:26:42 : DEBUG : Found value for red: 8
+10/03 - 17:26:42 : DEBUG : Found value for blue: 8
+10/03 - 17:26:42 : DEBUG : Found value for black: 1
+10/03 - 17:26:42 : DEBUG : Found value for grey: 8
+10/03 - 17:26:42 : INFO : Done loading settings from team_sizes.txt
+10/03 - 17:26:42 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+10/03 - 17:26:42 : DEBUG : Generating team words...
+10/03 - 17:30:31 : INFO : SpyMaster initialising...
+10/03 - 17:30:31 : INFO : Loading settings for top_hints_per_word, max_levels from spymaster_settings.txt... 
+10/03 - 17:30:31 : DEBUG : Found value for top_hints_per_word: 1
+10/03 - 17:30:31 : DEBUG : Found value for max_levels: 3
+10/03 - 17:30:31 : INFO : Done loading settings from spymaster_settings.txt
+10/03 - 17:30:31 : INFO : Loading settings for red, grey, blue, black from team_weights.txt... 
+10/03 - 17:30:31 : DEBUG : Found value for red: 40
+10/03 - 17:30:31 : DEBUG : Found value for grey: -1
+10/03 - 17:30:31 : DEBUG : Found value for blue: -4
+10/03 - 17:30:31 : DEBUG : Found value for black: -12
+10/03 - 17:30:31 : INFO : Done loading settings from team_weights.txt
+10/03 - 17:30:31 : INFO : Loading word model...
+10/03 - 17:30:31 : DEBUG : Loading Wiki 100
+10/03 - 17:30:31 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 17:30:31 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+10/03 - 17:33:00 : INFO : SpyMaster initialising...
+10/03 - 17:33:00 : INFO : Loading settings for top_hints_per_word, max_levels from spymaster_settings.txt... 
+10/03 - 17:33:00 : DEBUG : Found value for top_hints_per_word: 1
+10/03 - 17:33:00 : DEBUG : Found value for max_levels: 3
+10/03 - 17:33:00 : INFO : Done loading settings from spymaster_settings.txt
+10/03 - 17:33:00 : INFO : Loading settings for red, grey, blue, black from team_weights.txt... 
+10/03 - 17:33:00 : DEBUG : Found value for red: 40
+10/03 - 17:33:00 : DEBUG : Found value for grey: -1
+10/03 - 17:33:00 : DEBUG : Found value for blue: -4
+10/03 - 17:33:00 : DEBUG : Found value for black: -12
+10/03 - 17:33:00 : INFO : Done loading settings from team_weights.txt
+10/03 - 17:33:00 : INFO : Loading word model...
+10/03 - 17:33:00 : DEBUG : Loading Wiki 100
+10/03 - 17:33:00 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 17:33:00 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+10/03 - 17:36:31 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+10/03 - 17:36:31 : INFO : Done loading models
+10/03 - 17:36:31 : INFO : Loading game words...
+10/03 - 17:36:31 : INFO : Done loading game words
+10/03 - 17:36:31 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+10/03 - 17:36:33 : INFO : SpyMaster initialised!
+10/03 - 17:36:33 : INFO : Running round with random teams...
+10/03 - 17:36:33 : DEBUG : Shuffling words
+10/03 - 17:36:33 : DEBUG : Loading team sizes...
+10/03 - 17:36:33 : INFO : Loading settings for red, blue, black, grey from team_sizes.txt... 
+10/03 - 17:36:33 : DEBUG : Found value for red: 8
+10/03 - 17:36:33 : DEBUG : Found value for blue: 8
+10/03 - 17:36:33 : DEBUG : Found value for black: 1
+10/03 - 17:36:33 : DEBUG : Found value for grey: 8
+10/03 - 17:36:33 : INFO : Done loading settings from team_sizes.txt
+10/03 - 17:36:33 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+10/03 - 17:36:33 : DEBUG : Generating team words...
+10/03 - 17:36:33 : INFO : Team words:
+black: spider
+blue: octopus, mexico, back, mail, band, bed, grass, bow
+grey: calf, concert, canada, bermuda, park, fork, ball, chick
+red: dog, screen, rose, air, bond, jam, log, atlantis
+10/03 - 17:36:33 : INFO : Running round
+10/03 - 17:36:33 : INFO : Finding hints for overlap levels
+10/03 - 17:36:33 : INFO : Finding hints for 1 word(s)
+10/03 - 17:36:33 : INFO : precomputing L2-norms of word weight vectors
+10/03 - 17:36:54 : DEBUG : Found 42 legal hints (of 50 searched) for dog: mixed-breed:0.63995 // off-leash:0.58359 // groomer:0.57380 // puppy:0.56228 // canine:0.53627 // rottweiler:0.53372 // leashed:0.53183 // pekingese:0.52944 // hound:0.52539 // pet:0.51913 // purebred:0.51645 // pekinese:0.51175 // sled:0.50370 // groomers:0.50211 // kennels:0.50203 // mushers:0.50033 // kennel:0.49478 // herding:0.49253 // mushing:0.48557 // veterinarian:0.48304 // cat:0.48262 // terrier:0.47766 // puppies:0.47390 // doberman:0.47083 // junkyard:0.47043 // musher:0.46598 // k-9:0.46428 // dachshund:0.46374 // crufts:0.46194 // mangy:0.46080 // raccoon:0.45889 // pooch:0.45741 // breed:0.45738 // basenji:0.45557 // slaughterhouse:0.45272 // farrier:0.45027 // pets:0.44936 // yappy:0.44917 // retriever:0.44901 // pug:0.44860 // sniffing:0.44834 // hog:0.44802
+10/03 - 17:36:54 : DEBUG : Words: dog 		 Hint: mixed-breed 		 Score: 0.6399494409561157
+10/03 - 17:37:12 : DEBUG : Found 23 legal hints (of 50 searched) for screen: projector:0.60573 // projectors:0.58998 // viewfinder:0.56621 // monochrome:0.55901 // rear-projection:0.53901 // front-facing:0.53601 // stereoscopic:0.52184 // high-definition:0.52033 // cameras:0.51981 // pixels:0.50437 // 3-d:0.50326 // viewer:0.50307 // trommel:0.49362 // camera:0.49178 // 35-millimeter:0.49116 // 4.3-inch:0.48963 // televisions:0.48772 // digital:0.47481 // editing:0.47328 // compositing:0.47075 // 2-megapixel:0.46667 // multi-function:0.46265 // cinematography:0.46244
+10/03 - 17:37:12 : DEBUG : Words: screen 		 Hint: projector 		 Score: 0.6057299971580505
+10/03 - 17:37:30 : DEBUG : Found 42 legal hints (of 50 searched) for rose: surged:0.69325 // soared:0.65790 // tumbled:0.61949 // fell:0.60974 // plummeted:0.59475 // shares:0.57529 // gained:0.57041 // dipped:0.55351 // index:0.54285 // 0.9:0.52138 // slumped:0.51493 // 0.7:0.51471 // unchanged:0.51340 // plunged:0.51327 // retreated:0.51304 // cents:0.51146 // declined:0.51143 // inched:0.50993 // percent:0.50827 // sagged:0.50775 // firmed:0.50749 // dow:0.50663 // 0.4:0.50544 // turnover:0.50542 // 0.8:0.50273 // rebounded:0.50269 // futures:0.50165 // 0.6:0.49930 // jumped:0.49890 // slipped:0.49450 // 0.5:0.49261 // industrials:0.49241 // 0.2:0.48977 // stocks:0.48968 // 1.05:0.48951 // slid:0.48938 // pesos:0.48635 // 1.19:0.48624 // 0.3:0.48608 // 1.62:0.48457 // 1.09:0.48315 // 1.23:0.48302
+10/03 - 17:37:30 : DEBUG : Words: rose 		 Hint: surged 		 Score: 0.6932453513145447
+10/03 - 17:37:49 : DEBUG : Found 31 legal hints (of 50 searched) for air: aviation:0.58221 // warplanes:0.55399 // bombardment:0.54869 // artillery:0.52311 // refueling:0.52310 // reconnaissance:0.52092 // planes:0.51711 // force:0.51324 // personnel:0.51294 // active-duty:0.50822 // command:0.49821 // operational:0.49443 // materiel:0.49309 // tactical:0.49213 // civilian:0.49115 // overflights:0.48910 // f-16:0.48798 // military:0.48518 // radar:0.48492 // helicopters:0.48250 // pollutant:0.48092 // expeditionary:0.47813 // deployed:0.47503 // corps:0.47270 // stationed:0.46869 // pilots:0.46788 // squadrons:0.46543 // flights:0.46517 // kc-135:0.46465 // sorties:0.46427 // marshal:0.46251
+10/03 - 17:37:49 : DEBUG : Words: air 		 Hint: aviation 		 Score: 0.5822120904922485
+10/03 - 17:38:07 : DEBUG : Found 33 legal hints (of 50 searched) for bond: treasury:0.61878 // 30-year:0.59990 // treasuries:0.58182 // benchmark:0.57030 // 10-year:0.55076 // securities:0.53503 // yields:0.52729 // equities:0.51236 // yield:0.50279 // equity:0.49058 // gilts:0.49002 // ruble:0.48326 // yielding:0.48061 // denominated:0.47488 // currency:0.47281 // 28-day:0.46913 // exchangeable:0.46882 // issuance:0.46505 // taxable:0.46498 // 6.25:0.46119 // zero-coupon:0.44907 // 12-month:0.44891 // surety:0.44667 // maturities:0.44440 // 9-percent:0.44432 // coupon:0.43910 // 7.25:0.43656 // callable:0.43512 // prudential:0.43490 // exchange:0.43459 // c-n:0.43282 // underwriters:0.42700 // underwriting:0.42641
+10/03 - 17:38:07 : DEBUG : Words: bond 		 Hint: treasury 		 Score: 0.6187757253646851
+10/03 - 17:38:25 : DEBUG : Found 9 legal hints (of 50 searched) for jam: lingonberry:0.47954 // chutney:0.42722 // chill-out:0.42614 // chokecherry:0.41322 // easy-listening:0.40388 // daiquiri:0.40095 // flashover:0.40084 // nirvana:0.39838 // eurythmics:0.39526
+10/03 - 17:38:25 : DEBUG : Words: jam 		 Hint: lingonberry 		 Score: 0.4795389771461487
+10/03 - 17:38:43 : DEBUG : Found 21 legal hints (of 50 searched) for log: one-room:0.56576 // two-room:0.51975 // four-room:0.46942 // single-room:0.46331 // 959,000:0.46075 // smokehouse:0.45318 // 994,000:0.44785 // reapportion:0.43878 // altissimo:0.43767 // dovecote:0.43398 // 2,200-acre:0.43138 // admin:0.43022 // wood-frame:0.42770 // 140-2:0.42674 // initialize:0.42477 // timestamps:0.42341 // memory-mapped:0.41832 // demountable:0.41598 // falsework:0.41571 // two-story:0.41523 // federal-style:0.41490
+10/03 - 17:38:43 : DEBUG : Words: log 		 Hint: one-room 		 Score: 0.5657625794410706
+10/03 - 17:39:01 : DEBUG : Found 10 legal hints (of 50 searched) for atlantis: mir:0.59215 // cosmonauts:0.57844 // shuttle:0.55615 // astronauts:0.55585 // buran:0.53241 // shuttles:0.52669 // spacecraft:0.50727 // liftoff:0.49832 // x-38:0.49772 // smart-1:0.49283
+10/03 - 17:39:01 : DEBUG : Words: atlantis 		 Hint: mir 		 Score: 0.5921546220779419
+10/03 - 17:39:01 : INFO : Finding hints for 2 word(s)
+10/03 - 17:39:20 : DEBUG : Found 44 legal hints (of 50 searched) for dog, screen: camera:0.60801 // cameras:0.55546 // viewer:0.53756 // picture:0.52205 // display:0.50132 // video:0.49589 // canine:0.49354 // scanner:0.49203 // movie:0.48783 // viewing:0.48686 // character:0.48628 // projector:0.48016 // robot:0.47991 // toy:0.47942 // cat:0.47687 // characters:0.47685 // movies:0.47484 // pixels:0.47003 // touch:0.46937 // photograph:0.46376 // image:0.46212 // images:0.45585 // viewers:0.45252 // viewfinder:0.45205 // off-leash:0.44904 // pictures:0.44609 // displays:0.44546 // checkout:0.44434 // actors:0.44432 // sight:0.44192 // animated:0.44158 // projectionist:0.44021 // projectors:0.43910 // photo:0.43886 // scanners:0.43769 // front-facing:0.43704 // mouse:0.43545 // 3-d:0.43479 // watch:0.43445 // sensor:0.43434 // scan:0.43371 // adult:0.43363 // pixel:0.43355 // color:0.43350
+10/03 - 17:39:20 : DEBUG : Words: dog, screen 		 Hint: camera 		 Score: 0.6080068945884705
+10/03 - 17:39:39 : DEBUG : Found 44 legal hints (of 50 searched) for dog, rose: fell:0.61475 // surged:0.57498 // dipped:0.57266 // soared:0.55905 // gained:0.55838 // slipped:0.55457 // index:0.55283 // jumped:0.55258 // tumbled:0.54563 // futures:0.54323 // plummeted:0.54226 // shares:0.50422 // declined:0.49581 // yield:0.49489 // dropped:0.49272 // percent:0.49166 // plunged:0.49143 // slid:0.48706 // benchmark:0.48634 // stock:0.47984 // cents:0.47971 // yields:0.47930 // stocks:0.47405 // inched:0.47361 // slumped:0.47272 // 30-year:0.47138 // fallen:0.46568 // treasury:0.45691 // 10-year:0.45505 // retreated:0.45350 // leapt:0.45262 // yesterday:0.45237 // barometer:0.45120 // mercantile:0.44585 // dow:0.44579 // average:0.44182 // gallon:0.44009 // cent:0.43673 // 0.4:0.43627 // price:0.43527 // 0.9:0.43355 // rebounded:0.43254 // 225:0.42977 // 0.3:0.42965
+10/03 - 17:39:39 : DEBUG : Words: dog, rose 		 Hint: fell 		 Score: 0.6147517561912537
+10/03 - 17:39:57 : DEBUG : Found 43 legal hints (of 50 searched) for dog, air: helicopter:0.58816 // patrol:0.55465 // reconnaissance:0.55450 // helicopters:0.54950 // pilot:0.52409 // fighter:0.51622 // observation:0.51460 // artillery:0.51390 // fire:0.51055 // surveillance:0.50995 // pilots:0.50583 // personnel:0.50550 // combat:0.50188 // force:0.50163 // military:0.50161 // aviation:0.49836 // civilian:0.49732 // tactical:0.49368 // planes:0.49298 // safety:0.48713 // officers:0.48579 // command:0.47858 // warplanes:0.47628 // army:0.47555 // ranger:0.47500 // corps:0.47456 // guard:0.47301 // inspection:0.47260 // commander:0.47133 // patrols:0.47023 // unit:0.46858 // control:0.46443 // radar:0.46402 // flying:0.46361 // flight:0.46348 // aerial:0.46346 // patrolling:0.46203 // navy:0.45778 // jet:0.45572 // naval:0.45323 // paratroopers:0.45302 // marshals:0.45256 // marshal:0.45097
+10/03 - 17:39:57 : DEBUG : Words: dog, air 		 Hint: helicopter 		 Score: 0.5881571173667908
+10/03 - 17:40:15 : DEBUG : Found 41 legal hints (of 50 searched) for dog, bond: treasury:0.61578 // 10-year:0.60028 // treasuries:0.58567 // 30-year:0.57827 // benchmark:0.55578 // yields:0.53322 // yield:0.52562 // gilts:0.49610 // securities:0.46618 // coupon:0.46162 // stock:0.43809 // equities:0.43718 // futures:0.43666 // 28-day:0.43403 // surety:0.43234 // basis:0.43206 // discount:0.42828 // dealer:0.42259 // currency:0.41856 // 3-month:0.41803 // interest:0.41753 // exchange:0.41730 // yielding:0.41677 // brokers:0.41591 // credit:0.41574 // rates:0.41013 // rate:0.40999 // rating:0.40887 // barney:0.40543 // underwriters:0.40423 // maturity:0.39721 // 12-month:0.39718 // price:0.39679 // 9-percent:0.39639 // asset:0.39626 // mortgage:0.39566 // lynch:0.39452 // inflation:0.39449 // parity:0.39139 // appraiser:0.39032 // 6.25:0.38759
+10/03 - 17:40:15 : DEBUG : Words: dog, bond 		 Hint: treasury 		 Score: 0.6157822608947754
+10/03 - 17:40:33 : DEBUG : Found 34 legal hints (of 50 searched) for dog, jam: barbecue:0.51567 // chili:0.48891 // hound:0.44818 // buddy:0.44710 // popcorn:0.44513 // hop:0.44453 // pizza:0.44173 // off-leash:0.43376 // puppy:0.43114 // sausage:0.43110 // karaoke:0.43070 // ramen:0.41696 // musher:0.41588 // grog:0.41410 // peanut:0.40831 // rap:0.40627 // bootleg:0.40063 // hot:0.39875 // hog:0.39783 // junkyard:0.39608 // goat:0.39410 // remix:0.39281 // stew:0.39249 // slaughterhouse:0.39152 // salsa:0.38974 // homemade:0.38739 // deli:0.38730 // snack:0.38713 // hatter:0.38670 // candy:0.38266 // disco:0.38242 // sandwich:0.38235 // meat:0.37870 // bakery:0.37844
+10/03 - 17:40:33 : DEBUG : Words: dog, jam 		 Hint: barbecue 		 Score: 0.5156659483909607
+10/03 - 17:40:51 : DEBUG : Found 40 legal hints (of 50 searched) for dog, log: mixed-breed:0.47170 // one-room:0.46090 // barn:0.44349 // firehouse:0.43957 // farmhouse:0.43093 // off-leash:0.42993 // smokehouse:0.42905 // password:0.42349 // cabin:0.41710 // grog:0.41667 // schoolhouse:0.41569 // leashed:0.40930 // junkyard:0.40694 // tavern:0.40528 // puppy:0.39360 // kennels:0.39132 // blacksmith:0.38818 // checkout:0.38802 // flume:0.38411 // sled:0.38310 // plumber:0.38175 // smithy:0.38171 // clerks:0.38148 // pigeon:0.37878 // pet:0.37711 // picnic:0.37697 // hog:0.37434 // yule:0.37420 // dwelling:0.37271 // check:0.37226 // kiosk:0.37182 // pets:0.37158 // meetinghouse:0.37083 // appraiser:0.37079 // rental:0.37046 // homeowner:0.36959 // listings:0.36785 // brownie:0.36708 // self-service:0.36707 // cabins:0.36683
+10/03 - 17:40:51 : DEBUG : Words: dog, log 		 Hint: mixed-breed 		 Score: 0.47169768810272217
+10/03 - 17:41:09 : DEBUG : Found 30 legal hints (of 50 searched) for dog, atlantis: astronauts:0.61911 // cosmonauts:0.59014 // shuttle:0.56830 // mir:0.56104 // spacecraft:0.55029 // astronaut:0.54436 // spaceship:0.52132 // beagle:0.47174 // long-duration:0.47164 // apollo:0.46882 // orbit:0.46358 // cosmonaut:0.46330 // spacewalk:0.46257 // buran:0.45340 // docking:0.45296 // mushers:0.45287 // sled:0.44891 // submersibles:0.44884 // handlers:0.44832 // orbiter:0.44633 // robotic:0.44621 // docked:0.44596 // aboard:0.44471 // x-38:0.44226 // rendezvous:0.44059 // shuttles:0.43572 // spaceflight:0.43288 // liftoff:0.43285 // crew:0.43028 // musher:0.42610
+10/03 - 17:41:09 : DEBUG : Words: dog, atlantis 		 Hint: astronauts 		 Score: 0.619114875793457
+10/03 - 17:41:28 : DEBUG : Found 43 legal hints (of 50 searched) for screen, rose: surged:0.58304 // soared:0.57611 // gained:0.56750 // shares:0.56223 // fell:0.55141 // tumbled:0.52096 // plummeted:0.51529 // index:0.50460 // percent:0.50145 // declined:0.49825 // share:0.49644 // dropped:0.49385 // stock:0.48920 // barometer:0.47999 // dipped:0.47844 // compared:0.47579 // stocks:0.47419 // jumped:0.47219 // cents:0.47114 // electronics:0.46910 // leapt:0.46890 // slipped:0.46811 // reflecting:0.46774 // slumped:0.46735 // expectations:0.46471 // capitalization:0.46394 // sales:0.46074 // turnover:0.46064 // plunged:0.45881 // dow:0.45579 // gaining:0.45381 // price:0.45309 // prices:0.45277 // gain:0.45070 // higher:0.45016 // projection:0.44827 // consumer:0.44666 // boosted:0.44526 // composite:0.44515 // closing:0.44441 // 0.9:0.44262 // averaged:0.44183 // value:0.44135
+10/03 - 17:41:28 : DEBUG : Words: screen, rose 		 Hint: surged 		 Score: 0.5830437541007996
+10/03 - 17:41:46 : DEBUG : Found 41 legal hints (of 50 searched) for screen, air: radar:0.62325 // satellite:0.53049 // cameras:0.52928 // overhead:0.52495 // planes:0.52170 // reconnaissance:0.51586 // capability:0.50634 // radars:0.50509 // civilian:0.50297 // force:0.49801 // infrared:0.49563 // observation:0.49398 // daytime:0.49231 // signal:0.48910 // display:0.48722 // television:0.48679 // camera:0.48467 // installation:0.48286 // surveillance:0.48152 // personnel:0.47785 // equipped:0.47663 // signals:0.47654 // aerial:0.47444 // operational:0.47212 // sensors:0.47209 // deployed:0.47097 // tactical:0.46954 // communications:0.46929 // command:0.46875 // warplanes:0.46838 // broadcast:0.46605 // light:0.46566 // controllers:0.46351 // capabilities:0.46195 // military:0.46123 // aviation:0.46098 // satellites:0.45969 // digital:0.45807 // pilot:0.45705 // space:0.45686 // lighting:0.45670
+10/03 - 17:41:46 : DEBUG : Words: screen, air 		 Hint: radar 		 Score: 0.6232534646987915
+10/03 - 17:42:05 : DEBUG : Found 46 legal hints (of 50 searched) for screen, bond: 30-year:0.51317 // treasury:0.50346 // fixed:0.49513 // rating:0.48850 // benchmark:0.48453 // value:0.47946 // interest:0.47623 // basis:0.47142 // stock:0.46898 // rate:0.46837 // 10-year:0.46625 // ratings:0.45153 // maturity:0.45136 // equity:0.45100 // exchange:0.44943 // exchangeable:0.44601 // rates:0.44149 // currency:0.44109 // comparable:0.43575 // price:0.43391 // yields:0.43249 // portfolio:0.43100 // treasuries:0.43003 // capitalization:0.42658 // bellwether:0.42526 // lynch:0.42348 // default:0.42278 // securities:0.42170 // credit:0.42051 // borrowing:0.41884 // priced:0.41766 // mortgages:0.41755 // market:0.41664 // term:0.41579 // shares:0.41517 // barometer:0.41429 // investors:0.41378 // picture:0.41234 // outstanding:0.41136 // yield:0.41082 // denominated:0.41042 // coupon:0.40987 // expectations:0.40883 // dollar:0.40882 // valuations:0.40572 // projection:0.40531
+10/03 - 17:42:05 : DEBUG : Words: screen, bond 		 Hint: 30-year 		 Score: 0.5131661295890808
+10/03 - 17:42:23 : DEBUG : Found 38 legal hints (of 50 searched) for screen, jam: audio:0.55139 // video:0.55135 // soundtracks:0.51640 // digital:0.51226 // stereo:0.50093 // recording:0.49712 // soundtrack:0.49057 // projectors:0.47490 // download:0.47400 // conferencing:0.46460 // tape:0.46442 // projector:0.46368 // editing:0.46288 // set-top:0.46208 // cameras:0.45705 // studio:0.45579 // disc:0.45400 // cd:0.45197 // cassette:0.45192 // audition:0.45144 // instant:0.45057 // music:0.45005 // televisions:0.44995 // electronic:0.44897 // transistor:0.44741 // clips:0.44699 // pop:0.44655 // 3-d:0.44553 // multi-channel:0.44533 // edit:0.44490 // movies:0.44309 // disk:0.44263 // switches:0.44195 // discs:0.44027 // videos:0.43967 // installation:0.43846 // demo:0.43769 // console:0.43769
+10/03 - 17:42:23 : DEBUG : Words: screen, jam 		 Hint: audio 		 Score: 0.551390528678894
+10/03 - 17:42:42 : DEBUG : Found 41 legal hints (of 50 searched) for screen, log: edit:0.55388 // viewing:0.52264 // stack:0.50588 // user:0.50090 // upload:0.49882 // projector:0.49770 // files:0.49492 // digitized:0.49133 // editing:0.49097 // digital:0.48663 // viewer:0.48344 // classroom:0.48172 // formatting:0.47333 // file:0.47112 // frame:0.46932 // frames:0.46787 // whiteboard:0.46665 // projectors:0.46558 // readout:0.46507 // microfilm:0.46505 // maps:0.46479 // images:0.46102 // listings:0.45711 // click:0.45537 // graphical:0.45498 // graphics:0.45374 // built-in:0.45261 // whiteboards:0.45220 // cameras:0.45190 // data:0.44947 // scrolling:0.44802 // displays:0.44704 // display:0.44653 // viewable:0.44602 // pixels:0.44581 // copy:0.44538 // multi-function:0.44390 // 3-d:0.44185 // caption:0.44154 // formats:0.44031 // check-in:0.43953
+10/03 - 17:42:42 : DEBUG : Words: screen, log 		 Hint: edit 		 Score: 0.5538761615753174
+10/03 - 17:43:01 : DEBUG : Found 28 legal hints (of 50 searched) for screen, atlantis: spacecraft:0.60239 // shuttle:0.59620 // astronauts:0.57463 // cosmonauts:0.54006 // mir:0.52499 // orbit:0.52138 // spaceship:0.50424 // projector:0.49083 // liftoff:0.49003 // module:0.48624 // gyroscopes:0.48585 // apollo:0.48242 // satellites:0.48102 // space:0.47648 // shuttles:0.47549 // orbiter:0.47316 // docking:0.46964 // 3-d:0.46917 // stereoscopic:0.46737 // payloads:0.46470 // buran:0.45688 // capsule:0.45536 // infrared:0.45296 // astronaut:0.45097 // unmanned:0.44936 // projectors:0.44703 // spacewalk:0.44226 // payload:0.44155
+10/03 - 17:43:01 : DEBUG : Words: screen, atlantis 		 Hint: spacecraft 		 Score: 0.6023869514465332
+10/03 - 17:43:19 : DEBUG : Found 43 legal hints (of 50 searched) for rose, air: soared:0.61512 // surged:0.58006 // fell:0.57595 // shares:0.56584 // gained:0.55865 // dropped:0.54077 // aviation:0.53177 // percent:0.52848 // plummeted:0.52797 // declined:0.51814 // plunged:0.51814 // stock:0.49445 // tumbled:0.49441 // increased:0.49409 // retreated:0.49211 // closed:0.48608 // index:0.48597 // midday:0.48273 // boosted:0.48109 // units:0.48075 // unit:0.48063 // turnover:0.48013 // higher:0.47997 // industrial:0.47986 // stocks:0.47766 // prices:0.47628 // exchange:0.47312 // force:0.46907 // cents:0.46846 // jumped:0.46542 // meanwhile:0.46290 // gasoline:0.45941 // decreased:0.45855 // orders:0.45736 // gallon:0.45634 // dow:0.45276 // yesterday:0.45072 // artillery:0.45053 // rocketed:0.44984 // price:0.44805 // closing:0.44726 // warplanes:0.44601 // f-16:0.44563
+10/03 - 17:43:19 : DEBUG : Words: rose, air 		 Hint: soared 		 Score: 0.6151204705238342
+10/03 - 17:43:37 : DEBUG : Found 45 legal hints (of 50 searched) for rose, bond: benchmark:0.65362 // 30-year:0.65157 // surged:0.64821 // treasury:0.64163 // shares:0.63623 // yields:0.62136 // fell:0.61869 // soared:0.61723 // yield:0.61228 // tumbled:0.60270 // stock:0.59855 // stocks:0.58570 // index:0.58421 // futures:0.58016 // 10-year:0.57903 // equities:0.57736 // treasuries:0.57082 // exchange:0.56282 // unchanged:0.56047 // trading:0.55362 // gained:0.54911 // securities:0.54752 // 6.25:0.54167 // plummeted:0.54100 // firmed:0.53608 // price:0.53331 // capitalization:0.52852 // cents:0.52184 // yesterday:0.51961 // declined:0.51913 // traded:0.51560 // prices:0.51500 // rate:0.51479 // percent:0.51326 // dow:0.51318 // lows:0.51305 // slipped:0.51173 // dollar:0.51147 // yielding:0.51095 // pesos:0.51069 // boosted:0.51020 // dipped:0.51018 // currency:0.50918 // 12-month:0.50910 // peso:0.50789
+10/03 - 17:43:37 : DEBUG : Words: rose, bond 		 Hint: benchmark 		 Score: 0.6536239981651306
+10/03 - 17:43:55 : DEBUG : Found 31 legal hints (of 50 searched) for rose, jam: surged:0.53119 // soared:0.49435 // fell:0.47483 // topping:0.45345 // gained:0.44125 // tumbled:0.43627 // fluctuated:0.43487 // semiconductor:0.42882 // turnover:0.41446 // plummeted:0.40514 // gainer:0.40073 // rallied:0.39991 // dipped:0.39770 // futures:0.39605 // declined:0.39508 // dropped:0.39378 // closing:0.38590 // cents:0.38386 // prices:0.38238 // slid:0.38211 // closed:0.38133 // index:0.38078 // jumped:0.37860 // peaked:0.37856 // cent:0.37832 // sales:0.37814 // gallon:0.37711 // shares:0.37592 // coffee:0.37534 // electronics:0.37531 // retreated:0.37434
+10/03 - 17:43:55 : DEBUG : Words: rose, jam 		 Hint: surged 		 Score: 0.5311893224716187
+10/03 - 17:44:13 : DEBUG : Found 43 legal hints (of 50 searched) for rose, log: surged:0.54424 // tumbled:0.51986 // soared:0.50307 // plummeted:0.48534 // dow:0.48045 // 0.5:0.47974 // 0.4:0.47380 // dipped:0.47344 // 0.8:0.46921 // 0.9:0.46839 // 0.7:0.46703 // industrials:0.46621 // fell:0.46456 // 0.6:0.46348 // 0.2:0.46269 // declined:0.45749 // 0.3:0.45634 // indexes:0.45629 // cents:0.45533 // index:0.45481 // shares:0.45320 // yields:0.45179 // inventory:0.44649 // adjusted:0.44362 // incomes:0.44016 // 0.1:0.43657 // resales:0.43553 // 1.1:0.43334 // declining:0.43291 // decline:0.42984 // seasonally:0.42944 // percent:0.42825 // 3.4:0.42710 // composite:0.42691 // 2.9:0.42682 // inventories:0.42530 // 2.1:0.42502 // jumped:0.42377 // retreated:0.42263 // 3.1:0.41999 // 1.0:0.41998 // declines:0.41820 // gained:0.41735
+10/03 - 17:44:13 : DEBUG : Words: rose, log 		 Hint: surged 		 Score: 0.54423588514328
+10/03 - 17:44:31 : DEBUG : Found 32 legal hints (of 50 searched) for rose, atlantis: rocketed:0.53330 // soared:0.52470 // surged:0.50052 // tumbled:0.49782 // plummeted:0.48830 // plunged:0.46927 // fell:0.45576 // mir:0.44886 // shares:0.43152 // retreated:0.43075 // 1.47:0.41528 // 1.31:0.41203 // 1.15:0.40943 // 1.05:0.40824 // 1.24:0.40727 // 1.23:0.40697 // dow:0.40610 // apollo:0.40386 // 1.11:0.40157 // shuttle:0.39985 // 1.07:0.39976 // 1.17:0.39767 // slid:0.39687 // 1.38:0.39564 // 1.55:0.39483 // 1.18:0.39285 // futures:0.39119 // spacecraft:0.39100 // 1.01:0.38823 // 1.30:0.38821 // 1.12:0.38752 // skidded:0.38723
+10/03 - 17:44:31 : DEBUG : Words: rose, atlantis 		 Hint: rocketed 		 Score: 0.533295750617981
+10/03 - 17:44:49 : DEBUG : Found 47 legal hints (of 50 searched) for air, bond: treasury:0.59189 // exchange:0.54483 // stock:0.51861 // 30-year:0.51117 // benchmark:0.50720 // aviation:0.50026 // reserve:0.49868 // currency:0.49798 // equity:0.48493 // interest:0.47885 // federal:0.47813 // higher:0.47450 // basis:0.47131 // shares:0.47080 // trading:0.47051 // price:0.46935 // rates:0.46379 // unit:0.46377 // mutual:0.46343 // 10-year:0.46120 // yield:0.46080 // asset:0.46067 // treasuries:0.46006 // units:0.45181 // equities:0.45079 // force:0.45060 // overnight:0.44987 // rate:0.44894 // securities:0.44492 // yields:0.44458 // military:0.44418 // rating:0.44193 // stocks:0.44135 // fixed:0.43988 // ruble:0.43719 // markets:0.43687 // dollar:0.43651 // strategic:0.43539 // low:0.43529 // purchasing:0.43492 // funds:0.43047 // assets:0.43010 // market:0.43006 // value:0.42933 // level:0.42931 // debt:0.42832 // prices:0.42805
+10/03 - 17:44:49 : DEBUG : Words: air, bond 		 Hint: treasury 		 Score: 0.5918915271759033
+10/03 - 17:45:06 : DEBUG : Found 28 legal hints (of 50 searched) for air, jam: aviation:0.48109 // bombardment:0.46895 // artillery:0.45102 // brigade:0.44129 // radar:0.43474 // radars:0.43162 // controllers:0.43022 // aeromedical:0.42107 // 319th:0.41979 // corps:0.41920 // active-duty:0.41864 // battalion:0.41829 // traffic:0.41456 // refueling:0.41186 // personnel:0.41004 // reconnaissance:0.40655 // force:0.40617 // command:0.40447 // warplanes:0.40386 // refrigeration:0.40210 // ticketing:0.40168 // broadcasts:0.39990 // flights:0.39891 // unseasonably:0.39738 // patrol:0.39497 // quartermaster:0.39486 // squadrons:0.39263 // noise:0.39184
+10/03 - 17:45:06 : DEBUG : Words: air, jam 		 Hint: aviation 		 Score: 0.48109182715415955
+10/03 - 17:45:24 : DEBUG : Found 35 legal hints (of 50 searched) for air, log: cabin:0.49680 // radar:0.46422 // reconnaissance:0.45836 // cabins:0.44994 // hangar:0.44074 // service:0.43332 // personnel:0.42848 // assigned:0.42634 // ordnance:0.42543 // maintenance:0.41947 // planes:0.41835 // command:0.41813 // inventory:0.41694 // leased:0.41554 // active-duty:0.41520 // barracks:0.41438 // aviation:0.41228 // artillery:0.41178 // rental:0.40805 // patrol:0.40630 // pilots:0.40567 // operational:0.40389 // pentagon:0.40269 // bombardment:0.40115 // radars:0.40052 // munitions:0.40014 // warplanes:0.39789 // passenger:0.39753 // signal:0.39603 // storage:0.39566 // cockpit:0.39545 // transportation:0.39308 // depot:0.39093 // units:0.39080 // data:0.38994
+10/03 - 17:45:24 : DEBUG : Words: air, log 		 Hint: cabin 		 Score: 0.4968033730983734
+10/03 - 17:45:42 : DEBUG : Found 34 legal hints (of 50 searched) for air, atlantis: shuttle:0.67950 // shuttles:0.58931 // astronauts:0.58029 // spacecraft:0.57330 // c-130:0.57148 // refueling:0.57048 // mir:0.56634 // planes:0.54452 // cosmonauts:0.54423 // liftoff:0.52371 // unmanned:0.52355 // aboard:0.51924 // orbiter:0.51786 // bombardment:0.51353 // satellites:0.51291 // aeronautics:0.51114 // flights:0.50990 // warplanes:0.50637 // cosmonaut:0.50257 // orbit:0.50252 // flight:0.50243 // helicopter:0.49949 // aviation:0.49922 // helicopters:0.49532 // tankers:0.49325 // astronaut:0.49031 // reconnaissance:0.48896 // manned:0.48850 // jet:0.48489 // spacewalk:0.48251 // landing:0.48078 // interceptor:0.48049 // missile:0.47998 // apollo:0.47819
+10/03 - 17:45:42 : DEBUG : Words: air, atlantis 		 Hint: shuttle 		 Score: 0.6795036792755127
+10/03 - 17:46:00 : DEBUG : Found 28 legal hints (of 50 searched) for bond, jam: treasury:0.41600 // exchange:0.38826 // securities:0.37971 // trading:0.37416 // 30-year:0.36810 // yield:0.36504 // currency:0.35831 // surety:0.35604 // yields:0.35515 // stock:0.35196 // brokers:0.34966 // raters:0.34945 // broker:0.34845 // mutual:0.34690 // issuance:0.34636 // credit:0.34569 // benchmark:0.34463 // issuer:0.34263 // commodities:0.34109 // callable:0.33935 // 007:0.33921 // floating-point:0.33910 // anticipation:0.33827 // exchangeable:0.33669 // yielding:0.33613 // underwriter:0.33478 // futures:0.33235 // goldeneye:0.33213
+10/03 - 17:46:00 : DEBUG : Words: bond, jam 		 Hint: treasury 		 Score: 0.4159989356994629
+10/03 - 17:46:18 : DEBUG : Found 42 legal hints (of 50 searched) for bond, log: treasury:0.54461 // coupon:0.52719 // yields:0.51605 // 30-year:0.49044 // mortgage:0.46787 // taxable:0.46738 // treasuries:0.46121 // inventory:0.45681 // yield:0.45500 // mortgages:0.45470 // benchmark:0.45031 // borrowing:0.44129 // geld:0.43627 // rate:0.43477 // rental:0.43338 // indexed:0.43224 // decimal:0.43222 // 10-year:0.43052 // ruble:0.43039 // valuation:0.42682 // fixed:0.42662 // basis:0.42652 // rates:0.42542 // parity:0.42340 // issuance:0.41675 // 1,017,000,000:0.41653 // floating-point:0.41477 // one-room:0.41383 // 0.104:0.41382 // issuers:0.41088 // discount:0.41029 // value:0.41007 // equity:0.40694 // equivalence:0.40558 // callable:0.40428 // fidelity:0.40379 // annualized:0.40327 // deposit:0.40279 // fixed-point:0.40246 // listings:0.40042 // yielding:0.39566 // appraiser:0.39395
+10/03 - 17:46:18 : DEBUG : Words: bond, log 		 Hint: treasury 		 Score: 0.5446147322654724
+10/03 - 17:46:36 : DEBUG : Found 18 legal hints (of 50 searched) for bond, atlantis: treasury:0.49332 // shuttle:0.44203 // 007:0.44198 // moonraker:0.42840 // astronauts:0.40592 // 28-day:0.40537 // buran:0.40509 // apollo:0.40317 // exchangeable:0.40049 // benchmark:0.39779 // 30-year:0.39473 // equities:0.38768 // orbital:0.38638 // ruble:0.38084 // goldeneye:0.37815 // mir:0.37714 // 10,000-mark:0.37634 // treasuries:0.37605
+10/03 - 17:46:36 : DEBUG : Words: bond, atlantis 		 Hint: treasury 		 Score: 0.49332395195961
+10/03 - 17:46:53 : DEBUG : Found 29 legal hints (of 50 searched) for jam, log: 8-track:0.42705 // one-room:0.42641 // lingonberry:0.42323 // pectin:0.41640 // formatted:0.40845 // cassette:0.40665 // edit:0.40586 // schoolhouse:0.40364 // reel-to-reel:0.39938 // daiquiri:0.39883 // eight-track:0.39246 // zip:0.39146 // download:0.38989 // chill-out:0.38917 // microcode:0.38780 // double-sided:0.38593 // flume:0.38226 // disks:0.37892 // downloads:0.37869 // upload:0.37853 // demos:0.37727 // four-track:0.37636 // furnace:0.37611 // two-track:0.37551 // quadraphonic:0.37420 // demo:0.37330 // 16-track:0.37286 // fudge:0.37142 // bidirectional:0.36781
+10/03 - 17:46:53 : DEBUG : Words: jam, log 		 Hint: 8-track 		 Score: 0.4270496964454651
+10/03 - 17:47:11 : DEBUG : Found 14 legal hints (of 50 searched) for jam, atlantis: mir:0.52711 // shuttle:0.51732 // cosmonauts:0.50566 // astronauts:0.47495 // spacewalk:0.47415 // liftoff:0.45221 // reentry:0.44450 // spacewalks:0.43980 // blastoff:0.43077 // buran:0.42599 // shuttles:0.42472 // orbiter:0.40563 // to-morrow:0.39929 // spacecraft:0.39324
+10/03 - 17:47:11 : DEBUG : Words: jam, atlantis 		 Hint: mir 		 Score: 0.5271057486534119
+10/03 - 17:47:30 : DEBUG : Found 17 legal hints (of 50 searched) for log, atlantis: shuttle:0.53571 // mir:0.49734 // spacecraft:0.48795 // module:0.48582 // astronauts:0.48483 // shuttles:0.46914 // subleased:0.46104 // tessellate:0.46066 // spaceship:0.44939 // cosmonauts:0.44776 // 994,000:0.44480 // orbiter:0.44403 // orbiters:0.44188 // sublease:0.44004 // reentry:0.43733 // buran:0.42945 // ephemeris:0.42673
+10/03 - 17:47:30 : DEBUG : Words: log, atlantis 		 Hint: shuttle 		 Score: 0.535709023475647
+10/03 - 17:47:30 : INFO : Hint overlaps found: 
+Level                Word                           Hint                 Score               
+1                    rose                           surged                            0.69325
+2                    air, atlantis                  shuttle                           0.67950
