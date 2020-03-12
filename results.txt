@@ -1,0 +1,20 @@
+Teams:
+black: park
+blue: ninja - pin - foot - alps - port - tower - part - moon
+grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+Hints:
+Level: 1
+Target                                  Hint                Score               
+queen                                   regnant               0.6386635899543762
+band                                    drummer               0.6348080635070801
+band                                    punk                  0.6294861435890198
+band                                    vocalist              0.6280422210693359
+band                                    guitarist             0.6229457855224609
+Level: 2
+Target                                  Hint                Score               
+trip,time                               days                   0.631879448890686
+band,time                               recording             0.6294032335281372
+trip,time                               weekend               0.6269521117210388
+trip,time                               day                    0.624661922454834
+board,time                              committee              0.624179482460022

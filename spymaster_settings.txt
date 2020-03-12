@@ -1,2 +1,0 @@
-top_hints_per_word:1
-max_levels:3
