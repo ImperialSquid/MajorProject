@@ -8,28 +8,28 @@ import regex as re
 import spacy  # lemmatisation
 from gensim.models import KeyedVectors  # lading pre-trained word vectors
 from nltk.stem.lancaster import LancasterStemmer  # stemming
-from six import integer_types
 
 
 class SpyMaster:
     def __init__(self, teams_file="team_weights.txt", words_file="game_words.txt"):
         log.info("SpyMaster initialising...")
         # spymaster stuff
-        self.settings = self.__load_settings(sett_file="spymaster_settings.txt",
-                                             default_dict={"top_hints_per_word": 3,
-                                                           "max_levels": 3})
+        self.settings = self.__load_settings(sett_file="settings.txt",
+                                             default_dict={"max_top_hints": 10,
+                                                           "max_levels": 2})
 
         # game stuff (what game words are available depends on the word model used so it is loaded in load_model)
         self.game_words = list()
 
         # teams stuff
-        self.team_weights = self.__load_settings(sett_file="team_weights.txt",
+        self.team_weights = self.__load_settings(sett_file=teams_file,
                                                  default_dict={"red": 30, "grey": -1,
                                                                "blue": -3, "black": -10})
         self.team_words = dict()  # made as an attribute to save passing back and forth while running rounds
 
         # nlp stuff
-        self.word_model = self.load_word_model(model_name="")  # keyed vector model for generating hints
+        self.word_model = self.load_word_model(model_name="",
+                                               game_words_file=words_file)  # keyed vector model for generating hints
         self.ls = LancasterStemmer()  # stemmer for checking hint legality
         self.spacy_nlp = spacy.load("en_core_web_sm")  # lemmatiser for checking hint legality
 
@@ -51,7 +51,7 @@ class SpyMaster:
         log.info("Done loading settings from {0}".format(sett_file))
         return default_dict
 
-    def load_word_model(self, model_name):
+    def load_word_model(self, model_name, game_words_file="game_words.txt"):
         log.info("Loading word model...")
 
         if model_name == "word2vec-google-news-300":
@@ -69,7 +69,7 @@ class SpyMaster:
                 r"C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz", limit=500000)
 
         log.info("Done loading models")
-        self.__load_game_words(word_model)
+        self.__load_game_words(word_model, words_file=game_words_file)
         return word_model
 
     def __load_game_words(self, word_model, words_file="game_words.txt"):
@@ -109,10 +109,10 @@ class SpyMaster:
 
     def run_defined_round(self, reds: list, blues: list, greys: list, blacks: list, out_file=None):
         log.info("Running round with predefined teams...")
-        self.team_words["red"] = reds
-        self.team_words["blue"] = blues
-        self.team_words["grey"] = greys
-        self.team_words["black"] = blacks
+        self.team_words["red"] = [red for red in reds if red in self.word_model.vocab]
+        self.team_words["blue"] = [blue for blue in blues if blue in self.word_model.vocab]
+        self.team_words["grey"] = [grey for grey in greys if grey in self.word_model.vocab]
+        self.team_words["black"] = [black for black in blacks if black in self.word_model.vocab]
         log.info("Team words:\n{0}".format("\n".join([team + ": " + ", ".join(self.team_words[team])
                                                       for team in self.team_words.keys()])))
         self.__run_round(out_file=out_file)
@@ -121,9 +121,8 @@ class SpyMaster:
         log.info("Running round")
 
         log.info("Finding hints for overlap levels")
-        max_overlap = 2
         overlaps = dict()
-        for i in range(max_overlap):
+        for i in range(self.settings["max_levels"]):
             log.info("Finding hints for {0} word(s)".format(str(i + 1)))
             overlaps[i + 1] = self.__get_top_hints_multi(i + 1)
 
@@ -185,6 +184,10 @@ class SpyMaster:
                                                                                 " // ".join(
                                                                                     ["{0}:{1:.5f}".format(h[0], h[1])
                                                                                      for h in hints_filtered])))
+        if len(hints_filtered) == 0:
+            hints_filtered = [["NO HINT FOUND", -1]]
+            log.debug("Illegal Hints (since all were illegal): {0}".format(" // ".join(["{0}:{1:.5f}".format(h[0], h[1])
+                                                                                        for h in hints_raw])))
         return hints_filtered
 
     def __check_legal(self, hint):
@@ -205,6 +208,9 @@ class SpyMaster:
         d = enchant.Dict("en_US")
         matches.append(not d.check(hint))
         # True = word not in US dictionary (Us not UK due to word model using Us dict)
+
+        matches.append(re.match(r".*\-.*", hint))
+        # True = word contains - implying two words concatenated in text but separate in speech
 
         return not any(matches)  # If and Trues exist the hint is not legal
 
