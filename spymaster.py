@@ -87,7 +87,7 @@ class SpyMaster:
         log.debug("Loaded {0} words, {1} missing (missing word(s): {2})".format(len(self.game_words), len(missing),
                                                                                 ", ".join(missing)))
 
-    def run_random_round(self):
+    def run_random_round(self, out_file=None):
         log.info("Running round with random teams...")
         log.debug("Shuffling words")
         shuffle(self.game_words)
@@ -105,9 +105,9 @@ class SpyMaster:
         log.info("Team words:\n{0}".format("\n".join([team + ": " + ", ".join(self.team_words[team])
                                                       for team in self.team_words.keys()])))
 
-        self.__run_round()
+        self.__run_round(out_file=out_file)
 
-    def run_defined_round(self, reds: list, blues: list, greys: list, blacks: list):
+    def run_defined_round(self, reds: list, blues: list, greys: list, blacks: list, out_file=None):
         log.info("Running round with predefined teams...")
         self.team_words["red"] = reds
         self.team_words["blue"] = blues
@@ -115,9 +115,9 @@ class SpyMaster:
         self.team_words["black"] = blacks
         log.info("Team words:\n{0}".format("\n".join([team + ": " + ", ".join(self.team_words[team])
                                                       for team in self.team_words.keys()])))
-        self.__run_round()
+        self.__run_round(out_file=out_file)
 
-    def __run_round(self):
+    def __run_round(self, out_file=None):
         log.info("Running round")
 
         log.info("Finding hints for overlap levels")
@@ -126,32 +126,48 @@ class SpyMaster:
         for i in range(max_overlap):
             log.info("Finding hints for {0} word(s)".format(str(i + 1)))
             overlaps[i + 1] = self.__get_top_hints_multi(i + 1)
-        log.info("Hint overlaps found: \n{0}\n{1}".format(
-            "{0:20} {1:30} {2:20} {3:20}".format("Level", "Word", "Hint", "Score"),
-            "\n".join(["{0:20} {1:30} {2:20} {3:20.5f}".format(str(k),
-                                                               ", ".join(overlaps[k][0]),
-                                                               overlaps[k][1][0],
-                                                               overlaps[k][1][1])
-                       for k in sorted(overlaps.keys())]
-                      )))
+
+        log.info("Results:")
+        log.info("{0:7} | {1:30} | {2:15} | {3:10}".format("Level", "Words", "Hint", "Score"))
+        for level in sorted(overlaps.keys()):
+            log.info("{0:^7} | {1:^30} | {2:^15} | {3:^10}".format("-", "--", "-", "--"))
+            for hint in overlaps[level]:
+                log.info("{0:7} | {1:30} | {2:15} | {3:10}".format(level, ",".join(hint[0]), hint[1][0], hint[1][1]))
+
+        if out_file is not None:
+            log.info("Output file detected, writing hints")
+            with open(out_file, "w") as outf:
+                outf.write("Teams:\n")
+                for team in sorted(self.team_words.keys()):
+                    outf.write("{0}: {1}\n".format(team, " - ".join(self.team_words[team])))
+                outf.write("Hints:\n")
+                for level in sorted(overlaps.keys()):
+                    outf.write("Level: {0}\n".format(str(level)))
+                    outf.write("{0:40}{1:20}{2:20}\n".format("Target", "Hint", "Score"))
+                    for hint in overlaps[level]:
+                        outf.write("{0:40}{1:20}{2:20}\n".format(",".join(hint[0]), hint[1][0], hint[1][1]))
+            log.info("Done")
+            return None
+        else:
+            log.info("No out file given")
+            return overlaps
 
     def __get_top_hints_multi(self, overlap=1):
-        if not isinstance(overlap, integer_types) or overlap < 1:
-            log.warning("Bad word overlap passed {}, set to 1".format(str(overlap)))
-            overlap = 1
         multis = []
         for multi in combinations(self.team_words["red"], overlap):
-            hint = self.__get_top_hints(multi)
-            multis.append((multi, hint))  # multis = [ ((<target1.1>, <target1.2>, ...), hint1), ... ]
-            log.debug("Words: {0} \t\t Hint: {1} \t\t Score: {2}".format(", ".join(multi), hint[0], hint[1]))
+            hints = self.__get_hints(multi)
+            for hint in hints:
+                multis.append((multi, hint))
+                # multis = [ [[target1, ...], [hint1, score1]]
+                #            [[target1, ...], [hint2, score2]]
+                #            [[target2, ...], [hint3, score3]]
+                #            [[target2, ...], [hint4, score4]]
+                #            ... ] Allows hints to be sorted on individual strength
+            log.debug("Words: {0:20} Hints: {1}".format("|".join(multi), " // ".join(["{0}-{1}".format(hint[0], hint[1])
+                                                                                      for hint in hints])))
 
         multis = sorted(multis, key=lambda x: x[1][1], reverse=True)
-        return multis[0]
-
-    def __get_top_hints(self, reds):
-        hints = self.__get_hints(reds=reds)
-        hints = sorted(hints, key=lambda x: x[1], reverse=True)
-        return hints[0]
+        return multis[0:self.settings["max_top_hints"] if self.settings["max_top_hints"] > 0 else None]
 
     def __get_hints(self, reds):
         hints_raw = self.word_model.most_similar(positive=[(red, int(self.team_weights["red"] / sqrt(len(reds))))
@@ -197,4 +213,4 @@ if __name__ == "__main__":
     log.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', datefmt="%d/%m - %H:%M:%S",
                     filename="spymaster-log.txt", level=log.DEBUG)
     sm = SpyMaster()
-    sm.run_random_round()
+    sm.run_random_round(out_file="hint-results.txt")
