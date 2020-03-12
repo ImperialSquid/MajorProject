@@ -1,0 +1,16 @@
+12/03 - 21:17:26 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+12/03 - 21:17:26 : DEBUG : Found value for max_top_hints: 5
+12/03 - 21:17:26 : DEBUG : Found value for max_levels: 2
+12/03 - 21:17:26 : INFO : Done loading settings from settings.txt
+12/03 - 21:18:28 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+12/03 - 21:18:28 : DEBUG : Found value for max_top_hints: 5
+12/03 - 21:18:28 : DEBUG : Found value for max_levels: 2
+12/03 - 21:18:28 : INFO : Done loading settings from settings.txt
+12/03 - 21:20:52 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+12/03 - 21:20:52 : DEBUG : Found value for max_top_hints: 5
+12/03 - 21:20:52 : DEBUG : Found value for max_levels: 2
+12/03 - 21:20:52 : INFO : Done loading settings from settings.txt
+12/03 - 21:21:46 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+12/03 - 21:21:46 : DEBUG : Found value for max_top_hints: 5
+12/03 - 21:21:46 : DEBUG : Found value for max_levels: 2
+12/03 - 21:21:46 : INFO : Done loading settings from settings.txt
