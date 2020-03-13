@@ -4,11 +4,13 @@ from pprint import pprint
 
 class Agent:
     def __init__(self):
+        log.info("Agent initialising...")
         self.team_words = dict()
         self.hints = dict()
         self.settings = self.__load_settings(sett_file="settings.txt",
                                              default_dict={"max_top_hints": 10,
                                                            "max_levels": 2})
+        log.info("Agent initialised!")
 
     def __load_settings(self, sett_file: str, default_dict: dict):
         # loads settings in the form of <setting name>:<value> from file (only loads numeric values)
@@ -29,13 +31,13 @@ class Agent:
     def load_results(self, infile):
         with open(infile, "r") as inf:
             inf.readline()
-            for i in range(4):
+            for t_index in range(4):
                 line = inf.readline()
                 team = line.split(": ")[0]
                 words = line.split(": ")[1].strip().split(" - ")
                 self.team_words[team] = words
             inf.readline()
-            for l in range(self.settings["max_levels"]):
+            for l_index in range(self.settings["max_levels"]):
                 level = int(inf.readline().split(": ")[1])
                 inf.readline()
                 hints = []
@@ -53,8 +55,12 @@ class Agent:
 
 
 if __name__ == "__main__":
-    log.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', datefmt="%d/%m - %H:%M:%S",
-                    filename="agent-log.txt", level=log.DEBUG)
+    root_logger = log.getLogger()
+    root_logger.setLevel(log.DEBUG)
+    handler = log.FileHandler("agent-log.txt", "w", "utf-8")
+    handler.setFormatter(log.Formatter("%(asctime)s : %(levelname)s : %(message)s", datefmt="%d/%m - %H:%M:%S"))
+    root_logger.addHandler(handler)
+
     ag = Agent()
     ag.load_results("results.txt")
     print(ag.team_words)
