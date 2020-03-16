@@ -1,0 +1,12 @@
+Teams:
+black: park
+blue: ninja - pin - foot - alps - port - tower - part - moon
+grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+Hint Evaluation:
+Level: 1
+Target: queen                          Hint: regnant              WM Score:             0.638664
+Ranked by __word_net_eval: queen-0.554 - tower-0.085 - board-0.077 - atlantis-0.074 - saturn-0.065 - trip-0.047 - pin-0.04 - part-0.039 - shoe-0.037 - time-0.023 - bermuda-0.019 - foot-0.014 - port-0.01 - strike-0.001 - park--0.005 - bar--0.009 - sound--0.012 - band--0.017 - pumpkin--0.022 - theater--0.033 - moon--0.045 - helicopter--0.062 - ninja--0.082 - parachute--0.119 - alps--0.142
+Level: 2
+Target: trip,time                      Hint: days                 WM Score:             0.631879
+Ranked by __word_net_eval: time-0.458 - moon-0.14 - trip-0.074 - ninja-0.054 - saturn-0.042 - port-0.041 - part-0.041 - shoe-0.035 - sound-0.028 - bar-0.027 - tower-0.025 - helicopter-0.021 - foot-0.019 - alps-0.007 - park-0.004 - pin-0.002 - queen--0.007 - pumpkin--0.009 - strike--0.014 - band--0.019 - bermuda--0.021 - atlantis--0.025 - board--0.025 - theater--0.041 - parachute--0.081

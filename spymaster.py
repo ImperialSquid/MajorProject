@@ -218,7 +218,7 @@ class SpyMaster:
 if __name__ == "__main__":
     root_logger = log.getLogger()
     root_logger.setLevel(log.DEBUG)
-    handler = log.FileHandler("spymaster-log.txt", "w", "utf-8")
+    handler = log.FileHandler("spymaster-log.txt", "a", "utf-8")
     handler.setFormatter(log.Formatter("%(asctime)s : %(levelname)s : %(message)s", datefmt="%d/%m - %H:%M:%S"))
     root_logger.addHandler(handler)
 
