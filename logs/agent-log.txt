@@ -1,0 +1,473 @@
+16/03 - 12:49:59 : INFO : Agent initialising...
+16/03 - 12:49:59 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+16/03 - 12:49:59 : DEBUG : Found value for max_top_hints: 5
+16/03 - 12:49:59 : DEBUG : Found value for max_levels: 2
+16/03 - 12:49:59 : INFO : Done loading settings from settings.txt
+16/03 - 12:49:59 : INFO : Agent initialised!
+16/03 - 12:49:59 : INFO : Loading hints from results.txt...
+16/03 - 12:49:59 : INFO : Loaded teams
+16/03 - 12:49:59 : DEBUG : black: park
+16/03 - 12:49:59 : DEBUG : blue: ninja - pin - foot - alps - port - tower - part - moon
+16/03 - 12:49:59 : DEBUG : grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+16/03 - 12:49:59 : DEBUG : red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+16/03 - 12:49:59 : INFO : Loaded hints
+16/03 - 12:49:59 : DEBUG : Level: 1
+16/03 - 12:49:59 : DEBUG : Target                                  Hint                Score               
+16/03 - 12:49:59 : DEBUG : queen                                   regnant               0.6386635899543762
+16/03 - 12:49:59 : DEBUG : band                                    drummer               0.6348080635070801
+16/03 - 12:49:59 : DEBUG : band                                    punk                  0.6294861435890198
+16/03 - 12:49:59 : DEBUG : band                                    vocalist              0.6280422210693359
+16/03 - 12:49:59 : DEBUG : band                                    guitarist             0.6229457855224609
+16/03 - 12:49:59 : DEBUG : Level: 2
+16/03 - 12:49:59 : DEBUG : Target                                  Hint                Score               
+16/03 - 12:49:59 : DEBUG : trip,time                               days                   0.631879448890686
+16/03 - 12:49:59 : DEBUG : band,time                               recording             0.6294032335281372
+16/03 - 12:49:59 : DEBUG : trip,time                               weekend               0.6269521117210388
+16/03 - 12:49:59 : DEBUG : trip,time                               day                    0.624661922454834
+16/03 - 12:49:59 : DEBUG : board,time                              committee              0.624179482460022
+16/03 - 13:02:20 : INFO : Agent initialising...
+16/03 - 13:02:20 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+16/03 - 13:02:20 : DEBUG : Found value for max_top_hints: 5
+16/03 - 13:02:20 : DEBUG : Found value for max_levels: 2
+16/03 - 13:02:20 : INFO : Done loading settings from settings.txt
+16/03 - 13:02:20 : INFO : Agent initialised!
+16/03 - 13:02:20 : INFO : Loading hints from results.txt...
+16/03 - 13:02:20 : INFO : Loaded teams
+16/03 - 13:02:20 : DEBUG : black: park
+16/03 - 13:02:20 : DEBUG : blue: ninja - pin - foot - alps - port - tower - part - moon
+16/03 - 13:02:20 : DEBUG : grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+16/03 - 13:02:20 : DEBUG : red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+16/03 - 13:02:20 : INFO : Loaded hints
+16/03 - 13:02:20 : DEBUG : Level: 1
+16/03 - 13:02:20 : DEBUG : Target                                  Hint                Score               
+16/03 - 13:02:20 : DEBUG : queen                                   regnant               0.6386635899543762
+16/03 - 13:02:20 : DEBUG : band                                    drummer               0.6348080635070801
+16/03 - 13:02:20 : DEBUG : band                                    punk                  0.6294861435890198
+16/03 - 13:02:20 : DEBUG : band                                    vocalist              0.6280422210693359
+16/03 - 13:02:20 : DEBUG : band                                    guitarist             0.6229457855224609
+16/03 - 13:02:20 : DEBUG : Level: 2
+16/03 - 13:02:20 : DEBUG : Target                                  Hint                Score               
+16/03 - 13:02:20 : DEBUG : trip,time                               days                   0.631879448890686
+16/03 - 13:02:20 : DEBUG : band,time                               recording             0.6294032335281372
+16/03 - 13:02:20 : DEBUG : trip,time                               weekend               0.6269521117210388
+16/03 - 13:02:20 : DEBUG : trip,time                               day                    0.624661922454834
+16/03 - 13:02:20 : DEBUG : board,time                              committee              0.624179482460022
+16/03 - 13:02:20 : INFO : Evaluating hints
+16/03 - 13:02:20 : INFO : Level 1 hints
+16/03 - 13:02:20 : INFO : Evaluating hint 0 of 5: regnant
+16/03 - 13:02:20 : INFO : Evaluating with method: __word_net_eval
+16/03 - 13:03:15 : INFO : Level 2 hints
+16/03 - 13:03:15 : INFO : Evaluating hint 0 of 5: days
+16/03 - 13:03:15 : INFO : Evaluating with method: __word_net_eval
+16/03 - 14:23:32 : INFO : Agent initialising...
+16/03 - 14:23:32 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+16/03 - 14:23:32 : DEBUG : Found value for max_top_hints: 5
+16/03 - 14:23:32 : DEBUG : Found value for max_levels: 2
+16/03 - 14:23:32 : INFO : Done loading settings from settings.txt
+16/03 - 14:23:32 : INFO : Agent initialised!
+16/03 - 14:23:32 : INFO : Loading hints from results.txt...
+16/03 - 14:23:32 : INFO : Loaded teams
+16/03 - 14:23:32 : DEBUG : black: park
+16/03 - 14:23:32 : DEBUG : blue: ninja - pin - foot - alps - port - tower - part - moon
+16/03 - 14:23:32 : DEBUG : grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+16/03 - 14:23:32 : DEBUG : red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+16/03 - 14:23:32 : INFO : Loaded hints
+16/03 - 14:23:32 : DEBUG : Level: 1
+16/03 - 14:23:32 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:23:32 : DEBUG : queen                                   regnant               0.6386635899543762
+16/03 - 14:23:32 : DEBUG : band                                    drummer               0.6348080635070801
+16/03 - 14:23:32 : DEBUG : band                                    punk                  0.6294861435890198
+16/03 - 14:23:32 : DEBUG : band                                    vocalist              0.6280422210693359
+16/03 - 14:23:32 : DEBUG : band                                    guitarist             0.6229457855224609
+16/03 - 14:23:32 : DEBUG : Level: 2
+16/03 - 14:23:32 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:23:32 : DEBUG : trip,time                               days                   0.631879448890686
+16/03 - 14:23:32 : DEBUG : band,time                               recording             0.6294032335281372
+16/03 - 14:23:32 : DEBUG : trip,time                               weekend               0.6269521117210388
+16/03 - 14:23:32 : DEBUG : trip,time                               day                    0.624661922454834
+16/03 - 14:23:32 : DEBUG : board,time                              committee              0.624179482460022
+16/03 - 14:23:32 : INFO : Evaluating hints
+16/03 - 14:23:32 : INFO : Level 1 hints
+16/03 - 14:23:32 : INFO : Evaluating hint 1 of 5: regnant
+16/03 - 14:23:32 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 14:24:27 : INFO : Level 2 hints
+16/03 - 14:24:27 : INFO : Evaluating hint 1 of 5: days
+16/03 - 14:24:27 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 14:28:35 : INFO : Agent initialising...
+16/03 - 14:28:35 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+16/03 - 14:28:35 : DEBUG : Found value for max_top_hints: 5
+16/03 - 14:28:35 : DEBUG : Found value for max_levels: 2
+16/03 - 14:28:35 : INFO : Done loading settings from settings.txt
+16/03 - 14:28:35 : INFO : Agent initialised!
+16/03 - 14:28:35 : INFO : Loading hints from results.txt...
+16/03 - 14:28:35 : INFO : Loaded teams
+16/03 - 14:28:35 : DEBUG : black: park
+16/03 - 14:28:35 : DEBUG : blue: ninja - pin - foot - alps - port - tower - part - moon
+16/03 - 14:28:35 : DEBUG : grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+16/03 - 14:28:35 : DEBUG : red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+16/03 - 14:28:35 : INFO : Loaded hints
+16/03 - 14:28:35 : DEBUG : Level: 1
+16/03 - 14:28:35 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:28:35 : DEBUG : queen                                   regnant               0.6386635899543762
+16/03 - 14:28:35 : DEBUG : band                                    drummer               0.6348080635070801
+16/03 - 14:28:35 : DEBUG : band                                    punk                  0.6294861435890198
+16/03 - 14:28:35 : DEBUG : band                                    vocalist              0.6280422210693359
+16/03 - 14:28:35 : DEBUG : band                                    guitarist             0.6229457855224609
+16/03 - 14:28:35 : DEBUG : Level: 2
+16/03 - 14:28:35 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:28:35 : DEBUG : trip,time                               days                   0.631879448890686
+16/03 - 14:28:35 : DEBUG : band,time                               recording             0.6294032335281372
+16/03 - 14:28:35 : DEBUG : trip,time                               weekend               0.6269521117210388
+16/03 - 14:28:35 : DEBUG : trip,time                               day                    0.624661922454834
+16/03 - 14:28:35 : DEBUG : board,time                              committee              0.624179482460022
+16/03 - 14:35:45 : INFO : Agent initialising...
+16/03 - 14:35:45 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+16/03 - 14:35:45 : DEBUG : Found value for max_top_hints: 5
+16/03 - 14:35:45 : DEBUG : Found value for max_levels: 2
+16/03 - 14:35:45 : INFO : Done loading settings from settings.txt
+16/03 - 14:35:45 : INFO : Agent initialised!
+16/03 - 14:35:45 : INFO : Loading hints from results.txt...
+16/03 - 14:35:45 : INFO : Loaded teams
+16/03 - 14:35:45 : DEBUG : black: park
+16/03 - 14:35:45 : DEBUG : blue: ninja - pin - foot - alps - port - tower - part - moon
+16/03 - 14:35:45 : DEBUG : grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+16/03 - 14:35:45 : DEBUG : red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+16/03 - 14:35:45 : INFO : Loaded hints
+16/03 - 14:35:45 : DEBUG : Level: 1
+16/03 - 14:35:45 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:35:45 : DEBUG : queen                                   regnant               0.6386635899543762
+16/03 - 14:35:45 : DEBUG : band                                    drummer               0.6348080635070801
+16/03 - 14:35:45 : DEBUG : band                                    punk                  0.6294861435890198
+16/03 - 14:35:45 : DEBUG : band                                    vocalist              0.6280422210693359
+16/03 - 14:35:45 : DEBUG : band                                    guitarist             0.6229457855224609
+16/03 - 14:35:45 : DEBUG : Level: 2
+16/03 - 14:35:45 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:35:45 : DEBUG : trip,time                               days                   0.631879448890686
+16/03 - 14:35:45 : DEBUG : band,time                               recording             0.6294032335281372
+16/03 - 14:35:45 : DEBUG : trip,time                               weekend               0.6269521117210388
+16/03 - 14:35:45 : DEBUG : trip,time                               day                    0.624661922454834
+16/03 - 14:35:45 : DEBUG : board,time                              committee              0.624179482460022
+16/03 - 14:37:40 : INFO : Agent initialising...
+16/03 - 14:37:40 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+16/03 - 14:37:40 : DEBUG : Found value for max_top_hints: 5
+16/03 - 14:37:40 : DEBUG : Found value for max_levels: 2
+16/03 - 14:37:40 : INFO : Done loading settings from settings.txt
+16/03 - 14:37:40 : INFO : Agent initialised!
+16/03 - 14:37:40 : INFO : Loading hints from results.txt...
+16/03 - 14:37:40 : INFO : Loaded teams
+16/03 - 14:37:40 : DEBUG : black: park
+16/03 - 14:37:40 : DEBUG : blue: ninja - pin - foot - alps - port - tower - part - moon
+16/03 - 14:37:40 : DEBUG : grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+16/03 - 14:37:40 : DEBUG : red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+16/03 - 14:37:40 : INFO : Loaded hints
+16/03 - 14:37:40 : DEBUG : Level: 1
+16/03 - 14:37:40 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:37:40 : DEBUG : queen                                   regnant               0.6386635899543762
+16/03 - 14:37:40 : DEBUG : band                                    drummer               0.6348080635070801
+16/03 - 14:37:40 : DEBUG : band                                    punk                  0.6294861435890198
+16/03 - 14:37:40 : DEBUG : band                                    vocalist              0.6280422210693359
+16/03 - 14:37:40 : DEBUG : band                                    guitarist             0.6229457855224609
+16/03 - 14:37:40 : DEBUG : Level: 2
+16/03 - 14:37:40 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:37:40 : DEBUG : trip,time                               days                   0.631879448890686
+16/03 - 14:37:40 : DEBUG : band,time                               recording             0.6294032335281372
+16/03 - 14:37:40 : DEBUG : trip,time                               weekend               0.6269521117210388
+16/03 - 14:37:40 : DEBUG : trip,time                               day                    0.624661922454834
+16/03 - 14:37:40 : DEBUG : board,time                              committee              0.624179482460022
+16/03 - 14:48:32 : INFO : Agent initialising...
+16/03 - 14:48:32 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+16/03 - 14:48:32 : DEBUG : Found value for max_top_hints: 5
+16/03 - 14:48:32 : DEBUG : Found value for max_levels: 2
+16/03 - 14:48:32 : INFO : Done loading settings from settings.txt
+16/03 - 14:48:32 : INFO : Agent initialised!
+16/03 - 14:48:32 : INFO : Loading hints from results.txt...
+16/03 - 14:48:32 : INFO : Loaded teams
+16/03 - 14:48:32 : DEBUG : black: park
+16/03 - 14:48:32 : DEBUG : blue: ninja - pin - foot - alps - port - tower - part - moon
+16/03 - 14:48:32 : DEBUG : grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+16/03 - 14:48:32 : DEBUG : red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+16/03 - 14:48:32 : INFO : Loaded hints
+16/03 - 14:48:32 : DEBUG : Level: 1
+16/03 - 14:48:32 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:48:32 : DEBUG : queen                                   regnant               0.6386635899543762
+16/03 - 14:48:32 : DEBUG : band                                    drummer               0.6348080635070801
+16/03 - 14:48:32 : DEBUG : band                                    punk                  0.6294861435890198
+16/03 - 14:48:32 : DEBUG : band                                    vocalist              0.6280422210693359
+16/03 - 14:48:32 : DEBUG : band                                    guitarist             0.6229457855224609
+16/03 - 14:48:32 : DEBUG : Level: 2
+16/03 - 14:48:32 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:48:32 : DEBUG : trip,time                               days                   0.631879448890686
+16/03 - 14:48:32 : DEBUG : band,time                               recording             0.6294032335281372
+16/03 - 14:48:32 : DEBUG : trip,time                               weekend               0.6269521117210388
+16/03 - 14:48:32 : DEBUG : trip,time                               day                    0.624661922454834
+16/03 - 14:48:32 : DEBUG : board,time                              committee              0.624179482460022
+16/03 - 14:48:32 : INFO : Evaluating hints
+16/03 - 14:48:32 : INFO : Level 1 hints
+16/03 - 14:48:32 : INFO : Evaluating hint 1 of 5: regnant
+16/03 - 14:48:32 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 14:52:08 : INFO : Agent initialising...
+16/03 - 14:52:08 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+16/03 - 14:52:08 : DEBUG : Found value for max_top_hints: 5
+16/03 - 14:52:08 : DEBUG : Found value for max_levels: 2
+16/03 - 14:52:08 : INFO : Done loading settings from settings.txt
+16/03 - 14:52:08 : INFO : Agent initialised!
+16/03 - 14:52:08 : INFO : Loading hints from results.txt...
+16/03 - 14:52:08 : INFO : Loaded teams
+16/03 - 14:52:08 : DEBUG : black: park
+16/03 - 14:52:08 : DEBUG : blue: ninja - pin - foot - alps - port - tower - part - moon
+16/03 - 14:52:08 : DEBUG : grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+16/03 - 14:52:08 : DEBUG : red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+16/03 - 14:52:08 : INFO : Loaded hints
+16/03 - 14:52:08 : DEBUG : Level: 1
+16/03 - 14:52:08 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:52:08 : DEBUG : queen                                   regnant               0.6386635899543762
+16/03 - 14:52:08 : DEBUG : band                                    drummer               0.6348080635070801
+16/03 - 14:52:08 : DEBUG : band                                    punk                  0.6294861435890198
+16/03 - 14:52:08 : DEBUG : band                                    vocalist              0.6280422210693359
+16/03 - 14:52:08 : DEBUG : band                                    guitarist             0.6229457855224609
+16/03 - 14:52:08 : DEBUG : Level: 2
+16/03 - 14:52:08 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:52:08 : DEBUG : trip,time                               days                   0.631879448890686
+16/03 - 14:52:08 : DEBUG : band,time                               recording             0.6294032335281372
+16/03 - 14:52:08 : DEBUG : trip,time                               weekend               0.6269521117210388
+16/03 - 14:52:08 : DEBUG : trip,time                               day                    0.624661922454834
+16/03 - 14:52:08 : DEBUG : board,time                              committee              0.624179482460022
+16/03 - 14:52:08 : INFO : Evaluating hints
+16/03 - 14:52:08 : INFO : Level 1 hints
+16/03 - 14:52:08 : INFO : Evaluating hint 1 of 5: regnant
+16/03 - 14:52:08 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 14:53:04 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 14:53:13 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 14:53:13 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 14:58:41 : INFO : Agent initialising...
+16/03 - 14:58:41 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+16/03 - 14:58:41 : DEBUG : Found value for max_top_hints: 5
+16/03 - 14:58:41 : DEBUG : Found value for max_levels: 2
+16/03 - 14:58:41 : INFO : Done loading settings from settings.txt
+16/03 - 14:58:41 : INFO : Agent initialised!
+16/03 - 14:58:41 : INFO : Loading hints from results.txt...
+16/03 - 14:58:41 : INFO : Loaded teams
+16/03 - 14:58:41 : DEBUG : black: park
+16/03 - 14:58:41 : DEBUG : blue: ninja - pin - foot - alps - port - tower - part - moon
+16/03 - 14:58:41 : DEBUG : grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+16/03 - 14:58:41 : DEBUG : red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+16/03 - 14:58:41 : INFO : Loaded hints
+16/03 - 14:58:41 : DEBUG : Level: 1
+16/03 - 14:58:41 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:58:41 : DEBUG : queen                                   regnant               0.6386635899543762
+16/03 - 14:58:41 : DEBUG : band                                    drummer               0.6348080635070801
+16/03 - 14:58:41 : DEBUG : band                                    punk                  0.6294861435890198
+16/03 - 14:58:41 : DEBUG : band                                    vocalist              0.6280422210693359
+16/03 - 14:58:41 : DEBUG : band                                    guitarist             0.6229457855224609
+16/03 - 14:58:41 : DEBUG : Level: 2
+16/03 - 14:58:41 : DEBUG : Target                                  Hint                Score               
+16/03 - 14:58:41 : DEBUG : trip,time                               days                   0.631879448890686
+16/03 - 14:58:41 : DEBUG : band,time                               recording             0.6294032335281372
+16/03 - 14:58:41 : DEBUG : trip,time                               weekend               0.6269521117210388
+16/03 - 14:58:41 : DEBUG : trip,time                               day                    0.624661922454834
+16/03 - 14:58:41 : DEBUG : board,time                              committee              0.624179482460022
+16/03 - 14:58:41 : INFO : Evaluating hints
+16/03 - 14:58:41 : INFO : Level 1 hints
+16/03 - 14:58:41 : INFO : Evaluating hint 1 of 5: regnant
+16/03 - 14:58:41 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 14:59:36 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 14:59:45 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 14:59:45 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 14:59:52 : INFO : Level 2 hints
+16/03 - 14:59:52 : INFO : Evaluating hint 1 of 5: days
+16/03 - 14:59:52 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 15:00:49 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 15:00:51 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 15:00:52 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 15:06:57 : INFO : Agent initialising...
+16/03 - 15:06:57 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+16/03 - 15:06:57 : DEBUG : Found value for max_top_hints: 5
+16/03 - 15:06:57 : DEBUG : Found value for max_levels: 2
+16/03 - 15:06:57 : INFO : Done loading settings from settings.txt
+16/03 - 15:06:57 : INFO : Agent initialised!
+16/03 - 15:06:57 : INFO : Loading hints from results.txt...
+16/03 - 15:06:57 : INFO : Loaded teams
+16/03 - 15:06:57 : DEBUG : black: park
+16/03 - 15:06:57 : DEBUG : blue: ninja - pin - foot - alps - port - tower - part - moon
+16/03 - 15:06:57 : DEBUG : grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+16/03 - 15:06:57 : DEBUG : red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+16/03 - 15:06:57 : INFO : Loaded hints
+16/03 - 15:06:57 : DEBUG : Level: 1
+16/03 - 15:06:57 : DEBUG : Target                                  Hint                Score               
+16/03 - 15:06:57 : DEBUG : queen                                   regnant               0.6386635899543762
+16/03 - 15:06:57 : DEBUG : band                                    drummer               0.6348080635070801
+16/03 - 15:06:57 : DEBUG : band                                    punk                  0.6294861435890198
+16/03 - 15:06:57 : DEBUG : band                                    vocalist              0.6280422210693359
+16/03 - 15:06:57 : DEBUG : band                                    guitarist             0.6229457855224609
+16/03 - 15:06:57 : DEBUG : Level: 2
+16/03 - 15:06:57 : DEBUG : Target                                  Hint                Score               
+16/03 - 15:06:57 : DEBUG : trip,time                               days                   0.631879448890686
+16/03 - 15:06:57 : DEBUG : band,time                               recording             0.6294032335281372
+16/03 - 15:06:57 : DEBUG : trip,time                               weekend               0.6269521117210388
+16/03 - 15:06:57 : DEBUG : trip,time                               day                    0.624661922454834
+16/03 - 15:06:57 : DEBUG : board,time                              committee              0.624179482460022
+16/03 - 15:06:57 : INFO : Evaluating hints
+16/03 - 15:06:57 : INFO : Level 1 hints
+16/03 - 15:06:57 : INFO : Evaluating hint 1 of 5: regnant
+16/03 - 15:06:57 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 15:07:52 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 15:08:01 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 15:08:01 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 15:08:06 : INFO : Level 2 hints
+16/03 - 15:08:06 : INFO : Evaluating hint 1 of 5: days
+16/03 - 15:08:06 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 15:09:03 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 15:09:05 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 15:09:05 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 15:14:00 : INFO : Agent initialising...
+16/03 - 15:14:00 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+16/03 - 15:14:00 : DEBUG : Found value for max_top_hints: 5
+16/03 - 15:14:00 : DEBUG : Found value for max_levels: 2
+16/03 - 15:14:00 : INFO : Done loading settings from settings.txt
+16/03 - 15:14:00 : INFO : Agent initialised!
+16/03 - 15:14:00 : INFO : Loading hints from results.txt...
+16/03 - 15:14:00 : INFO : Loaded teams
+16/03 - 15:14:00 : DEBUG : black: park
+16/03 - 15:14:00 : DEBUG : blue: ninja - pin - foot - alps - port - tower - part - moon
+16/03 - 15:14:00 : DEBUG : grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+16/03 - 15:14:00 : DEBUG : red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+16/03 - 15:14:00 : INFO : Loaded hints
+16/03 - 15:14:00 : DEBUG : Level: 1
+16/03 - 15:14:00 : DEBUG : Target                                  Hint                Score               
+16/03 - 15:14:00 : DEBUG : queen                                   regnant               0.6386635899543762
+16/03 - 15:14:00 : DEBUG : band                                    drummer               0.6348080635070801
+16/03 - 15:14:00 : DEBUG : band                                    punk                  0.6294861435890198
+16/03 - 15:14:00 : DEBUG : band                                    vocalist              0.6280422210693359
+16/03 - 15:14:00 : DEBUG : band                                    guitarist             0.6229457855224609
+16/03 - 15:14:00 : DEBUG : Level: 2
+16/03 - 15:14:00 : DEBUG : Target                                  Hint                Score               
+16/03 - 15:14:00 : DEBUG : trip,time                               days                   0.631879448890686
+16/03 - 15:14:00 : DEBUG : band,time                               recording             0.6294032335281372
+16/03 - 15:14:00 : DEBUG : trip,time                               weekend               0.6269521117210388
+16/03 - 15:14:00 : DEBUG : trip,time                               day                    0.624661922454834
+16/03 - 15:14:00 : DEBUG : board,time                              committee              0.624179482460022
+16/03 - 15:14:00 : INFO : Evaluating hints
+16/03 - 15:14:00 : INFO : Level 1 hints
+16/03 - 15:14:00 : INFO : Evaluating hint 1 of 5: regnant
+16/03 - 15:14:00 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 15:14:55 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 15:15:52 : INFO : Agent initialising...
+16/03 - 15:15:52 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+16/03 - 15:15:52 : DEBUG : Found value for max_top_hints: 5
+16/03 - 15:15:52 : DEBUG : Found value for max_levels: 2
+16/03 - 15:15:52 : INFO : Done loading settings from settings.txt
+16/03 - 15:15:52 : INFO : Agent initialised!
+16/03 - 15:15:52 : INFO : Loading hints from results.txt...
+16/03 - 15:15:52 : INFO : Loaded teams
+16/03 - 15:15:52 : DEBUG : black: park
+16/03 - 15:15:52 : DEBUG : blue: ninja - pin - foot - alps - port - tower - part - moon
+16/03 - 15:15:52 : DEBUG : grey: helicopter - saturn - atlantis - strike - bar - theater - parachute - sound
+16/03 - 15:15:52 : DEBUG : red: pumpkin - board - trip - band - shoe - time - bermuda - queen
+16/03 - 15:15:52 : INFO : Loaded hints
+16/03 - 15:15:52 : DEBUG : Level: 1
+16/03 - 15:15:52 : DEBUG : Target                                  Hint                Score               
+16/03 - 15:15:52 : DEBUG : queen                                   regnant               0.6386635899543762
+16/03 - 15:15:52 : DEBUG : band                                    drummer               0.6348080635070801
+16/03 - 15:15:52 : DEBUG : band                                    punk                  0.6294861435890198
+16/03 - 15:15:52 : DEBUG : band                                    vocalist              0.6280422210693359
+16/03 - 15:15:52 : DEBUG : band                                    guitarist             0.6229457855224609
+16/03 - 15:15:52 : DEBUG : Level: 2
+16/03 - 15:15:52 : DEBUG : Target                                  Hint                Score               
+16/03 - 15:15:52 : DEBUG : trip,time                               days                   0.631879448890686
+16/03 - 15:15:52 : DEBUG : band,time                               recording             0.6294032335281372
+16/03 - 15:15:52 : DEBUG : trip,time                               weekend               0.6269521117210388
+16/03 - 15:15:52 : DEBUG : trip,time                               day                    0.624661922454834
+16/03 - 15:15:52 : DEBUG : board,time                              committee              0.624179482460022
+16/03 - 15:15:52 : INFO : Evaluating hints
+16/03 - 15:15:52 : INFO : Level 1 hints
+16/03 - 15:15:52 : INFO : Evaluating hint 1 of 5: regnant
+16/03 - 15:15:52 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 15:16:48 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 15:16:56 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 15:16:56 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 15:17:01 : INFO : Level 2 hints
+16/03 - 15:17:01 : INFO : Evaluating hint 1 of 5: days
+16/03 - 15:17:01 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 15:17:56 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 15:17:58 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 15:17:59 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 15:54:19 : INFO : Agent initialising...
+16/03 - 15:54:19 : INFO : Loading settings for max_top_hints, max_levels from settings.txt... 
+16/03 - 15:54:19 : DEBUG : Found value for max_top_hints: 5
+16/03 - 15:54:19 : DEBUG : Found value for max_levels: 2
+16/03 - 15:54:19 : INFO : Done loading settings from settings.txt
+16/03 - 15:54:19 : INFO : Agent initialised!
+16/03 - 15:54:19 : INFO : Loading hints from results.txt...
+16/03 - 15:54:19 : INFO : Loaded teams
+16/03 - 15:54:19 : DEBUG : black: ship
+16/03 - 15:54:19 : DEBUG : blue: greece - tail - trunk - opera - pin - doctor - yard - note
+16/03 - 15:54:19 : DEBUG : grey: beijing - skyscraper - slip - bolt - nail - pupil - apple - hospital
+16/03 - 15:54:19 : DEBUG : red: contract - star - ninja - plane - light - death - spring - key
+16/03 - 15:54:19 : INFO : Loaded hints
+16/03 - 15:54:19 : DEBUG : Level: 1
+16/03 - 15:54:19 : DEBUG : Target                                  Hint                Score               
+16/03 - 15:54:19 : DEBUG : spring                                  autumn                0.6505780220031738
+16/03 - 15:54:19 : DEBUG : key                                     crucial               0.6363884210586548
+16/03 - 15:54:19 : DEBUG : plane                                   airliner              0.6138476133346558
+16/03 - 15:54:19 : DEBUG : plane                                   crashed               0.6119383573532104
+16/03 - 15:54:19 : DEBUG : contract                                multiyear             0.5952427983283997
+16/03 - 15:54:19 : DEBUG : Level: 2
+16/03 - 15:54:19 : DEBUG : Target                                  Hint                Score               
+16/03 - 15:54:19 : DEBUG : light,spring                            autumn                0.6827131509780884
+16/03 - 15:54:19 : DEBUG : plane,light                             jet                   0.6578378081321716
+16/03 - 15:54:19 : DEBUG : plane,death                             crash                 0.6484948396682739
+16/03 - 15:54:19 : DEBUG : plane,key                               crucial                0.640709400177002
+16/03 - 15:54:19 : DEBUG : contract,key                            agreement             0.6369242072105408
+16/03 - 15:54:19 : INFO : Evaluating hints
+16/03 - 15:54:19 : INFO : Level 1 hints
+16/03 - 15:54:19 : INFO : Evaluating hint 1 of 5: autumn
+16/03 - 15:54:19 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 15:55:16 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 15:55:26 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 15:55:26 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 15:56:06 : INFO : Evaluating hint 2 of 5: crucial
+16/03 - 15:56:06 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 15:57:01 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 15:57:01 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 15:57:01 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 15:57:08 : INFO : Evaluating hint 3 of 5: airliner
+16/03 - 15:57:08 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 15:58:04 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 15:58:05 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 15:58:05 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 15:58:05 : INFO : Evaluating hint 4 of 5: crashed
+16/03 - 15:58:05 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 15:59:03 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 15:59:03 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 15:59:04 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 15:59:09 : INFO : Evaluating hint 5 of 5: multiyear
+16/03 - 15:59:09 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 16:00:04 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 16:00:04 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 16:00:04 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 16:00:04 : INFO : Level 2 hints
+16/03 - 16:00:04 : INFO : Evaluating hint 1 of 5: autumn
+16/03 - 16:00:04 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 16:00:59 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 16:00:59 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 16:00:59 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 16:00:59 : INFO : Evaluating hint 2 of 5: jet
+16/03 - 16:00:59 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 16:01:54 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 16:01:55 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 16:01:56 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 16:01:56 : INFO : Evaluating hint 3 of 5: crash
+16/03 - 16:01:56 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 16:02:53 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 16:02:54 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 16:02:55 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 16:02:55 : INFO : Evaluating hint 4 of 5: crucial
+16/03 - 16:02:55 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 16:03:53 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 16:03:53 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 16:03:53 : INFO : Evaluating with method: __word_net_lch_eval
+16/03 - 16:03:53 : INFO : Evaluating hint 5 of 5: agreement
+16/03 - 16:03:53 : INFO : Evaluating with method: __concept_net_eval
+16/03 - 16:04:51 : INFO : Evaluating with method: __word_net_path_eval
+16/03 - 16:04:51 : INFO : Evaluating with method: __word_net_wup_eval
+16/03 - 16:04:52 : INFO : Evaluating with method: __word_net_lch_eval

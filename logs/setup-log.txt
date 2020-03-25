@@ -1,0 +1,232 @@
+25/02, 16:33:47 : INFO : Program started
+25/02, 16:33:47 : INFO : Loading word model...
+25/02, 16:33:48 : INFO : Done
+25/02, 16:54:02 : INFO : Program started
+25/02, 16:54:02 : INFO : Loading word models...
+25/02, 17:25:46 : INFO : conceptnet-numberbatch-17-06-300 downloaded
+25/02, 17:25:46 : INFO : loading projection weights from C:\Users\benja/gensim-data\conceptnet-numberbatch-17-06-300\conceptnet-numberbatch-17-06-300.gz
+25/02, 17:36:39 : INFO : Program started
+25/02, 17:36:39 : INFO : Loading word models5...
+25/02, 18:16:40 : INFO : Program started
+25/02, 18:16:40 : INFO : Loading word models5...
+25/02, 18:31:35 : INFO : glove-wiki-gigaword-300 downloaded
+25/02, 19:27:25 : INFO : word2vec-google-news-300 downloaded
+25/02, 19:27:25 : INFO : Done
+26/02 - 03:43:05 : INFO : Program started
+26/02 - 03:43:05 : INFO : Loading word models...
+26/02 - 03:43:05 : INFO : Loading ConceptNet NumberBatch
+26/02 - 03:43:06 : INFO : Loading Wiki
+26/02 - 03:43:06 : INFO : Loading Google News
+26/02 - 03:43:06 : INFO : Done
+27/02 - 16:59:53 : INFO : Program started
+27/02 - 16:59:53 : INFO : Loading word models...
+27/02 - 16:59:53 : INFO : Loading ConceptNet NumberBatch
+27/02 - 16:59:54 : INFO : Loading Wiki
+27/02 - 16:59:54 : INFO : Loading Google News
+27/02 - 16:59:54 : INFO : Loading Twitter
+27/02 - 17:14:37 : INFO : glove-twitter-200 downloaded
+27/02 - 17:14:37 : INFO : Done
+27/02 - 17:18:40 : INFO : Program started
+27/02 - 17:18:40 : INFO : Loading word models...
+27/02 - 17:18:40 : INFO : Loading ConceptNet NumberBatch
+27/02 - 17:18:40 : INFO : Loading Wiki
+27/02 - 17:18:41 : INFO : Loading Google News
+27/02 - 17:18:41 : INFO : Loading Twitter
+27/02 - 17:19:03 : INFO : Program started
+27/02 - 17:19:03 : INFO : Loading word models...
+27/02 - 17:19:03 : INFO : Loading ConceptNet NumberBatch
+27/02 - 17:19:04 : INFO : Loading Wiki
+27/02 - 17:19:04 : INFO : Loading Google News
+27/02 - 17:19:04 : INFO : Loading Twitter
+27/02 - 17:19:04 : INFO : Done
+27/02 - 17:22:24 : INFO : Program started
+27/02 - 17:22:24 : INFO : Loading word models...
+27/02 - 17:22:24 : INFO : Loading ConceptNet NumberBatch
+27/02 - 17:22:24 : INFO : Loading Wiki 300
+27/02 - 17:22:24 : INFO : Loading Google News 300
+27/02 - 17:22:24 : INFO : Loading Twitter 200
+27/02 - 17:22:24 : INFO : Loading Wiki 100
+27/02 - 17:25:32 : INFO : glove-wiki-gigaword-100 downloaded
+27/02 - 17:25:32 : INFO : Loading Twitter 100
+27/02 - 17:32:45 : INFO : glove-twitter-100 downloaded
+27/02 - 17:32:45 : INFO : Done
+28/02 - 13:56:31 : INFO : Program started
+28/02 - 13:56:31 : INFO : Loading word models...
+28/02 - 13:56:31 : INFO : Loading ConceptNet NumberBatch
+28/02 - 13:56:32 : INFO : Loading Wiki 300
+28/02 - 13:56:32 : INFO : Loading Google News 300
+28/02 - 13:56:32 : INFO : Loading Twitter 200
+28/02 - 13:56:32 : INFO : Loading Wiki 100
+28/02 - 13:56:33 : INFO : Loading Twitter 100
+28/02 - 13:56:33 : INFO : Done
+28/02 - 14:17:55 : INFO : Program started
+28/02 - 14:17:55 : INFO : Loading word models...
+28/02 - 14:17:55 : INFO : Loading ConceptNet NumberBatch
+28/02 - 14:17:55 : INFO : Loading Wiki 300
+28/02 - 14:17:55 : INFO : Loading Google News 300
+28/02 - 14:17:56 : INFO : Loading Twitter 200
+28/02 - 14:17:56 : INFO : Loading Wiki 100
+28/02 - 14:17:56 : INFO : Loading Twitter 100
+28/02 - 14:17:57 : INFO : Done
+24/03 - 12:36:42 : INFO : Program started
+24/03 - 12:36:42 : INFO : Loading model...
+24/03 - 12:36:42 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+24/03 - 12:36:42 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 12:42:39 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+24/03 - 12:42:39 : INFO : Done
+24/03 - 12:42:39 : INFO : Saving as binary...
+24/03 - 12:45:13 : INFO : Program started
+24/03 - 12:45:13 : INFO : Loading model...
+24/03 - 12:45:13 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+24/03 - 12:45:13 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 12:50:06 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+24/03 - 12:50:06 : INFO : Done
+24/03 - 12:50:06 : INFO : Saving as binary...
+24/03 - 12:50:06 : INFO : saving Word2VecKeyedVectors object under glove-wiki-100.bin, separately None
+24/03 - 12:50:06 : INFO : storing np array 'vectors' to glove-wiki-100.bin.vectors.npy
+24/03 - 12:50:09 : INFO : not storing attribute vectors_norm
+24/03 - 12:50:09 : DEBUG : {'uri': 'glove-wiki-100.bin', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 12:50:12 : INFO : saved glove-wiki-100.bin
+24/03 - 12:50:12 : INFO : Done
+24/03 - 12:50:12 : INFO : All Done
+24/03 - 12:56:34 : INFO : Program started
+24/03 - 12:56:34 : INFO : Loading binary model
+24/03 - 12:56:34 : INFO : loading projection weights from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-wiki-100.bin
+24/03 - 12:56:34 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 12:56:59 : INFO : Program started
+24/03 - 12:56:59 : INFO : Loading binary model
+24/03 - 12:56:59 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-wiki-100.bin
+24/03 - 12:56:59 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 12:57:05 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-wiki-100.bin.vectors.npy with mmap=None
+24/03 - 12:57:06 : INFO : setting ignored attribute vectors_norm to None
+24/03 - 12:57:06 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-wiki-100.bin
+24/03 - 12:57:06 : INFO : Done!
+24/03 - 12:57:06 : INFO : All Done
+24/03 - 13:19:40 : INFO : Program started
+24/03 - 13:19:40 : INFO : Loading model...
+24/03 - 13:19:40 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-300.gz
+24/03 - 13:19:40 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 13:20:23 : INFO : Program started
+24/03 - 13:20:23 : INFO : Loading model...
+24/03 - 13:20:23 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+24/03 - 13:20:23 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 13:37:36 : INFO : loaded (400000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+24/03 - 13:37:36 : INFO : Done
+24/03 - 13:37:36 : INFO : Saving as binary...
+24/03 - 13:37:36 : INFO : saving Word2VecKeyedVectors object under glove-wiki-300.bin, separately None
+24/03 - 13:37:36 : INFO : storing np array 'vectors' to glove-wiki-300.bin.vectors.npy
+24/03 - 13:37:41 : INFO : not storing attribute vectors_norm
+24/03 - 13:37:41 : DEBUG : {'uri': 'glove-wiki-300.bin', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 13:37:45 : INFO : saved glove-wiki-300.bin
+24/03 - 13:37:45 : INFO : Done
+24/03 - 13:37:45 : INFO : Loading binary model
+24/03 - 13:37:45 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-wiki-300.bin
+24/03 - 13:37:45 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\glove-wiki-300.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 13:37:49 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-wiki-300.bin.vectors.npy with mmap=None
+24/03 - 13:37:52 : INFO : setting ignored attribute vectors_norm to None
+24/03 - 13:37:52 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-wiki-300.bin
+24/03 - 13:37:52 : INFO : Done!
+24/03 - 13:37:52 : INFO : Loading model...
+24/03 - 13:37:52 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-twitter-100\glove-twitter-100.gz
+24/03 - 13:37:52 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-twitter-100\\glove-twitter-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 14:02:08 : INFO : loaded (1193514, 100) matrix from C:\Users\benja\gensim-data\glove-twitter-100\glove-twitter-100.gz
+24/03 - 14:02:08 : INFO : Done
+24/03 - 14:02:08 : INFO : Saving as binary...
+24/03 - 14:02:08 : INFO : saving Word2VecKeyedVectors object under glove-twitter-100.bin, separately None
+24/03 - 14:02:08 : INFO : storing np array 'vectors' to glove-twitter-100.bin.vectors.npy
+24/03 - 14:02:12 : INFO : not storing attribute vectors_norm
+24/03 - 14:02:12 : DEBUG : {'uri': 'glove-twitter-100.bin', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 14:02:27 : INFO : saved glove-twitter-100.bin
+24/03 - 14:02:27 : INFO : Done
+24/03 - 14:02:27 : INFO : Loading binary model
+24/03 - 14:02:27 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-twitter-100.bin
+24/03 - 14:02:27 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\glove-twitter-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 14:02:48 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-twitter-100.bin.vectors.npy with mmap=None
+24/03 - 14:03:10 : INFO : setting ignored attribute vectors_norm to None
+24/03 - 14:03:11 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-twitter-100.bin
+24/03 - 14:03:13 : INFO : Done!
+24/03 - 14:03:14 : INFO : Loading model...
+24/03 - 14:03:14 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-twitter-300\glove-twitter-300.gz
+24/03 - 14:03:14 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-twitter-300\\glove-twitter-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 14:17:09 : INFO : Program started
+24/03 - 14:17:09 : INFO : Loading model...
+24/03 - 14:17:09 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-twitter-200\glove-twitter-200.gz
+24/03 - 14:17:09 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-twitter-200\\glove-twitter-200.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 14:59:47 : INFO : loaded (1193514, 200) matrix from C:\Users\benja\gensim-data\glove-twitter-200\glove-twitter-200.gz
+24/03 - 14:59:47 : INFO : Done
+24/03 - 14:59:47 : INFO : Saving as binary...
+24/03 - 14:59:47 : INFO : saving Word2VecKeyedVectors object under glove-twitter-200.bin, separately None
+24/03 - 14:59:47 : INFO : storing np array 'vectors' to glove-twitter-200.bin.vectors.npy
+24/03 - 15:00:05 : INFO : not storing attribute vectors_norm
+24/03 - 15:00:05 : DEBUG : {'uri': 'glove-twitter-200.bin', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 15:00:17 : INFO : saved glove-twitter-200.bin
+24/03 - 15:00:17 : INFO : Done
+24/03 - 15:00:17 : INFO : Loading binary model
+24/03 - 15:00:17 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-twitter-200.bin
+24/03 - 15:00:17 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\glove-twitter-200.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 15:00:41 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-twitter-200.bin.vectors.npy with mmap=None
+24/03 - 15:01:09 : INFO : setting ignored attribute vectors_norm to None
+24/03 - 15:01:09 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-twitter-200.bin
+24/03 - 15:01:21 : INFO : Done!
+24/03 - 15:01:21 : INFO : Loading model...
+24/03 - 15:01:21 : INFO : loading projection weights from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+24/03 - 15:01:21 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\word2vec-google-news-300\\word2vec-google-news-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 15:12:35 : INFO : loaded (3000000, 300) matrix from C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz
+24/03 - 15:13:40 : INFO : Done
+24/03 - 15:13:40 : INFO : Saving as binary...
+24/03 - 15:13:40 : INFO : saving Word2VecKeyedVectors object under word2vec-gnews-300.bin, separately None
+24/03 - 15:13:40 : INFO : storing np array 'vectors' to word2vec-gnews-300.bin.vectors.npy
+24/03 - 15:21:32 : INFO : not storing attribute vectors_norm
+24/03 - 15:21:32 : DEBUG : {'uri': 'word2vec-gnews-300.bin', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 15:23:10 : INFO : saved word2vec-gnews-300.bin
+24/03 - 15:23:10 : INFO : Done
+24/03 - 15:23:10 : INFO : Loading binary model
+24/03 - 15:23:10 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\word2vec-gnews-300.bin
+24/03 - 15:23:10 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\word2vec-gnews-300.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 15:24:13 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\word2vec-gnews-300.bin.vectors.npy with mmap=None
+24/03 - 15:28:32 : INFO : setting ignored attribute vectors_norm to None
+24/03 - 15:28:38 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\word2vec-gnews-300.bin
+24/03 - 15:37:56 : INFO : Done!
+24/03 - 15:37:56 : INFO : All Done
+24/03 - 17:04:09 : INFO : Program started
+24/03 - 17:04:09 : INFO : Loading model...
+24/03 - 17:04:09 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+24/03 - 17:04:09 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-100\\glove-wiki-gigaword-100.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 17:08:16 : INFO : loaded (400000, 100) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz
+24/03 - 17:08:16 : INFO : Done
+24/03 - 17:08:16 : INFO : Saving as binary...
+24/03 - 17:08:16 : INFO : saving Word2VecKeyedVectors object under glove-wiki-100.bin, separately None
+24/03 - 17:08:16 : INFO : storing np array 'vectors' to glove-wiki-100.bin.vectors.npy
+24/03 - 17:08:17 : INFO : not storing attribute vectors_norm
+24/03 - 17:08:17 : DEBUG : {'uri': 'glove-wiki-100.bin', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 17:08:20 : INFO : saved glove-wiki-100.bin
+24/03 - 17:08:20 : INFO : Done
+24/03 - 17:08:20 : INFO : Loading binary model
+24/03 - 17:08:20 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-wiki-100.bin
+24/03 - 17:08:20 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 17:08:23 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-wiki-100.bin.vectors.npy with mmap=None
+24/03 - 17:08:23 : INFO : setting ignored attribute vectors_norm to None
+24/03 - 17:08:23 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-wiki-100.bin
+24/03 - 17:08:23 : INFO : Done!
+24/03 - 17:08:23 : INFO : All Done
+24/03 - 17:39:40 : INFO : Program started
+24/03 - 17:39:40 : INFO : Loading model...
+24/03 - 17:39:40 : INFO : loading projection weights from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+24/03 - 17:39:40 : DEBUG : {'uri': 'C:\\Users\\benja\\gensim-data\\glove-wiki-gigaword-300\\glove-wiki-gigaword-300.gz', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 17:53:24 : INFO : loaded (400000, 300) matrix from C:\Users\benja\gensim-data\glove-wiki-gigaword-300\glove-wiki-gigaword-300.gz
+24/03 - 17:53:24 : INFO : Done
+24/03 - 17:53:24 : INFO : Saving as binary...
+24/03 - 17:53:24 : INFO : saving Word2VecKeyedVectors object under glove-wiki-300.bin, separately None
+24/03 - 17:53:24 : INFO : storing np array 'vectors' to glove-wiki-300.bin.vectors.npy
+24/03 - 17:53:28 : INFO : not storing attribute vectors_norm
+24/03 - 17:53:28 : DEBUG : {'uri': 'glove-wiki-300.bin', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 17:53:30 : INFO : saved glove-wiki-300.bin
+24/03 - 17:53:30 : INFO : Done
+24/03 - 17:53:30 : INFO : Loading binary model
+24/03 - 17:53:30 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-wiki-300.bin
+24/03 - 17:53:30 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\glove-wiki-300.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+24/03 - 17:53:33 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-wiki-300.bin.vectors.npy with mmap=None
+24/03 - 17:53:34 : INFO : setting ignored attribute vectors_norm to None
+24/03 - 17:53:34 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-wiki-300.bin
+24/03 - 17:53:35 : INFO : Done!
+24/03 - 17:53:35 : INFO : All Done
