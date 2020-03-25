@@ -1,2 +1,0 @@
-max_top_hints:5
-max_levels:2
