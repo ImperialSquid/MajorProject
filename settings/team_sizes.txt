@@ -1,0 +1,4 @@
+red:8
+blue:8
+black:1
+grey:8
