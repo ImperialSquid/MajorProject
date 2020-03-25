@@ -11,10 +11,10 @@ from nltk.stem.lancaster import LancasterStemmer  # stemming
 
 
 class SpyMaster:
-    def __init__(self, teams_file="team_weights.txt", words_file="game_words.txt"):
+    def __init__(self, teams_file="settings/team_weights.txt", words_file="settings/game_words.txt"):
         log.info("SpyMaster initialising...")
         # spymaster stuff
-        self.settings = self.__load_settings(sett_file="settings.txt",
+        self.settings = self.__load_settings(sett_file="settings/settings.txt",
                                              default_dict={"max_top_hints": 10,
                                                            "max_levels": 2})
 
@@ -28,7 +28,7 @@ class SpyMaster:
         self.team_words = dict()  # made as an attribute to save passing back and forth while running rounds
 
         # nlp stuff
-        self.word_model = self.load_word_model(model_name="",
+        self.word_model = self.load_word_model(model_name="glove-wiki-100",
                                                game_words_file=words_file)  # keyed vector model for generating hints
         self.ls = LancasterStemmer()  # stemmer for checking hint legality
         self.spacy_nlp = spacy.load("en_core_web_sm")  # lemmatiser for checking hint legality
@@ -51,28 +51,35 @@ class SpyMaster:
         log.info("Done loading settings from {0}".format(sett_file))
         return default_dict
 
-    def load_word_model(self, model_name, game_words_file="game_words.txt"):
+    def load_word_model(self, model_name, game_words_file="settings/game_words.txt"):
         log.info("Loading word model...")
 
-        if model_name == "word2vec-google-news-300":
+        if model_name == "word2vec-gnews-300":
             log.debug("Loading Google News 300")
-            word_model = KeyedVectors.load_word2vec_format(
-                r"C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz", binary=True,
-                limit=500000)
+            word_model = KeyedVectors.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440"
+                                           r"MajorProject\models\word2vec-gnews-300.bin")
         elif model_name == "glove-twitter-100":
             log.debug("Loading Twitter 100")
-            word_model = KeyedVectors.load_word2vec_format(
-                r"C:\Users\benja\gensim-data\glove-twitter-100\glove-twitter-100.gz", limit=500000)
+            word_model = KeyedVectors.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440"
+                                           r"MajorProject\models\glove-twitter-100.bin")
+        elif model_name == "glove-twitter-200":
+            log.debug("Loading Twitter 200")
+            word_model = KeyedVectors.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440"
+                                           r"\MajorProject\models\glove-twitter-200.bin")
+        elif model_name == "glove-wiki-300":
+            log.debug("Loading Wiki 300")
+            word_model = KeyedVectors.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440"
+                                           r"\MajorProject\models\glove-wiki-300.bin")
         else:
             log.debug("Loading Wiki 100")
-            word_model = KeyedVectors.load_word2vec_format(
-                r"C:\Users\benja\gensim-data\glove-wiki-gigaword-100\glove-wiki-gigaword-100.gz", limit=500000)
+            word_model = KeyedVectors.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440"
+                                           r"\MajorProject\models\glove-wiki-100.bin")
 
         log.info("Done loading models")
         self.__load_game_words(word_model, words_file=game_words_file)
         return word_model
 
-    def __load_game_words(self, word_model, words_file="game_words.txt"):
+    def __load_game_words(self, word_model, words_file="settings/game_words.txt"):
         log.info("Loading game words...")
         file_words = [w.replace(" ", "_").strip() for w in open(words_file, "r").readlines()]
         try:
@@ -94,7 +101,7 @@ class SpyMaster:
         word_gen = cycle(self.game_words)
 
         log.debug("Loading team sizes...")
-        team_sizes = self.__load_settings(sett_file="team_sizes.txt",
+        team_sizes = self.__load_settings(sett_file="settings/team_sizes.txt",
                                           default_dict={"red": 8, "blue": 8, "black": 1, "grey": 8})
         log.debug("Team sizes: {0}".format(" - ".join([k + ":" + str(team_sizes[k]) for
                                                        k in sorted(team_sizes.keys())])))
@@ -212,15 +219,15 @@ class SpyMaster:
         matches.append(re.match(r".*\-.*", hint))
         # True = word contains - implying two words concatenated in text but separate in speech
 
-        return not any(matches)  # If and Trues exist the hint is not legal
+        return not any(matches)  # If any Trues exist the hint is not legal
 
 
 if __name__ == "__main__":
     root_logger = log.getLogger()
     root_logger.setLevel(log.DEBUG)
-    handler = log.FileHandler("spymaster-log.txt", "a", "utf-8")
+    handler = log.FileHandler("logs/spymaster-log.txt", "a", "utf-8")
     handler.setFormatter(log.Formatter("%(asctime)s : %(levelname)s : %(message)s", datefmt="%d/%m - %H:%M:%S"))
     root_logger.addHandler(handler)
 
     sm = SpyMaster()
-    sm.run_random_round(out_file="hint-results.txt")
+    sm.run_random_round(out_file="results.txt")
