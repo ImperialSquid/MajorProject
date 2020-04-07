@@ -1,0 +1,9 @@
+/models/glove-twitter-100.bin
+/models/glove-twitter-100.bin.vectors.npy
+/models/glove-twitter-200.bin
+/models/glove-twitter-200.bin.vectors.npy
+/models/glove-wiki-100.bin
+/models/glove-wiki-100.bin.vectors.npy
+/models/glove-wiki-300.bin
+/models/glove-wiki-300.bin.vectors.npy
+/models/word2vec-gnews-300.bin
