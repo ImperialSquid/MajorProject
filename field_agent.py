@@ -7,7 +7,7 @@ from nltk.corpus import wordnet as wn
 from nltk.corpus.reader import WordNetError
 
 
-class Agent:
+class FieldAgent:
     def __init__(self):
         log.info("Agent initialising...")
         self.team_words = dict()
@@ -148,12 +148,12 @@ class Agent:
 if __name__ == "__main__":
     root_logger = log.getLogger()
     root_logger.setLevel(log.DEBUG)
-    handler = log.FileHandler("logs/agent-log.txt", "a", "utf-8")
+    handler = log.FileHandler("logs/field-agent-log.txt", "a", "utf-8")
     handler.setFormatter(log.Formatter("%(asctime)s : %(levelname)s : %(message)s", datefmt="%d/%m - %H:%M:%S"))
     root_logger.addHandler(handler)
 
     log.getLogger("urllib3").setLevel(log.WARNING)  # prevent log from filling with http info
 
-    ag = Agent()
+    ag = FieldAgent()
     ag.load_results("results.txt")
     ag.evaluate_hints("evaluation.txt")
