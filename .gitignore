@@ -7,3 +7,4 @@
 /models/glove-wiki-300.bin
 /models/glove-wiki-300.bin.vectors.npy
 /models/word2vec-gnews-300.bin
+/models/word2vec-gnews-300.bin.vectors.npy

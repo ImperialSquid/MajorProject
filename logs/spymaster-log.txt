@@ -4436,3 +4436,200 @@ red: olive, spy, spike, shop, cotton, spot, needle, tick
 25/03 - 11:37:12 : INFO :       1 | cotton                         | jute            | 0.6279241442680359
 25/03 - 11:37:12 : INFO : Output file detected, writing hints
 25/03 - 11:37:12 : INFO : Done
+11/04 - 20:57:45 : INFO : SpyMaster initialising...
+11/04 - 20:57:45 : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+11/04 - 20:57:45 : DEBUG : Found value for max_top_hints: 7
+11/04 - 20:57:45 : DEBUG : Found value for max_levels: 1
+11/04 - 20:57:45 : INFO : Done loading settings from settings/settings.txt
+11/04 - 20:57:45 : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+11/04 - 20:57:45 : DEBUG : Found value for red: 40
+11/04 - 20:57:45 : DEBUG : Found value for grey: -1
+11/04 - 20:57:45 : DEBUG : Found value for blue: -4
+11/04 - 20:57:45 : DEBUG : Found value for black: -12
+11/04 - 20:57:45 : INFO : Done loading settings from settings/team_weights.txt
+11/04 - 20:57:45 : INFO : Loading word model...
+11/04 - 20:57:45 : DEBUG : Loading Wiki 100
+11/04 - 20:57:45 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+11/04 - 20:57:45 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+11/04 - 20:57:51 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+11/04 - 20:57:53 : INFO : setting ignored attribute vectors_norm to None
+11/04 - 20:57:53 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+11/04 - 20:57:53 : INFO : Done loading models
+11/04 - 20:57:53 : INFO : Loading game words...
+11/04 - 20:57:53 : INFO : Done loading game words
+11/04 - 20:57:53 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+11/04 - 20:57:59 : INFO : SpyMaster initialised!
+11/04 - 20:57:59 : INFO : Running round with random teams...
+11/04 - 20:57:59 : DEBUG : Shuffling words
+11/04 - 20:57:59 : DEBUG : Loading team sizes...
+11/04 - 20:57:59 : INFO : Loading settings for red, blue, black, grey from settings/team_sizes.txt... 
+11/04 - 20:57:59 : DEBUG : Found value for red: 8
+11/04 - 20:57:59 : DEBUG : Found value for blue: 8
+11/04 - 20:57:59 : DEBUG : Found value for black: 1
+11/04 - 20:57:59 : DEBUG : Found value for grey: 8
+11/04 - 20:57:59 : INFO : Done loading settings from settings/team_sizes.txt
+11/04 - 20:57:59 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+11/04 - 20:57:59 : DEBUG : Generating team words...
+11/04 - 20:57:59 : INFO : Team words:
+black: pupil
+blue: shop, day, pumpkin, robot, scale, bottle, robin, pin
+grey: glass, suit, revolution, whip, lawyer, crown, rome, crash
+red: cycle, marble, wake, grace, roulette, plastic, pool, center
+11/04 - 20:57:59 : INFO : Running round
+11/04 - 20:57:59 : INFO : Finding hints for overlap levels
+11/04 - 20:57:59 : INFO : Finding hints for 1 word(s)
+11/04 - 20:57:59 : INFO : precomputing L2-norms of word weight vectors
+11/04 - 21:01:37 : INFO : SpyMaster initialising...
+11/04 - 21:01:37 : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+11/04 - 21:01:37 : DEBUG : Found value for max_top_hints: 7
+11/04 - 21:01:37 : DEBUG : Found value for max_levels: 1
+11/04 - 21:01:37 : INFO : Done loading settings from settings/settings.txt
+11/04 - 21:01:37 : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+11/04 - 21:01:37 : DEBUG : Found value for red: 40
+11/04 - 21:01:37 : DEBUG : Found value for grey: -1
+11/04 - 21:01:37 : DEBUG : Found value for blue: -4
+11/04 - 21:01:37 : DEBUG : Found value for black: -12
+11/04 - 21:01:37 : INFO : Done loading settings from settings/team_weights.txt
+11/04 - 21:01:37 : INFO : Loading word model...
+11/04 - 21:01:37 : DEBUG : Loading Twitter 100
+11/04 - 21:01:37 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440MajorProject\models\glove-twitter-100.bin
+11/04 - 21:01:37 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440MajorProject\\models\\glove-twitter-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+11/04 - 21:02:50 : INFO : SpyMaster initialising...
+11/04 - 21:02:50 : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+11/04 - 21:02:50 : DEBUG : Found value for max_top_hints: 7
+11/04 - 21:02:50 : DEBUG : Found value for max_levels: 1
+11/04 - 21:02:50 : INFO : Done loading settings from settings/settings.txt
+11/04 - 21:02:50 : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+11/04 - 21:02:50 : DEBUG : Found value for red: 40
+11/04 - 21:02:50 : DEBUG : Found value for grey: -1
+11/04 - 21:02:50 : DEBUG : Found value for blue: -4
+11/04 - 21:02:50 : DEBUG : Found value for black: -12
+11/04 - 21:02:50 : INFO : Done loading settings from settings/team_weights.txt
+11/04 - 21:02:50 : INFO : Loading word model...
+11/04 - 21:02:58 : DEBUG : Loading Twitter 100
+11/04 - 21:03:39 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440MajorProject\models\glove-twitter-100.bin
+11/04 - 21:04:09 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440MajorProject\\models\\glove-twitter-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+11/04 - 21:06:51 : INFO : SpyMaster initialising...
+11/04 - 21:06:51 : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+11/04 - 21:06:51 : DEBUG : Found value for max_top_hints: 7
+11/04 - 21:06:51 : DEBUG : Found value for max_levels: 1
+11/04 - 21:06:51 : INFO : Done loading settings from settings/settings.txt
+11/04 - 21:06:51 : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+11/04 - 21:06:51 : DEBUG : Found value for red: 40
+11/04 - 21:06:51 : DEBUG : Found value for grey: -1
+11/04 - 21:06:51 : DEBUG : Found value for blue: -4
+11/04 - 21:06:51 : DEBUG : Found value for black: -12
+11/04 - 21:06:51 : INFO : Done loading settings from settings/team_weights.txt
+11/04 - 21:06:51 : INFO : Loading word model...
+11/04 - 21:06:51 : DEBUG : Loading Twitter 200
+11/04 - 21:06:51 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-200.bin
+11/04 - 21:06:51 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-twitter-200.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+11/04 - 21:07:04 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-200.bin.vectors.npy with mmap=None
+11/04 - 21:07:15 : INFO : setting ignored attribute vectors_norm to None
+11/04 - 21:07:15 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-200.bin
+11/04 - 21:07:15 : INFO : Done loading models
+11/04 - 21:07:15 : INFO : Loading game words...
+11/04 - 21:07:16 : INFO : Done loading game words
+11/04 - 21:07:16 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+11/04 - 21:08:33 : INFO : SpyMaster initialising...
+11/04 - 21:08:33 : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+11/04 - 21:08:33 : DEBUG : Found value for max_top_hints: 7
+11/04 - 21:08:33 : DEBUG : Found value for max_levels: 1
+11/04 - 21:08:33 : INFO : Done loading settings from settings/settings.txt
+11/04 - 21:08:33 : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+11/04 - 21:08:33 : DEBUG : Found value for red: 40
+11/04 - 21:08:33 : DEBUG : Found value for grey: -1
+11/04 - 21:08:33 : DEBUG : Found value for blue: -4
+11/04 - 21:08:33 : DEBUG : Found value for black: -12
+11/04 - 21:08:33 : INFO : Done loading settings from settings/team_weights.txt
+11/04 - 21:08:33 : INFO : Loading word model...
+11/04 - 21:08:33 : DEBUG : Loading Twitter 100
+11/04 - 21:08:33 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440MajorProject\models\glove-twitter-100.bin
+11/04 - 21:08:33 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440MajorProject\\models\\glove-twitter-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+11/04 - 21:10:56 : INFO : SpyMaster initialising...
+11/04 - 21:10:56 : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+11/04 - 21:10:56 : DEBUG : Found value for max_top_hints: 7
+11/04 - 21:10:56 : DEBUG : Found value for max_levels: 1
+11/04 - 21:10:56 : INFO : Done loading settings from settings/settings.txt
+11/04 - 21:10:56 : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+11/04 - 21:10:56 : DEBUG : Found value for red: 40
+11/04 - 21:10:56 : DEBUG : Found value for grey: -1
+11/04 - 21:10:56 : DEBUG : Found value for blue: -4
+11/04 - 21:10:56 : DEBUG : Found value for black: -12
+11/04 - 21:10:56 : INFO : Done loading settings from settings/team_weights.txt
+11/04 - 21:10:56 : INFO : Loading word model...
+11/04 - 21:10:56 : DEBUG : Loading Twitter 100
+11/04 - 21:10:56 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin
+11/04 - 21:10:56 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-twitter-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+11/04 - 21:11:06 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin.vectors.npy with mmap=None
+13/04 - 13:07:47 : INFO : SpyMaster initialising...
+13/04 - 13:07:47 : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+13/04 - 13:07:47 : DEBUG : Found value for max_top_hints: 7
+13/04 - 13:07:47 : DEBUG : Found value for max_levels: 1
+13/04 - 13:07:47 : INFO : Done loading settings from settings/settings.txt
+13/04 - 13:07:47 : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+13/04 - 13:07:47 : DEBUG : Found value for red: 40
+13/04 - 13:07:47 : DEBUG : Found value for grey: -1
+13/04 - 13:07:47 : DEBUG : Found value for blue: -4
+13/04 - 13:07:47 : DEBUG : Found value for black: -12
+13/04 - 13:07:47 : INFO : Done loading settings from settings/team_weights.txt
+13/04 - 13:07:47 : INFO : Loading word model...
+13/04 - 13:07:47 : DEBUG : Loading Wiki 100
+13/04 - 13:07:47 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+13/04 - 13:07:47 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+13/04 - 13:07:52 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+13/04 - 13:07:54 : INFO : setting ignored attribute vectors_norm to None
+13/04 - 13:07:54 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+13/04 - 13:07:54 : INFO : Done loading models
+13/04 - 13:07:54 : INFO : Loading game words...
+13/04 - 13:07:54 : INFO : Done loading game words
+13/04 - 13:07:54 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+13/04 - 13:08:03 : INFO : SpyMaster initialised!
+13/04 - 13:08:03 : INFO : Running round with random teams...
+13/04 - 13:08:03 : DEBUG : Shuffling words
+13/04 - 13:08:03 : DEBUG : Loading team sizes...
+13/04 - 13:08:03 : INFO : Loading settings for red, blue, black, grey from settings/team_sizes.txt... 
+13/04 - 13:08:03 : DEBUG : Found value for red: 8
+13/04 - 13:08:03 : DEBUG : Found value for blue: 8
+13/04 - 13:08:03 : DEBUG : Found value for black: 1
+13/04 - 13:08:03 : DEBUG : Found value for grey: 8
+13/04 - 13:08:03 : INFO : Done loading settings from settings/team_sizes.txt
+13/04 - 13:08:03 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+13/04 - 13:08:03 : DEBUG : Generating team words...
+13/04 - 13:08:03 : INFO : Team words:
+black: strike
+blue: spy, sound, mine, aztec, torch, himalayas, hood, hospital
+grey: alps, draft, ninja, head, palm, ambulance, face, mass
+red: dress, school, comic, pirate, kid, greece, bridge, skyscraper
+13/04 - 13:08:03 : INFO : Running round
+13/04 - 13:08:03 : INFO : Finding hints for overlap levels
+13/04 - 13:08:03 : INFO : Finding hints for 1 word(s)
+13/04 - 13:08:03 : INFO : precomputing L2-norms of word weight vectors
+13/04 - 13:08:28 : DEBUG : Found 47 legal hints (of 50 searched) for dress: attire:0.70134 // blouse:0.66801 // gown:0.65975 // tunic:0.64517 // trousers:0.63560 // slacks:0.62389 // frocks:0.61448 // frilly:0.60925 // gowns:0.60312 // kimono:0.60084 // sleeveless:0.60056 // scarf:0.59875 // hairstyle:0.59285 // embroidered:0.59111 // strapless:0.58568 // tuxedo:0.58552 // bustier:0.58541 // satin:0.58300 // waistcoat:0.58230 // sweater:0.58201 // pants:0.58134 // frock:0.57938 // tuxedos:0.57875 // beaded:0.57821 // skirt:0.57812 // leggings:0.57744 // blouses:0.57635 // lace:0.57421 // starched:0.57309 // pantsuit:0.57222 // chiffon:0.57198 // gingham:0.57141 // jeans:0.57132 // neckties:0.56974 // hairstyles:0.56850 // pleated:0.56770 // garb:0.56602 // baggy:0.56531 // ladylike:0.55935 // demure:0.55895 // sweaters:0.55884 // pantsuits:0.55439 // patterned:0.55339 // crocheted:0.55261 // sarong:0.55251 // tunics:0.55150 // jacket:0.55092
+13/04 - 13:08:28 : DEBUG : Words: dress                Hints: attire-0.7013412117958069 // blouse-0.6680052280426025 // gown-0.6597470045089722 // tunic-0.6451708078384399 // trousers-0.6355992555618286 // slacks-0.6238858699798584 // frocks-0.6144819855690002 // frilly-0.6092527508735657 // gowns-0.6031161546707153 // kimono-0.6008434295654297 // sleeveless-0.6005626916885376 // scarf-0.5987458825111389 // hairstyle-0.5928497314453125 // embroidered-0.5911076068878174 // strapless-0.585675060749054 // tuxedo-0.5855163335800171 // bustier-0.5854072570800781 // satin-0.5829957723617554 // waistcoat-0.582301139831543 // sweater-0.5820068120956421 // pants-0.5813394784927368 // frock-0.5793812274932861 // tuxedos-0.5787544250488281 // beaded-0.5782105922698975 // skirt-0.5781203508377075 // leggings-0.5774375796318054 // blouses-0.5763495564460754 // lace-0.5742075443267822 // starched-0.5730924606323242 // pantsuit-0.5722193121910095 // chiffon-0.5719831585884094 // gingham-0.5714143514633179 // jeans-0.5713168382644653 // neckties-0.5697425603866577 // hairstyles-0.5685036778450012 // pleated-0.5676977634429932 // garb-0.5660194754600525 // baggy-0.5653101205825806 // ladylike-0.5593470335006714 // demure-0.5589463710784912 // sweaters-0.5588364601135254 // pantsuits-0.55438631772995 // patterned-0.5533943176269531 // crocheted-0.552605926990509 // sarong-0.552510142326355 // tunics-0.5514992475509644 // jacket-0.5509231090545654
+13/04 - 13:08:55 : DEBUG : Found 37 legal hints (of 50 searched) for school: college:0.72407 // elementary:0.71995 // graduate:0.70151 // undergraduate:0.68930 // enrolled:0.65250 // graduated:0.65176 // graduating:0.64603 // prep:0.64149 // vocational:0.63110 // colleges:0.61915 // faculty:0.61625 // kindergarten:0.60069 // grades:0.59625 // curriculum:0.59605 // teaching:0.59483 // parochial:0.58779 // seminary:0.58699 // students:0.58266 // taught:0.57990 // postgraduate:0.57802 // graduation:0.57459 // education:0.57191 // scholarship:0.57128 // student:0.56887 // academic:0.56883 // university:0.56720 // campus:0.56644 // pupils:0.56335 // graduates:0.56116 // teaches:0.55601 // undergraduates:0.55563 // curricula:0.55391 // enrolling:0.55255 // teacher:0.55217 // math:0.55156 // admissions:0.54973 // preparatory:0.54899
+13/04 - 13:08:55 : DEBUG : Words: school               Hints: college-0.7240713238716125 // elementary-0.7199512720108032 // graduate-0.7015074491500854 // undergraduate-0.6892976760864258 // enrolled-0.6524955630302429 // graduated-0.651757001876831 // graduating-0.6460311412811279 // prep-0.641494870185852 // vocational-0.6310986280441284 // colleges-0.6191458106040955 // faculty-0.6162474155426025 // kindergarten-0.6006948351860046 // grades-0.5962519645690918 // curriculum-0.5960469841957092 // teaching-0.5948275923728943 // parochial-0.5877898931503296 // seminary-0.5869917869567871 // students-0.5826576948165894 // taught-0.5798960328102112 // postgraduate-0.5780243277549744 // graduation-0.574586033821106 // education-0.5719056129455566 // scholarship-0.5712813138961792 // student-0.5688718557357788 // academic-0.5688289403915405 // university-0.5672040581703186 // campus-0.5664448738098145 // pupils-0.5633500814437866 // graduates-0.5611613988876343 // teaches-0.5560129284858704 // undergraduates-0.5556332468986511 // curricula-0.5539054870605469 // enrolling-0.5525472164154053 // teacher-0.5521690249443054 // math-0.5515568256378174 // admissions-0.5497289299964905 // preparatory-0.5489912033081055
+13/04 - 13:09:17 : DEBUG : Found 24 legal hints (of 50 searched) for comic: humorous:0.60154 // superhero:0.60152 // manga:0.58942 // reprints:0.57650 // nonfiction:0.57546 // anthology:0.56572 // satirical:0.56518 // parody:0.56209 // fiction:0.56100 // parodies:0.55311 // marvel:0.55137 // illustrator:0.54852 // cartoonist:0.54487 // anthologies:0.54308 // beano:0.54098 // novels:0.53987 // autobiographical:0.53739 // letterer:0.52922 // satiric:0.52803 // offbeat:0.52424 // anime:0.51650 // illustrated:0.51449 // superheroes:0.51017 // pastiche:0.50975
+13/04 - 13:09:17 : DEBUG : Words: comic                Hints: humorous-0.6015352010726929 // superhero-0.601520299911499 // manga-0.5894231796264648 // reprints-0.5764950513839722 // nonfiction-0.5754597187042236 // anthology-0.5657215118408203 // satirical-0.5651824474334717 // parody-0.562091588973999 // fiction-0.5610048174858093 // parodies-0.5531059503555298 // marvel-0.5513739585876465 // illustrator-0.5485204458236694 // cartoonist-0.5448664426803589 // anthologies-0.543082058429718 // beano-0.5409825444221497 // novels-0.5398705005645752 // autobiographical-0.5373936891555786 // letterer-0.5292168855667114 // satiric-0.5280312299728394 // offbeat-0.5242359638214111 // anime-0.5165016055107117 // illustrated-0.5144857168197632 // superheroes-0.5101678967475891 // pastiche-0.5097469091415405
+13/04 - 13:09:45 : DEBUG : Found 13 legal hints (of 50 searched) for pirate: privateers:0.54497 // privateer:0.49872 // slaver:0.49618 // lugger:0.48170 // privateering:0.44356 // corsairs:0.44189 // marcher:0.44027 // skiffs:0.43812 // ringtones:0.43406 // louts:0.43189 // felucca:0.42906 // buccaneer:0.42623 // snaggletooth:0.42486
+13/04 - 13:09:45 : DEBUG : Words: pirate               Hints: privateers-0.5449676513671875 // privateer-0.49871692061424255 // slaver-0.4961753487586975 // lugger-0.4816986918449402 // privateering-0.44356226921081543 // corsairs-0.4418896436691284 // marcher-0.44027179479599 // skiffs-0.43811818957328796 // ringtones-0.43405723571777344 // louts-0.4318945109844208 // felucca-0.42906057834625244 // buccaneer-0.42622873187065125 // snaggletooth-0.4248630404472351
+13/04 - 13:10:11 : DEBUG : Found 38 legal hints (of 50 searched) for kid: geeky:0.60354 // nerdy:0.58122 // dude:0.56981 // tomboy:0.56772 // bratty:0.56572 // dad:0.56371 // daddy:0.56162 // nerd:0.55684 // cute:0.55172 // mom:0.55055 // loves:0.52813 // chubby:0.51789 // preteen:0.51677 // dorky:0.51147 // bunch:0.51091 // latchkey:0.50997 // geek:0.50825 // adorable:0.50612 // pimp:0.50408 // crazy:0.49133 // wannabe:0.49033 // bitch:0.48759 // dudes:0.48756 // goofy:0.48651 // precocious:0.48558 // guy:0.48522 // guys:0.48375 // yeah:0.48093 // ballplayer:0.47770 // fella:0.47627 // lovable:0.47492 // hubby:0.47379 // puppy:0.47237 // buddy:0.47020 // scrawny:0.47016 // slacker:0.46861 // hey:0.46612 // liked:0.46491
+13/04 - 13:10:11 : DEBUG : Words: kid                  Hints: geeky-0.6035382747650146 // nerdy-0.5812174081802368 // dude-0.5698145031929016 // tomboy-0.5677210092544556 // bratty-0.5657203197479248 // dad-0.5637064576148987 // daddy-0.5616165399551392 // nerd-0.556836724281311 // cute-0.5517150163650513 // mom-0.550551176071167 // loves-0.5281275510787964 // chubby-0.5178856253623962 // preteen-0.5167664885520935 // dorky-0.5114703178405762 // bunch-0.5109054446220398 // latchkey-0.5099655389785767 // geek-0.5082511901855469 // adorable-0.5061172246932983 // pimp-0.5040761232376099 // crazy-0.4913264811038971 // wannabe-0.49033498764038086 // bitch-0.48759061098098755 // dudes-0.4875592291355133 // goofy-0.48651236295700073 // precocious-0.48557794094085693 // guy-0.48521888256073 // guys-0.48374634981155396 // yeah-0.4809328317642212 // ballplayer-0.4777018129825592 // fella-0.4762718975543976 // lovable-0.4749225378036499 // hubby-0.4737919867038727 // puppy-0.4723682999610901 // buddy-0.4702024459838867 // scrawny-0.470157265663147 // slacker-0.4686106741428375 // hey-0.46611636877059937 // liked-0.46490752696990967
+13/04 - 13:10:31 : DEBUG : Found 1 legal hints (of 50 searched) for greece: drachma:0.51172
+13/04 - 13:10:31 : DEBUG : Words: greece               Hints: drachma-0.5117220878601074
+13/04 - 13:10:52 : DEBUG : Found 24 legal hints (of 50 searched) for bridge: abutments:0.63379 // viaduct:0.61076 // trestle:0.59859 // bascule:0.59856 // canal:0.56298 // abutment:0.56152 // roadway:0.56033 // frontage:0.55235 // causeway:0.54405 // packhorse:0.53910 // expressway:0.53516 // viaducts:0.53300 // pontoon:0.52935 // interchange:0.52561 // towpath:0.52293 // parkway:0.52201 // interchanges:0.51599 // overpass:0.51465 // walkway:0.51264 // bowstring:0.50738 // piers:0.50561 // aqueduct:0.50537 // pier:0.49949 // carriageway:0.49189
+13/04 - 13:10:52 : DEBUG : Words: bridge               Hints: abutments-0.6337940692901611 // viaduct-0.6107629537582397 // trestle-0.5985919833183289 // bascule-0.598556399345398 // canal-0.5629782676696777 // abutment-0.5615230798721313 // roadway-0.5603293180465698 // frontage-0.5523481965065002 // causeway-0.5440549850463867 // packhorse-0.5390962958335876 // expressway-0.5351608991622925 // viaducts-0.5330008864402771 // pontoon-0.5293493270874023 // interchange-0.5256060361862183 // towpath-0.5229305028915405 // parkway-0.5220069885253906 // interchanges-0.5159927606582642 // overpass-0.5146527886390686 // walkway-0.5126402378082275 // bowstring-0.5073812007904053 // piers-0.5056092739105225 // aqueduct-0.5053668022155762 // pier-0.49949347972869873 // carriageway-0.49189260601997375
+13/04 - 13:11:26 : DEBUG : Found 4 legal hints (of 50 searched) for skyscraper: brutalist:0.54370 // modernistic:0.54328 // tallest:0.53061 // ultramodern:0.52455
+13/04 - 13:11:26 : DEBUG : Words: skyscraper           Hints: brutalist-0.5437005758285522 // modernistic-0.5432816743850708 // tallest-0.5306054949760437 // ultramodern-0.524550199508667
+13/04 - 13:11:26 : INFO : Results:
+13/04 - 13:11:26 : INFO : Level   | Words                          | Hint            | Score     
+13/04 - 13:11:26 : INFO :    -    |               --               |        -        |     --    
+13/04 - 13:11:26 : INFO :       1 | school                         | college         | 0.7240713238716125
+13/04 - 13:11:26 : INFO :       1 | school                         | elementary      | 0.7199512720108032
+13/04 - 13:11:26 : INFO :       1 | school                         | graduate        | 0.7015074491500854
+13/04 - 13:11:26 : INFO :       1 | dress                          | attire          | 0.7013412117958069
+13/04 - 13:11:26 : INFO :       1 | school                         | undergraduate   | 0.6892976760864258
+13/04 - 13:11:26 : INFO :       1 | dress                          | blouse          | 0.6680052280426025
+13/04 - 13:11:26 : INFO :       1 | dress                          | gown            | 0.6597470045089722
+13/04 - 13:11:26 : INFO : Output file detected, writing hints
+13/04 - 13:11:27 : INFO : Done

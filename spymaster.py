@@ -57,11 +57,11 @@ class SpyMaster:
         if model_name == "word2vec-gnews-300":
             log.debug("Loading Google News 300")
             word_model = KeyedVectors.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440"
-                                           r"MajorProject\models\word2vec-gnews-300.bin")
+                                           r"\MajorProject\models\word2vec-gnews-300.bin")
         elif model_name == "glove-twitter-100":
             log.debug("Loading Twitter 100")
             word_model = KeyedVectors.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440"
-                                           r"MajorProject\models\glove-twitter-100.bin")
+                                           r"\MajorProject\models\glove-twitter-100.bin")
         elif model_name == "glove-twitter-200":
             log.debug("Loading Twitter 200")
             word_model = KeyedVectors.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440"

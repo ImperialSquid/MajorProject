@@ -1,15 +1,15 @@
 Teams:
-black: mouth
-blue: parachute - whip - greece - giant - mint - ham - sound - temple
-grey: table - bat - helicopter - canada - paper - code - bridge - light
-red: gas - force - microscope - slip - carrot - queen - plane - mammoth
+black: strike
+blue: spy - sound - mine - aztec - torch - himalayas - hood - hospital
+grey: alps - draft - ninja - head - palm - ambulance - face - mass
+red: dress - school - comic - pirate - kid - greece - bridge - skyscraper
 Hints:
 Level: 1
 Target                                  Hint                Score               
-microscope                              confocal              0.6761385202407837
-gas                                     propane               0.6541793346405029
-plane                                   airliner              0.6481907963752747
-force                                   peacekeeping          0.6395047903060913
-queen                                   princess              0.6358725428581238
-plane                                   hijacked              0.6192775964736938
-microscope                              magnification         0.6153404116630554
+school                                  college               0.7240713238716125
+school                                  elementary            0.7199512720108032
+school                                  graduate              0.7015074491500854
+dress                                   attire                0.7013412117958069
+school                                  undergraduate         0.6892976760864258
+dress                                   blouse                0.6680052280426025
+dress                                   gown                  0.6597470045089722

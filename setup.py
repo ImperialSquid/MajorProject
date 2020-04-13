@@ -3,6 +3,10 @@ import logging as log
 log.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', datefmt="%d/%m - %H:%M:%S",
                 filename="logs/setup-log.txt", level=log.DEBUG)
 
+"""
+Just some code used to setup up word model files, not needed for operation but kept for posterity
+"""
+
 # pp.pprint(api.info())
 
 log.info("Program started")
@@ -68,7 +72,7 @@ log.info("Program started")
 # word_model = KeyedVectors.load(
 #     r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\glove-twitter-200.bin")
 # log.info("Done!")
-#
+
 # log.info("Loading model...")
 # word_model = KeyedVectors.load_word2vec_format(
 #                 r"C:\Users\benja\gensim-data\word2vec-google-news-300\word2vec-google-news-300.gz", binary=True)
@@ -81,5 +85,14 @@ log.info("Program started")
 #     r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\word2vec-gnews-300.bin")
 # log.info("Done!")
 
+# for filename in os.listdir(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models"):
+#     if filename[-4:] == ".bin" and filename != "word2vec-gnews-300.bin":
+#         log.info("Loading {0}".format(filename))
+#         wm = KeyedVectors.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3" +
+#                                r"\CS39440\MajorProject\models\{0}".format(filename))
+#         log.info("Loaded, preprocessing L2 norms...")
+#         wm.init_sims(replace=True)
+#         log.info("Preprocessed, saving")
+#         wm.save(filename)
 
 log.info("All Done")
