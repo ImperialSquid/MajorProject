@@ -505,3 +505,95 @@
 13/04 - 13:19:48 : DEBUG : {'uri': 'glove-wiki-300.bin', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
 13/04 - 13:19:52 : INFO : saved glove-wiki-300.bin
 13/04 - 13:19:52 : INFO : All Done
+14/04 - 00:04:12 : INFO : Program started
+14/04 - 00:04:12 : INFO : Loading glove-twitter-100.bin
+14/04 - 00:04:12 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin
+14/04 - 00:04:12 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-twitter-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:04:21 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin.vectors.npy with mmap=None
+14/04 - 00:04:27 : INFO : setting ignored attribute vectors_norm to None
+14/04 - 00:04:27 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin
+14/04 - 00:04:27 : INFO : Building annoy indexer
+14/04 - 00:04:27 : INFO : precomputing L2-norms of word weight vectors
+14/04 - 00:07:16 : INFO : Saving
+14/04 - 00:07:25 : DEBUG : {'uri': 'models\\bin-5-trees.ann.d', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:07:29 : INFO : All Done
+14/04 - 00:08:46 : INFO : Program started
+14/04 - 00:08:46 : INFO : Loading glove-twitter-100.bin
+14/04 - 00:08:46 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin
+14/04 - 00:08:46 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-twitter-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:08:55 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin.vectors.npy with mmap=None
+14/04 - 00:09:00 : INFO : setting ignored attribute vectors_norm to None
+14/04 - 00:09:00 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin
+14/04 - 00:09:00 : INFO : Building annoy indexer
+14/04 - 00:09:00 : INFO : precomputing L2-norms of word weight vectors
+14/04 - 00:11:47 : INFO : Saving
+14/04 - 00:11:52 : DEBUG : {'uri': 'models\\bin-5-trees.ann.d', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:11:54 : INFO : Loading glove-twitter-200.bin
+14/04 - 00:11:54 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-200.bin
+14/04 - 00:11:54 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-twitter-200.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:12:05 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-200.bin.vectors.npy with mmap=None
+14/04 - 00:12:17 : INFO : setting ignored attribute vectors_norm to None
+14/04 - 00:12:17 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-200.bin
+14/04 - 00:12:17 : INFO : Building annoy indexer
+14/04 - 00:12:17 : INFO : precomputing L2-norms of word weight vectors
+14/04 - 00:16:05 : INFO : Program started
+14/04 - 00:16:05 : INFO : Loading glove-twitter-100.bin
+14/04 - 00:16:05 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin
+14/04 - 00:16:05 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-twitter-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:16:15 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin.vectors.npy with mmap=None
+14/04 - 00:16:20 : INFO : setting ignored attribute vectors_norm to None
+14/04 - 00:16:20 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin
+14/04 - 00:16:20 : INFO : Building annoy indexer
+14/04 - 00:16:20 : INFO : precomputing L2-norms of word weight vectors
+14/04 - 00:19:06 : INFO : Saving
+14/04 - 00:19:11 : DEBUG : {'uri': 'models\\glove-twitter-100-5-trees.ann.d', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:19:13 : INFO : Loading glove-twitter-200.bin
+14/04 - 00:19:13 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-200.bin
+14/04 - 00:19:13 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-twitter-200.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:19:23 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-200.bin.vectors.npy with mmap=None
+14/04 - 00:19:33 : INFO : setting ignored attribute vectors_norm to None
+14/04 - 00:19:33 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-200.bin
+14/04 - 00:19:33 : INFO : Building annoy indexer
+14/04 - 00:19:33 : INFO : precomputing L2-norms of word weight vectors
+14/04 - 00:23:41 : INFO : Saving
+14/04 - 00:23:57 : DEBUG : {'uri': 'models\\glove-twitter-200-5-trees.ann.d', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:23:59 : INFO : Loading glove-wiki-100.bin
+14/04 - 00:23:59 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+14/04 - 00:23:59 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:24:03 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+14/04 - 00:24:04 : INFO : setting ignored attribute vectors_norm to None
+14/04 - 00:24:04 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+14/04 - 00:24:04 : INFO : Building annoy indexer
+14/04 - 00:24:04 : INFO : precomputing L2-norms of word weight vectors
+14/04 - 00:25:02 : INFO : Saving
+14/04 - 00:25:04 : DEBUG : {'uri': 'models\\glove-wiki-100-5-trees.ann.d', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:25:05 : INFO : Loading glove-wiki-300.bin
+14/04 - 00:25:05 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-300.bin
+14/04 - 00:25:05 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-300.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:25:09 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-300.bin.vectors.npy with mmap=None
+14/04 - 00:25:13 : INFO : setting ignored attribute vectors_norm to None
+14/04 - 00:25:13 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-300.bin
+14/04 - 00:25:13 : INFO : Building annoy indexer
+14/04 - 00:25:13 : INFO : precomputing L2-norms of word weight vectors
+14/04 - 00:27:10 : INFO : Saving
+14/04 - 00:27:15 : DEBUG : {'uri': 'models\\glove-wiki-300-5-trees.ann.d', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:27:15 : INFO : All Done
+14/04 - 00:51:22 : INFO : Program started
+14/04 - 00:51:22 : INFO : Loading glove-twitter-100.bin
+14/04 - 00:51:22 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin
+14/04 - 00:51:22 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-twitter-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:51:39 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin.vectors.npy with mmap=None
+14/04 - 00:51:44 : INFO : setting ignored attribute vectors_norm to None
+14/04 - 00:51:44 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-100.bin
+14/04 - 00:51:44 : INFO : Building annoy indexer
+14/04 - 00:51:44 : INFO : precomputing L2-norms of word weight vectors
+14/04 - 00:54:35 : INFO : Saving
+14/04 - 00:54:40 : DEBUG : {'uri': 'models\\glove-twitter-100-5-trees.ann.d', 'mode': 'wb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:54:42 : INFO : Loading glove-twitter-200.bin
+14/04 - 00:54:42 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-200.bin
+14/04 - 00:54:42 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-twitter-200.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:54:52 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-200.bin.vectors.npy with mmap=None
+14/04 - 00:55:02 : INFO : setting ignored attribute vectors_norm to None
+14/04 - 00:55:02 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-twitter-200.bin
+14/04 - 00:55:02 : INFO : Building annoy indexer
+14/04 - 00:55:02 : INFO : precomputing L2-norms of word weight vectors

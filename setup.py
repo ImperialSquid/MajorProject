@@ -1,4 +1,8 @@
 import logging as log
+import os
+
+from gensim.models import KeyedVectors
+from gensim.similarities.index import AnnoyIndexer
 
 log.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', datefmt="%d/%m - %H:%M:%S",
                 filename="logs/setup-log.txt", level=log.DEBUG)
@@ -94,5 +98,15 @@ log.info("Program started")
 #         wm.init_sims(replace=True)
 #         log.info("Preprocessed, saving")
 #         wm.save(filename)
+
+for filename in os.listdir(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models"):
+    if filename[-4:] == ".bin" and filename != "word2vec-gnews-300.bin":
+        log.info("Loading {0}".format(filename))
+        wm = KeyedVectors.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3" +
+                               r"\CS39440\MajorProject\models\{0}".format(filename))
+        log.info("Building annoy indexer")
+        indexer = AnnoyIndexer(wm, 5)
+        log.info("Saving")
+        indexer.save(r"models\{0}-5-trees.ann".format(filename.split(".")[0]))
 
 log.info("All Done")
