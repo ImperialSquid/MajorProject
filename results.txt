@@ -1,15 +1,15 @@
 Teams:
-black: slip
-blue: atlantis - maple - angel - pit - board - boot - pie - crane
-grey: luck - calf - novel - fall - shark - water - torch - hollywood
-red: train - olive - fan - bar - pan - dress - car - tie
+black: link
+blue: centaur - rabbit - czech - cell - berlin - band - dice - cap
+grey: bat - spike - hood - degree - triangle - chocolate - horn - cast
+red: sock - missile - film - night - vacuum - stock - mouth - march
 Hints:
 Level: 1
 Target                                  Hint                Score               
-dress                                   attire                0.7473360300064087
-train                                   commuter               0.659569501876831
-car                                     vehicle               0.6506526470184326
-dress                                   garb                  0.6255471706390381
-car                                     vehicles              0.6224413514137268
-car                                     truck                 0.6121972799301147
-dress                                   outfits               0.6117656230926514
+march                                   august                0.7512052655220032
+missile                                 ballistic             0.7140558958053589
+stock                                   shares                0.6878576278686523
+film                                    screenplay            0.6825401186943054
+night                                   afternoon             0.6795550584793091
+march                                   dec.                  0.6747822761535645
+film                                    movie                 0.6743428707122803
