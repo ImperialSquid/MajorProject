@@ -8,3 +8,11 @@
 /models/glove-wiki-300.bin.vectors.npy
 /models/word2vec-gnews-300.bin
 /models/word2vec-gnews-300.bin.vectors.npy
+/models/glove-twitter-100-5-trees.ann
+/models/glove-twitter-100-5-trees.ann.d
+/models/glove-twitter-200-5-trees.ann
+/models/glove-twitter-200-5-trees.ann.d
+/models/glove-wiki-100-5-trees.ann
+/models/glove-wiki-100-5-trees.ann.d
+/models/glove-wiki-300-5-trees.ann
+/models/glove-wiki-300-5-trees.ann.d
