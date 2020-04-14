@@ -1,15 +1,15 @@
 Teams:
-black: strike
-blue: spy - sound - mine - aztec - torch - himalayas - hood - hospital
-grey: alps - draft - ninja - head - palm - ambulance - face - mass
-red: dress - school - comic - pirate - kid - greece - bridge - skyscraper
+black: jupiter
+blue: ship - doctor - mint - row - band - fly - smuggler - tail
+grey: iron - card - day - dragon - snow - mount - pin - concert
+red: tie - canada - france - fair - mail - van - plastic - eye
 Hints:
 Level: 1
 Target                                  Hint                Score               
-school                                  college               0.7240713238716125
-school                                  elementary            0.7199512720108032
-school                                  graduate              0.7015074491500854
-dress                                   attire                0.7013412117958069
-school                                  undergraduate         0.6892976760864258
-dress                                   blouse                0.6680052280426025
-dress                                   gown                  0.6597470045089722
+plastic                                 styrofoam              0.549965888261795
+tie                                     clinched              0.5286508500576019
+plastic                                 degradable            0.5057919025421143
+plastic                                 zippered              0.5046963095664978
+plastic                                 dishware              0.4982377886772156
+plastic                                 tins                 0.49601221084594727
+plastic                                 cushions               0.488497793674469

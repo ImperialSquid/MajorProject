@@ -7,6 +7,7 @@ import enchant  # load american english language
 import regex as re
 import spacy  # lemmatisation
 from gensim.models import KeyedVectors  # lading pre-trained word vectors
+from gensim.similarities.index import AnnoyIndexer
 from nltk.stem.lancaster import LancasterStemmer  # stemming
 
 
@@ -16,7 +17,8 @@ class SpyMaster:
         # spymaster stuff
         self.settings = self.__load_settings(sett_file="settings/settings.txt",
                                              default_dict={"max_top_hints": 10,
-                                                           "max_levels": 2})
+                                                           "max_levels": 2,
+                                                           "use_annoy_indexer": 1})
 
         # game stuff (what game words are available depends on the word model used so it is loaded in load_model)
         self.game_words = list()
@@ -30,6 +32,9 @@ class SpyMaster:
         # nlp stuff
         self.word_model = self.load_word_model(model_name="glove-wiki-100",
                                                game_words_file=words_file)  # keyed vector model for generating hints
+
+        self.indexer = self.load_indexer(model_name="glove-wiki-100")
+
         self.ls = LancasterStemmer()  # stemmer for checking hint legality
         self.spacy_nlp = spacy.load("en_core_web_sm")  # lemmatiser for checking hint legality
 
@@ -78,6 +83,38 @@ class SpyMaster:
         log.info("Done loading models")
         self.__load_game_words(word_model, words_file=game_words_file)
         return word_model
+
+    def load_indexer(self, model_name):
+        log.info("Loading word model indexer...")
+
+        indexer = None
+
+        if self.settings["use_annoy_indexer"]:
+            if model_name == "glove-twitter-100":
+                log.debug("Loading Twitter 100")
+                indexer = AnnoyIndexer()
+                indexer.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440" +
+                             r"\MajorProject\models\glove-twitter-100-5-trees.ann")
+            elif model_name == "glove-twitter-200":
+                log.debug("Loading Twitter 200")
+                indexer = AnnoyIndexer()
+                indexer.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440" +
+                             r"\MajorProject\models\glove-twitter-200-5-trees.ann")
+            elif model_name == "glove-wiki-300":
+                log.debug("Loading Wiki 300")
+                indexer = AnnoyIndexer()
+                indexer.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440" +
+                             r"\MajorProject\models\glove-wiki-300-5-trees.ann")
+            elif model_name == "glove-wiki-100":
+                log.debug("Loading Wiki 100")
+                indexer = AnnoyIndexer()
+                indexer.load(r"C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440" +
+                             r"\MajorProject\models\glove-wiki-100-5-trees.ann")
+            log.info("Done loading model indexer")
+        else:
+            log.info("No indexer selected, using default")
+
+        return indexer
 
     def __load_game_words(self, word_model, words_file="settings/game_words.txt"):
         log.info("Loading game words...")
@@ -184,7 +221,7 @@ class SpyMaster:
                                                            for blue in self.team_words["blue"]] +
                                                           [(black, self.team_weights["black"])
                                                            for black in self.team_words["black"]],
-                                                 topn=50)
+                                                 topn=50, indexer=self.indexer)
         hints_filtered = [raw for raw in hints_raw if self.__check_legal(raw[0])]
         log.debug("Found {0} legal hints (of {1} searched) for {2}: {3}".format(len(hints_filtered), len(hints_raw),
                                                                                 ", ".join(reds),

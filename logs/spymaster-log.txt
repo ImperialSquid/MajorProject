@@ -4633,3 +4633,79 @@ red: dress, school, comic, pirate, kid, greece, bridge, skyscraper
 13/04 - 13:11:26 : INFO :       1 | dress                          | gown            | 0.6597470045089722
 13/04 - 13:11:26 : INFO : Output file detected, writing hints
 13/04 - 13:11:27 : INFO : Done
+14/04 - 00:56:39 : INFO : SpyMaster initialising...
+14/04 - 00:56:39 : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer from settings/settings.txt... 
+14/04 - 00:56:39 : DEBUG : Found value for max_top_hints: 7
+14/04 - 00:56:39 : DEBUG : Found value for max_levels: 1
+14/04 - 00:56:39 : DEBUG : Found value for use_annoy_indexer: 1
+14/04 - 00:56:39 : INFO : Done loading settings from settings/settings.txt
+14/04 - 00:56:39 : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+14/04 - 00:56:39 : DEBUG : Found value for red: 40
+14/04 - 00:56:39 : DEBUG : Found value for grey: -1
+14/04 - 00:56:39 : DEBUG : Found value for blue: -4
+14/04 - 00:56:39 : DEBUG : Found value for black: -12
+14/04 - 00:56:39 : INFO : Done loading settings from settings/team_weights.txt
+14/04 - 00:56:39 : INFO : Loading word model...
+14/04 - 00:56:39 : DEBUG : Loading Wiki 100
+14/04 - 00:56:39 : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+14/04 - 00:56:39 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:56:43 : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+14/04 - 00:56:45 : INFO : setting ignored attribute vectors_norm to None
+14/04 - 00:56:45 : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+14/04 - 00:56:45 : INFO : Done loading models
+14/04 - 00:56:45 : INFO : Loading game words...
+14/04 - 00:56:45 : INFO : Done loading game words
+14/04 - 00:56:45 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+14/04 - 00:56:45 : INFO : Loading word model indexer...
+14/04 - 00:56:45 : DEBUG : Loading Wiki 100
+14/04 - 00:56:45 : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100-5-trees.ann.d', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+14/04 - 00:56:45 : INFO : Done loading model indexer
+14/04 - 00:56:52 : INFO : SpyMaster initialised!
+14/04 - 00:56:52 : INFO : Running round with random teams...
+14/04 - 00:56:52 : DEBUG : Shuffling words
+14/04 - 00:56:52 : DEBUG : Loading team sizes...
+14/04 - 00:56:52 : INFO : Loading settings for red, blue, black, grey from settings/team_sizes.txt... 
+14/04 - 00:56:52 : DEBUG : Found value for red: 8
+14/04 - 00:56:52 : DEBUG : Found value for blue: 8
+14/04 - 00:56:52 : DEBUG : Found value for black: 1
+14/04 - 00:56:52 : DEBUG : Found value for grey: 8
+14/04 - 00:56:52 : INFO : Done loading settings from settings/team_sizes.txt
+14/04 - 00:56:52 : DEBUG : Team sizes: black:1 - blue:8 - grey:8 - red:8
+14/04 - 00:56:52 : DEBUG : Generating team words...
+14/04 - 00:56:52 : INFO : Team words:
+black: jupiter
+blue: ship, doctor, mint, row, band, fly, smuggler, tail
+grey: iron, card, day, dragon, snow, mount, pin, concert
+red: tie, canada, france, fair, mail, van, plastic, eye
+14/04 - 00:56:52 : INFO : Running round
+14/04 - 00:56:52 : INFO : Finding hints for overlap levels
+14/04 - 00:56:52 : INFO : Finding hints for 1 word(s)
+14/04 - 00:56:52 : INFO : precomputing L2-norms of word weight vectors
+14/04 - 00:57:16 : DEBUG : Found 7 legal hints (of 50 searched) for tie: clinched:0.52865 // pts:0.46704 // quarterfinals:0.45749 // semifinals:0.45396 // notched:0.45334 // rematch:0.44646 // overcame:0.44584
+14/04 - 00:57:16 : DEBUG : Words: tie                  Hints: clinched-0.5286508500576019 // pts-0.46703702211380005 // quarterfinals-0.4574880599975586 // semifinals-0.45395761728286743 // notched-0.45333629846572876 // rematch-0.44646358489990234 // overcame-0.4458387494087219
+14/04 - 00:57:37 : DEBUG : Found 21 legal hints (of 50 searched) for canada: 1984:0.41391 // subsidies:0.41255 // 1990:0.40817 // won:0.40795 // 2010:0.40646 // 2011:0.40044 // 2012:0.39954 // 2009:0.39812 // 2013:0.39811 // 1988:0.39645 // 2007:0.39578 // 1986:0.39560 // hosted:0.39416 // 1993:0.39334 // broadcaster:0.38745 // 1991:0.38689 // 1968:0.38397 // partnered:0.38233 // patty:0.38076 // signed:0.37569 // privatization:0.37157
+14/04 - 00:57:37 : DEBUG : Words: canada               Hints: 1984-0.4139115810394287 // subsidies-0.4125458598136902 // 1990-0.4081653356552124 // won-0.40795326232910156 // 2010-0.40646201372146606 // 2011-0.40043532848358154 // 2012-0.3995431661605835 // 2009-0.3981161117553711 // 2013-0.3981127142906189 // 1988-0.3964489698410034 // 2007-0.39578336477279663 // 1986-0.3955967426300049 // hosted-0.3941558599472046 // 1993-0.39333581924438477 // broadcaster-0.38744688034057617 // 1991-0.386885404586792 // 1968-0.3839693069458008 // partnered-0.38232898712158203 // patty-0.3807550072669983 // signed-0.37568747997283936 // privatization-0.3715748190879822
+14/04 - 00:57:59 : DEBUG : Found 8 legal hints (of 50 searched) for france: reaffirmed:0.42184 // stressing:0.41670 // pledged:0.41455 // reiterated:0.40802 // reforms:0.40313 // 1793:0.39791 // stressed:0.39360 // consultations:0.39152
+14/04 - 00:57:59 : DEBUG : Words: france               Hints: reaffirmed-0.4218401312828064 // stressing-0.41670477390289307 // pledged-0.41455042362213135 // reiterated-0.4080237150192261 // reforms-0.4031323194503784 // 1793-0.39791417121887207 // stressed-0.3936046361923218 // consultations-0.3915178179740906
+14/04 - 00:58:20 : DEBUG : Found 47 legal hints (of 50 searched) for fair: rights:0.44120 // biased:0.43951 // governmental:0.41971 // commission:0.41818 // upheld:0.41469 // judicial:0.41324 // appeal:0.41314 // council:0.41298 // declaration:0.41289 // expedited:0.40993 // endorsement:0.40946 // harmonized:0.40745 // formal:0.40583 // restitution:0.40179 // advocate:0.40155 // arbitration:0.39956 // granting:0.39896 // arguing:0.39799 // universally:0.39744 // upfront:0.39710 // assurances:0.39707 // challenged:0.39700 // deed:0.39687 // committee:0.39553 // adjudicated:0.39534 // unconstitutional:0.39461 // adoption:0.39216 // recount:0.39047 // libel:0.38983 // appeals:0.38880 // compensated:0.38879 // argued:0.38874 // ruling:0.38850 // resolutions:0.38766 // governing:0.38639 // independent:0.38601 // pursuant:0.38498 // recommendations:0.38417 // nonbinding:0.38390 // awarding:0.38366 // blueprint:0.38363 // regionally:0.38327 // sentencing:0.38288 // clarification:0.38282 // dictated:0.38112 // justice:0.38031 // watchdog:0.37900
+14/04 - 00:58:20 : DEBUG : Words: fair                 Hints: rights-0.4411960244178772 // biased-0.4395056962966919 // governmental-0.4197147488594055 // commission-0.41817671060562134 // upheld-0.41468673944473267 // judicial-0.4132397174835205 // appeal-0.4131433963775635 // council-0.41297823190689087 // declaration-0.41289132833480835 // expedited-0.40993207693099976 // endorsement-0.4094638228416443 // harmonized-0.40744704008102417 // formal-0.40583181381225586 // restitution-0.40179377794265747 // advocate-0.40155094861984253 // arbitration-0.3995630145072937 // granting-0.39895981550216675 // arguing-0.3979862928390503 // universally-0.39743566513061523 // upfront-0.3970954418182373 // assurances-0.39707261323928833 // challenged-0.39700162410736084 // deed-0.39687496423721313 // committee-0.3955279588699341 // adjudicated-0.3953379988670349 // unconstitutional-0.39461326599121094 // adoption-0.39215612411499023 // recount-0.3904697895050049 // libel-0.38982969522476196 // appeals-0.3887965679168701 // compensated-0.388791561126709 // argued-0.3887420892715454 // ruling-0.3885021209716797 // resolutions-0.38766294717788696 // governing-0.3863859176635742 // independent-0.3860108256340027 // pursuant-0.3849828243255615 // recommendations-0.3841698169708252 // nonbinding-0.38389742374420166 // awarding-0.3836557865142822 // blueprint-0.38363295793533325 // regionally-0.38326770067214966 // sentencing-0.38288313150405884 // clarification-0.3828203082084656 // dictated-0.381117582321167 // justice-0.38030582666397095 // watchdog-0.37899917364120483
+14/04 - 00:58:41 : DEBUG : Found 7 legal hints (of 50 searched) for mail: 1,435:0.37177 // 1,448:0.37100 // 1,201:0.36500 // matin:0.35977 // 1,013:0.35931 // 1,363:0.35446 // 1,028:0.35174
+14/04 - 00:58:41 : DEBUG : Words: mail                 Hints: 1,435-0.3717714548110962 // 1,448-0.3709988594055176 // 1,201-0.365003764629364 // matin-0.3597698211669922 // 1,013-0.3593127727508545 // 1,363-0.35446107387542725 // 1,028-0.35173845291137695
+14/04 - 00:59:02 : DEBUG : Found 1 legal hints (of 50 searched) for van: swart:0.42347
+14/04 - 00:59:02 : DEBUG : Words: van                  Hints: swart-0.4234676957130432
+14/04 - 00:59:23 : DEBUG : Found 44 legal hints (of 50 searched) for plastic: styrofoam:0.54997 // degradable:0.50579 // zippered:0.50470 // dishware:0.49824 // tins:0.49601 // cushions:0.48850 // flooring:0.48008 // removable:0.47674 // saddlebags:0.46946 // insulated:0.46865 // barrettes:0.46856 // rusted:0.46581 // erasers:0.46341 // stacked:0.46124 // planks:0.45922 // glued:0.45916 // stools:0.45750 // neoprene:0.45613 // sieves:0.45441 // cornflakes:0.45369 // unprocessed:0.45079 // shreds:0.44973 // precast:0.44914 // rinds:0.44630 // fungicide:0.44131 // lampshades:0.43993 // beveled:0.43502 // sunblock:0.43436 // lids:0.43340 // washboard:0.43334 // enamels:0.42951 // clapboards:0.42812 // affixed:0.42695 // calfskin:0.42366 // rusting:0.42240 // bulging:0.42216 // sturdier:0.42115 // steroidal:0.42107 // moisturizer:0.42012 // hypodermic:0.41847 // guardrails:0.41782 // earmuffs:0.41768 // vuvuzelas:0.41478 // transparencies:0.41454
+14/04 - 00:59:23 : DEBUG : Words: plastic              Hints: styrofoam-0.549965888261795 // degradable-0.5057919025421143 // zippered-0.5046963095664978 // dishware-0.4982377886772156 // tins-0.49601221084594727 // cushions-0.488497793674469 // flooring-0.48008018732070923 // removable-0.47674256563186646 // saddlebags-0.4694643020629883 // insulated-0.46865028142929077 // barrettes-0.4685624837875366 // rusted-0.4658060669898987 // erasers-0.4634062647819519 // stacked-0.46124267578125 // planks-0.4592222571372986 // glued-0.459159791469574 // stools-0.4575008749961853 // neoprene-0.45613014698028564 // sieves-0.45440542697906494 // cornflakes-0.4536855220794678 // unprocessed-0.45078712701797485 // shreds-0.44973063468933105 // precast-0.44914233684539795 // rinds-0.4463021159172058 // fungicide-0.44131189584732056 // lampshades-0.4399338364601135 // beveled-0.43501800298690796 // sunblock-0.43435847759246826 // lids-0.4334028959274292 // washboard-0.43334054946899414 // enamels-0.4295061230659485 // clapboards-0.42811936140060425 // affixed-0.42695415019989014 // calfskin-0.42365771532058716 // rusting-0.42240381240844727 // bulging-0.4221648573875427 // sturdier-0.4211493730545044 // steroidal-0.4210657477378845 // moisturizer-0.4201224446296692 // hypodermic-0.41847294569015503 // guardrails-0.41781753301620483 // earmuffs-0.41768401861190796 // vuvuzelas-0.41478121280670166 // transparencies-0.414542555809021
+14/04 - 00:59:43 : DEBUG : Found 27 legal hints (of 50 searched) for eye: glaucoma:0.48359 // dit:0.46757 // irritation:0.46158 // inflammation:0.45130 // blindness:0.44760 // pigmentation:0.43666 // respiratory:0.43479 // immune:0.43037 // degenerative:0.43026 // symptoms:0.42665 // abdominal:0.42652 // ischemic:0.42592 // zoon:0.42291 // scarring:0.42069 // degeneration:0.41983 // melanoma:0.41756 // ulcers:0.41672 // gastrointestinal:0.41435 // susceptible:0.40934 // muscle:0.40833 // wasting:0.40447 // lesions:0.40416 // coronary:0.40170 // slanted:0.39871 // epilepsy:0.39837 // genital:0.39765 // ailment:0.39748
+14/04 - 00:59:43 : DEBUG : Words: eye                  Hints: glaucoma-0.483590304851532 // dit-0.46756893396377563 // irritation-0.46157538890838623 // inflammation-0.45130473375320435 // blindness-0.447597861289978 // pigmentation-0.4366605877876282 // respiratory-0.43478667736053467 // immune-0.4303745627403259 // degenerative-0.43025732040405273 // symptoms-0.42664605379104614 // abdominal-0.4265185594558716 // ischemic-0.42591559886932373 // zoon-0.42290782928466797 // scarring-0.42069369554519653 // degeneration-0.419832706451416 // melanoma-0.4175580143928528 // ulcers-0.4167242646217346 // gastrointestinal-0.41435468196868896 // susceptible-0.40933841466903687 // muscle-0.4083341956138611 // wasting-0.40446561574935913 // lesions-0.4041568636894226 // coronary-0.4016951322555542 // slanted-0.39871418476104736 // epilepsy-0.3983684182167053 // genital-0.39764654636383057 // ailment-0.39748287200927734
+14/04 - 00:59:43 : INFO : Results:
+14/04 - 00:59:43 : INFO : Level   | Words                          | Hint            | Score     
+14/04 - 00:59:43 : INFO :    -    |               --               |        -        |     --    
+14/04 - 00:59:43 : INFO :       1 | plastic                        | styrofoam       | 0.549965888261795
+14/04 - 00:59:43 : INFO :       1 | tie                            | clinched        | 0.5286508500576019
+14/04 - 00:59:43 : INFO :       1 | plastic                        | degradable      | 0.5057919025421143
+14/04 - 00:59:43 : INFO :       1 | plastic                        | zippered        | 0.5046963095664978
+14/04 - 00:59:43 : INFO :       1 | plastic                        | dishware        | 0.4982377886772156
+14/04 - 00:59:43 : INFO :       1 | plastic                        | tins            | 0.49601221084594727
+14/04 - 00:59:43 : INFO :       1 | plastic                        | cushions        | 0.488497793674469
+14/04 - 00:59:43 : INFO : Output file detected, writing hints
+14/04 - 00:59:43 : INFO : Done
