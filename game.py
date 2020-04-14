@@ -15,8 +15,8 @@ class Game:
 
         self.setts = load_settings("settings/game_setts.txt",
                                    {"scrn_w": 500, "scrn_h": 500,
-                                    "red_spymaster_cpu": 1, "red_field_agent_cpu": 1,
-                                    "blue_spymaster_cpu": 1, "blue_field_agent_cpu": 1})
+                                    "red_spymaster_cpu": True, "red_field_agent_cpu": False,
+                                    "blue_spymaster_cpu": True, "blue_field_agent_cpu": True})
 
         self.surface = pyg.display.set_mode((self.setts["scrn_w"], self.setts["scrn_h"]))
 
@@ -58,22 +58,22 @@ class Game:
                         self.screen = "main"
 
                     if self.buttons["red_sm_cpu_btn"].collidepoint(pos):
-                        self.setts["red_spymaster_cpu"] = 1
+                        self.setts["red_spymaster_cpu"] = True
                     if self.buttons["red_sm_ply_btn"].collidepoint(pos):
-                        self.setts["red_spymaster_cpu"] = 0
+                        self.setts["red_spymaster_cpu"] = False
                     if self.buttons["red_fa_cpu_btn"].collidepoint(pos):
-                        self.setts["red_field_agent_cpu"] = 1
+                        self.setts["red_field_agent_cpu"] = True
                     if self.buttons["red_fa_ply_btn"].collidepoint(pos):
-                        self.setts["red_field_agent_cpu"] = 0
+                        self.setts["red_field_agent_cpu"] = False
 
                     if self.buttons["blue_sm_cpu_btn"].collidepoint(pos):
-                        self.setts["blue_spymaster_cpu"] = 1
+                        self.setts["blue_spymaster_cpu"] = True
                     if self.buttons["blue_sm_ply_btn"].collidepoint(pos):
-                        self.setts["blue_spymaster_cpu"] = 0
+                        self.setts["blue_spymaster_cpu"] = False
                     if self.buttons["blue_fa_cpu_btn"].collidepoint(pos):
-                        self.setts["blue_field_agent_cpu"] = 1
+                        self.setts["blue_field_agent_cpu"] = True
                     if self.buttons["blue_fa_ply_btn"].collidepoint(pos):
-                        self.setts["blue_field_agent_cpu"] = 0
+                        self.setts["blue_field_agent_cpu"] = False
 
     def draw(self):
         if self.screen == "loading":

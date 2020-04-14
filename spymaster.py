@@ -18,7 +18,7 @@ class SpyMaster:
         log.info("SpyMaster initialising...")
         # spymaster stuff
         self.settings = load_settings(sett_file="settings/settings.txt",
-                                      default_dict={"max_top_hints": 10, "max_levels": 2, "use_annoy_indexer": 1})
+                                      default_dict={"max_top_hints": 10, "max_levels": 2, "use_annoy_indexer": True})
 
         # game stuff (what game words are available depends on the word model used so it is loaded in load_model)
         self.game_words = list()
@@ -32,7 +32,7 @@ class SpyMaster:
         self.word_model = self.load_word_model(model_name="glove-wiki-100",
                                                game_words_file=words_file)  # keyed vector model for generating hints
 
-        self.indexer = self.load_indexer(model_name="glove-wiki-100")
+        self.indexer = self.load_indexer(model_name=None)
 
         self.ls = LancasterStemmer()  # stemmer for checking hint legality
         self.spacy_nlp = spacy.load("en_core_web_sm")  # lemmatiser for checking hint legality
@@ -196,7 +196,7 @@ class SpyMaster:
         return multis[0:self.settings["max_top_hints"] if self.settings["max_top_hints"] > 0 else None]
 
     def __get_hints(self, reds):
-        hints_raw = self.word_model.most_similar(positive=[(red, int(self.team_weights["red"] / sqrt(len(reds))))
+        hints_raw = self.word_model.most_similar(positive=[(red, self.team_weights["red"] / sqrt(len(reds)))
                                                            for red in reds],
                                                  negative=[(grey, self.team_weights["grey"])
                                                            for grey in self.team_words["grey"]] +

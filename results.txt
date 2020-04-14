@@ -1,15 +1,15 @@
 Teams:
-black: jupiter
-blue: ship - doctor - mint - row - band - fly - smuggler - tail
-grey: iron - card - day - dragon - snow - mount - pin - concert
-red: tie - canada - france - fair - mail - van - plastic - eye
+black: slip
+blue: atlantis - maple - angel - pit - board - boot - pie - crane
+grey: luck - calf - novel - fall - shark - water - torch - hollywood
+red: train - olive - fan - bar - pan - dress - car - tie
 Hints:
 Level: 1
 Target                                  Hint                Score               
-plastic                                 styrofoam              0.549965888261795
-tie                                     clinched              0.5286508500576019
-plastic                                 degradable            0.5057919025421143
-plastic                                 zippered              0.5046963095664978
-plastic                                 dishware              0.4982377886772156
-plastic                                 tins                 0.49601221084594727
-plastic                                 cushions               0.488497793674469
+dress                                   attire                0.7473360300064087
+train                                   commuter               0.659569501876831
+car                                     vehicle               0.6506526470184326
+dress                                   garb                  0.6255471706390381
+car                                     vehicles              0.6224413514137268
+car                                     truck                 0.6121972799301147
+dress                                   outfits               0.6117656230926514

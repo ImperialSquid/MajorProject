@@ -22,7 +22,8 @@ def load_settings(sett_file: str, default_dict: dict):
             else:
                 default_dict[split[0]] = split[2]
 
-    log.warning("No settings found (using default) for: {0}".format(", ".join(settings)))
+    if len(settings):
+        log.warning("No settings found (using default) for: {0}".format(", ".join(settings)))
     log.info("Done loading settings from {0}".format(sett_file))
 
     return default_dict

@@ -471,3 +471,121 @@
 16/03 - 16:04:51 : INFO : Evaluating with method: __word_net_path_eval
 16/03 - 16:04:51 : INFO : Evaluating with method: __word_net_wup_eval
 16/03 - 16:04:52 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:33:20 : INFO : Agent initialising...
+14/04 - 02:33:20 : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+14/04 - 02:33:20 : INFO : Found setting for max_top_hints: 7 of type int
+14/04 - 02:33:20 : INFO : Found setting for max_levels: 1 of type int
+14/04 - 02:33:20 : INFO : Done loading settings from settings/settings.txt
+14/04 - 02:33:20 : INFO : Agent initialised!
+14/04 - 02:33:20 : INFO : Loading hints from results.txt...
+14/04 - 02:33:20 : INFO : Loaded teams
+14/04 - 02:33:20 : DEBUG : black: slip
+14/04 - 02:33:20 : DEBUG : blue: atlantis - maple - angel - pit - board - boot - pie - crane
+14/04 - 02:33:20 : DEBUG : grey: luck - calf - novel - fall - shark - water - torch - hollywood
+14/04 - 02:33:20 : DEBUG : red: train - olive - fan - bar - pan - dress - car - tie
+14/04 - 02:33:20 : INFO : Loaded hints
+14/04 - 02:33:20 : DEBUG : Level: 1
+14/04 - 02:33:20 : DEBUG : Target                                  Hint                Score               
+14/04 - 02:33:20 : DEBUG : dress                                   attire                0.7473360300064087
+14/04 - 02:33:20 : DEBUG : train                                   commuter               0.659569501876831
+14/04 - 02:33:20 : DEBUG : car                                     vehicle               0.6506526470184326
+14/04 - 02:33:20 : DEBUG : dress                                   garb                  0.6255471706390381
+14/04 - 02:33:20 : DEBUG : car                                     vehicles              0.6224413514137268
+14/04 - 02:33:20 : DEBUG : car                                     truck                 0.6121972799301147
+14/04 - 02:33:20 : DEBUG : dress                                   outfits               0.6117656230926514
+14/04 - 02:33:20 : INFO : Evaluating hints
+14/04 - 02:33:20 : INFO : Level 1 hints
+14/04 - 02:33:20 : INFO : Evaluating hint 1 of 7: attire
+14/04 - 02:33:20 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:34:16 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:34:28 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:34:29 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:35:22 : INFO : Evaluating hint 2 of 7: commuter
+14/04 - 02:35:22 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:36:21 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:36:22 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:36:22 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:36:22 : INFO : Evaluating hint 3 of 7: vehicle
+14/04 - 02:36:22 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:37:17 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:37:18 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:37:18 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:37:18 : INFO : Evaluating hint 4 of 7: garb
+14/04 - 02:37:18 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:38:15 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:38:15 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:38:15 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:38:15 : INFO : Evaluating hint 5 of 7: vehicles
+14/04 - 02:38:15 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:39:16 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:39:16 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:39:16 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:39:16 : INFO : Evaluating hint 6 of 7: truck
+14/04 - 02:39:16 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:40:14 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:40:14 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:40:14 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:40:14 : INFO : Evaluating hint 7 of 7: outfits
+14/04 - 02:40:14 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:41:13 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:41:13 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:41:14 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:41:31 : INFO : Agent initialising...
+14/04 - 02:41:31 : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+14/04 - 02:41:31 : INFO : Found setting for max_top_hints: 7 of type int
+14/04 - 02:41:31 : INFO : Found setting for max_levels: 1 of type int
+14/04 - 02:41:31 : INFO : Done loading settings from settings/settings.txt
+14/04 - 02:41:31 : INFO : Agent initialised!
+14/04 - 02:41:31 : INFO : Loading hints from results.txt...
+14/04 - 02:41:31 : INFO : Loaded teams
+14/04 - 02:41:31 : DEBUG : black: slip
+14/04 - 02:41:31 : DEBUG : blue: atlantis - maple - angel - pit - board - boot - pie - crane
+14/04 - 02:41:31 : DEBUG : grey: luck - calf - novel - fall - shark - water - torch - hollywood
+14/04 - 02:41:31 : DEBUG : red: train - olive - fan - bar - pan - dress - car - tie
+14/04 - 02:41:31 : INFO : Loaded hints
+14/04 - 02:41:31 : DEBUG : Level: 1
+14/04 - 02:41:31 : DEBUG : Target                                  Hint                Score               
+14/04 - 02:41:31 : DEBUG : dress                                   attire                0.7473360300064087
+14/04 - 02:41:31 : DEBUG : train                                   commuter               0.659569501876831
+14/04 - 02:41:31 : DEBUG : car                                     vehicle               0.6506526470184326
+14/04 - 02:41:31 : DEBUG : dress                                   garb                  0.6255471706390381
+14/04 - 02:41:31 : DEBUG : car                                     vehicles              0.6224413514137268
+14/04 - 02:41:31 : DEBUG : car                                     truck                 0.6121972799301147
+14/04 - 02:41:31 : DEBUG : dress                                   outfits               0.6117656230926514
+14/04 - 02:41:31 : INFO : Evaluating hints
+14/04 - 02:41:31 : INFO : Level 1 hints
+14/04 - 02:41:31 : INFO : Evaluating hint 1 of 7: attire
+14/04 - 02:41:31 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:42:28 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:42:38 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:42:39 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:43:17 : INFO : Evaluating hint 2 of 7: commuter
+14/04 - 02:43:17 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:44:15 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:44:15 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:44:15 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:44:15 : INFO : Evaluating hint 3 of 7: vehicle
+14/04 - 02:44:15 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:45:12 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:45:12 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:45:12 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:45:13 : INFO : Evaluating hint 4 of 7: garb
+14/04 - 02:45:13 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:46:10 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:46:11 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:46:11 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:46:11 : INFO : Evaluating hint 5 of 7: vehicles
+14/04 - 02:46:11 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:47:11 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:47:12 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:47:12 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:47:12 : INFO : Evaluating hint 6 of 7: truck
+14/04 - 02:47:12 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:48:10 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:48:10 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:48:10 : INFO : Evaluating with method: __word_net_lch_eval
+14/04 - 02:48:11 : INFO : Evaluating hint 7 of 7: outfits
+14/04 - 02:48:11 : INFO : Evaluating with method: __concept_net_eval
+14/04 - 02:49:06 : INFO : Evaluating with method: __word_net_path_eval
+14/04 - 02:49:06 : INFO : Evaluating with method: __word_net_wup_eval
+14/04 - 02:49:07 : INFO : Evaluating with method: __word_net_lch_eval
