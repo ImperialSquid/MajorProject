@@ -1,0 +1,6 @@
+scrn_w:1000
+scrn_h:600
+red_spymaster_cpu:1
+red_field_agent_cpu:0
+blue_spymaster_cpu:1
+blue_field_agent_cpu:1
