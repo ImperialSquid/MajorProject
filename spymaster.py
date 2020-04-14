@@ -10,23 +10,22 @@ from gensim.models import KeyedVectors  # lading pre-trained word vectors
 from gensim.similarities.index import AnnoyIndexer
 from nltk.stem.lancaster import LancasterStemmer  # stemming
 
+from utils import load_settings
+
 
 class SpyMaster:
     def __init__(self, teams_file="settings/team_weights.txt", words_file="settings/game_words.txt"):
         log.info("SpyMaster initialising...")
         # spymaster stuff
-        self.settings = self.__load_settings(sett_file="settings/settings.txt",
-                                             default_dict={"max_top_hints": 10,
-                                                           "max_levels": 2,
-                                                           "use_annoy_indexer": 1})
+        self.settings = load_settings(sett_file="settings/settings.txt",
+                                      default_dict={"max_top_hints": 10, "max_levels": 2, "use_annoy_indexer": 1})
 
         # game stuff (what game words are available depends on the word model used so it is loaded in load_model)
         self.game_words = list()
 
         # teams stuff
-        self.team_weights = self.__load_settings(sett_file=teams_file,
-                                                 default_dict={"red": 30, "grey": -1,
-                                                               "blue": -3, "black": -10})
+        self.team_weights = load_settings(sett_file=teams_file,
+                                          default_dict={"red": 30, "grey": -1, "blue": -3, "black": -10})
         self.team_words = dict()  # made as an attribute to save passing back and forth while running rounds
 
         # nlp stuff
@@ -39,22 +38,6 @@ class SpyMaster:
         self.spacy_nlp = spacy.load("en_core_web_sm")  # lemmatiser for checking hint legality
 
         log.info("SpyMaster initialised!")
-
-    def __load_settings(self, sett_file: str, default_dict: dict):
-        # loads settings in the form of <setting name>:<value> from file (only loads numeric values)
-        log.info("Loading settings for {0} from {1}... ".format(", ".join(default_dict.keys()), sett_file))
-        lines = [line.strip() for line in open(sett_file).readlines()]
-        splits = {line.split(":")[0]: line.split(":")[1] for line in lines}  # reads in a definitions list for settings
-
-        for k in default_dict.keys():  # reassign settings if a new one was found
-            try:
-                default_dict[k] = int(splits[k])
-                log.debug("Found value for {0}: {1}".format(k, default_dict[k]))
-            except KeyError:
-                log.warning("No value found for {0}, using default value {1}".format(k, default_dict[k]))
-
-        log.info("Done loading settings from {0}".format(sett_file))
-        return default_dict
 
     def load_word_model(self, model_name, game_words_file="settings/game_words.txt"):
         log.info("Loading word model...")
@@ -138,8 +121,8 @@ class SpyMaster:
         word_gen = cycle(self.game_words)
 
         log.debug("Loading team sizes...")
-        team_sizes = self.__load_settings(sett_file="settings/team_sizes.txt",
-                                          default_dict={"red": 8, "blue": 8, "black": 1, "grey": 8})
+        team_sizes = load_settings(sett_file="settings/team_sizes.txt",
+                                   default_dict={"red": 8, "blue": 8, "black": 1, "grey": 8})
         log.debug("Team sizes: {0}".format(" - ".join([k + ":" + str(team_sizes[k]) for
                                                        k in sorted(team_sizes.keys())])))
 

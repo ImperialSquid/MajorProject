@@ -1,4 +1,4 @@
-red:40
-grey:-1
-blue:-4
-black:-12
+red:int:40
+grey:int:-1
+blue:int:-4
+black:int:-12

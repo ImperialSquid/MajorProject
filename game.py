@@ -4,6 +4,7 @@ import pygame as pyg
 
 from field_agent import FieldAgent
 from spymaster import SpyMaster
+from utils import load_settings
 
 
 class Game:
@@ -12,10 +13,10 @@ class Game:
         log.info("Initialising pygame...")
         pyg.init()
 
-        self.setts = self.__load_settings("settings/game_setts.txt",
-                                          {"scrn_w": 500, "scrn_h": 500,
-                                           "red_spymaster_cpu": 1, "red_field_agent_cpu": 1,
-                                           "blue_spymaster_cpu": 1, "blue_field_agent_cpu": 1})
+        self.setts = load_settings("settings/game_setts.txt",
+                                   {"scrn_w": 500, "scrn_h": 500,
+                                    "red_spymaster_cpu": 1, "red_field_agent_cpu": 1,
+                                    "blue_spymaster_cpu": 1, "blue_field_agent_cpu": 1})
 
         self.surface = pyg.display.set_mode((self.setts["scrn_w"], self.setts["scrn_h"]))
 
@@ -287,22 +288,6 @@ class Game:
     def quit(self):
         pyg.quit()
         self.running = False
-
-    def __load_settings(self, sett_file: str, default_dict: dict):
-        # loads setts in the form of <setting name>:<value> from file (only loads numeric values)
-        log.info("Loading setts for {0} from {1}... ".format(", ".join(default_dict.keys()), sett_file))
-        lines = [line.strip() for line in open(sett_file).readlines()]
-        splits = {line.split(":")[0]: line.split(":")[1] for line in lines}  # reads in a definitions list for setts
-
-        for k in default_dict.keys():  # reassign setts if a new one was found
-            try:
-                default_dict[k] = int(splits[k])
-                log.debug("Found value for {0}: {1}".format(k, default_dict[k]))
-            except KeyError:
-                log.warning("No value found for {0}, using default value {1}".format(k, default_dict[k]))
-
-        log.info("Done loading setts from {0}".format(sett_file))
-        return default_dict
 
 
 if __name__ == "__main__":

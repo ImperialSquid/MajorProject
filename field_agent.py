@@ -6,6 +6,8 @@ import requests as req
 from nltk.corpus import wordnet as wn
 from nltk.corpus.reader import WordNetError
 
+from utils import load_settings
+
 
 class FieldAgent:
     def __init__(self):
@@ -13,28 +15,12 @@ class FieldAgent:
         self.team_words = dict()
         self.board_words = list()
         self.hints = dict()
-        self.settings = self.__load_settings(sett_file="settings/settings.txt",
-                                             default_dict={"max_top_hints": 10,
-                                                           "max_levels": 2})
+        self.settings = load_settings(sett_file="settings/settings.txt",
+                                      default_dict={"max_top_hints": 10,
+                                                    "max_levels": 2})
         self.evaluation_methods = [self.__concept_net_eval, self.__word_net_path_eval,
                                    self.__word_net_wup_eval, self.__word_net_lch_eval]
         log.info("Agent initialised!")
-
-    def __load_settings(self, sett_file: str, default_dict: dict):
-        # loads settings in the form of <setting name>:<value> from file (only loads numeric values)
-        log.info("Loading settings for {0} from {1}... ".format(", ".join(default_dict.keys()), sett_file))
-        lines = [line.strip() for line in open(sett_file).readlines()]
-        splits = {line.split(":")[0]: line.split(":")[1] for line in lines}  # reads in a definitions list for settings
-
-        for k in default_dict.keys():  # reassign settings if a new one was found
-            try:
-                default_dict[k] = int(splits[k])
-                log.debug("Found value for {0}: {1}".format(k, default_dict[k]))
-            except KeyError:
-                log.warning("No value found for {0}, using default value {1}".format(k, default_dict[k]))
-
-        log.info("Done loading settings from {0}".format(sett_file))
-        return default_dict
 
     def load_results(self, infile):
         log.info("Loading hints from {0}...".format(infile))
