@@ -29,6 +29,10 @@ class Game:
         self.blue_spymaster = SpyMaster()
         self.blue_field_agent = FieldAgent()
 
+        self.game_words = list(set(self.red_spymaster.game_words + self.blue_spymaster.game_words))
+        self.team_words = dict()
+        self.board = list()
+
         self.buttons = dict()
 
         self.screen = "main"
