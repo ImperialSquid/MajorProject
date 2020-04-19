@@ -10,6 +10,8 @@ from spymaster import SpyMaster
 from utils import load_settings
 
 
+# TODO add a lot of processing logging
+# TODO add game analysis log
 class Game:
     def __init__(self):
         log.info("Initialising Game...")
@@ -43,7 +45,8 @@ class Game:
         # rf = red field agent, bf = blue field agent
         self.current_agent = "rs"
         self.hint = None
-        self.hunt_num = 0
+        self.hint_num = 0
+        self.guess = None
         self.guesses_made = 0
 
         self.buttons = dict()
@@ -111,11 +114,18 @@ class Game:
                             self.discovered_team_words[team] = []  # start of game, all words on board are undiscovered
 
                         board_words = [x for x in it.chain.from_iterable(self.team_words.values())]
-
                         # list of lists to display board state
                         self.board = [board_words[5 * i: 5 * i + 5] for i in range(5)]
 
+                        self.hint = None
+                        self.hint_num = 0
+                        self.guess = None
+                        self.guesses_made = 0
+
                         self.screen = "game"
+
+                        self.draw()  # skip past first spymaster processing to draw game screen
+                        self.draw()
 
                 elif self.screen == "game":
                     if self.buttons["back_btn"].collidepoint(pos):
@@ -124,33 +134,92 @@ class Game:
                     for x in range(5):
                         for y in range(5):
                             if self.buttons["board_btns"][x][y].collidepoint(pos):
-                                print(self.board[x][y])
+                                if self.board[x][y] not in [word for word in
+                                                            it.chain(self.discovered_team_words.values())]:
+                                    self.guess = self.board[x][y]
+                    try:
+                        if self.buttons["pass_turn_btn"].collidepoint(pos):
+                            self.hint = None
+                            self.guesses_made = 0
+                            if self.current_agent == "rf":
+                                self.current_agent = "bs"
+                            elif self.current_agent == "bf":
+                                self.current_agent = "rs"
+                            self.draw()  # skip past spymaster processing to draw game screen
+                            self.draw()
+                    except KeyError:
+                        pass  # pass turn button might not exist for a few runs
 
-                    # self.__process_game()
+        if self.screen == "game":
+            self.__process_game()
 
     def __process_game(self):
-        # --- hint generation ---
-        if self.current_agent[1] == "s" and self.hint is None:
+        if self.current_agent[1] == "s" and self.hint is None:  # --- spymaster and no existing hint ---
+            # TODO investigate if moving hint gen into a diff thread would prevent Not Responding window
             if self.current_agent[0] == "r" and self.setts["red_spymaster_cpu"]:  # red team, comp generated hint
                 hints = self.red_spymaster.run_defined_round(reds=self.team_words["red"],
                                                              blues=self.team_words["blue"],
                                                              greys=self.team_words["grey"],
                                                              blacks=self.team_words["black"])
-                hint = rand.choice(hints)[0]
+                hint = rand.choice([hint for hint in it.chain.from_iterable([hints for hints in hints.values()])])
                 self.hint = hint[1][0]
-                self.hunt_num = len(hint[0])
-            elif self.current_agent[0] == "b" and self.setts["blue_spymaster_cpu"]:  # blue team, comp generated hint
-                hints = self.red_spymaster.run_defined_round(reds=self.team_words["blue"],
-                                                             blues=self.team_words["red"],
-                                                             greys=self.team_words["grey"],
-                                                             blacks=self.team_words["black"])
-                hint = rand.choice(hints)[0]
-                self.hint = hint[1][0]
-                self.hunt_num = len(hint[0])
-            elif not self.setts["red_spymaster_cpu"] or not self.setts["blue_spymaster_cpu"]:
-                pass
+                self.hint_num = len(hint[0])
+                self.current_agent = "rf"
 
-        # --- choice eval ---
+            elif self.current_agent[0] == "b" and self.setts["blue_spymaster_cpu"]:  # blue team, comp generated hint
+                hints = self.blue_spymaster.run_defined_round(reds=self.team_words["blue"],
+                                                              blues=self.team_words["red"],
+                                                              greys=self.team_words["grey"],
+                                                              blacks=self.team_words["black"])
+                hint = rand.choice([hint for hint in it.chain.from_iterable([hints for hints in hints.values()])])
+                self.hint = hint[1][0]
+                self.hint_num = len(hint[0])
+                self.current_agent = "bf"
+
+            elif not self.setts["red_spymaster_cpu"] or not self.setts["blue_spymaster_cpu"]:
+                pass  # TODO get player inputted hint
+
+        elif self.current_agent[1] == "f":  # --- field agent ---
+            # --- process cpu field agents ---
+            if self.setts["red_field_agent_cpu"]:
+                self.guess = ""  # TODO add comp hint eval
+            elif self.setts["blue_field_agent_cpu"]:
+                self.guess = ""
+
+            # --- process guess ---
+            if self.guess is not None:  # only do processing is guess exists, so user gen'd can take more than one frame
+                if (self.current_agent[0] == "r" and self.guess in self.team_words["red"]) or \
+                        (self.current_agent[0] == "b" and self.guess in self.team_words[
+                            "blue"]):  # check for correct guess
+
+                    self.guesses_made += 1
+
+                    if self.guesses_made >= self.hint_num + 1:  # if guess max reached reset counter and swap team
+                        self.guesses_made = 0
+                        if self.current_agent[0] == "r":
+                            self.current_agent = "bs"
+                            self.hint = None
+                        else:
+                            self.current_agent = "rs"
+                            self.hint = None
+                else:  # if incorrect guess
+                    if self.guess in self.team_words["black"]:
+                        pass  # TODO add fail state
+                    else:  # guess in wrong team or bystander by process of elimination
+                        self.guesses_made = 0
+                        if self.current_agent[0] == "r":
+                            self.current_agent = "bs"
+                            self.hint = None
+                        else:
+                            self.current_agent = "rs"
+                            self.hint = None
+
+                for team in self.team_words.keys():
+                    if self.guess in self.team_words[team]:
+                        self.team_words[team].remove(self.guess)
+                        self.discovered_team_words[team].append(self.guess)
+                        self.guess = None
+                # TODO add win state
 
     def draw(self):
         if self.screen == "loading":
@@ -390,6 +459,7 @@ class Game:
 
         board_btns = []  # list of lists of board word Rects
 
+        # render board btns
         for x in range(5):
             board_btns.append([])
             for y in range(5):
@@ -421,17 +491,49 @@ class Game:
         self.buttons["board_btns"] = board_btns
 
         # --- other interface ---
-        cur_agent_txt = "Current: "
+        cur_txt = "Current: "
         if self.current_agent[0] == "r":
-            cur_agent_txt += "Red "
+            cur_txt += "Red "
         elif self.current_agent[0] == "b":
-            cur_agent_txt += "Blue "
+            cur_txt += "Blue "
+
         if self.current_agent[1] == "s":
-            cur_agent_txt += "Spymaster"
+            cur_txt += "Spymaster"
         elif self.current_agent[1] == "f":
-            cur_agent_txt += "Field Agent"
-        txt = fnt4.render(cur_agent_txt, True, (200, 200, 200))
+            cur_txt += "Field Agent"
+
+        # no hint exists and comp generating
+        if self.hint is None and ((self.current_agent == "rs" and self.setts["red_spymaster_cpu"]) or
+                                  (self.current_agent == "bs" and self.setts["blue_spymaster_cpu"])):
+            cur_txt += ", generating hint..."
+
+        # no hint exists and user generated
+        if self.hint is None and ((self.current_agent == "rs" and not self.setts["red_spymaster_cpu"]) or
+                                  (self.current_agent == "bs" and not self.setts["blue_spymaster_cpu"])):
+            cur_txt += ", generated hint"
+
+        # hint exists and comp evaluated
+        if self.hint is not None and ((self.current_agent == "rf" and self.setts["red_field_agent_cpu"]) or
+                                      (self.current_agent == "bf" and self.setts["blue_field_agent_cpu"])):
+            cur_txt += ", evaluating hint..."
+
+        # hint exists and user evaluated
+        if self.hint is not None and ((self.current_agent == "rf" and not self.setts["red_field_agent_cpu"]) or
+                                      (self.current_agent == "bf" and not self.setts["blue_field_agent_cpu"])):
+            cur_txt += ", hint is \"{0} {1}\"".format(self.hint, self.hint_num)
+
+        txt = fnt4.render(cur_txt, True, (200, 200, 200))
         self.surface.blit(txt, (50, 7 * self.setts["scrn_h"] // 8 + 10))
+
+        if self.guesses_made >= 1 and self.current_agent[1] == "f":
+            btn = pyg.Rect((self.setts["scrn_w"] - 50 - 2 * 5 - fnt4.size("PASS TURN")[0],
+                            7 * self.setts["scrn_h"] // 8 + 10),
+                           (fnt4.size("PASS TURN")[0] + 10, fnt4.size("PASS TURN")[1] + 10))
+            pyg.draw.rect(self.surface, (200, 200, 200), btn)
+            self.buttons["pass_turn_btn"] = btn
+
+            txt = fnt4.render("PASS TURN", True, (100, 100, 100))
+            self.surface.blit(txt, (btn.x + 5, btn.y + 5))
 
     def __draw_about(self):
         self.surface.fill((181, 46, 89))

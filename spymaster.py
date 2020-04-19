@@ -17,7 +17,7 @@ class SpyMaster:
     def __init__(self, teams_file="settings/team_weights.txt", words_file="settings/game_words.txt"):
         log.info("SpyMaster initialising...")
         # spymaster stuff
-        self.settings = load_settings(sett_file="settings/settings.txt",
+        self.settings = load_settings(sett_file="settings/spymaster_setts.txt",
                                       default_dict={"max_top_hints": 10, "max_levels": 2,
                                                     "use_annoy_indexer": True, "model_name": "glove-wiki-100"})
 
@@ -227,15 +227,15 @@ class SpyMaster:
         # list of Trues and Falses
         # True = illegal due to same root
 
-        matches = matches + [re.match(".*{}.*".format(hint), bw) for bw in board_words]
+        matches = matches + [re.match(re.escape(".*{}.*".format(hint)), bw) for bw in board_words]
         # True = board word contained within hint
 
-        matches = matches + [re.match(".*{}.*".format(bw), hint) for bw in board_words]
+        matches = matches + [re.match(re.escape(".*{}.*".format(bw)), hint) for bw in board_words]
         # True = hint contained within board word
 
         d = enchant.Dict("en_US")
         matches.append(not d.check(hint))
-        # True = word not in US dictionary (Us not UK due to word model using Us dict)
+        # True = word not in US dictionary (US not UK due to word model using US dict)
 
         matches.append(re.match(r".*\-.*", hint))
         # True = word contains - implying two words concatenated in text but separate in speech

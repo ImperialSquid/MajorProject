@@ -15,7 +15,7 @@ class FieldAgent:
         self.team_words = dict()
         self.board_words = list()
         self.hints = dict()
-        self.settings = load_settings(sett_file="settings/settings.txt",
+        self.settings = load_settings(sett_file="settings/spymaster_setts.txt",
                                       default_dict={"max_top_hints": 10,
                                                     "max_levels": 2})
         self.evaluation_methods = [self.__concept_net_eval, self.__word_net_path_eval,
@@ -81,6 +81,15 @@ class FieldAgent:
                         score_str = " - ".join(
                             ["{0}-{1:.3f}".format(word[0], word[1]) for word in sorted_board_words])
                         outf.write("Ranked by {0}: {1}\n".format(method.__name__, score_str))
+
+    def evaluate_hint(self, hint: str, board_words: list):
+        hint_scores = []
+        for word in board_words:
+            scores = []
+            for method in self.evaluation_methods:
+                scores.append(method(hint, word))
+            hint_scores.append([word, scores])
+        return hint_scores
 
     def __concept_net_eval(self, hint: str, target: str):
         relatedness_url = "http://api.conceptnet.io/relatedness?node1=/c/en/{}&node2=/c/en/{}"
