@@ -1,4 +1,4 @@
-max_top_hints:int:7
-max_levels:int:1
+max_top_hints:int:5
+max_levels:int:2
 use_annoy_indexer:bool:false
 model_name:str:glove-wiki-100

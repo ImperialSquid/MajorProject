@@ -133,7 +133,7 @@ class SpyMaster:
         log.info("Team words:\n{0}".format("\n".join([team + ": " + ", ".join(self.team_words[team])
                                                       for team in self.team_words.keys()])))
 
-        self.__run_round(out_file=out_file)
+        return self.__run_round(out_file=out_file)
 
     def run_defined_round(self, reds: list, blues: list, greys: list, blacks: list, out_file=None):
         log.info("Running round with predefined teams...")
@@ -143,7 +143,7 @@ class SpyMaster:
         self.team_words["black"] = [black for black in blacks if black in self.word_model.vocab]
         log.info("Team words:\n{0}".format("\n".join([team + ": " + ", ".join(self.team_words[team])
                                                       for team in self.team_words.keys()])))
-        self.__run_round(out_file=out_file)
+        return self.__run_round(out_file=out_file)
 
     def __run_round(self, out_file=None):
         log.info("Running round")
@@ -251,4 +251,4 @@ if __name__ == "__main__":
     root_logger.addHandler(handler)
 
     sm = SpyMaster()
-    sm.run_random_round(out_file="results.txt")
+    print(sm.run_random_round(out_file=None))

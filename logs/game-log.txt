@@ -1141,3 +1141,1737 @@
 16/04 - 17:35:17 : utils           : INFO : Found setting for max_levels: 1 of type int
 16/04 - 17:35:17 : utils           : INFO : Done loading settings from settings/settings.txt
 16/04 - 17:35:17 : field_agent     : INFO : Agent initialised!
+17/04 - 20:08:50 : game            : INFO : Initialising Game...
+17/04 - 20:08:50 : game            : INFO : Initialising pygame...
+17/04 - 20:08:52 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 20:08:52 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 20:08:52 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 20:08:52 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 20:08:52 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 20:08:52 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 20:08:52 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 20:08:52 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 20:08:53 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 20:08:53 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 20:08:53 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:08:53 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:08:53 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 20:08:53 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 20:08:53 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:08:53 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 20:08:53 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 20:08:53 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 20:08:53 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 20:08:53 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 20:08:53 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 20:08:53 : spymaster       : INFO : Loading word model...
+17/04 - 20:08:53 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 20:08:53 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:08:53 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 20:08:58 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 20:09:00 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 20:09:00 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:09:00 : spymaster       : INFO : Done loading models
+17/04 - 20:09:00 : spymaster       : INFO : Loading game words...
+17/04 - 20:09:00 : spymaster       : INFO : Done loading game words
+17/04 - 20:09:00 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 20:09:00 : spymaster       : INFO : Loading word model indexer...
+17/04 - 20:09:00 : spymaster       : INFO : No indexer selected, using default
+17/04 - 20:09:04 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 20:09:04 : field_agent     : INFO : Agent initialising...
+17/04 - 20:09:04 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 20:09:04 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:09:04 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:09:04 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:09:04 : field_agent     : INFO : Agent initialised!
+17/04 - 20:09:04 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 20:09:04 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 20:09:04 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:09:04 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:09:04 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 20:09:04 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 20:09:04 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:09:04 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 20:09:04 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 20:09:04 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 20:09:04 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 20:09:04 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 20:09:04 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 20:09:04 : spymaster       : INFO : Loading word model...
+17/04 - 20:09:04 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 20:09:04 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:09:04 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 20:09:08 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 20:09:09 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 20:09:09 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:09:09 : spymaster       : INFO : Done loading models
+17/04 - 20:09:09 : spymaster       : INFO : Loading game words...
+17/04 - 20:09:09 : spymaster       : INFO : Done loading game words
+17/04 - 20:09:09 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 20:09:09 : spymaster       : INFO : Loading word model indexer...
+17/04 - 20:09:09 : spymaster       : INFO : No indexer selected, using default
+17/04 - 20:09:12 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 20:09:12 : field_agent     : INFO : Agent initialising...
+17/04 - 20:09:12 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 20:09:12 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:09:12 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:09:12 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:09:12 : field_agent     : INFO : Agent initialised!
+17/04 - 20:12:19 : game            : INFO : Initialising Game...
+17/04 - 20:12:19 : game            : INFO : Initialising pygame...
+17/04 - 20:12:21 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 20:12:21 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 20:12:21 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 20:12:21 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 20:12:21 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 20:12:21 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 20:12:21 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 20:12:21 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 20:12:22 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 20:12:22 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 20:12:22 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:12:22 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:12:22 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 20:12:22 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 20:12:22 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:12:22 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 20:12:22 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 20:12:22 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 20:12:22 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 20:12:22 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 20:12:22 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 20:12:22 : spymaster       : INFO : Loading word model...
+17/04 - 20:12:22 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 20:12:22 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:12:22 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 20:12:27 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 20:12:28 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 20:12:28 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:12:28 : spymaster       : INFO : Done loading models
+17/04 - 20:12:28 : spymaster       : INFO : Loading game words...
+17/04 - 20:12:28 : spymaster       : INFO : Done loading game words
+17/04 - 20:12:28 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 20:12:28 : spymaster       : INFO : Loading word model indexer...
+17/04 - 20:12:28 : spymaster       : INFO : No indexer selected, using default
+17/04 - 20:12:31 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 20:12:31 : field_agent     : INFO : Agent initialising...
+17/04 - 20:12:31 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 20:12:31 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:12:31 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:12:31 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:12:31 : field_agent     : INFO : Agent initialised!
+17/04 - 20:12:31 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 20:12:31 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 20:12:31 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:12:31 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:12:31 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 20:12:31 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 20:12:31 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:12:31 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 20:12:31 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 20:12:31 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 20:12:31 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 20:12:31 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 20:12:31 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 20:12:31 : spymaster       : INFO : Loading word model...
+17/04 - 20:12:31 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 20:12:31 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:12:31 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 20:12:35 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 20:12:35 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 20:12:35 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:12:35 : spymaster       : INFO : Done loading models
+17/04 - 20:12:35 : spymaster       : INFO : Loading game words...
+17/04 - 20:12:35 : spymaster       : INFO : Done loading game words
+17/04 - 20:12:35 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 20:12:35 : spymaster       : INFO : Loading word model indexer...
+17/04 - 20:12:35 : spymaster       : INFO : No indexer selected, using default
+17/04 - 20:12:38 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 20:12:38 : field_agent     : INFO : Agent initialising...
+17/04 - 20:12:38 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 20:12:38 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:12:38 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:12:38 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:12:38 : field_agent     : INFO : Agent initialised!
+17/04 - 20:19:34 : game            : INFO : Initialising Game...
+17/04 - 20:19:34 : game            : INFO : Initialising pygame...
+17/04 - 20:19:36 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 20:19:36 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 20:19:36 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 20:19:36 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 20:19:36 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 20:19:36 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 20:19:36 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 20:19:36 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 20:19:37 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 20:19:37 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 20:19:37 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:19:37 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:19:37 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 20:19:37 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 20:19:37 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:19:37 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 20:19:37 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 20:19:37 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 20:19:37 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 20:19:37 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 20:19:37 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 20:19:37 : spymaster       : INFO : Loading word model...
+17/04 - 20:19:37 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 20:19:37 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:19:37 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 20:19:42 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 20:19:43 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 20:19:43 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:19:43 : spymaster       : INFO : Done loading models
+17/04 - 20:19:43 : spymaster       : INFO : Loading game words...
+17/04 - 20:19:43 : spymaster       : INFO : Done loading game words
+17/04 - 20:19:43 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 20:19:43 : spymaster       : INFO : Loading word model indexer...
+17/04 - 20:19:43 : spymaster       : INFO : No indexer selected, using default
+17/04 - 20:19:46 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 20:19:46 : field_agent     : INFO : Agent initialising...
+17/04 - 20:19:46 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 20:19:46 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:19:46 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:19:46 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:19:46 : field_agent     : INFO : Agent initialised!
+17/04 - 20:19:46 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 20:19:46 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 20:19:46 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:19:46 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:19:46 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 20:19:46 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 20:19:46 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:19:46 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 20:19:46 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 20:19:46 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 20:19:46 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 20:19:46 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 20:19:46 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 20:19:46 : spymaster       : INFO : Loading word model...
+17/04 - 20:19:46 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 20:19:46 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:19:46 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 20:19:51 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 20:19:51 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 20:19:51 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:19:51 : spymaster       : INFO : Done loading models
+17/04 - 20:19:51 : spymaster       : INFO : Loading game words...
+17/04 - 20:19:51 : spymaster       : INFO : Done loading game words
+17/04 - 20:19:51 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 20:19:51 : spymaster       : INFO : Loading word model indexer...
+17/04 - 20:19:51 : spymaster       : INFO : No indexer selected, using default
+17/04 - 20:19:53 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 20:19:53 : field_agent     : INFO : Agent initialising...
+17/04 - 20:19:53 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 20:19:53 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:19:53 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:19:53 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:19:53 : field_agent     : INFO : Agent initialised!
+17/04 - 20:22:20 : game            : INFO : Initialising Game...
+17/04 - 20:22:20 : game            : INFO : Initialising pygame...
+17/04 - 20:22:21 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 20:22:21 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 20:22:21 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 20:22:21 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 20:22:21 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 20:22:21 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 20:22:21 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 20:22:21 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 20:24:20 : game            : INFO : Initialising Game...
+17/04 - 20:24:20 : game            : INFO : Initialising pygame...
+17/04 - 20:24:22 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 20:24:22 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 20:24:22 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 20:24:22 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 20:24:22 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 20:24:22 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 20:24:22 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 20:24:22 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 20:28:42 : game            : INFO : Initialising Game...
+17/04 - 20:28:42 : game            : INFO : Initialising pygame...
+17/04 - 20:28:44 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 20:28:44 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 20:28:44 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 20:28:44 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 20:28:44 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 20:28:44 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 20:28:44 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 20:28:44 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 20:30:06 : game            : INFO : Initialising Game...
+17/04 - 20:30:06 : game            : INFO : Initialising pygame...
+17/04 - 20:30:08 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 20:30:08 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 20:30:08 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 20:30:08 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 20:30:08 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 20:30:08 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 20:30:08 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 20:30:08 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 20:34:14 : game            : INFO : Initialising Game...
+17/04 - 20:34:14 : game            : INFO : Initialising pygame...
+17/04 - 20:34:15 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 20:34:15 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 20:34:15 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 20:34:15 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 20:34:15 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 20:34:15 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 20:34:15 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 20:34:15 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 20:35:38 : game            : INFO : Initialising Game...
+17/04 - 20:35:38 : game            : INFO : Initialising pygame...
+17/04 - 20:35:39 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 20:35:39 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 20:35:39 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 20:35:39 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 20:35:39 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 20:35:39 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 20:35:39 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 20:35:39 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 20:51:37 : game            : INFO : Initialising Game...
+17/04 - 20:51:37 : game            : INFO : Initialising pygame...
+17/04 - 20:51:38 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 20:51:38 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 20:51:38 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 20:51:38 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 20:51:38 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 20:51:38 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 20:51:38 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 20:51:38 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 20:51:39 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 20:51:39 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 20:51:39 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:51:39 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:51:39 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 20:51:39 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 20:51:39 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:51:39 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 20:51:39 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 20:51:39 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 20:51:39 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 20:51:39 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 20:51:39 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 20:51:39 : spymaster       : INFO : Loading word model...
+17/04 - 20:51:39 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 20:51:39 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:51:39 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 20:51:44 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 20:51:44 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 20:51:44 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:51:44 : spymaster       : INFO : Done loading models
+17/04 - 20:51:44 : spymaster       : INFO : Loading game words...
+17/04 - 20:51:44 : spymaster       : INFO : Done loading game words
+17/04 - 20:51:44 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 20:51:44 : spymaster       : INFO : Loading word model indexer...
+17/04 - 20:51:44 : spymaster       : INFO : No indexer selected, using default
+17/04 - 20:51:47 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 20:51:47 : field_agent     : INFO : Agent initialising...
+17/04 - 20:51:47 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 20:51:47 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:51:47 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:51:47 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:51:47 : field_agent     : INFO : Agent initialised!
+17/04 - 20:51:47 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 20:51:47 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 20:51:47 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:51:47 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:51:47 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 20:51:47 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 20:51:47 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:51:47 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 20:51:47 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 20:51:47 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 20:51:47 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 20:51:47 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 20:51:47 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 20:51:47 : spymaster       : INFO : Loading word model...
+17/04 - 20:51:47 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 20:51:47 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:51:47 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 20:51:51 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 20:51:51 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 20:51:51 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:51:51 : spymaster       : INFO : Done loading models
+17/04 - 20:51:51 : spymaster       : INFO : Loading game words...
+17/04 - 20:51:51 : spymaster       : INFO : Done loading game words
+17/04 - 20:51:51 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 20:51:51 : spymaster       : INFO : Loading word model indexer...
+17/04 - 20:51:51 : spymaster       : INFO : No indexer selected, using default
+17/04 - 20:51:54 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 20:51:54 : field_agent     : INFO : Agent initialising...
+17/04 - 20:51:54 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 20:51:54 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:51:54 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:51:54 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:51:54 : field_agent     : INFO : Agent initialised!
+17/04 - 20:53:02 : game            : INFO : Initialising Game...
+17/04 - 20:53:02 : game            : INFO : Initialising pygame...
+17/04 - 20:53:03 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 20:53:03 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 20:53:03 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 20:53:03 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 20:53:03 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 20:53:03 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 20:53:03 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 20:53:03 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 20:53:04 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 20:53:04 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 20:53:04 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:53:04 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:53:04 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 20:53:04 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 20:53:04 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:53:04 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 20:53:04 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 20:53:04 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 20:53:04 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 20:53:04 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 20:53:04 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 20:53:04 : spymaster       : INFO : Loading word model...
+17/04 - 20:53:04 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 20:53:04 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:53:04 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 20:53:08 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 20:53:08 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 20:53:08 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:53:08 : spymaster       : INFO : Done loading models
+17/04 - 20:53:08 : spymaster       : INFO : Loading game words...
+17/04 - 20:53:08 : spymaster       : INFO : Done loading game words
+17/04 - 20:53:08 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 20:53:08 : spymaster       : INFO : Loading word model indexer...
+17/04 - 20:53:08 : spymaster       : INFO : No indexer selected, using default
+17/04 - 20:53:11 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 20:53:11 : field_agent     : INFO : Agent initialising...
+17/04 - 20:53:11 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 20:53:11 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:53:11 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:53:11 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:53:11 : field_agent     : INFO : Agent initialised!
+17/04 - 20:53:11 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 20:53:11 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 20:53:11 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:53:11 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:53:11 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 20:53:11 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 20:53:11 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:53:11 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 20:53:11 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 20:53:11 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 20:53:11 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 20:53:11 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 20:53:11 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 20:53:11 : spymaster       : INFO : Loading word model...
+17/04 - 20:53:11 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 20:53:11 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:53:11 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 20:53:15 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 20:53:15 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 20:53:15 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:53:15 : spymaster       : INFO : Done loading models
+17/04 - 20:53:15 : spymaster       : INFO : Loading game words...
+17/04 - 20:53:15 : spymaster       : INFO : Done loading game words
+17/04 - 20:53:15 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 20:53:15 : spymaster       : INFO : Loading word model indexer...
+17/04 - 20:53:15 : spymaster       : INFO : No indexer selected, using default
+17/04 - 20:53:17 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 20:53:17 : field_agent     : INFO : Agent initialising...
+17/04 - 20:53:17 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 20:53:17 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:53:17 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:53:17 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:53:17 : field_agent     : INFO : Agent initialised!
+17/04 - 20:57:28 : game            : INFO : Initialising Game...
+17/04 - 20:57:28 : game            : INFO : Initialising pygame...
+17/04 - 20:57:30 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 20:57:30 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 20:57:30 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 20:57:30 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 20:57:30 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 20:57:30 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 20:57:30 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 20:57:30 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 20:57:31 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 20:57:31 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 20:57:31 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:57:31 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:57:31 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 20:57:31 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 20:57:31 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:57:31 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 20:57:31 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 20:57:31 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 20:57:31 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 20:57:31 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 20:57:31 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 20:57:31 : spymaster       : INFO : Loading word model...
+17/04 - 20:57:31 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 20:57:31 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:57:31 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 20:57:36 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 20:57:36 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 20:57:36 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:57:36 : spymaster       : INFO : Done loading models
+17/04 - 20:57:36 : spymaster       : INFO : Loading game words...
+17/04 - 20:57:36 : spymaster       : INFO : Done loading game words
+17/04 - 20:57:36 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 20:57:36 : spymaster       : INFO : Loading word model indexer...
+17/04 - 20:57:36 : spymaster       : INFO : No indexer selected, using default
+17/04 - 20:57:39 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 20:57:39 : field_agent     : INFO : Agent initialising...
+17/04 - 20:57:39 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 20:57:39 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:57:39 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:57:39 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:57:39 : field_agent     : INFO : Agent initialised!
+17/04 - 20:57:39 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 20:57:39 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 20:57:39 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:57:39 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:57:39 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 20:57:39 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 20:57:39 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:57:39 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 20:57:39 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 20:57:39 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 20:57:39 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 20:57:39 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 20:57:39 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 20:57:39 : spymaster       : INFO : Loading word model...
+17/04 - 20:57:39 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 20:57:39 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:57:39 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 20:57:43 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 20:57:43 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 20:57:43 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:57:43 : spymaster       : INFO : Done loading models
+17/04 - 20:57:43 : spymaster       : INFO : Loading game words...
+17/04 - 20:57:43 : spymaster       : INFO : Done loading game words
+17/04 - 20:57:43 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 20:57:43 : spymaster       : INFO : Loading word model indexer...
+17/04 - 20:57:43 : spymaster       : INFO : No indexer selected, using default
+17/04 - 20:57:47 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 20:57:47 : field_agent     : INFO : Agent initialising...
+17/04 - 20:57:47 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 20:57:47 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:57:47 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:57:47 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:57:47 : field_agent     : INFO : Agent initialised!
+17/04 - 20:59:49 : game            : INFO : Initialising Game...
+17/04 - 20:59:49 : game            : INFO : Initialising pygame...
+17/04 - 20:59:51 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 20:59:51 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 20:59:51 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 20:59:51 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 20:59:51 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 20:59:51 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 20:59:51 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 20:59:51 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 20:59:51 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 20:59:51 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 20:59:51 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 20:59:51 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 20:59:51 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 20:59:51 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 20:59:51 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 20:59:51 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 20:59:51 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 20:59:51 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 20:59:51 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 20:59:51 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 20:59:51 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 20:59:51 : spymaster       : INFO : Loading word model...
+17/04 - 20:59:51 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 20:59:51 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:59:51 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 20:59:57 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 20:59:57 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 20:59:57 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 20:59:57 : spymaster       : INFO : Done loading models
+17/04 - 20:59:57 : spymaster       : INFO : Loading game words...
+17/04 - 20:59:57 : spymaster       : INFO : Done loading game words
+17/04 - 20:59:57 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 20:59:57 : spymaster       : INFO : Loading word model indexer...
+17/04 - 20:59:57 : spymaster       : INFO : No indexer selected, using default
+17/04 - 21:00:04 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 21:00:04 : field_agent     : INFO : Agent initialising...
+17/04 - 21:00:04 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 21:00:04 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 21:00:04 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 21:00:04 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 21:00:04 : field_agent     : INFO : Agent initialised!
+17/04 - 21:00:04 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 21:00:04 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 21:00:04 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 21:00:04 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 21:00:04 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 21:00:04 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 21:00:04 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 21:00:04 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 21:00:04 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 21:00:04 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 21:00:04 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 21:00:04 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 21:00:04 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 21:00:04 : spymaster       : INFO : Loading word model...
+17/04 - 21:00:04 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 21:00:04 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 21:00:04 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 21:00:08 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 21:00:08 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 21:00:08 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 21:00:08 : spymaster       : INFO : Done loading models
+17/04 - 21:00:08 : spymaster       : INFO : Loading game words...
+17/04 - 21:00:08 : spymaster       : INFO : Done loading game words
+17/04 - 21:00:08 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 21:00:08 : spymaster       : INFO : Loading word model indexer...
+17/04 - 21:00:08 : spymaster       : INFO : No indexer selected, using default
+17/04 - 21:00:14 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 21:00:14 : field_agent     : INFO : Agent initialising...
+17/04 - 21:00:14 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 21:00:14 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 21:00:14 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 21:00:14 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 21:00:14 : field_agent     : INFO : Agent initialised!
+17/04 - 21:03:56 : game            : INFO : Initialising Game...
+17/04 - 21:03:56 : game            : INFO : Initialising pygame...
+17/04 - 21:03:59 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+17/04 - 21:03:59 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+17/04 - 21:03:59 : utils           : INFO : Found setting for scrn_h: 600 of type int
+17/04 - 21:03:59 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+17/04 - 21:03:59 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+17/04 - 21:03:59 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+17/04 - 21:03:59 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+17/04 - 21:03:59 : utils           : INFO : Done loading settings from settings/game_setts.txt
+17/04 - 21:04:00 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 21:04:00 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 21:04:00 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 21:04:00 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 21:04:00 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 21:04:00 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 21:04:00 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 21:04:00 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 21:04:00 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 21:04:00 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 21:04:00 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 21:04:00 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 21:04:00 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 21:04:00 : spymaster       : INFO : Loading word model...
+17/04 - 21:04:00 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 21:04:00 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 21:04:00 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 21:04:05 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 21:04:05 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 21:04:05 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 21:04:05 : spymaster       : INFO : Done loading models
+17/04 - 21:04:05 : spymaster       : INFO : Loading game words...
+17/04 - 21:04:05 : spymaster       : INFO : Done loading game words
+17/04 - 21:04:05 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 21:04:05 : spymaster       : INFO : Loading word model indexer...
+17/04 - 21:04:05 : spymaster       : INFO : No indexer selected, using default
+17/04 - 21:04:08 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 21:04:08 : field_agent     : INFO : Agent initialising...
+17/04 - 21:04:08 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 21:04:08 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 21:04:08 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 21:04:08 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 21:04:08 : field_agent     : INFO : Agent initialised!
+17/04 - 21:04:08 : spymaster       : INFO : SpyMaster initialising...
+17/04 - 21:04:08 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+17/04 - 21:04:08 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 21:04:08 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 21:04:08 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+17/04 - 21:04:08 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+17/04 - 21:04:08 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 21:04:08 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+17/04 - 21:04:08 : utils           : INFO : Found setting for red: 40 of type int
+17/04 - 21:04:08 : utils           : INFO : Found setting for grey: -1 of type int
+17/04 - 21:04:08 : utils           : INFO : Found setting for blue: -4 of type int
+17/04 - 21:04:08 : utils           : INFO : Found setting for black: -12 of type int
+17/04 - 21:04:08 : utils           : INFO : Done loading settings from settings/team_weights.txt
+17/04 - 21:04:08 : spymaster       : INFO : Loading word model...
+17/04 - 21:04:08 : spymaster       : DEBUG : Loading Wiki 100
+17/04 - 21:04:08 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 21:04:08 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+17/04 - 21:04:12 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+17/04 - 21:04:12 : utils           : INFO : setting ignored attribute vectors_norm to None
+17/04 - 21:04:12 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+17/04 - 21:04:12 : spymaster       : INFO : Done loading models
+17/04 - 21:04:12 : spymaster       : INFO : Loading game words...
+17/04 - 21:04:12 : spymaster       : INFO : Done loading game words
+17/04 - 21:04:12 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+17/04 - 21:04:12 : spymaster       : INFO : Loading word model indexer...
+17/04 - 21:04:12 : spymaster       : INFO : No indexer selected, using default
+17/04 - 21:04:15 : spymaster       : INFO : SpyMaster initialised!
+17/04 - 21:04:15 : field_agent     : INFO : Agent initialising...
+17/04 - 21:04:15 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+17/04 - 21:04:15 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+17/04 - 21:04:15 : utils           : INFO : Found setting for max_levels: 1 of type int
+17/04 - 21:04:15 : utils           : INFO : Done loading settings from settings/settings.txt
+17/04 - 21:04:15 : field_agent     : INFO : Agent initialised!
+18/04 - 01:20:23 : game            : INFO : Initialising Game...
+18/04 - 01:20:23 : game            : INFO : Initialising pygame...
+18/04 - 01:20:25 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+18/04 - 01:20:25 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+18/04 - 01:20:25 : utils           : INFO : Found setting for scrn_h: 600 of type int
+18/04 - 01:20:25 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+18/04 - 01:20:25 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+18/04 - 01:20:25 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+18/04 - 01:20:25 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+18/04 - 01:20:25 : utils           : INFO : Done loading settings from settings/game_setts.txt
+18/04 - 01:20:26 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 01:20:26 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 01:20:26 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:20:26 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:20:26 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 01:20:26 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 01:20:26 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:20:26 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 01:20:26 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 01:20:26 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 01:20:26 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 01:20:26 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 01:20:26 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 01:20:26 : spymaster       : INFO : Loading word model...
+18/04 - 01:20:26 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 01:20:26 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:20:26 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 01:20:30 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 01:20:31 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 01:20:31 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:20:31 : spymaster       : INFO : Done loading models
+18/04 - 01:20:31 : spymaster       : INFO : Loading game words...
+18/04 - 01:20:31 : spymaster       : INFO : Done loading game words
+18/04 - 01:20:31 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 01:20:31 : spymaster       : INFO : Loading word model indexer...
+18/04 - 01:20:31 : spymaster       : INFO : No indexer selected, using default
+18/04 - 01:20:33 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 01:20:33 : field_agent     : INFO : Agent initialising...
+18/04 - 01:20:33 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 01:20:33 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:20:33 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:20:33 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:20:33 : field_agent     : INFO : Agent initialised!
+18/04 - 01:20:33 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 01:20:33 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 01:20:33 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:20:33 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:20:33 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 01:20:33 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 01:20:33 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:20:33 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 01:20:33 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 01:20:33 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 01:20:33 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 01:20:33 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 01:20:33 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 01:20:33 : spymaster       : INFO : Loading word model...
+18/04 - 01:20:33 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 01:20:33 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:20:33 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 01:20:37 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 01:20:38 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 01:20:38 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:20:38 : spymaster       : INFO : Done loading models
+18/04 - 01:20:38 : spymaster       : INFO : Loading game words...
+18/04 - 01:20:38 : spymaster       : INFO : Done loading game words
+18/04 - 01:20:38 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 01:20:38 : spymaster       : INFO : Loading word model indexer...
+18/04 - 01:20:38 : spymaster       : INFO : No indexer selected, using default
+18/04 - 01:20:40 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 01:20:40 : field_agent     : INFO : Agent initialising...
+18/04 - 01:20:40 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 01:20:40 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:20:40 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:20:40 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:20:40 : field_agent     : INFO : Agent initialised!
+18/04 - 01:21:45 : game            : INFO : Initialising Game...
+18/04 - 01:21:45 : game            : INFO : Initialising pygame...
+18/04 - 01:21:47 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+18/04 - 01:21:47 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+18/04 - 01:21:47 : utils           : INFO : Found setting for scrn_h: 600 of type int
+18/04 - 01:21:47 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+18/04 - 01:21:47 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+18/04 - 01:21:47 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+18/04 - 01:21:47 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+18/04 - 01:21:47 : utils           : INFO : Done loading settings from settings/game_setts.txt
+18/04 - 01:21:47 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 01:21:47 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 01:21:47 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:21:47 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:21:47 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 01:21:47 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 01:21:47 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:21:47 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 01:21:47 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 01:21:47 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 01:21:47 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 01:21:47 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 01:21:47 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 01:21:47 : spymaster       : INFO : Loading word model...
+18/04 - 01:21:47 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 01:21:47 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:21:47 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 01:21:51 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 01:21:51 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 01:21:51 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:21:51 : spymaster       : INFO : Done loading models
+18/04 - 01:21:51 : spymaster       : INFO : Loading game words...
+18/04 - 01:21:51 : spymaster       : INFO : Done loading game words
+18/04 - 01:21:51 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 01:21:51 : spymaster       : INFO : Loading word model indexer...
+18/04 - 01:21:51 : spymaster       : INFO : No indexer selected, using default
+18/04 - 01:21:55 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 01:21:55 : field_agent     : INFO : Agent initialising...
+18/04 - 01:21:55 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 01:21:55 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:21:55 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:21:55 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:21:55 : field_agent     : INFO : Agent initialised!
+18/04 - 01:21:55 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 01:21:55 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 01:21:55 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:21:55 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:21:55 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 01:21:55 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 01:21:55 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:21:55 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 01:21:55 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 01:21:55 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 01:21:55 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 01:21:55 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 01:21:55 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 01:21:55 : spymaster       : INFO : Loading word model...
+18/04 - 01:21:55 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 01:21:55 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:21:55 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 01:21:59 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 01:21:59 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 01:21:59 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:21:59 : spymaster       : INFO : Done loading models
+18/04 - 01:21:59 : spymaster       : INFO : Loading game words...
+18/04 - 01:21:59 : spymaster       : INFO : Done loading game words
+18/04 - 01:21:59 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 01:21:59 : spymaster       : INFO : Loading word model indexer...
+18/04 - 01:21:59 : spymaster       : INFO : No indexer selected, using default
+18/04 - 01:22:03 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 01:22:03 : field_agent     : INFO : Agent initialising...
+18/04 - 01:22:03 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 01:22:03 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:22:03 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:22:03 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:22:03 : field_agent     : INFO : Agent initialised!
+18/04 - 01:25:19 : game            : INFO : Initialising Game...
+18/04 - 01:25:19 : game            : INFO : Initialising pygame...
+18/04 - 01:25:21 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+18/04 - 01:25:21 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+18/04 - 01:25:21 : utils           : INFO : Found setting for scrn_h: 600 of type int
+18/04 - 01:25:21 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+18/04 - 01:25:21 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+18/04 - 01:25:21 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+18/04 - 01:25:21 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+18/04 - 01:25:21 : utils           : INFO : Done loading settings from settings/game_setts.txt
+18/04 - 01:25:21 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 01:25:21 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 01:25:21 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:25:21 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:25:21 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 01:25:21 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 01:25:21 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:25:21 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 01:25:21 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 01:25:21 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 01:25:21 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 01:25:21 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 01:25:21 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 01:25:21 : spymaster       : INFO : Loading word model...
+18/04 - 01:25:21 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 01:25:21 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:25:21 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 01:25:25 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 01:25:25 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 01:25:25 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:25:25 : spymaster       : INFO : Done loading models
+18/04 - 01:25:25 : spymaster       : INFO : Loading game words...
+18/04 - 01:25:25 : spymaster       : INFO : Done loading game words
+18/04 - 01:25:25 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 01:25:25 : spymaster       : INFO : Loading word model indexer...
+18/04 - 01:25:25 : spymaster       : INFO : No indexer selected, using default
+18/04 - 01:25:29 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 01:25:29 : field_agent     : INFO : Agent initialising...
+18/04 - 01:25:29 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 01:25:29 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:25:29 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:25:29 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:25:29 : field_agent     : INFO : Agent initialised!
+18/04 - 01:25:29 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 01:25:29 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 01:25:29 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:25:29 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:25:29 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 01:25:29 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 01:25:29 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:25:29 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 01:25:29 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 01:25:29 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 01:25:29 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 01:25:29 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 01:25:29 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 01:25:29 : spymaster       : INFO : Loading word model...
+18/04 - 01:25:29 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 01:25:29 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:25:29 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 01:25:33 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 01:25:33 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 01:25:33 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:25:33 : spymaster       : INFO : Done loading models
+18/04 - 01:25:33 : spymaster       : INFO : Loading game words...
+18/04 - 01:25:33 : spymaster       : INFO : Done loading game words
+18/04 - 01:25:33 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 01:25:33 : spymaster       : INFO : Loading word model indexer...
+18/04 - 01:25:33 : spymaster       : INFO : No indexer selected, using default
+18/04 - 01:25:37 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 01:25:37 : field_agent     : INFO : Agent initialising...
+18/04 - 01:25:37 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 01:25:37 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:25:37 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:25:37 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:25:37 : field_agent     : INFO : Agent initialised!
+18/04 - 01:26:22 : game            : INFO : Initialising Game...
+18/04 - 01:26:22 : game            : INFO : Initialising pygame...
+18/04 - 01:26:23 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+18/04 - 01:26:23 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+18/04 - 01:26:23 : utils           : INFO : Found setting for scrn_h: 600 of type int
+18/04 - 01:26:23 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+18/04 - 01:26:23 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+18/04 - 01:26:23 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+18/04 - 01:26:23 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+18/04 - 01:26:23 : utils           : INFO : Done loading settings from settings/game_setts.txt
+18/04 - 01:26:24 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 01:26:24 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 01:26:24 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:26:24 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:26:24 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 01:26:24 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 01:26:24 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:26:24 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 01:26:24 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 01:26:24 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 01:26:24 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 01:26:24 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 01:26:24 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 01:26:24 : spymaster       : INFO : Loading word model...
+18/04 - 01:26:24 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 01:26:24 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:26:24 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 01:26:28 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 01:26:28 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 01:26:28 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:26:28 : spymaster       : INFO : Done loading models
+18/04 - 01:26:28 : spymaster       : INFO : Loading game words...
+18/04 - 01:26:28 : spymaster       : INFO : Done loading game words
+18/04 - 01:26:28 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 01:26:28 : spymaster       : INFO : Loading word model indexer...
+18/04 - 01:26:28 : spymaster       : INFO : No indexer selected, using default
+18/04 - 01:26:31 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 01:26:31 : field_agent     : INFO : Agent initialising...
+18/04 - 01:26:31 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 01:26:31 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:26:31 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:26:31 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:26:31 : field_agent     : INFO : Agent initialised!
+18/04 - 01:26:31 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 01:26:31 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 01:26:31 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:26:31 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:26:31 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 01:26:31 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 01:26:31 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:26:31 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 01:26:31 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 01:26:31 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 01:26:31 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 01:26:31 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 01:26:31 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 01:26:31 : spymaster       : INFO : Loading word model...
+18/04 - 01:26:31 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 01:26:31 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:26:31 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 01:26:35 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 01:26:35 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 01:26:35 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 01:26:35 : spymaster       : INFO : Done loading models
+18/04 - 01:26:35 : spymaster       : INFO : Loading game words...
+18/04 - 01:26:35 : spymaster       : INFO : Done loading game words
+18/04 - 01:26:35 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 01:26:35 : spymaster       : INFO : Loading word model indexer...
+18/04 - 01:26:35 : spymaster       : INFO : No indexer selected, using default
+18/04 - 01:26:37 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 01:26:37 : field_agent     : INFO : Agent initialising...
+18/04 - 01:26:37 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 01:26:37 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 01:26:37 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 01:26:37 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 01:26:37 : field_agent     : INFO : Agent initialised!
+18/04 - 09:48:57 : game            : INFO : Initialising Game...
+18/04 - 09:48:57 : game            : INFO : Initialising pygame...
+18/04 - 09:48:58 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+18/04 - 09:48:58 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+18/04 - 09:48:58 : utils           : INFO : Found setting for scrn_h: 600 of type int
+18/04 - 09:48:58 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+18/04 - 09:48:58 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+18/04 - 09:48:58 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+18/04 - 09:48:58 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+18/04 - 09:48:58 : utils           : INFO : Done loading settings from settings/game_setts.txt
+18/04 - 09:49:00 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 09:49:00 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 09:49:00 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 09:49:00 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 09:49:00 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 09:49:00 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 09:49:00 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 09:49:00 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 09:49:00 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 09:49:00 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 09:49:00 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 09:49:00 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 09:49:00 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 09:49:00 : spymaster       : INFO : Loading word model...
+18/04 - 09:49:00 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 09:49:00 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 09:49:00 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 09:49:03 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 09:49:04 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 09:49:04 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 09:49:04 : spymaster       : INFO : Done loading models
+18/04 - 09:49:04 : spymaster       : INFO : Loading game words...
+18/04 - 09:49:04 : spymaster       : INFO : Done loading game words
+18/04 - 09:49:04 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 09:49:04 : spymaster       : INFO : Loading word model indexer...
+18/04 - 09:49:04 : spymaster       : INFO : No indexer selected, using default
+18/04 - 09:49:07 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 09:49:07 : field_agent     : INFO : Agent initialising...
+18/04 - 09:49:07 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 09:49:07 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 09:49:07 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 09:49:07 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 09:49:07 : field_agent     : INFO : Agent initialised!
+18/04 - 09:49:07 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 09:49:07 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 09:49:07 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 09:49:07 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 09:49:07 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 09:49:07 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 09:49:07 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 09:49:07 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 09:49:07 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 09:49:07 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 09:49:07 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 09:49:07 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 09:49:07 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 09:49:07 : spymaster       : INFO : Loading word model...
+18/04 - 09:49:07 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 09:49:07 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 09:49:07 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 09:49:10 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 09:49:10 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 09:49:10 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 09:49:10 : spymaster       : INFO : Done loading models
+18/04 - 09:49:10 : spymaster       : INFO : Loading game words...
+18/04 - 09:49:10 : spymaster       : INFO : Done loading game words
+18/04 - 09:49:10 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 09:49:10 : spymaster       : INFO : Loading word model indexer...
+18/04 - 09:49:10 : spymaster       : INFO : No indexer selected, using default
+18/04 - 09:49:12 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 09:49:12 : field_agent     : INFO : Agent initialising...
+18/04 - 09:49:12 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 09:49:12 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 09:49:12 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 09:49:12 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 09:49:12 : field_agent     : INFO : Agent initialised!
+18/04 - 10:03:27 : game            : INFO : Initialising Game...
+18/04 - 10:03:27 : game            : INFO : Initialising pygame...
+18/04 - 10:03:28 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+18/04 - 10:03:28 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+18/04 - 10:03:28 : utils           : INFO : Found setting for scrn_h: 600 of type int
+18/04 - 10:03:28 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+18/04 - 10:03:28 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+18/04 - 10:03:28 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+18/04 - 10:03:28 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+18/04 - 10:03:28 : utils           : INFO : Done loading settings from settings/game_setts.txt
+18/04 - 10:03:29 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 10:03:29 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 10:03:29 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 10:03:29 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 10:03:29 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 10:03:29 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 10:03:29 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 10:03:29 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 10:03:29 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 10:03:29 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 10:03:29 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 10:03:29 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 10:03:29 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 10:03:29 : spymaster       : INFO : Loading word model...
+18/04 - 10:03:29 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 10:03:29 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 10:03:29 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 10:03:32 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 10:03:32 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 10:03:32 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 10:03:32 : spymaster       : INFO : Done loading models
+18/04 - 10:03:32 : spymaster       : INFO : Loading game words...
+18/04 - 10:03:32 : spymaster       : INFO : Done loading game words
+18/04 - 10:03:32 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 10:03:32 : spymaster       : INFO : Loading word model indexer...
+18/04 - 10:03:32 : spymaster       : INFO : No indexer selected, using default
+18/04 - 10:03:35 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 10:03:35 : field_agent     : INFO : Agent initialising...
+18/04 - 10:03:35 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 10:03:35 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 10:03:35 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 10:03:35 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 10:03:35 : field_agent     : INFO : Agent initialised!
+18/04 - 10:03:35 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 10:03:35 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 10:03:35 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 10:03:35 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 10:03:35 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 10:03:35 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 10:03:35 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 10:03:35 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 10:03:35 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 10:03:35 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 10:03:35 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 10:03:35 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 10:03:35 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 10:03:35 : spymaster       : INFO : Loading word model...
+18/04 - 10:03:35 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 10:03:35 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 10:03:35 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 10:03:38 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 10:03:39 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 10:03:39 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 10:03:39 : spymaster       : INFO : Done loading models
+18/04 - 10:03:39 : spymaster       : INFO : Loading game words...
+18/04 - 10:03:39 : spymaster       : INFO : Done loading game words
+18/04 - 10:03:39 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 10:03:39 : spymaster       : INFO : Loading word model indexer...
+18/04 - 10:03:39 : spymaster       : INFO : No indexer selected, using default
+18/04 - 10:03:41 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 10:03:41 : field_agent     : INFO : Agent initialising...
+18/04 - 10:03:41 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 10:03:41 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 10:03:41 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 10:03:41 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 10:03:41 : field_agent     : INFO : Agent initialised!
+18/04 - 10:23:13 : game            : INFO : Initialising Game...
+18/04 - 10:23:13 : game            : INFO : Initialising pygame...
+18/04 - 10:23:14 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+18/04 - 10:23:14 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+18/04 - 10:23:14 : utils           : INFO : Found setting for scrn_h: 600 of type int
+18/04 - 10:23:14 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+18/04 - 10:23:14 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+18/04 - 10:23:14 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+18/04 - 10:23:14 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+18/04 - 10:23:14 : utils           : INFO : Done loading settings from settings/game_setts.txt
+18/04 - 10:23:15 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 10:23:15 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 10:23:15 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 10:23:15 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 10:23:15 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 10:23:15 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 10:23:15 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 10:23:15 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 10:23:15 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 10:23:15 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 10:23:15 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 10:23:15 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 10:23:15 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 10:23:15 : spymaster       : INFO : Loading word model...
+18/04 - 10:23:15 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 10:23:15 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 10:23:15 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 10:23:19 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 10:23:19 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 10:23:19 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 10:23:19 : spymaster       : INFO : Done loading models
+18/04 - 10:23:19 : spymaster       : INFO : Loading game words...
+18/04 - 10:23:19 : spymaster       : INFO : Done loading game words
+18/04 - 10:23:19 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 10:23:19 : spymaster       : INFO : Loading word model indexer...
+18/04 - 10:23:19 : spymaster       : INFO : No indexer selected, using default
+18/04 - 10:23:22 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 10:23:22 : field_agent     : INFO : Agent initialising...
+18/04 - 10:23:22 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 10:23:22 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 10:23:22 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 10:23:22 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 10:23:22 : field_agent     : INFO : Agent initialised!
+18/04 - 10:23:22 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 10:23:22 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 10:23:22 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 10:23:22 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 10:23:22 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 10:23:22 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 10:23:22 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 10:23:22 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 10:23:22 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 10:23:22 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 10:23:22 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 10:23:22 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 10:23:22 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 10:23:22 : spymaster       : INFO : Loading word model...
+18/04 - 10:23:22 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 10:23:22 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 10:23:22 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 10:23:25 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 10:23:25 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 10:23:25 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 10:23:25 : spymaster       : INFO : Done loading models
+18/04 - 10:23:25 : spymaster       : INFO : Loading game words...
+18/04 - 10:23:25 : spymaster       : INFO : Done loading game words
+18/04 - 10:23:25 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 10:23:25 : spymaster       : INFO : Loading word model indexer...
+18/04 - 10:23:25 : spymaster       : INFO : No indexer selected, using default
+18/04 - 10:23:28 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 10:23:28 : field_agent     : INFO : Agent initialising...
+18/04 - 10:23:28 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 10:23:28 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 10:23:28 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 10:23:28 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 10:23:28 : field_agent     : INFO : Agent initialised!
+18/04 - 23:11:43 : game            : INFO : Initialising Game...
+18/04 - 23:11:43 : game            : INFO : Initialising pygame...
+18/04 - 23:11:46 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+18/04 - 23:11:46 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+18/04 - 23:11:46 : utils           : INFO : Found setting for scrn_h: 600 of type int
+18/04 - 23:11:46 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+18/04 - 23:11:46 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+18/04 - 23:11:46 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+18/04 - 23:11:46 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+18/04 - 23:11:46 : utils           : INFO : Done loading settings from settings/game_setts.txt
+18/04 - 23:11:47 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 23:11:47 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 23:11:47 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:11:47 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:11:47 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 23:11:47 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 23:11:47 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:11:47 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 23:11:47 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 23:11:47 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 23:11:47 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 23:11:47 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 23:11:47 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 23:11:47 : spymaster       : INFO : Loading word model...
+18/04 - 23:11:47 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 23:11:47 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:11:47 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 23:11:51 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 23:11:53 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 23:11:53 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:11:53 : spymaster       : INFO : Done loading models
+18/04 - 23:11:53 : spymaster       : INFO : Loading game words...
+18/04 - 23:11:53 : spymaster       : INFO : Done loading game words
+18/04 - 23:11:53 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 23:11:53 : spymaster       : INFO : Loading word model indexer...
+18/04 - 23:11:53 : spymaster       : INFO : No indexer selected, using default
+18/04 - 23:11:56 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 23:11:56 : field_agent     : INFO : Agent initialising...
+18/04 - 23:11:56 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 23:11:56 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:11:56 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:11:56 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:11:56 : field_agent     : INFO : Agent initialised!
+18/04 - 23:11:56 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 23:11:56 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 23:11:56 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:11:56 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:11:56 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 23:11:56 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 23:11:56 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:11:56 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 23:11:56 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 23:11:56 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 23:11:56 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 23:11:56 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 23:11:56 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 23:11:56 : spymaster       : INFO : Loading word model...
+18/04 - 23:11:56 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 23:11:56 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:11:56 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 23:12:00 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 23:12:00 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 23:12:00 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:12:00 : spymaster       : INFO : Done loading models
+18/04 - 23:12:00 : spymaster       : INFO : Loading game words...
+18/04 - 23:12:00 : spymaster       : INFO : Done loading game words
+18/04 - 23:12:00 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 23:12:00 : spymaster       : INFO : Loading word model indexer...
+18/04 - 23:12:00 : spymaster       : INFO : No indexer selected, using default
+18/04 - 23:12:03 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 23:12:03 : field_agent     : INFO : Agent initialising...
+18/04 - 23:12:03 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 23:12:04 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:12:04 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:12:04 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:12:04 : field_agent     : INFO : Agent initialised!
+18/04 - 23:12:50 : game            : INFO : Initialising Game...
+18/04 - 23:12:50 : game            : INFO : Initialising pygame...
+18/04 - 23:12:51 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+18/04 - 23:12:51 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+18/04 - 23:12:51 : utils           : INFO : Found setting for scrn_h: 600 of type int
+18/04 - 23:12:51 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+18/04 - 23:12:51 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+18/04 - 23:12:51 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+18/04 - 23:12:51 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+18/04 - 23:12:51 : utils           : INFO : Done loading settings from settings/game_setts.txt
+18/04 - 23:12:52 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 23:12:52 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 23:12:52 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:12:52 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:12:52 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 23:12:52 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 23:12:52 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:12:52 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 23:12:52 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 23:12:52 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 23:12:52 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 23:12:52 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 23:12:52 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 23:12:52 : spymaster       : INFO : Loading word model...
+18/04 - 23:12:52 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 23:12:52 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:12:52 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 23:12:56 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 23:12:56 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 23:12:56 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:12:56 : spymaster       : INFO : Done loading models
+18/04 - 23:12:56 : spymaster       : INFO : Loading game words...
+18/04 - 23:12:56 : spymaster       : INFO : Done loading game words
+18/04 - 23:12:56 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 23:12:56 : spymaster       : INFO : Loading word model indexer...
+18/04 - 23:12:56 : spymaster       : INFO : No indexer selected, using default
+18/04 - 23:12:59 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 23:12:59 : field_agent     : INFO : Agent initialising...
+18/04 - 23:12:59 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 23:12:59 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:12:59 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:12:59 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:12:59 : field_agent     : INFO : Agent initialised!
+18/04 - 23:12:59 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 23:12:59 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 23:12:59 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:12:59 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:12:59 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 23:12:59 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 23:12:59 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:12:59 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 23:12:59 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 23:12:59 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 23:12:59 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 23:12:59 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 23:12:59 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 23:12:59 : spymaster       : INFO : Loading word model...
+18/04 - 23:12:59 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 23:12:59 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:12:59 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 23:13:02 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 23:13:03 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 23:13:03 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:13:03 : spymaster       : INFO : Done loading models
+18/04 - 23:13:03 : spymaster       : INFO : Loading game words...
+18/04 - 23:13:03 : spymaster       : INFO : Done loading game words
+18/04 - 23:13:03 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 23:13:03 : spymaster       : INFO : Loading word model indexer...
+18/04 - 23:13:03 : spymaster       : INFO : No indexer selected, using default
+18/04 - 23:13:05 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 23:13:05 : field_agent     : INFO : Agent initialising...
+18/04 - 23:13:05 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 23:13:05 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:13:05 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:13:05 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:13:05 : field_agent     : INFO : Agent initialised!
+18/04 - 23:14:17 : game            : INFO : Initialising Game...
+18/04 - 23:14:17 : game            : INFO : Initialising pygame...
+18/04 - 23:14:18 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+18/04 - 23:14:18 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+18/04 - 23:14:18 : utils           : INFO : Found setting for scrn_h: 600 of type int
+18/04 - 23:14:18 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+18/04 - 23:14:18 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+18/04 - 23:14:18 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+18/04 - 23:14:18 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+18/04 - 23:14:18 : utils           : INFO : Done loading settings from settings/game_setts.txt
+18/04 - 23:14:19 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 23:14:19 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 23:14:19 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:14:19 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:14:19 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 23:14:19 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 23:14:19 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:14:19 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 23:14:19 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 23:14:19 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 23:14:19 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 23:14:19 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 23:14:19 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 23:14:19 : spymaster       : INFO : Loading word model...
+18/04 - 23:14:19 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 23:14:19 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:14:19 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 23:14:23 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 23:14:23 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 23:14:23 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:14:23 : spymaster       : INFO : Done loading models
+18/04 - 23:14:23 : spymaster       : INFO : Loading game words...
+18/04 - 23:14:23 : spymaster       : INFO : Done loading game words
+18/04 - 23:14:23 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 23:14:23 : spymaster       : INFO : Loading word model indexer...
+18/04 - 23:14:23 : spymaster       : INFO : No indexer selected, using default
+18/04 - 23:14:26 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 23:14:26 : field_agent     : INFO : Agent initialising...
+18/04 - 23:14:26 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 23:14:26 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:14:26 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:14:26 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:14:26 : field_agent     : INFO : Agent initialised!
+18/04 - 23:14:26 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 23:14:26 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 23:14:26 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:14:26 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:14:26 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 23:14:26 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 23:14:26 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:14:26 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 23:14:26 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 23:14:26 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 23:14:26 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 23:14:26 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 23:14:26 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 23:14:26 : spymaster       : INFO : Loading word model...
+18/04 - 23:14:26 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 23:14:26 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:14:26 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 23:14:30 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 23:14:30 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 23:14:30 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:14:30 : spymaster       : INFO : Done loading models
+18/04 - 23:14:30 : spymaster       : INFO : Loading game words...
+18/04 - 23:14:30 : spymaster       : INFO : Done loading game words
+18/04 - 23:14:30 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 23:14:30 : spymaster       : INFO : Loading word model indexer...
+18/04 - 23:14:30 : spymaster       : INFO : No indexer selected, using default
+18/04 - 23:14:32 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 23:14:32 : field_agent     : INFO : Agent initialising...
+18/04 - 23:14:32 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 23:14:32 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:14:32 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:14:32 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:14:32 : field_agent     : INFO : Agent initialised!
+18/04 - 23:18:42 : game            : INFO : Initialising Game...
+18/04 - 23:18:42 : game            : INFO : Initialising pygame...
+18/04 - 23:18:43 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+18/04 - 23:18:43 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+18/04 - 23:18:43 : utils           : INFO : Found setting for scrn_h: 600 of type int
+18/04 - 23:18:43 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+18/04 - 23:18:43 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+18/04 - 23:18:43 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+18/04 - 23:18:43 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+18/04 - 23:18:43 : utils           : INFO : Done loading settings from settings/game_setts.txt
+18/04 - 23:18:44 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 23:18:44 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 23:18:44 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:18:44 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:18:44 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 23:18:44 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 23:18:44 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:18:44 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 23:18:44 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 23:18:44 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 23:18:44 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 23:18:44 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 23:18:44 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 23:18:44 : spymaster       : INFO : Loading word model...
+18/04 - 23:18:44 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 23:18:44 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:18:44 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 23:18:48 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 23:18:48 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 23:18:48 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:18:48 : spymaster       : INFO : Done loading models
+18/04 - 23:18:48 : spymaster       : INFO : Loading game words...
+18/04 - 23:18:48 : spymaster       : INFO : Done loading game words
+18/04 - 23:18:48 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 23:18:48 : spymaster       : INFO : Loading word model indexer...
+18/04 - 23:18:48 : spymaster       : INFO : No indexer selected, using default
+18/04 - 23:18:50 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 23:18:50 : field_agent     : INFO : Agent initialising...
+18/04 - 23:18:50 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 23:18:50 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:18:50 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:18:50 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:18:50 : field_agent     : INFO : Agent initialised!
+18/04 - 23:18:50 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 23:18:50 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 23:18:50 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:18:50 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:18:50 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 23:18:50 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 23:18:50 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:18:50 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 23:18:50 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 23:18:50 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 23:18:50 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 23:18:50 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 23:18:50 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 23:18:50 : spymaster       : INFO : Loading word model...
+18/04 - 23:18:50 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 23:18:50 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:18:50 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 23:18:54 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 23:18:54 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 23:18:54 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:18:54 : spymaster       : INFO : Done loading models
+18/04 - 23:18:54 : spymaster       : INFO : Loading game words...
+18/04 - 23:18:54 : spymaster       : INFO : Done loading game words
+18/04 - 23:18:54 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 23:18:54 : spymaster       : INFO : Loading word model indexer...
+18/04 - 23:18:54 : spymaster       : INFO : No indexer selected, using default
+18/04 - 23:18:57 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 23:18:57 : field_agent     : INFO : Agent initialising...
+18/04 - 23:18:57 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 23:18:57 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:18:57 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:18:57 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:18:57 : field_agent     : INFO : Agent initialised!
+18/04 - 23:25:23 : game            : INFO : Initialising Game...
+18/04 - 23:25:23 : game            : INFO : Initialising pygame...
+18/04 - 23:25:24 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+18/04 - 23:25:24 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+18/04 - 23:25:24 : utils           : INFO : Found setting for scrn_h: 600 of type int
+18/04 - 23:25:24 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+18/04 - 23:25:24 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+18/04 - 23:25:24 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+18/04 - 23:25:24 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+18/04 - 23:25:24 : utils           : INFO : Done loading settings from settings/game_setts.txt
+18/04 - 23:25:25 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 23:25:25 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 23:25:25 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:25:25 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:25:25 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 23:25:25 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 23:25:25 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:25:25 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 23:25:25 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 23:25:25 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 23:25:25 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 23:25:25 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 23:25:25 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 23:25:25 : spymaster       : INFO : Loading word model...
+18/04 - 23:25:25 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 23:25:25 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:25:25 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 23:25:29 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 23:25:29 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 23:25:29 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:25:29 : spymaster       : INFO : Done loading models
+18/04 - 23:25:29 : spymaster       : INFO : Loading game words...
+18/04 - 23:25:29 : spymaster       : INFO : Done loading game words
+18/04 - 23:25:29 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 23:25:29 : spymaster       : INFO : Loading word model indexer...
+18/04 - 23:25:29 : spymaster       : INFO : No indexer selected, using default
+18/04 - 23:25:32 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 23:25:32 : field_agent     : INFO : Agent initialising...
+18/04 - 23:25:32 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 23:25:32 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:25:32 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:25:32 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:25:32 : field_agent     : INFO : Agent initialised!
+18/04 - 23:25:32 : spymaster       : INFO : SpyMaster initialising...
+18/04 - 23:25:32 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+18/04 - 23:25:32 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:25:32 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:25:32 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+18/04 - 23:25:32 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+18/04 - 23:25:32 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:25:32 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+18/04 - 23:25:32 : utils           : INFO : Found setting for red: 40 of type int
+18/04 - 23:25:32 : utils           : INFO : Found setting for grey: -1 of type int
+18/04 - 23:25:32 : utils           : INFO : Found setting for blue: -4 of type int
+18/04 - 23:25:32 : utils           : INFO : Found setting for black: -12 of type int
+18/04 - 23:25:32 : utils           : INFO : Done loading settings from settings/team_weights.txt
+18/04 - 23:25:32 : spymaster       : INFO : Loading word model...
+18/04 - 23:25:32 : spymaster       : DEBUG : Loading Wiki 100
+18/04 - 23:25:32 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:25:32 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+18/04 - 23:25:35 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+18/04 - 23:25:35 : utils           : INFO : setting ignored attribute vectors_norm to None
+18/04 - 23:25:35 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+18/04 - 23:25:35 : spymaster       : INFO : Done loading models
+18/04 - 23:25:35 : spymaster       : INFO : Loading game words...
+18/04 - 23:25:35 : spymaster       : INFO : Done loading game words
+18/04 - 23:25:35 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+18/04 - 23:25:35 : spymaster       : INFO : Loading word model indexer...
+18/04 - 23:25:35 : spymaster       : INFO : No indexer selected, using default
+18/04 - 23:25:37 : spymaster       : INFO : SpyMaster initialised!
+18/04 - 23:25:37 : field_agent     : INFO : Agent initialising...
+18/04 - 23:25:37 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+18/04 - 23:25:37 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+18/04 - 23:25:37 : utils           : INFO : Found setting for max_levels: 1 of type int
+18/04 - 23:25:37 : utils           : INFO : Done loading settings from settings/settings.txt
+18/04 - 23:25:37 : field_agent     : INFO : Agent initialised!
+19/04 - 00:54:16 : game            : INFO : Initialising Game...
+19/04 - 00:54:16 : game            : INFO : Initialising pygame...
+19/04 - 00:54:18 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+19/04 - 00:54:18 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+19/04 - 00:54:18 : utils           : INFO : Found setting for scrn_h: 600 of type int
+19/04 - 00:54:18 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+19/04 - 00:54:18 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+19/04 - 00:54:18 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+19/04 - 00:54:18 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+19/04 - 00:54:18 : utils           : INFO : Done loading settings from settings/game_setts.txt
+19/04 - 00:54:19 : spymaster       : INFO : SpyMaster initialising...
+19/04 - 00:54:19 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+19/04 - 00:54:19 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+19/04 - 00:54:19 : utils           : INFO : Found setting for max_levels: 1 of type int
+19/04 - 00:54:19 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+19/04 - 00:54:19 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+19/04 - 00:54:19 : utils           : INFO : Done loading settings from settings/settings.txt
+19/04 - 00:54:19 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+19/04 - 00:54:19 : utils           : INFO : Found setting for red: 40 of type int
+19/04 - 00:54:19 : utils           : INFO : Found setting for grey: -1 of type int
+19/04 - 00:54:19 : utils           : INFO : Found setting for blue: -4 of type int
+19/04 - 00:54:19 : utils           : INFO : Found setting for black: -12 of type int
+19/04 - 00:54:19 : utils           : INFO : Done loading settings from settings/team_weights.txt
+19/04 - 00:54:19 : spymaster       : INFO : Loading word model...
+19/04 - 00:54:19 : spymaster       : DEBUG : Loading Wiki 100
+19/04 - 00:54:19 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+19/04 - 00:54:19 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+19/04 - 00:54:22 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+19/04 - 00:54:23 : utils           : INFO : setting ignored attribute vectors_norm to None
+19/04 - 00:54:23 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+19/04 - 00:54:23 : spymaster       : INFO : Done loading models
+19/04 - 00:54:23 : spymaster       : INFO : Loading game words...
+19/04 - 00:54:23 : spymaster       : INFO : Done loading game words
+19/04 - 00:54:23 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+19/04 - 00:54:23 : spymaster       : INFO : Loading word model indexer...
+19/04 - 00:54:23 : spymaster       : INFO : No indexer selected, using default
+19/04 - 00:54:25 : spymaster       : INFO : SpyMaster initialised!
+19/04 - 00:54:25 : field_agent     : INFO : Agent initialising...
+19/04 - 00:54:25 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+19/04 - 00:54:25 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+19/04 - 00:54:25 : utils           : INFO : Found setting for max_levels: 1 of type int
+19/04 - 00:54:25 : utils           : INFO : Done loading settings from settings/settings.txt
+19/04 - 00:54:25 : field_agent     : INFO : Agent initialised!
+19/04 - 00:54:25 : spymaster       : INFO : SpyMaster initialising...
+19/04 - 00:54:25 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+19/04 - 00:54:25 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+19/04 - 00:54:25 : utils           : INFO : Found setting for max_levels: 1 of type int
+19/04 - 00:54:25 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+19/04 - 00:54:25 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+19/04 - 00:54:25 : utils           : INFO : Done loading settings from settings/settings.txt
+19/04 - 00:54:25 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+19/04 - 00:54:25 : utils           : INFO : Found setting for red: 40 of type int
+19/04 - 00:54:25 : utils           : INFO : Found setting for grey: -1 of type int
+19/04 - 00:54:25 : utils           : INFO : Found setting for blue: -4 of type int
+19/04 - 00:54:25 : utils           : INFO : Found setting for black: -12 of type int
+19/04 - 00:54:25 : utils           : INFO : Done loading settings from settings/team_weights.txt
+19/04 - 00:54:25 : spymaster       : INFO : Loading word model...
+19/04 - 00:54:25 : spymaster       : DEBUG : Loading Wiki 100
+19/04 - 00:54:25 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+19/04 - 00:54:25 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+19/04 - 00:54:29 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+19/04 - 00:54:30 : utils           : INFO : setting ignored attribute vectors_norm to None
+19/04 - 00:54:30 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+19/04 - 00:54:30 : spymaster       : INFO : Done loading models
+19/04 - 00:54:30 : spymaster       : INFO : Loading game words...
+19/04 - 00:54:30 : spymaster       : INFO : Done loading game words
+19/04 - 00:54:30 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+19/04 - 00:54:30 : spymaster       : INFO : Loading word model indexer...
+19/04 - 00:54:30 : spymaster       : INFO : No indexer selected, using default
+19/04 - 00:54:32 : spymaster       : INFO : SpyMaster initialised!
+19/04 - 00:54:32 : field_agent     : INFO : Agent initialising...
+19/04 - 00:54:32 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+19/04 - 00:54:32 : utils           : INFO : Found setting for max_top_hints: 7 of type int
+19/04 - 00:54:32 : utils           : INFO : Found setting for max_levels: 1 of type int
+19/04 - 00:54:32 : utils           : INFO : Done loading settings from settings/settings.txt
+19/04 - 00:54:32 : field_agent     : INFO : Agent initialised!
+19/04 - 01:52:16 : game            : INFO : Initialising Game...
+19/04 - 01:52:16 : game            : INFO : Initialising pygame...
+19/04 - 01:52:18 : utils           : INFO : Loading settings for scrn_w, scrn_h, red_spymaster_cpu, red_field_agent_cpu, blue_spymaster_cpu, blue_field_agent_cpu from settings/game_setts.txt... 
+19/04 - 01:52:18 : utils           : INFO : Found setting for scrn_w: 1000 of type int
+19/04 - 01:52:18 : utils           : INFO : Found setting for scrn_h: 600 of type int
+19/04 - 01:52:18 : utils           : INFO : Found setting for red_spymaster_cpu: true of type bool
+19/04 - 01:52:18 : utils           : INFO : Found setting for red_field_agent_cpu: false of type bool
+19/04 - 01:52:18 : utils           : INFO : Found setting for blue_spymaster_cpu: true of type bool
+19/04 - 01:52:18 : utils           : INFO : Found setting for blue_field_agent_cpu: true of type bool
+19/04 - 01:52:18 : utils           : INFO : Done loading settings from settings/game_setts.txt
+19/04 - 01:52:19 : spymaster       : INFO : SpyMaster initialising...
+19/04 - 01:52:19 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+19/04 - 01:52:19 : utils           : INFO : Found setting for max_top_hints: 5 of type int
+19/04 - 01:52:19 : utils           : INFO : Found setting for max_levels: 2 of type int
+19/04 - 01:52:19 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+19/04 - 01:52:19 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+19/04 - 01:52:19 : utils           : INFO : Done loading settings from settings/settings.txt
+19/04 - 01:52:19 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+19/04 - 01:52:19 : utils           : INFO : Found setting for red: 40 of type int
+19/04 - 01:52:19 : utils           : INFO : Found setting for grey: -1 of type int
+19/04 - 01:52:19 : utils           : INFO : Found setting for blue: -4 of type int
+19/04 - 01:52:19 : utils           : INFO : Found setting for black: -12 of type int
+19/04 - 01:52:19 : utils           : INFO : Done loading settings from settings/team_weights.txt
+19/04 - 01:52:19 : spymaster       : INFO : Loading word model...
+19/04 - 01:52:19 : spymaster       : DEBUG : Loading Wiki 100
+19/04 - 01:52:19 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+19/04 - 01:52:19 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+19/04 - 01:52:22 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+19/04 - 01:52:23 : utils           : INFO : setting ignored attribute vectors_norm to None
+19/04 - 01:52:23 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+19/04 - 01:52:23 : spymaster       : INFO : Done loading models
+19/04 - 01:52:23 : spymaster       : INFO : Loading game words...
+19/04 - 01:52:23 : spymaster       : INFO : Done loading game words
+19/04 - 01:52:23 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+19/04 - 01:52:23 : spymaster       : INFO : Loading word model indexer...
+19/04 - 01:52:23 : spymaster       : INFO : No indexer selected, using default
+19/04 - 01:52:25 : spymaster       : INFO : SpyMaster initialised!
+19/04 - 01:52:25 : keyedvectors    : INFO : precomputing L2-norms of word weight vectors
+19/04 - 01:52:27 : field_agent     : INFO : Agent initialising...
+19/04 - 01:52:27 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+19/04 - 01:52:27 : utils           : INFO : Found setting for max_top_hints: 5 of type int
+19/04 - 01:52:27 : utils           : INFO : Found setting for max_levels: 2 of type int
+19/04 - 01:52:27 : utils           : INFO : Done loading settings from settings/settings.txt
+19/04 - 01:52:27 : field_agent     : INFO : Agent initialised!
+19/04 - 01:52:27 : spymaster       : INFO : SpyMaster initialising...
+19/04 - 01:52:27 : utils           : INFO : Loading settings for max_top_hints, max_levels, use_annoy_indexer, model_name from settings/settings.txt... 
+19/04 - 01:52:27 : utils           : INFO : Found setting for max_top_hints: 5 of type int
+19/04 - 01:52:27 : utils           : INFO : Found setting for max_levels: 2 of type int
+19/04 - 01:52:27 : utils           : INFO : Found setting for use_annoy_indexer: false of type bool
+19/04 - 01:52:27 : utils           : INFO : Found setting for model_name: glove-wiki-100 of type str
+19/04 - 01:52:27 : utils           : INFO : Done loading settings from settings/settings.txt
+19/04 - 01:52:27 : utils           : INFO : Loading settings for red, grey, blue, black from settings/team_weights.txt... 
+19/04 - 01:52:27 : utils           : INFO : Found setting for red: 40 of type int
+19/04 - 01:52:27 : utils           : INFO : Found setting for grey: -1 of type int
+19/04 - 01:52:27 : utils           : INFO : Found setting for blue: -4 of type int
+19/04 - 01:52:27 : utils           : INFO : Found setting for black: -12 of type int
+19/04 - 01:52:27 : utils           : INFO : Done loading settings from settings/team_weights.txt
+19/04 - 01:52:27 : spymaster       : INFO : Loading word model...
+19/04 - 01:52:27 : spymaster       : DEBUG : Loading Wiki 100
+19/04 - 01:52:27 : utils           : INFO : loading Word2VecKeyedVectors object from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+19/04 - 01:52:27 : smart_open_lib  : DEBUG : {'uri': 'C:\\Users\\benja\\OneDrive\\Documents\\UniWork\\Aberystwyth\\Year3\\CS39440\\MajorProject\\models\\glove-wiki-100.bin', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'transport_params': None}
+19/04 - 01:52:31 : utils           : INFO : loading vectors from C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin.vectors.npy with mmap=None
+19/04 - 01:52:31 : utils           : INFO : setting ignored attribute vectors_norm to None
+19/04 - 01:52:31 : utils           : INFO : loaded C:\Users\benja\OneDrive\Documents\UniWork\Aberystwyth\Year3\CS39440\MajorProject\models\glove-wiki-100.bin
+19/04 - 01:52:31 : spymaster       : INFO : Done loading models
+19/04 - 01:52:31 : spymaster       : INFO : Loading game words...
+19/04 - 01:52:31 : spymaster       : INFO : Done loading game words
+19/04 - 01:52:31 : spymaster       : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, scuba_diver, loch_ness, new_york)
+19/04 - 01:52:31 : spymaster       : INFO : Loading word model indexer...
+19/04 - 01:52:31 : spymaster       : INFO : No indexer selected, using default
+19/04 - 01:52:34 : spymaster       : INFO : SpyMaster initialised!
+19/04 - 01:52:34 : keyedvectors    : INFO : precomputing L2-norms of word weight vectors
+19/04 - 01:52:35 : field_agent     : INFO : Agent initialising...
+19/04 - 01:52:35 : utils           : INFO : Loading settings for max_top_hints, max_levels from settings/settings.txt... 
+19/04 - 01:52:35 : utils           : INFO : Found setting for max_top_hints: 5 of type int
+19/04 - 01:52:35 : utils           : INFO : Found setting for max_levels: 2 of type int
+19/04 - 01:52:35 : utils           : INFO : Done loading settings from settings/settings.txt
+19/04 - 01:52:35 : field_agent     : INFO : Agent initialised!

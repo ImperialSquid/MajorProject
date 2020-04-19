@@ -22,7 +22,7 @@ class FieldAgent:
                                    self.__word_net_wup_eval, self.__word_net_lch_eval]
         log.info("Agent initialised!")
 
-    def load_results(self, infile):
+    def load_results_from_file(self, infile):
         log.info("Loading hints from {0}...".format(infile))
         with open(infile, "r") as inf:
             inf.readline()
@@ -54,7 +54,7 @@ class FieldAgent:
                 for hint in self.hints[level]:
                     log.debug("{0:40}{1:20}{2:20}".format(",".join(hint[0]), hint[1][0], hint[1][1]))
 
-    def evaluate_hints(self, out_file):
+    def evaluate_hints_to_file(self, out_file):
         log.info("Evaluating hints")
         with open(out_file, "w") as outf:
             outf.write("Teams:\n")
@@ -115,7 +115,7 @@ class FieldAgent:
         if all([x == -1 for x in lst]):
             return -9.999
         else:
-            return max(lst)
+            return max(lst)  # get strongest hint
 
     def __word_net_wup_eval(self, hint: str, target: str):
         h_synsets = wn.synsets(hint)
@@ -141,5 +141,5 @@ if __name__ == "__main__":
     log.getLogger("urllib3").setLevel(log.WARNING)  # prevent log from filling with http info
 
     ag = FieldAgent()
-    ag.load_results("results.txt")
-    ag.evaluate_hints("evaluation.txt")
+    ag.load_results_from_file("results.txt")
+    ag.evaluate_hints_to_file("evaluation.txt")
