@@ -2,6 +2,7 @@ import logging as log  # logging spymaster
 from itertools import combinations, chain, cycle
 from math import sqrt  # adjust search weighting as search scope increases
 from random import shuffle
+from typing import Dict, List
 
 import enchant  # load american english language
 import regex as re
@@ -221,9 +222,10 @@ class SpyMaster:
     def __check_legal(self, hint):
         board_words = [x for x in chain.from_iterable(self.team_words.values())]
 
-        doc = self.spacy_nlp(" ".join([word for word in board_words]))
+        board_lemma_stems = [self.ls.stem(token.lemma_) for token in
+                             self.spacy_nlp(" ".join([word for word in board_words]))]
         hint_lemma_stem = self.ls.stem([token.lemma_ for token in self.spacy_nlp(hint)][0])
-        matches = [hint_lemma_stem == self.ls.stem(token.lemma_) for token in doc]
+        matches = [hint_lemma_stem == bls for bls in board_lemma_stems]
         # list of Trues and Falses
         # True = illegal due to same root
 
@@ -237,10 +239,21 @@ class SpyMaster:
         matches.append(not d.check(hint))
         # True = word not in US dictionary (US not UK due to word model using US dict)
 
-        matches.append(re.match(r".*\-.*", hint))
+        matches.append(re.match(r"[a-z]*", hint))
         # True = word contains - implying two words concatenated in text but separate in speech
 
         return not any(matches)  # If any Trues exist the hint is not legal
+
+    def check_legality(self, team_words: Dict[str: List[str]], hint_word: str):
+        log.info("Checking legality of external hint {0}".format(hint_word, " - ".join([team + ":" +
+                                                                                        team_words[team] for team in
+                                                                                        team_words.keys()])))
+        
+        for team in ["red", "blue", "grey", "black"]:
+            log.info("Team {0} - {1}".format(team, team_words[team]))
+            self.team_words[team] = team_words.get(team, [])
+
+        return self.__check_legal(hint=hint_word)
 
 
 if __name__ == "__main__":
