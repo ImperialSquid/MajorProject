@@ -2,7 +2,6 @@ import logging as log  # logging spymaster
 from itertools import combinations, chain, cycle
 from math import sqrt  # adjust search weighting as search scope increases
 from random import shuffle
-from typing import Dict, List
 
 import enchant  # load american english language
 import regex as re
@@ -20,7 +19,8 @@ class SpyMaster:
         # spymaster stuff
         self.settings = load_settings(sett_file="settings/spymaster_setts.txt",
                                       default_dict={"max_top_hints": 10, "max_levels": 2,
-                                                    "use_annoy_indexer": True, "model_name": "glove-wiki-100"})
+                                                    "use_annoy_indexer": True, "model_name": "glove-wiki-100",
+                                                    "vocab_limit": 0})
 
         # game stuff (what game words are available depends on the word model used so it is loaded in load_model)
         self.game_words = list()
@@ -206,7 +206,9 @@ class SpyMaster:
                                                            for blue in self.team_words["blue"]] +
                                                           [(black, self.team_weights["black"])
                                                            for black in self.team_words["black"]],
-                                                 topn=50, indexer=self.indexer)
+                                                 topn=50, indexer=self.indexer,
+                                                 restrict_vocab=self.settings["vocab_limit"] if
+                                                 self.settings["vocab_limit"] != 0 else None)
         hints_filtered = [raw for raw in hints_raw if self.__check_legal(raw[0])]
         log.debug("Found {0} legal hints (of {1} searched) for {2}: {3}".format(len(hints_filtered), len(hints_raw),
                                                                                 ", ".join(reds),
@@ -239,16 +241,14 @@ class SpyMaster:
         matches.append(not d.check(hint))
         # True = word not in US dictionary (US not UK due to word model using US dict)
 
-        matches.append(re.match(r"[a-z]*", hint))
-        # True = word contains - implying two words concatenated in text but separate in speech
+        matches.append(re.match(r"[^a-z]", hint))
+        # True = word contains non-alphabetic chars
 
         return not any(matches)  # If any Trues exist the hint is not legal
 
-    def check_legality(self, team_words: Dict[str: List[str]], hint_word: str):
-        log.info("Checking legality of external hint {0}".format(hint_word, " - ".join([team + ":" +
-                                                                                        team_words[team] for team in
-                                                                                        team_words.keys()])))
-        
+    def check_legality(self, team_words, hint_word: str) -> bool:
+        log.info("Checking legality of external hint {0}".format(hint_word))
+
         for team in ["red", "blue", "grey", "black"]:
             log.info("Team {0} - {1}".format(team, team_words[team]))
             self.team_words[team] = team_words.get(team, [])

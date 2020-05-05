@@ -1,5 +1,8 @@
 scrn_w:int:1000
 scrn_h:int:600
+back_hex:hex:0xB52E5900
+fore_hex_light:hex:0xC8C8C800
+fore_hex_dark:hex:0x64646400
 red_spymaster_cpu:bool:true
 red_field_agent_cpu:bool:false
 blue_spymaster_cpu:bool:true

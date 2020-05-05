@@ -19,6 +19,8 @@ def load_settings(sett_file: str, default_dict: dict):
                 default_dict[split[0]] = int(split[2])
             elif split[1] == "bool":
                 default_dict[split[0]] = strtobool(split[2])
+            elif split[1] == "hex":
+                default_dict[split[0]] = int(split[2], 16)
             else:
                 default_dict[split[0]] = split[2]
 

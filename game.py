@@ -20,6 +20,8 @@ class Game:
 
         self.setts = load_settings("settings/game_setts.txt",
                                    {"scrn_w": 500, "scrn_h": 500,
+                                    "back_hex": 0xB52E59,
+                                    "fore_hex_light": 0xC8C8C8, "fore_hex_dark": 0x646464,
                                     "red_spymaster_cpu": True, "red_field_agent_cpu": False,
                                     "blue_spymaster_cpu": True, "blue_field_agent_cpu": True})
 
@@ -230,6 +232,8 @@ class Game:
             self.__draw_setup()
         elif self.screen == "game":
             self.__draw_game()
+        elif self.screen == "win":
+            self.__draw_win()
         elif self.screen == "about":
             self.__draw_about()
         pyg.display.flip()
@@ -237,41 +241,43 @@ class Game:
     def __draw_loading(self):
         self.surface.fill((255, 255, 255))
         fnt = pyg.font.Font(pyg.font.get_default_font(), 30)
-        txt = fnt.render("LOADING...", True, (100, 100, 100))
+        txt = fnt.render("LOADING...", True, pyg.Color(self.setts["fore_hex_dark"]))
         coords = (self.surface.get_width() - fnt.size("LOADING...")[0] - 30,
                   self.surface.get_height() - fnt.size("LOADING...")[1] - 30)
         self.surface.blit(txt, coords)
 
     def __draw_main(self):
-        self.surface.fill((181, 46, 89))
+        self.surface.fill(pyg.Color(self.setts["back_hex"]))
 
+        # -- play btn --
         fnt = pyg.font.Font(pyg.font.get_default_font(), 70)
-        txt = fnt.render("CODENAMES", True, (200, 200, 200))
+        txt = fnt.render("CODENAMES", True, pyg.Color(self.setts["fore_hex_light"]))
         coords = ((self.surface.get_width() - fnt.size("CODENAMES")[0]) // 2, 50)
         self.surface.blit(txt, coords)
 
         play_btn = pyg.Rect(50, self.setts["scrn_h"] * 2 // 5,
                             self.setts["scrn_w"] // 2 - 100, self.setts["scrn_h"] // 4)
-        pyg.draw.rect(self.surface, (200, 200, 200), play_btn)
+        pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_light"]), play_btn)
         self.buttons["play_btn"] = play_btn
 
         fnt = pyg.font.Font(pyg.font.get_default_font(), 50)
-        txt = fnt.render("PLAY", True, (100, 100, 100))
+        txt = fnt.render("PLAY", True, pyg.Color(self.setts["fore_hex_dark"]))
         coords = (play_btn.centerx - fnt.size("PLAY")[0] // 2, play_btn.centery - fnt.size("PLAY")[1] // 2)
         self.surface.blit(txt, coords)
 
+        # -- about btn --
         about_btn = pyg.Rect.copy(play_btn)
         about_btn.move_ip(self.setts["scrn_w"] // 2, 0)
-        pyg.draw.rect(self.surface, (200, 200, 200), about_btn)
+        pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_light"]), about_btn)
         self.buttons["about_btn"] = about_btn
 
         fnt = pyg.font.Font(pyg.font.get_default_font(), 50)
-        txt = fnt.render("ABOUT", True, (100, 100, 100))
+        txt = fnt.render("ABOUT", True, pyg.Color(self.setts["fore_hex_dark"]))
         coords = (about_btn.centerx - fnt.size("ABOUT")[0] // 2, about_btn.centery - fnt.size("ABOUT")[1] // 2)
         self.surface.blit(txt, coords)
 
     def __draw_setup(self):
-        self.surface.fill((181, 46, 89))
+        self.surface.fill(pyg.Color(self.setts["back_hex"]))
 
         fnt1 = pyg.font.Font(pyg.font.get_default_font(), 70)
         fnt2 = pyg.font.Font(pyg.font.get_default_font(), 60)
@@ -280,24 +286,24 @@ class Game:
 
         back_btn_dims = (fnt1.size("SETUP")[1], fnt1.size("SETUP")[1])
         back_btn = pyg.Rect((50, 50), back_btn_dims)
-        pyg.draw.rect(self.surface, (200, 200, 200), back_btn)
+        pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_light"]), back_btn)
         self.buttons["back_btn"] = back_btn
-        pyg.draw.polygon(self.surface, (100, 100, 100), [(50 + back_btn_dims[0] // 4, 50 + back_btn_dims[1] // 2),
-                                                         (50 + 3 * back_btn_dims[0] // 4, 50 + back_btn_dims[1] // 4),
-                                                         (50 + 3 * back_btn_dims[0] // 4,
-                                                          50 + 3 * back_btn_dims[1] // 4)])
+        pyg.draw.polygon(self.surface, pyg.Color(self.setts["fore_hex_dark"]),
+                         [(50 + back_btn_dims[0] // 4, 50 + back_btn_dims[1] // 2),
+                          (50 + 3 * back_btn_dims[0] // 4, 50 + back_btn_dims[1] // 4),
+                          (50 + 3 * back_btn_dims[0] // 4, 50 + 3 * back_btn_dims[1] // 4)])
 
-        title = fnt1.render("SETUP", True, (200, 200, 200))
+        title = fnt1.render("SETUP", True, pyg.Color(self.setts["fore_hex_light"]))
         title_coords = ((self.surface.get_width() - fnt1.size("SETUP")[0]) // 2, 50)
         self.surface.blit(title, title_coords)
 
         # --- red team options ---
-        r_team_title = fnt2.render("RED TEAM", True, (200, 200, 200))
+        r_team_title = fnt2.render("RED TEAM", True, pyg.Color(self.setts["fore_hex_light"]))
         r_team_title_coords = ((self.setts["scrn_w"] // 2 - fnt2.size("RED TEAM")[0]) // 2, self.setts["scrn_h"] // 4)
         self.surface.blit(r_team_title, r_team_title_coords)
 
         # --- red spymaster options ---
-        txt3 = fnt3.render("SPYMASTER", True, (200, 200, 200))
+        txt3 = fnt3.render("SPYMASTER", True, pyg.Color(self.setts["fore_hex_light"]))
         coords3 = (self.setts["scrn_w"] // 4 - fnt3.size("SPYMASTER")[0] // 2,
                    self.setts["scrn_h"] // 4 + fnt2.size("RED TEAM")[1] + 10)
         self.surface.blit(txt3, coords3)
@@ -315,19 +321,19 @@ class Game:
         self.buttons["red_sm_ply_btn"] = red_sm_ply_btn
 
         if self.setts["red_spymaster_cpu"]:
-            pyg.draw.rect(self.surface, (100, 100, 100), red_sm_cpu_btn, 5)
+            pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_dark"]), red_sm_cpu_btn, 5)
         else:
-            pyg.draw.rect(self.surface, (100, 100, 100), red_sm_ply_btn, 5)
+            pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_dark"]), red_sm_ply_btn, 5)
 
-        txt4 = fnt4.render("CPU", True, (200, 200, 200))
+        txt4 = fnt4.render("CPU", True, pyg.Color(self.setts["fore_hex_light"]))
         self.surface.blit(txt4, (red_sm_cpu_btn.x + 10, red_sm_cpu_btn.y + 10))
 
-        txt4 = fnt4.render("PLAYER", True, (200, 200, 200))
+        txt4 = fnt4.render("PLAYER", True, pyg.Color(self.setts["fore_hex_light"]))
         self.surface.blit(txt4, (red_sm_ply_btn.x + 10, red_sm_ply_btn.y + 10))
 
         # --- red field agent options ---
         red_sm_offset = 10 + fnt3.size("SPYMASTER")[1] + 10 + fnt4.size("CPU")[1] + 10 + 10
-        txt3 = fnt3.render("FIELD AGENT", True, (200, 200, 200))
+        txt3 = fnt3.render("FIELD AGENT", True, pyg.Color(self.setts["fore_hex_light"]))
         coords3 = (self.setts["scrn_w"] // 4 - fnt3.size("SPYMASTER")[0] // 2,
                    self.setts["scrn_h"] // 4 + fnt2.size("RED TEAM")[1] + 10 + red_sm_offset)
         self.surface.blit(txt3, coords3)
@@ -345,24 +351,24 @@ class Game:
         self.buttons["red_fa_ply_btn"] = red_fa_ply_btn
 
         if self.setts["red_field_agent_cpu"]:
-            pyg.draw.rect(self.surface, (100, 100, 100), red_fa_cpu_btn, 5)
+            pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_dark"]), red_fa_cpu_btn, 5)
         else:
-            pyg.draw.rect(self.surface, (100, 100, 100), red_fa_ply_btn, 5)
+            pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_dark"]), red_fa_ply_btn, 5)
 
-        txt4 = fnt4.render("CPU", True, (200, 200, 200))
+        txt4 = fnt4.render("CPU", True, pyg.Color(self.setts["fore_hex_light"]))
         self.surface.blit(txt4, (red_fa_cpu_btn.x + 10, red_fa_cpu_btn.y + 10))
 
-        txt4 = fnt4.render("PLAYER", True, (200, 200, 200))
+        txt4 = fnt4.render("PLAYER", True, pyg.Color(self.setts["fore_hex_light"]))
         self.surface.blit(txt4, (red_fa_ply_btn.x + 10, red_fa_ply_btn.y + 10))
 
         # --- blue team options ---
-        b_team_title = fnt2.render("BLUE TEAM", True, (200, 200, 200))
+        b_team_title = fnt2.render("BLUE TEAM", True, pyg.Color(self.setts["fore_hex_light"]))
         b_team_title_coords = (
             3 * self.setts["scrn_w"] // 4 - fnt2.size("BLUE TEAM")[0] // 2, self.setts["scrn_h"] // 4)
         self.surface.blit(b_team_title, b_team_title_coords)
 
         # --- blue spymaster options ---
-        txt3 = fnt3.render("SPYMASTER", True, (200, 200, 200))
+        txt3 = fnt3.render("SPYMASTER", True, pyg.Color(self.setts["fore_hex_light"]))
         coords3 = (3 * self.setts["scrn_w"] // 4 - fnt3.size("SPYMASTER")[0] // 2,
                    self.setts["scrn_h"] // 4 + fnt2.size("RED TEAM")[1] + 10)
         self.surface.blit(txt3, coords3)
@@ -380,19 +386,19 @@ class Game:
         self.buttons["blue_sm_ply_btn"] = blue_sm_ply_btn
 
         if self.setts["blue_spymaster_cpu"]:
-            pyg.draw.rect(self.surface, (100, 100, 100), blue_sm_cpu_btn, 5)
+            pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_dark"]), blue_sm_cpu_btn, 5)
         else:
-            pyg.draw.rect(self.surface, (100, 100, 100), blue_sm_ply_btn, 5)
+            pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_dark"]), blue_sm_ply_btn, 5)
 
-        txt4 = fnt4.render("CPU", True, (200, 200, 200))
+        txt4 = fnt4.render("CPU", True, pyg.Color(self.setts["fore_hex_light"]))
         self.surface.blit(txt4, (blue_sm_cpu_btn.x + 10, blue_sm_cpu_btn.y + 10))
 
-        txt4 = fnt4.render("PLAYER", True, (200, 200, 200))
+        txt4 = fnt4.render("PLAYER", True, pyg.Color(self.setts["fore_hex_light"]))
         self.surface.blit(txt4, (blue_sm_ply_btn.x + 10, blue_sm_ply_btn.y + 10))
 
         # --- blue field agent options ---
         blue_sm_offset = 10 + fnt3.size("SPYMASTER")[1] + 10 + fnt4.size("CPU")[1] + 10 + 10
-        txt3 = fnt3.render("FIELD AGENT", True, (200, 200, 200))
+        txt3 = fnt3.render("FIELD AGENT", True, pyg.Color(self.setts["fore_hex_light"]))
         coords3 = (3 * self.setts["scrn_w"] // 4 - fnt3.size("SPYMASTER")[0] // 2,
                    self.setts["scrn_h"] // 4 + fnt2.size("BLUE TEAM")[1] + 10 + blue_sm_offset)
         self.surface.blit(txt3, coords3)
@@ -410,14 +416,14 @@ class Game:
         self.buttons["blue_fa_ply_btn"] = blue_fa_ply_btn
 
         if self.setts["blue_field_agent_cpu"]:
-            pyg.draw.rect(self.surface, (100, 100, 100), blue_fa_cpu_btn, 5)
+            pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_dark"]), blue_fa_cpu_btn, 5)
         else:
-            pyg.draw.rect(self.surface, (100, 100, 100), blue_fa_ply_btn, 5)
+            pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_dark"]), blue_fa_ply_btn, 5)
 
-        txt4 = fnt4.render("CPU", True, (200, 200, 200))
+        txt4 = fnt4.render("CPU", True, pyg.Color(self.setts["fore_hex_light"]))
         self.surface.blit(txt4, (blue_fa_cpu_btn.x + 10, blue_fa_cpu_btn.y + 10))
 
-        txt4 = fnt4.render("PLAYER", True, (200, 200, 200))
+        txt4 = fnt4.render("PLAYER", True, pyg.Color(self.setts["fore_hex_light"]))
         self.surface.blit(txt4, (blue_fa_ply_btn.x + 10, blue_fa_ply_btn.y + 10))
 
         # --- play button ---
@@ -426,14 +432,14 @@ class Game:
             ((self.setts["scrn_w"] - txt_dims[0] - 20) // 2,
              self.setts["scrn_h"] // 4 + blue_sm_offset * 2 + fnt2.size("RED TEAM")[1] + 30),
             (txt_dims[0] + 20, txt_dims[1] + 20))
-        pyg.draw.rect(self.surface, (200, 200, 200), begin_game_btn)
+        pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_light"]), begin_game_btn)
         self.buttons["begin_game_btn"] = begin_game_btn
 
-        txt2 = fnt2.render("BEGIN GAME!", True, (100, 100, 100))
+        txt2 = fnt2.render("BEGIN GAME!", True, pyg.Color(self.setts["fore_hex_dark"]))
         self.surface.blit(txt2, (begin_game_btn.x + 10, begin_game_btn.y + 10))
 
     def __draw_game(self):
-        self.surface.fill((181, 46, 89))
+        self.surface.fill(pyg.Color(self.setts["back_hex"]))
 
         fnt1 = pyg.font.Font(pyg.font.get_default_font(), 70)
         fnt2 = pyg.font.Font(pyg.font.get_default_font(), 60)
@@ -442,14 +448,14 @@ class Game:
 
         back_btn_dims = (fnt1.size("GAME")[1], fnt1.size("GAME")[1])
         back_btn = pyg.Rect((50, 50), back_btn_dims)
-        pyg.draw.rect(self.surface, (200, 200, 200), back_btn)
+        pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_light"]), back_btn)
         self.buttons["back_btn"] = back_btn
-        pyg.draw.polygon(self.surface, (100, 100, 100), [(50 + back_btn_dims[0] // 4, 50 + back_btn_dims[1] // 2),
-                                                         (50 + 3 * back_btn_dims[0] // 4, 50 + back_btn_dims[1] // 4),
-                                                         (50 + 3 * back_btn_dims[0] // 4,
-                                                          50 + 3 * back_btn_dims[1] // 4)])
+        pyg.draw.polygon(self.surface, pyg.Color(self.setts["fore_hex_dark"]),
+                         [(50 + back_btn_dims[0] // 4, 50 + back_btn_dims[1] // 2),
+                          (50 + 3 * back_btn_dims[0] // 4, 50 + back_btn_dims[1] // 4),
+                          (50 + 3 * back_btn_dims[0] // 4, 50 + 3 * back_btn_dims[1] // 4)])
 
-        title = fnt1.render("GAME", True, (200, 200, 200))
+        title = fnt1.render("GAME", True, pyg.Color(self.setts["fore_hex_light"]))
         title_coords = ((self.surface.get_width() - fnt1.size("GAME")[0]) // 2, 50)
         self.surface.blit(title, title_coords)
 
@@ -476,16 +482,17 @@ class Game:
                 elif self.board[x][y] in self.discovered_team_words["black"]:  # and black discovered words
                     pyg.draw.rect(self.surface, (20, 20, 20), btn)
                 else:
-                    pyg.draw.rect(self.surface, (200, 200, 200), btn)
+                    pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_light"]), btn)
                     # only render words on undiscovered words
                     if fnt4.size(self.board[x][y].upper())[0] > card_dims[0] - 10:
                         txt1 = fnt4.render(self.board[x][y][:len(self.board[x][y]) // 2].upper() + "-", True,
-                                           (100, 100, 100))
-                        txt2 = fnt4.render(self.board[x][y][len(self.board[x][y]) // 2:].upper(), True, (100, 100, 100))
+                                           pyg.Color(self.setts["fore_hex_dark"]))
+                        txt2 = fnt4.render(self.board[x][y][len(self.board[x][y]) // 2:].upper(), True,
+                                           pyg.Color(self.setts["fore_hex_dark"]))
                         self.surface.blit(txt1, (btn.x + 5, btn.y + 5))
                         self.surface.blit(txt2, (btn.x + 5, btn.y + 5 + fnt4.size(self.board[x][y])[1]))
                     else:
-                        txt = fnt4.render(self.board[x][y].upper(), True, (100, 100, 100))
+                        txt = fnt4.render(self.board[x][y].upper(), True, pyg.Color(self.setts["fore_hex_dark"]))
                         self.surface.blit(txt, (btn.x + 5, btn.y + 5))
 
         self.buttons["board_btns"] = board_btns
@@ -522,24 +529,27 @@ class Game:
                                       (self.current_agent == "bf" and not self.setts["blue_field_agent_cpu"])):
             cur_txt += ", hint is \"{0} {1}\"".format(self.hint, self.hint_num)
 
-        txt = fnt4.render(cur_txt, True, (200, 200, 200))
+        txt = fnt4.render(cur_txt, True, pyg.Color(self.setts["fore_hex_light"]))
         self.surface.blit(txt, (50, 7 * self.setts["scrn_h"] // 8 + 10))
 
         if self.guesses_made >= 1 and self.current_agent[1] == "f":
             btn = pyg.Rect((self.setts["scrn_w"] - 50 - 2 * 5 - fnt4.size("PASS TURN")[0],
                             7 * self.setts["scrn_h"] // 8 + 10),
                            (fnt4.size("PASS TURN")[0] + 10, fnt4.size("PASS TURN")[1] + 10))
-            pyg.draw.rect(self.surface, (200, 200, 200), btn)
+            pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_dark"]), btn)
             self.buttons["pass_turn_btn"] = btn
 
-            txt = fnt4.render("PASS TURN", True, (100, 100, 100))
+            txt = fnt4.render("PASS TURN", True, pyg.Color(self.setts["fore_hex_light"]))
             self.surface.blit(txt, (btn.x + 5, btn.y + 5))
 
+    def __draw_win(self):
+        pass
+
     def __draw_about(self):
-        self.surface.fill((181, 46, 89))
+        self.surface.fill(pyg.Color(self.setts["back_hex"]))
 
         fnt = pyg.font.Font(pyg.font.get_default_font(), 70)
-        txt = fnt.render("ABOUT", True, (200, 200, 200))
+        txt = fnt.render("ABOUT", True, pyg.Color(self.setts["fore_hex_light"]))
         coords = ((self.surface.get_width() - fnt.size("ABOUT")[0]) // 2, 40)
         self.surface.blit(txt, coords)
 

@@ -1,15 +1,20 @@
 Teams:
-black: link
-blue: centaur - rabbit - czech - cell - berlin - band - dice - cap
-grey: bat - spike - hood - degree - triangle - chocolate - horn - cast
-red: sock - missile - film - night - vacuum - stock - mouth - march
+black: bar
+blue: battery - thief - lawyer - net - wave - superhero - dice - center
+grey: kid - africa - bear - paper - ground - capital - moscow - chest
+red: mint - shop - bat - doctor - rabbit - grace - boot - change
 Hints:
 Level: 1
 Target                                  Hint                Score               
-march                                   august                0.7512052655220032
-missile                                 ballistic             0.7140558958053589
-stock                                   shares                0.6878576278686523
-film                                    screenplay            0.6825401186943054
-night                                   afternoon             0.6795550584793091
-march                                   dec.                  0.6747822761535645
-film                                    movie                 0.6743428707122803
+grace                                   prevenient             0.687587559223175
+shop                                    lumberyards           0.6374600529670715
+doctor                                  mid-nite              0.6362323760986328
+rabbit                                  locoweed              0.6300991773605347
+rabbit                                  teosinte              0.6273986101150513
+Level: 2
+Target                                  Hint                Score               
+grace,boot                              prevenient            0.6418906450271606
+rabbit,grace                            prevenient            0.6251058578491211
+shop,rabbit                             hutches               0.6241426467895508
+rabbit,boot                             hutches               0.6097632050514221
+doctor,grace                            prevenient            0.6072582006454468
