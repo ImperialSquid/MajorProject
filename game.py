@@ -63,6 +63,8 @@ class Game:
             self.draw()
             clock.tick(30)
             self.process_events()
+            if self.screen == "game":
+                self.__process_game()
 
     def process_events(self):
         for event in pyg.event.get():
@@ -151,9 +153,6 @@ class Game:
                             self.draw()
                     except KeyError:
                         pass  # pass turn button might not exist for a few runs
-
-        if self.screen == "game":
-            self.__process_game()
 
     def __process_game(self):
         if self.current_agent[1] == "s" and self.hint is None:  # --- spymaster and no existing hint ---
@@ -471,7 +470,7 @@ class Game:
             for y in range(5):
                 btn = pyg.Rect((50 + x * (card_dims[0] + 10), self.setts["scrn_h"] // 4 + y * (10 + card_dims[1])),
                                card_dims)
-                board_btns[-1].append(btn)
+                board_btns[-1].append(btn)  # append button to last list in list of lists
 
                 if self.board[x][y] in self.discovered_team_words["red"]:  # render red,
                     pyg.draw.rect(self.surface, (225, 60, 20), btn)
@@ -482,9 +481,11 @@ class Game:
                 elif self.board[x][y] in self.discovered_team_words["black"]:  # and black discovered words
                     pyg.draw.rect(self.surface, (20, 20, 20), btn)
                 else:
-                    pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_light"]), btn)
                     # only render words on undiscovered words
+                    pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_light"]), btn)
+
                     if fnt4.size(self.board[x][y].upper())[0] > card_dims[0] - 10:
+                        # if text length exceeds box, split in two
                         txt1 = fnt4.render(self.board[x][y][:len(self.board[x][y]) // 2].upper() + "-", True,
                                            pyg.Color(self.setts["fore_hex_dark"]))
                         txt2 = fnt4.render(self.board[x][y][len(self.board[x][y]) // 2:].upper(), True,
@@ -495,7 +496,7 @@ class Game:
                         txt = fnt4.render(self.board[x][y].upper(), True, pyg.Color(self.setts["fore_hex_dark"]))
                         self.surface.blit(txt, (btn.x + 5, btn.y + 5))
 
-        self.buttons["board_btns"] = board_btns
+        self.buttons["board_btns"] = board_btns  # list of lists of buttons added as single item to simplify processing
 
         # --- other interface ---
         cur_txt = "Current: "
@@ -517,7 +518,7 @@ class Game:
         # no hint exists and user generated
         if self.hint is None and ((self.current_agent == "rs" and not self.setts["red_spymaster_cpu"]) or
                                   (self.current_agent == "bs" and not self.setts["blue_spymaster_cpu"])):
-            cur_txt += ", generated hint"
+            cur_txt += ", input hint"
 
         # hint exists and comp evaluated
         if self.hint is not None and ((self.current_agent == "rf" and self.setts["red_field_agent_cpu"]) or
