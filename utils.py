@@ -13,7 +13,7 @@ def load_settings(sett_file: str, default_dict: dict):
 
     for split in splits:
         if split[0] in settings:
-            log.info("Found setting for {0}: {2} of type {1}".format(*split))
+            log.debug("Found setting for {0}: {2} of type {1}".format(*split))
             settings.remove(split[0])
             if split[1] == "int":
                 default_dict[split[0]] = int(split[2])

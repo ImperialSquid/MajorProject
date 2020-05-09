@@ -141,18 +141,16 @@ class Game:
                                 if self.board[x][y] not in [word for word in
                                                             it.chain(self.discovered_team_words.values())]:
                                     self.guess = self.board[x][y]
-                    try:
-                        if self.buttons["pass_turn_btn"].collidepoint(pos):
-                            self.hint = None
-                            self.guesses_made = 0
-                            if self.current_agent == "rf":
-                                self.current_agent = "bs"
-                            elif self.current_agent == "bf":
-                                self.current_agent = "rs"
-                            self.draw()  # skip past spymaster processing to draw game screen
-                            self.draw()
-                    except KeyError:
-                        pass  # pass turn button might not exist for a few runs
+
+                    if self.buttons["pass_turn_btn"].collidepoint(pos):
+                        self.hint = None
+                        self.guesses_made = 0
+                        if self.current_agent == "rf":
+                            self.current_agent = "bs"
+                        elif self.current_agent == "bf":
+                            self.current_agent = "rs"
+                        self.draw()  # skip past spymaster processing to draw game screen
+                        self.draw()
 
     def __process_game(self):
         if self.current_agent[1] == "s" and self.hint is None:  # --- spymaster and no existing hint ---
@@ -177,7 +175,9 @@ class Game:
                 self.hint_num = len(hint[0])
                 self.current_agent = "bf"
 
-            elif not self.setts["red_spymaster_cpu"] or not self.setts["blue_spymaster_cpu"]:
+            elif (self.current_agent[0] == "r" and not self.setts["red_spymaster_cpu"]) or \
+                    (self.current_agent[0] == "b" and not self.setts["blue_spymaster_cpu"]):
+                # either team, human gen hint
                 pass  # TODO get player inputted hint
 
         elif self.current_agent[1] == "f":  # --- field agent ---
@@ -189,31 +189,30 @@ class Game:
 
             # --- process guess ---
             if self.guess is not None:  # only do processing is guess exists, so user gen'd can take more than one frame
+                # check for correct guess
                 if (self.current_agent[0] == "r" and self.guess in self.team_words["red"]) or \
-                        (self.current_agent[0] == "b" and self.guess in self.team_words[
-                            "blue"]):  # check for correct guess
+                        (self.current_agent[0] == "b" and self.guess in self.team_words["blue"]):
 
                     self.guesses_made += 1
 
                     if self.guesses_made >= self.hint_num + 1:  # if guess max reached reset counter and swap team
+                        self.hint = None
                         self.guesses_made = 0
                         if self.current_agent[0] == "r":
                             self.current_agent = "bs"
-                            self.hint = None
                         else:
                             self.current_agent = "rs"
-                            self.hint = None
+
                 else:  # if incorrect guess
                     if self.guess in self.team_words["black"]:
                         pass  # TODO add fail state
                     else:  # guess in wrong team or bystander by process of elimination
+                        self.hint = None
                         self.guesses_made = 0
                         if self.current_agent[0] == "r":
                             self.current_agent = "bs"
-                            self.hint = None
                         else:
                             self.current_agent = "rs"
-                            self.hint = None
 
                 for team in self.team_words.keys():
                     if self.guess in self.team_words[team]:
@@ -464,7 +463,7 @@ class Game:
 
         board_btns = []  # list of lists of board word Rects
 
-        # render board btns
+        # render board buttons
         for x in range(5):
             board_btns.append([])
             for y in range(5):
@@ -533,12 +532,13 @@ class Game:
         txt = fnt4.render(cur_txt, True, pyg.Color(self.setts["fore_hex_light"]))
         self.surface.blit(txt, (50, 7 * self.setts["scrn_h"] // 8 + 10))
 
-        if self.guesses_made >= 1 and self.current_agent[1] == "f":
-            btn = pyg.Rect((self.setts["scrn_w"] - 50 - 2 * 5 - fnt4.size("PASS TURN")[0],
-                            7 * self.setts["scrn_h"] // 8 + 10),
-                           (fnt4.size("PASS TURN")[0] + 10, fnt4.size("PASS TURN")[1] + 10))
+        btn = pyg.Rect((self.setts["scrn_w"] - 50 - 2 * 5 - fnt4.size("PASS TURN")[0],
+                        7 * self.setts["scrn_h"] // 8 + 10),
+                       (fnt4.size("PASS TURN")[0] + 10, fnt4.size("PASS TURN")[1] + 10))
+        self.buttons["pass_turn_btn"] = btn
+
+        if self.guesses_made >= 1 and self.current_agent[1] == "f":  # only draw the button if activating it is legal
             pyg.draw.rect(self.surface, pyg.Color(self.setts["fore_hex_dark"]), btn)
-            self.buttons["pass_turn_btn"] = btn
 
             txt = fnt4.render("PASS TURN", True, pyg.Color(self.setts["fore_hex_light"]))
             self.surface.blit(txt, (btn.x + 5, btn.y + 5))
@@ -561,11 +561,11 @@ class Game:
 
 
 if __name__ == "__main__":
-    root_logger = log.getLogger()
-    root_logger.setLevel(log.DEBUG)
+    game_logger = log.getLogger("game")
+    game_logger.setLevel(log.DEBUG)
     handler = log.FileHandler("logs/game-log.txt", "a", "utf-8")
     handler.setFormatter(log.Formatter("%(asctime)s : %(module)-15s : %(levelname)s : %(message)s",
                                        datefmt="%d/%m - %H:%M:%S"))
-    root_logger.addHandler(handler)
+    game_logger.addHandler(handler)
 
     game = Game()
