@@ -9,9 +9,9 @@ from nltk.corpus.reader import WordNetError
 from utils import load_settings
 
 
-class FieldAgent:
+class FieldOperative:
     def __init__(self):
-        log.info("Agent initialising...")
+        log.info("Operative initialising...")
         self.team_words = dict()
         self.board_words = list()
         self.hints = dict()
@@ -20,7 +20,7 @@ class FieldAgent:
                                                     "max_levels": 2})
         self.evaluation_methods = [self.__concept_net_eval, self.__word_net_path_eval,
                                    self.__word_net_wup_eval, self.__word_net_lch_eval]
-        log.info("Agent initialised!")
+        log.info("Operative initialised!")
 
     def load_results_from_file(self, infile):
         log.info("Loading hints from {0}...".format(infile))
@@ -141,14 +141,14 @@ class FieldAgent:
 
 
 if __name__ == "__main__":
-    fa_logger = log.getLogger("fieldagent")
+    fa_logger = log.getLogger("fieldoperative")
     fa_logger.setLevel(log.DEBUG)
-    handler = log.FileHandler("logs/field-agent-log.txt", "a", "utf-8")
+    handler = log.FileHandler("logs/field-operative-log.txt", "a", "utf-8")
     handler.setFormatter(log.Formatter("%(asctime)s : %(levelname)s : %(message)s", datefmt="%d/%m - %H:%M:%S"))
     fa_logger.addHandler(handler)
 
     log.getLogger("urllib3").setLevel(log.WARNING)  # prevent log from filling with http info
 
-    ag = FieldAgent()
+    ag = FieldOperative()
     ag.load_results_from_file("results.txt")
     ag.evaluate_hints_to_file("evaluation.txt")
