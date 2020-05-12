@@ -212,20 +212,20 @@ class Game:
         if self.current_agent[1] == "s" and self.hint is None:  # --- spymaster and no existing hint ---
             # TODO investigate if moving hint gen into a diff thread would prevent Not Responding window
             if self.current_agent[0] == "r" and self.setts["red_spymaster_cpu"]:  # red team, comp generated hint
-                hints = self.red_spymaster.run_defined_round(reds=self.team_words["red"],
-                                                             blues=self.team_words["blue"],
-                                                             greys=self.team_words["grey"],
-                                                             blacks=self.team_words["black"])
+                hints = self.red_spymaster.run_defined_round(ts=self.team_words["red"],
+                                                             os=self.team_words["blue"],
+                                                             bs=self.team_words["grey"],
+                                                             ks=self.team_words["black"])
                 hint = rand.choice([hint for hint in it.chain.from_iterable([hints for hints in hints.values()])])
                 self.hint = hint[1][0]
                 self.hint_num = len(hint[0])
                 self.current_agent = "rf"
 
             elif self.current_agent[0] == "b" and self.setts["blue_spymaster_cpu"]:  # blue team, comp generated hint
-                hints = self.blue_spymaster.run_defined_round(reds=self.team_words["blue"],
-                                                              blues=self.team_words["red"],
-                                                              greys=self.team_words["grey"],
-                                                              blacks=self.team_words["black"])
+                hints = self.blue_spymaster.run_defined_round(ts=self.team_words["blue"],
+                                                              os=self.team_words["red"],
+                                                              bs=self.team_words["grey"],
+                                                              ks=self.team_words["black"])
                 hint = rand.choice([hint for hint in it.chain.from_iterable([hints for hints in hints.values()])])
                 self.hint = hint[1][0]
                 self.hint_num = len(hint[0])
@@ -234,7 +234,8 @@ class Game:
             elif (self.current_agent[0] == "r" and not self.setts["red_spymaster_cpu"]) or \
                     (self.current_agent[0] == "b" and not self.setts["blue_spymaster_cpu"]):
                 # either team, human gen hint
-                pass  # TODO get player inputted hint
+                pass  #
+                # TODO get player inputted hint
 
         elif self.current_agent[1] == "f":  # --- field agent ---
             # --- process cpu field agents ---

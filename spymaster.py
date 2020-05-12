@@ -33,7 +33,7 @@ class SpyMaster:
 
         # teams stuff
         self.team_weights = load_settings(sett_file=teams_file,
-                                          default_dict={"red": 30, "grey": -1, "blue": -3, "black": -10})
+                                          default_dict={"t": 30, "b": -1, "o": -3, "k": -10})
         self.team_words = dict()  # made as an attribute to save passing back and forth while running rounds
 
         # nlp stuff
@@ -162,41 +162,40 @@ class SpyMaster:
         if self.full_log is not None:
             self.full_log.debug("Loading team sizes...")
         team_sizes = load_settings(sett_file="settings/team_sizes.txt",
-                                   default_dict={"red": 8, "blue": 8, "black": 1, "grey": 8})
+                                   default_dict={"t": 8, "o": 8, "k": 1, "b": 8})
         if self.full_log is not None:
             self.full_log.debug("Team sizes: {0}".format(" - ".join([k + ":" + str(team_sizes[k]) for
-                                                                     k in sorted(team_sizes.keys())])))
+                                                                     k in ["t", "o", "b", "k"]])))
 
         if self.full_log is not None:
             self.full_log.debug("Generating team words...")
-        self.team_words = {team: [next(word_gen) for i in range(team_sizes[team])]
-                           for team in sorted(team_sizes.keys())}
+        self.team_words = {team: [next(word_gen) for i in range(team_sizes[team])] for team in ["t", "o", "b", "k"]}
         if self.full_log is not None:
             self.full_log.info("Team words:\n{0}".format("\n".join([team + ": " + ", ".join(self.team_words[team])
-                                                                    for team in self.team_words.keys()])))
+                                                                    for team in ["t", "o", "b", "k"]])))
         if self.game_log is not None:
             self.game_log.info("Randomly generated teams are:\n{0}".format("\n".join([team + ": " +
                                                                                       ", ".join(self.team_words[team])
                                                                                       for team in
-                                                                                      self.team_words.keys()])))
+                                                                                      ["t", "o", "b", "k"]])))
 
         return self.__run_round(out_file=out_file)
 
-    def run_defined_round(self, reds: list, blues: list, greys: list, blacks: list, out_file=None):
+    def run_defined_round(self, ts: list, os: list, bs: list, ks: list, out_file=None):
         if self.full_log is not None:
             self.full_log.info("Running round with predefined teams...")
         if self.game_log is not None:
             self.game_log.info("Running round with predefined teams...")
-        self.team_words["red"] = [red for red in reds if red in self.word_model.vocab]
-        self.team_words["blue"] = [blue for blue in blues if blue in self.word_model.vocab]
-        self.team_words["grey"] = [grey for grey in greys if grey in self.word_model.vocab]
-        self.team_words["black"] = [black for black in blacks if black in self.word_model.vocab]
+        self.team_words["t"] = [t for t in ts if t in self.word_model.vocab]
+        self.team_words["o"] = [o for o in os if o in self.word_model.vocab]
+        self.team_words["b"] = [b for b in bs if b in self.word_model.vocab]
+        self.team_words["k"] = [k for k in ks if k in self.word_model.vocab]
         if self.full_log is not None:
             self.full_log.info("Team words:\n{0}".format("\n".join([team + ": " + ", ".join(self.team_words[team])
-                                                                    for team in self.team_words.keys()])))
+                                                                    for team in ["t", "o", "b", "k"]])))
         if self.game_log is not None:
             self.game_log.info("Given teams are:\n{0}".format("\n".join([team + ": " + ", ".join(self.team_words[team])
-                                                                         for team in self.team_words.keys()])))
+                                                                         for team in ["t", "o", "b", "k"]])))
         return self.__run_round(out_file=out_file)
 
     def __run_round(self, out_file=None):
@@ -234,7 +233,7 @@ class SpyMaster:
                 self.full_log.info("Output file detected, writing hints")
             with open(out_file, "w") as outf:
                 outf.write("Teams:\n")
-                for team in sorted(self.team_words.keys()):
+                for team in ["t", "o", "b", "k"]:
                     outf.write("{0}: {1}\n".format(team, " - ".join(self.team_words[team])))
                 outf.write("Hints:\n")
                 for level in sorted(overlaps.keys()):
@@ -252,7 +251,7 @@ class SpyMaster:
 
     def __get_top_hints_multi(self, overlap=1):
         multis = []
-        for multi in combinations(self.team_words["red"], overlap):
+        for multi in combinations(self.team_words["t"], overlap):
             hints = self.__get_hints(multi)
             for hint in hints:
                 multis.append((multi, hint))
@@ -269,22 +268,22 @@ class SpyMaster:
         multis = sorted(multis, key=lambda x: x[1][1], reverse=True)
         return multis[0:self.settings["max_top_hints"] if self.settings["max_top_hints"] > 0 else None]
 
-    def __get_hints(self, reds):
-        hints_raw = self.word_model.most_similar(positive=[(red, self.team_weights["red"] / sqrt(len(reds)))
-                                                           for red in reds],
-                                                 negative=[(grey, self.team_weights["grey"])
-                                                           for grey in self.team_words["grey"]] +
-                                                          [(blue, self.team_weights["blue"])
-                                                           for blue in self.team_words["blue"]] +
-                                                          [(black, self.team_weights["black"])
-                                                           for black in self.team_words["black"]],
+    def __get_hints(self, ts):
+        hints_raw = self.word_model.most_similar(positive=[(t, self.team_weights["t"] / sqrt(len(ts)))
+                                                           for t in ts],
+                                                 negative=[(b, self.team_weights["b"])
+                                                           for b in self.team_words["b"]] +
+                                                          [(o, self.team_weights["o"])
+                                                           for o in self.team_words["o"]] +
+                                                          [(k, self.team_weights["k"])
+                                                           for k in self.team_words["k"]],
                                                  topn=50, indexer=self.indexer,
                                                  restrict_vocab=self.settings["vocab_limit"] if
                                                  self.settings["vocab_limit"] != 0 else None)
         hints_filtered = [raw for raw in hints_raw if self.__check_legal(raw[0])]
         if self.full_log is not None:
             self.full_log.debug("Found {0} legal hints (of {1} searched) for {2}: {3}".format(
-                len(hints_filtered), len(hints_raw), ", ".join(reds),
+                len(hints_filtered), len(hints_raw), ", ".join(ts),
                 " // ".join(["{0}:{1:.5f}".format(h[0], h[1]) for h in hints_filtered])))
         if len(hints_filtered) == 0:
             hints_filtered = [["NO HINT FOUND", -1]]
@@ -324,7 +323,7 @@ class SpyMaster:
         if self.game_log is not None:
             self.game_log.info("Checking legality of hint {0}".format(hint_word))
 
-        for team in ["red", "blue", "grey", "black"]:
+        for team in ["t", "o", "b", "k"]:
             if self.full_log is not None:
                 self.full_log.info("Team {0} - {1}".format(team, ", ".join(team_words[team])))
             if self.game_log is not None:
