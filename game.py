@@ -183,9 +183,6 @@ class Game:
                         self.draw()  # skip past first spymaster processing to draw game screen
                         self.draw()
 
-
-
-
                 elif self.screen == "game":
                     if self.buttons["back_btn"].collidepoint(pos):
                         self.screen = "setup"
@@ -273,10 +270,18 @@ class Game:
                             self.current_agent = "bs"
                         else:
                             self.current_agent = "rs"
+                        if self.game_logger is not None:
+                            self.game_logger.info("Correct Guess! However, max guesses reached, " +
+                                                  "play passed to other team")
+                    else:
+                        if self.game_logger is not None:
+                            self.game_logger.info("Correct Guess! And max guesses not yet reached, continue guessing")
 
                 else:  # if incorrect guess
                     if self.guess in self.team_words["black"]:
                         pass  # TODO add fail state
+                        if self.game_logger is not None:
+                            self.game_logger.info("Found the assassin... You lose!")
                     else:  # guess in wrong team or bystander by process of elimination
                         self.hint = None
                         self.guesses_made = 0
@@ -284,6 +289,8 @@ class Game:
                             self.current_agent = "bs"
                         else:
                             self.current_agent = "rs"
+                        if self.game_logger is not None:
+                            self.game_logger.info("Incorrect Guess! Play passed to the other team")
 
                 for team in self.team_words.keys():
                     if self.guess in self.team_words[team]:
