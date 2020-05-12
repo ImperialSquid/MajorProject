@@ -56,6 +56,9 @@ class Game:
         self.guess = None
         self.guesses_made = 0
 
+        self.win_state = {"win": "",
+                          "reason": ""}
+
         self.buttons = dict()
 
         self.screen = "main"
@@ -82,6 +85,10 @@ class Game:
                         self.screen = "setup"
                     if self.buttons["about_btn"].collidepoint(pos):
                         self.screen = "about"
+
+                elif self.screen == "about":
+                    if self.buttons["back_btn"].collidepoint(pos):
+                        self.screen = "main"
 
                 elif self.screen == "setup":
                     if self.buttons["back_btn"].collidepoint(pos):
@@ -139,6 +146,7 @@ class Game:
                             self.discovered_team_words[team] = []  # start of game, all words on board are undiscovered
 
                         board_words = [x for x in it.chain.from_iterable(self.team_words.values())]
+                        rand.shuffle(board_words)
                         # list of lists to display board state
                         self.board = [board_words[5 * i: 5 * i + 5] for i in range(5)]
 
@@ -203,6 +211,10 @@ class Game:
                             self.current_agent = "rs"
                         self.draw()  # skip past spymaster processing to draw game screen
                         self.draw()
+
+                elif self.screen == "win":
+                    if self.buttons["back_btn"].collidepoint(pos):
+                        self.screen = "main"
 
     def __process_game(self):
         if self.current_agent[1] == "s" and self.hint is None:  # --- spymaster and no existing hint ---
@@ -279,9 +291,17 @@ class Game:
 
                 else:  # if incorrect guess
                     if self.guess in self.team_words["black"]:
-                        pass  # TODO add fail state
+                        self.win_state["reason"] = "assassin"
+                        if self.current_agent[0] == "r":
+                            self.win_state["win"] = "red"
+                        else:
+                            self.win_state["win"] = "blue"
+
                         if self.game_logger is not None:
-                            self.game_logger.info("Found the assassin... You lose!")
+                            self.game_logger.info("Found the assassin... Whoops!")
+
+                        self.screen = "win"
+
                     else:  # guess in wrong team or bystander by process of elimination
                         self.hint = None
                         self.guesses_made = 0
@@ -297,7 +317,15 @@ class Game:
                         self.team_words[team].remove(self.guess)
                         self.discovered_team_words[team].append(self.guess)
                         self.guess = None
-                # TODO add win state
+
+                if self.team_words["red"] == []:
+                    self.win_state["win"] = "red"
+                    self.win_state["reason"] = "all"
+                    self.screen = "win"
+                elif self.team_words["blue"] == []:
+                    self.win_state["win"] = "blue"
+                    self.win_state["reason"] = "all"
+                    self.screen = "win"
 
     def draw(self):
         if self.screen == "loading":
@@ -351,6 +379,27 @@ class Game:
         txt = fnt.render("ABOUT", True, pgm.Color(self.setts["fore_hex_dark"]))
         coords = (about_btn.centerx - fnt.size("ABOUT")[0] // 2, about_btn.centery - fnt.size("ABOUT")[1] // 2)
         self.surface.blit(txt, coords)
+
+    def __draw_about(self):
+        self.surface.fill(pgm.Color(self.setts["back_hex"]))
+
+        fnt1 = pgm.font.Font(pgm.font.get_default_font(), 70)
+        fnt2 = pgm.font.Font(pgm.font.get_default_font(), 60)
+        fnt3 = pgm.font.Font(pgm.font.get_default_font(), 40)
+        fnt4 = pgm.font.Font(pgm.font.get_default_font(), 30)
+
+        back_btn_dims = (fnt1.size("ABOUT")[1], fnt1.size("ABOUT")[1])
+        back_btn = pgm.Rect((50, 50), back_btn_dims)
+        pgm.draw.rect(self.surface, pgm.Color(self.setts["fore_hex_light"]), back_btn)
+        self.buttons["back_btn"] = back_btn
+        pgm.draw.polygon(self.surface, pgm.Color(self.setts["fore_hex_dark"]),
+                         [(50 + back_btn_dims[0] // 4, 50 + back_btn_dims[1] // 2),
+                          (50 + 3 * back_btn_dims[0] // 4, 50 + back_btn_dims[1] // 4),
+                          (50 + 3 * back_btn_dims[0] // 4, 50 + 3 * back_btn_dims[1] // 4)])
+
+        title = fnt1.render("ABOUT", True, pgm.Color(self.setts["fore_hex_light"]))
+        title_coords = ((self.surface.get_width() - fnt1.size("ABOUT")[0]) // 2, 50)
+        self.surface.blit(title, title_coords)
 
     def __draw_setup(self):
         self.surface.fill(pgm.Color(self.setts["back_hex"]))
@@ -624,15 +673,89 @@ class Game:
             self.surface.blit(txt, (btn.x + 5, btn.y + 5))
 
     def __draw_win(self):
-        pass
-
-    def __draw_about(self):
         self.surface.fill(pgm.Color(self.setts["back_hex"]))
 
-        fnt = pgm.font.Font(pgm.font.get_default_font(), 70)
-        txt = fnt.render("ABOUT", True, pgm.Color(self.setts["fore_hex_light"]))
-        coords = ((self.surface.get_width() - fnt.size("ABOUT")[0]) // 2, 40)
-        self.surface.blit(txt, coords)
+        fnt1 = pgm.font.Font(pgm.font.get_default_font(), 70)
+        fnt2 = pgm.font.Font(pgm.font.get_default_font(), 60)
+        fnt3 = pgm.font.Font(pgm.font.get_default_font(), 40)
+        fnt4 = pgm.font.Font(pgm.font.get_default_font(), 30)
+
+        win_txt = "RED TEAM WINS!" if self.win_state["win"] == "red" else "BLUE TEAM WINS!"
+
+        back_btn_dims = (fnt1.size(win_txt)[1], fnt1.size(win_txt)[1])
+        back_btn = pgm.Rect((50, 50), back_btn_dims)
+        pgm.draw.rect(self.surface, pgm.Color(self.setts["fore_hex_light"]), back_btn)
+        self.buttons["back_btn"] = back_btn
+        pgm.draw.polygon(self.surface, pgm.Color(self.setts["fore_hex_dark"]),
+                         [(50 + back_btn_dims[0] // 4, 50 + back_btn_dims[1] // 2),
+                          (50 + 3 * back_btn_dims[0] // 4, 50 + back_btn_dims[1] // 4),
+                          (50 + 3 * back_btn_dims[0] // 4, 50 + 3 * back_btn_dims[1] // 4)])
+
+        title = fnt1.render(win_txt, True, pgm.Color(self.setts["fore_hex_light"]))
+        title_coords = ((self.surface.get_width() - fnt1.size(win_txt)[0]) // 2, 50)
+        self.surface.blit(title, title_coords)
+
+        reason_txt = "{0} team found {1}".format("Red" if (self.win_state["win"] == "red" and
+                                                           self.win_state["reason"] == "all") or
+                                                          (self.win_state["win"] == "blue" and
+                                                           self.win_state["reason"] == "assassin")
+                                                 else "Blue",
+                                                 "the assassin!" if self.win_state["reason"] == "assassin"
+                                                 else "all their words!")
+        reason = fnt3.render(reason_txt, True, pgm.Color(self.setts["fore_hex_light"]))
+        self.surface.blit(reason, ((self.setts["scrn_w"] - fnt3.size(reason_txt)[0]) // 2,
+                                   7 * self.setts["scrn_h"] // 8 + 10))
+
+        card_dims = [(self.setts["scrn_w"] - 50 * 2 - 10 * 4) // 5,
+                     (5 * self.setts["scrn_h"] // 8 - 10 * 4) // 5]  # save recomputing each render
+        # render board buttons
+        for x in range(5):
+            for y in range(5):
+                txt_col = (0, 0, 0)
+                card_col = (0, 0, 0)
+
+                if self.board[x][y] in self.discovered_team_words["red"]:  # render red,
+                    txt_col = pgm.Color(self.setts["fore_hex_light"])
+                    card_col = (225, 60, 20)
+                elif self.board[x][y] in self.discovered_team_words["blue"]:  # blue,
+                    txt_col = pgm.Color(self.setts["fore_hex_light"])
+                    card_col = (0, 100, 180)
+                elif self.board[x][y] in self.discovered_team_words["grey"]:  # grey
+                    txt_col = pgm.Color(self.setts["fore_hex_light"])
+                    card_col = (150, 150, 150)
+                elif self.board[x][y] in self.discovered_team_words["black"]:  # and black discovered words
+                    txt_col = pgm.Color(self.setts["fore_hex_light"])
+                    card_col = (20, 20, 20)
+
+                elif self.board[x][y] in self.team_words["red"]:  # render red,
+                    txt_col = (225, 60, 20)
+                    card_col = pgm.Color(self.setts["fore_hex_light"])
+                elif self.board[x][y] in self.team_words["blue"]:  # blue,
+                    txt_col = (0, 100, 180)
+                    card_col = pgm.Color(self.setts["fore_hex_light"])
+                elif self.board[x][y] in self.team_words["grey"]:  # grey
+                    txt_col = (150, 150, 150)
+                    card_col = pgm.Color(self.setts["fore_hex_light"])
+                elif self.board[x][y] in self.team_words["black"]:  # and black discovered words
+                    txt_col = (20, 20, 20)
+                    card_col = pgm.Color(self.setts["fore_hex_light"])
+
+                btn = pgm.Rect((50 + x * (card_dims[0] + 10), self.setts["scrn_h"] // 4 + y * (10 + card_dims[1])),
+                               card_dims)
+
+                pgm.draw.rect(self.surface, card_col, btn)
+
+                if fnt4.size(self.board[x][y].upper())[0] > card_dims[0] - 10:
+                    # if text length exceeds box, split in two
+                    txt1 = fnt4.render(self.board[x][y][:len(self.board[x][y]) // 2].upper() + "-", True,
+                                       txt_col)
+                    txt2 = fnt4.render(self.board[x][y][len(self.board[x][y]) // 2:].upper(), True,
+                                       txt_col)
+                    self.surface.blit(txt1, (btn.x + 5, btn.y + 5))
+                    self.surface.blit(txt2, (btn.x + 5, btn.y + 5 + fnt4.size(self.board[x][y])[1]))
+                else:
+                    txt = fnt4.render(self.board[x][y].upper(), True, txt_col)
+                    self.surface.blit(txt, (btn.x + 5, btn.y + 5))
 
     def quit(self):
         pgm.quit()
