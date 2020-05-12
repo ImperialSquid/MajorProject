@@ -195,6 +195,9 @@ class Game:
                     if self.buttons["back_btn"].collidepoint(pos):
                         self.screen = "setup"
 
+                        if self.game_logger is not None:
+                            self.game_logger.info("GAME QUIT")
+
                     for x in range(5):
                         for y in range(5):
                             if self.buttons["board_btns"][x][y].collidepoint(pos):
@@ -205,10 +208,14 @@ class Game:
                     if self.buttons["pass_turn_btn"].collidepoint(pos):
                         self.hint = None
                         self.guesses_made = 0
+                        if self.game_logger is not None:
+                            self.game_logger.info("{} Field Operative passed their turn".format(
+                                "Red" if self.current_agent[0] == "r" else "Blue"))
                         if self.current_agent == "rf":
                             self.current_agent = "bs"
                         elif self.current_agent == "bf":
                             self.current_agent = "rs"
+
                         self.draw()  # skip past spymaster processing to draw game screen
                         self.draw()
 
@@ -322,10 +329,16 @@ class Game:
                     self.win_state["win"] = "red"
                     self.win_state["reason"] = "all"
                     self.screen = "win"
+
+                    if self.game_logger is not None:
+                        self.game_logger.info("Red team wins! (They found all their words)")
                 elif self.team_words["blue"] == []:
                     self.win_state["win"] = "blue"
                     self.win_state["reason"] = "all"
                     self.screen = "win"
+
+                    if self.game_logger is not None:
+                        self.game_logger.info("Blue team wins! (They found all their words)")
 
     def draw(self):
         if self.screen == "loading":
