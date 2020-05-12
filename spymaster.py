@@ -333,12 +333,6 @@ class SpyMaster:
 
         return self.__check_legal(hint=hint_word)
 
-    def set_logger(self, logger_name, new_logger):
-        if logger_name == "full":
-            self.full_log = new_logger
-        if logger_name == "game":
-            self.game_log = new_logger
-
 
 if __name__ == "__main__":
     sm_full_logger = log.getLogger("spymaster-full")
