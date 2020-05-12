@@ -6,7 +6,7 @@ import sys
 
 import pygame as pgm
 
-from field_agent import FieldAgent
+from field_operative import FieldOperative
 from spymaster import SpyMaster
 from utils import load_settings
 
@@ -26,10 +26,9 @@ class Game:
 
         self.setts = load_settings("settings/game_setts.txt",
                                    {"scrn_w": 500, "scrn_h": 500,
-                                    "back_hex": 0xB52E59,
-                                    "fore_hex_light": 0xC8C8C8, "fore_hex_dark": 0x646464,
-                                    "red_spymaster_cpu": True, "red_field_agent_cpu": False,
-                                    "blue_spymaster_cpu": True, "blue_field_agent_cpu": True})
+                                    "back_hex": 0xB52E59, "fore_hex_light": 0xC8C8C8, "fore_hex_dark": 0x646464,
+                                    "red_spymaster_cpu": True, "red_field_operative_cpu": False,
+                                    "blue_spymaster_cpu": True, "blue_field_operative_cpu": False})
 
         self.surface = pgm.display.set_mode((self.setts["scrn_w"], self.setts["scrn_h"]))
 
@@ -38,11 +37,11 @@ class Game:
 
         self.red_spymaster = SpyMaster(full_log=self.full_logger, game_log=self.game_logger)
         self.red_spymaster.word_model.init_sims()
-        self.red_field_agent = FieldAgent()
+        self.red_field_operative = FieldOperative()
 
         self.blue_spymaster = SpyMaster(full_log=self.full_logger, game_log=self.game_logger)
         self.blue_spymaster.word_model.init_sims()
-        self.blue_field_agent = FieldAgent()
+        self.blue_field_operative = FieldOperative()
 
         # intersection of both spymaster's game_words, means only words on board will be in both vocabs, no duplicates
         self.game_words = list(set(self.red_spymaster.game_words) & set(self.blue_spymaster.game_words))
@@ -50,7 +49,7 @@ class Game:
         self.discovered_team_words = dict()  # all words on each team, that have been found
         self.board = list()  # iterable of iterables for board state (5x5 grid)
         # rs = red spymaster, bs = blue spymaster,
-        # rf = red field agent, bf = blue field agent
+        # rf = red field operative, bf = blue field operative
         self.current_agent = "rs"
         self.hint = None
         self.hint_num = 0
@@ -93,18 +92,18 @@ class Game:
                     if self.buttons["red_sm_ply_btn"].collidepoint(pos):
                         self.setts["red_spymaster_cpu"] = False
                     if self.buttons["red_fa_cpu_btn"].collidepoint(pos):
-                        self.setts["red_field_agent_cpu"] = True
+                        self.setts["red_field_operative_cpu"] = True
                     if self.buttons["red_fa_ply_btn"].collidepoint(pos):
-                        self.setts["red_field_agent_cpu"] = False
+                        self.setts["red_field_operative_cpu"] = False
 
                     if self.buttons["blue_sm_cpu_btn"].collidepoint(pos):
                         self.setts["blue_spymaster_cpu"] = True
                     if self.buttons["blue_sm_ply_btn"].collidepoint(pos):
                         self.setts["blue_spymaster_cpu"] = False
                     if self.buttons["blue_fa_cpu_btn"].collidepoint(pos):
-                        self.setts["blue_field_agent_cpu"] = True
+                        self.setts["blue_field_operative_cpu"] = True
                     if self.buttons["blue_fa_ply_btn"].collidepoint(pos):
-                        self.setts["blue_field_agent_cpu"] = False
+                        self.setts["blue_field_operative_cpu"] = False
 
                     if self.buttons["begin_game_btn"].collidepoint(pos):
                         if self.game_logger is not None:
@@ -153,8 +152,8 @@ class Game:
                             self.game_logger.info("Game Started!")
 
                             # agent controller info
-                            for key in ["red_spymaster_cpu", "red_field_agent_cpu",
-                                        "blue_spymaster_cpu", "blue_field_agent_cpu"]:
+                            for key in ["red_spymaster_cpu", "red_field_operative_cpu",
+                                        "blue_spymaster_cpu", "blue_field_operative_cpu"]:
                                 self.game_logger.info("{} is {}-controlled".format(key[:-4].replace("_", " ").title(),
                                                                                    "computer" if self.setts[key]
                                                                                    else "human"))
@@ -165,7 +164,7 @@ class Game:
 
                             # teams words info
                             for team in ["red", "blue", "grey", "black"]:
-                                self.game_logger.info("{0} team words are:\n\t{1}".format(
+                                self.game_logger.info("{0} team words are: {1}".format(
                                     team.title(), ", ".join(self.team_words[team])))
 
                             # board layout info
@@ -212,43 +211,59 @@ class Game:
         if self.current_agent[1] == "s" and self.hint is None:  # --- spymaster and no existing hint ---
             # TODO investigate if moving hint gen into a diff thread would prevent Not Responding window
             if self.current_agent[0] == "r" and self.setts["red_spymaster_cpu"]:  # red team, comp generated hint
-                hints = self.red_spymaster.run_defined_round(reds=self.team_words["red"],
-                                                             blues=self.team_words["blue"],
-                                                             greys=self.team_words["grey"],
-                                                             blacks=self.team_words["black"])
+                if self.game_logger is not None:
+                    self.game_logger.info("Red Spymaster generating hints...")
+                hints = self.red_spymaster.run_defined_round(ts=self.team_words["red"],
+                                                             os=self.team_words["blue"],
+                                                             bs=self.team_words["grey"],
+                                                             ks=self.team_words["black"])
                 hint = rand.choice([hint for hint in it.chain.from_iterable([hints for hints in hints.values()])])
                 self.hint = hint[1][0]
                 self.hint_num = len(hint[0])
+                if self.game_logger is not None:
+                    self.game_logger.info("Randomly chosen hint is \"{0} {1}\"".format(self.hint, str(self.hint_num)))
+                    self.game_logger.info("Passing turn to Red Field Operative")
                 self.current_agent = "rf"
 
             elif self.current_agent[0] == "b" and self.setts["blue_spymaster_cpu"]:  # blue team, comp generated hint
-                hints = self.blue_spymaster.run_defined_round(reds=self.team_words["blue"],
-                                                              blues=self.team_words["red"],
-                                                              greys=self.team_words["grey"],
-                                                              blacks=self.team_words["black"])
+                if self.game_logger is not None:
+                    self.game_logger.info("Blue Spymaster generating hints...")
+                hints = self.blue_spymaster.run_defined_round(ts=self.team_words["blue"],
+                                                              os=self.team_words["red"],
+                                                              bs=self.team_words["grey"],
+                                                              ks=self.team_words["black"])
                 hint = rand.choice([hint for hint in it.chain.from_iterable([hints for hints in hints.values()])])
                 self.hint = hint[1][0]
                 self.hint_num = len(hint[0])
+                if self.game_logger is not None:
+                    self.game_logger.info("Randomly chosen hint is \"{0} {1}\"".format(self.hint, str(self.hint_num)))
+                    self.game_logger.info("Passing turn to Blue Field Operative")
                 self.current_agent = "bf"
 
             elif (self.current_agent[0] == "r" and not self.setts["red_spymaster_cpu"]) or \
                     (self.current_agent[0] == "b" and not self.setts["blue_spymaster_cpu"]):
                 # either team, human gen hint
-                pass  # TODO get player inputted hint
+                pass  #
+                # TODO get player inputted hint
 
-        elif self.current_agent[1] == "f":  # --- field agent ---
-            # --- process cpu field agents ---
-            if self.setts["red_field_agent_cpu"]:
+        elif self.current_agent[1] == "f":  # --- field operative ---
+            # --- process cpu field operatives ---
+            if self.setts["red_field_operative_cpu"]:
                 self.guess = ""  # TODO add comp hint eval
-            elif self.setts["blue_field_agent_cpu"]:
+            elif self.setts["blue_field_operative_cpu"]:
                 self.guess = ""
 
             # --- process guess ---
             if self.guess is not None:  # only do processing is guess exists, so user gen'd can take more than one frame
+                if self.game_logger is not None:
+                    self.game_logger.info("{0} Field Operative picked board word {1} from hint {2}".format(
+                        "Red" if self.current_agent[0] == "r" else "Blue", self.guess, self.hint))
+                    self.game_logger.info("Guessed word {0} belongs to {1} team".format(
+                        self.guess, [team for team in self.team_words.keys() if self.guess in self.team_words[team]]))
+
                 # check for correct guess
                 if (self.current_agent[0] == "r" and self.guess in self.team_words["red"]) or \
                         (self.current_agent[0] == "b" and self.guess in self.team_words["blue"]):
-
                     self.guesses_made += 1
 
                     if self.guesses_made >= self.hint_num + 1:  # if guess max reached reset counter and swap team
@@ -385,26 +400,26 @@ class Game:
         txt4 = fnt4.render("PLAYER", True, pgm.Color(self.setts["fore_hex_light"]))
         self.surface.blit(txt4, (red_sm_ply_btn.x + 10, red_sm_ply_btn.y + 10))
 
-        # --- red field agent options ---
+        # --- red field operative options ---
         red_sm_offset = 10 + fnt3.size("SPYMASTER")[1] + 10 + fnt4.size("CPU")[1] + 10 + 10
-        txt3 = fnt3.render("FIELD AGENT", True, pgm.Color(self.setts["fore_hex_light"]))
-        coords3 = (self.setts["scrn_w"] // 4 - fnt3.size("SPYMASTER")[0] // 2,
+        txt3 = fnt3.render("FIELD OPERATIVE", True, pgm.Color(self.setts["fore_hex_light"]))
+        coords3 = (self.setts["scrn_w"] // 4 - fnt3.size("FIELD OPERATIVE")[0] // 2,
                    self.setts["scrn_h"] // 4 + fnt2.size("RED TEAM")[1] + 10 + red_sm_offset)
         self.surface.blit(txt3, coords3)
 
         red_fa_cpu_btn = pgm.Rect(
             (self.setts["scrn_w"] - 2 * fnt4.size("CPU")[0] - 2 * fnt4.size("PLAYER")[0] - 120) // 4,
-            self.setts["scrn_h"] // 4 + fnt2.size("RED TEAM")[1] + fnt3.size("FIELD AGENT")[1] + 20 + red_sm_offset,
+            self.setts["scrn_h"] // 4 + fnt2.size("RED TEAM")[1] + fnt3.size("FIELD OPERATIVE")[1] + 20 + red_sm_offset,
             fnt4.size("CPU")[0] + 20, fnt4.size("CPU")[1] + 20)
         self.buttons["red_fa_cpu_btn"] = red_fa_cpu_btn
 
         red_fa_ply_btn = pgm.Rect(
             (self.setts["scrn_w"] + 2 * fnt4.size("CPU")[0] - 2 * fnt4.size("PLAYER")[0] + 40) // 4,
-            self.setts["scrn_h"] // 4 + fnt2.size("RED TEAM")[1] + fnt3.size("FIELD AGENT")[1] + 20 + red_sm_offset,
+            self.setts["scrn_h"] // 4 + fnt2.size("RED TEAM")[1] + fnt3.size("FIELD OPERATIVE")[1] + 20 + red_sm_offset,
             fnt4.size("PLAYER")[0] + 20, fnt4.size("PLAYER")[1] + 20)
         self.buttons["red_fa_ply_btn"] = red_fa_ply_btn
 
-        if self.setts["red_field_agent_cpu"]:
+        if self.setts["red_field_operative_cpu"]:
             pgm.draw.rect(self.surface, pgm.Color(self.setts["fore_hex_dark"]), red_fa_cpu_btn, 5)
         else:
             pgm.draw.rect(self.surface, pgm.Color(self.setts["fore_hex_dark"]), red_fa_ply_btn, 5)
@@ -450,26 +465,28 @@ class Game:
         txt4 = fnt4.render("PLAYER", True, pgm.Color(self.setts["fore_hex_light"]))
         self.surface.blit(txt4, (blue_sm_ply_btn.x + 10, blue_sm_ply_btn.y + 10))
 
-        # --- blue field agent options ---
+        # --- blue field operative options ---
         blue_sm_offset = 10 + fnt3.size("SPYMASTER")[1] + 10 + fnt4.size("CPU")[1] + 10 + 10
-        txt3 = fnt3.render("FIELD AGENT", True, pgm.Color(self.setts["fore_hex_light"]))
-        coords3 = (3 * self.setts["scrn_w"] // 4 - fnt3.size("SPYMASTER")[0] // 2,
+        txt3 = fnt3.render("FIELD OPERATIVE", True, pgm.Color(self.setts["fore_hex_light"]))
+        coords3 = (3 * self.setts["scrn_w"] // 4 - fnt3.size("FIELD OPERATIVE")[0] // 2,
                    self.setts["scrn_h"] // 4 + fnt2.size("BLUE TEAM")[1] + 10 + blue_sm_offset)
         self.surface.blit(txt3, coords3)
 
         blue_fa_cpu_btn = pgm.Rect(
             (3 * self.setts["scrn_w"] - 2 * fnt4.size("CPU")[0] - 2 * fnt4.size("PLAYER")[0] - 120) // 4,
-            self.setts["scrn_h"] // 4 + fnt2.size("RED TEAM")[1] + fnt3.size("FIELD AGENT")[1] + 20 + blue_sm_offset,
+            self.setts["scrn_h"] // 4 + fnt2.size("RED TEAM")[1] + fnt3.size("FIELD OPERATIVE")[
+                1] + 20 + blue_sm_offset,
             fnt4.size("CPU")[0] + 20, fnt4.size("CPU")[1] + 20)
         self.buttons["blue_fa_cpu_btn"] = blue_fa_cpu_btn
 
         blue_fa_ply_btn = pgm.Rect(
             (3 * self.setts["scrn_w"] + 2 * fnt4.size("CPU")[0] - 2 * fnt4.size("PLAYER")[0] + 40) // 4,
-            self.setts["scrn_h"] // 4 + fnt2.size("RED TEAM")[1] + fnt3.size("FIELD AGENT")[1] + 20 + blue_sm_offset,
+            self.setts["scrn_h"] // 4 + fnt2.size("RED TEAM")[1] + fnt3.size("FIELD OPERATIVE")[
+                1] + 20 + blue_sm_offset,
             fnt4.size("PLAYER")[0] + 20, fnt4.size("PLAYER")[1] + 20)
         self.buttons["blue_fa_ply_btn"] = blue_fa_ply_btn
 
-        if self.setts["blue_field_agent_cpu"]:
+        if self.setts["blue_field_operative_cpu"]:
             pgm.draw.rect(self.surface, pgm.Color(self.setts["fore_hex_dark"]), blue_fa_cpu_btn, 5)
         else:
             pgm.draw.rect(self.surface, pgm.Color(self.setts["fore_hex_dark"]), blue_fa_ply_btn, 5)
@@ -563,7 +580,7 @@ class Game:
         if self.current_agent[1] == "s":
             cur_txt += "Spymaster"
         elif self.current_agent[1] == "f":
-            cur_txt += "Field Agent"
+            cur_txt += "Field Operative"
 
         # no hint exists and comp generating
         if self.hint is None and ((self.current_agent == "rs" and self.setts["red_spymaster_cpu"]) or
@@ -576,13 +593,13 @@ class Game:
             cur_txt += ", input hint"
 
         # hint exists and comp evaluated
-        if self.hint is not None and ((self.current_agent == "rf" and self.setts["red_field_agent_cpu"]) or
-                                      (self.current_agent == "bf" and self.setts["blue_field_agent_cpu"])):
+        if self.hint is not None and ((self.current_agent == "rf" and self.setts["red_field_operative_cpu"]) or
+                                      (self.current_agent == "bf" and self.setts["blue_field_operative_cpu"])):
             cur_txt += ", evaluating hint..."
 
         # hint exists and user evaluated
-        if self.hint is not None and ((self.current_agent == "rf" and not self.setts["red_field_agent_cpu"]) or
-                                      (self.current_agent == "bf" and not self.setts["blue_field_agent_cpu"])):
+        if self.hint is not None and ((self.current_agent == "rf" and not self.setts["red_field_operative_cpu"]) or
+                                      (self.current_agent == "bf" and not self.setts["blue_field_operative_cpu"])):
             cur_txt += ", hint is \"{0} {1}\"".format(self.hint, self.hint_num)
 
         txt = fnt4.render(cur_txt, True, pgm.Color(self.setts["fore_hex_light"]))
@@ -637,7 +654,6 @@ if __name__ == "__main__":
 
     # logging for game (file handler will be remade for each game and so is not needed here)
     g_logger = log.getLogger("game-game")
-    g_logger.addHandler(fh)
 
     g_logger.propagate = False
     g_logger.setLevel(log.DEBUG)

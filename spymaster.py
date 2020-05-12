@@ -224,10 +224,9 @@ class SpyMaster:
         if self.game_log is not None:
             self.game_log.info("Finished making hints")
             self.game_log.info("Candidate hints are:")
+            self.game_log.info("{0:10}|{1:30}|{2:10}".format("Hint", "Target", "Score"))
             for hint in chain.from_iterable([overlaps[level] for level in overlaps.keys()]):
-                self.game_log.info("{0:10} targeting {1:20} with score {2:10}".format(hint[1][0],
-                                                                                      ",".join(hint[0]),
-                                                                                      hint[1][1]))
+                self.game_log.info("{0:10}|{1:30}|{2:10}".format(hint[1][0], ", ".join(hint[0]), hint[1][1]))
 
         if out_file is not None:
             if self.full_log is not None:
