@@ -6,7 +6,6 @@ alps
 amazon
 ambulance
 america
-angel
 antartica
 apple
 arm

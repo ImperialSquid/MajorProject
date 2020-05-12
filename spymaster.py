@@ -25,8 +25,13 @@ class SpyMaster:
         # spymaster stuff
         self.settings = load_settings(sett_file="settings/spymaster_setts.txt",
                                       default_dict={"max_top_hints": 10, "max_levels": 2,
-                                                    "use_annoy_indexer": True, "model_name": "glove-wiki-100",
-                                                    "vocab_limit": 0})
+                                                    "model_name": "glove-wiki-100", "use_annoy_indexer": True,
+                                                    "vocab_limit": 0,
+                                                    "game_hint_naive_method": False})
+
+        self.strategy = load_settings(sett_file="settings/spymaster_setts.txt",
+                                      default_dict={"level_{}_limit".format(str(x + 1)): 0
+                                                    for x in range(self.settings["max_levels"])})
 
         # game stuff (what game words are available depends on the word model used so it is loaded in load_model)
         self.game_words = list()
@@ -250,7 +255,12 @@ class SpyMaster:
 
     def __get_top_hints_multi(self, overlap=1):
         multis = []
-        for multi in combinations(self.team_words["t"], overlap):
+
+        combos = [c for c in combinations(self.team_words["t"], overlap)]
+        shuffle(combos)
+        targets = combos[:self.strategy["level_{}_limit".format(str(overlap))]]
+
+        for multi in targets:
             hints = self.__get_hints(multi)
             for hint in hints:
                 multis.append((multi, hint))
@@ -341,4 +351,8 @@ if __name__ == "__main__":
     sm_full_logger.addHandler(handler)
 
     sm = SpyMaster(full_log=sm_full_logger)
-    print(sm.run_random_round(out_file=None))
+    print(sm.run_defined_round(ts=["angel"],
+                               os=["berlin", "germany", "tail", "pipe", "slip"],
+                               bs=["foot", "ivory", "wind", "screen", "oil", "server"],
+                               ks=["ketchup"],
+                               out_file=None))

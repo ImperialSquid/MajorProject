@@ -4,6 +4,7 @@ import logging as log
 import random as rand
 import sys
 
+import numpy.random as npr
 import pygame as pgm
 
 from field_operative import FieldOperative
@@ -12,7 +13,6 @@ from utils import load_settings
 
 
 # TODO add a lot of processing logging
-# TODO add game analysis log
 class Game:
     def __init__(self, full_logger=None, game_logger=None):
         self.full_logger = full_logger
@@ -229,11 +229,17 @@ class Game:
             if self.current_agent[0] == "r" and self.setts["red_spymaster_cpu"]:  # red team, comp generated hint
                 if self.game_logger is not None:
                     self.game_logger.info("Red Spymaster generating hints...")
-                hints = self.red_spymaster.run_defined_round(ts=self.team_words["red"],
-                                                             os=self.team_words["blue"],
-                                                             bs=self.team_words["grey"],
-                                                             ks=self.team_words["black"])
-                hint = rand.choice([hint for hint in it.chain.from_iterable([hints for hints in hints.values()])])
+                overlaps = self.red_spymaster.run_defined_round(ts=self.team_words["red"],
+                                                                os=self.team_words["blue"],
+                                                                bs=self.team_words["grey"],
+                                                                ks=self.team_words["black"])
+                hints = [hint for hint in it.chain.from_iterable([hints for hints in overlaps.values()])]
+                if self.red_spymaster.settings["game_hint_naive_method"]:
+                    hint = rand.choice(hints)
+                else:
+                    hint_pdf = [hint[1][1] / sum([hint[1][1] for hint in hints]) for hint in hints]
+                    hint_index = npr.choice([x for x in range(len(hints))], p=hint_pdf)
+                    hint = hints[hint_index]
                 self.hint = hint[1][0]
                 self.hint_num = len(hint[0])
                 if self.game_logger is not None:
@@ -244,11 +250,17 @@ class Game:
             elif self.current_agent[0] == "b" and self.setts["blue_spymaster_cpu"]:  # blue team, comp generated hint
                 if self.game_logger is not None:
                     self.game_logger.info("Blue Spymaster generating hints...")
-                hints = self.blue_spymaster.run_defined_round(ts=self.team_words["blue"],
-                                                              os=self.team_words["red"],
-                                                              bs=self.team_words["grey"],
-                                                              ks=self.team_words["black"])
-                hint = rand.choice([hint for hint in it.chain.from_iterable([hints for hints in hints.values()])])
+                overlaps = self.blue_spymaster.run_defined_round(ts=self.team_words["blue"],
+                                                                 os=self.team_words["red"],
+                                                                 bs=self.team_words["grey"],
+                                                                 ks=self.team_words["black"])
+                hints = [hint for hint in it.chain.from_iterable([hints for hints in overlaps.values()])]
+                if self.blue_spymaster.settings["game_hint_naive_method"]:
+                    hint = rand.choice(hints)
+                else:
+                    hint_pdf = [hint[1][1] / sum([hint[1][1] for hint in hints]) for hint in hints]
+                    hint_index = npr.choice([x for x in range(len(hints))], p=hint_pdf)
+                    hint = hints[hint_index]
                 self.hint = hint[1][0]
                 self.hint_num = len(hint[0])
                 if self.game_logger is not None:

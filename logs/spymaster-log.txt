@@ -6896,3 +6896,251 @@ k: swing
 12/05 - 02:48:13 : DEBUG :       1 | water                          | drinking        | 0.47022849321365356
 12/05 - 02:48:13 : DEBUG :       1 | water                          | electricity     | 0.46609020233154297
 12/05 - 02:48:13 : INFO : No out file given
+12/05 - 20:58:56 : INFO : SpyMaster initialising...
+12/05 - 21:02:52 : INFO : SpyMaster initialising...
+12/05 - 21:02:52 : INFO : Loading word model...
+12/05 - 21:02:52 : DEBUG : Loading Wiki 100
+12/05 - 21:03:39 : INFO : SpyMaster initialising...
+12/05 - 21:03:49 : INFO : Loading word model...
+12/05 - 21:03:49 : DEBUG : Loading Wiki 100
+12/05 - 21:03:54 : INFO : Done loading models
+12/05 - 21:03:54 : INFO : Loading game words...
+12/05 - 21:03:54 : INFO : Done loading game words
+12/05 - 21:03:54 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, loch_ness, new_york, scuba_diver)
+12/05 - 21:03:54 : INFO : Loading word model indexer...
+12/05 - 21:03:54 : WARNING : No indexer selected, using default
+12/05 - 21:04:00 : INFO : SpyMaster initialised!
+12/05 - 21:04:00 : INFO : Running round with random teams...
+12/05 - 21:04:00 : DEBUG : Shuffling words
+12/05 - 21:04:00 : DEBUG : Loading team sizes...
+12/05 - 21:04:00 : DEBUG : Team sizes: t:2 - o:8 - b:8 - k:1
+12/05 - 21:04:00 : DEBUG : Generating team words...
+12/05 - 21:04:00 : INFO : Team words:
+t: horn, gold
+o: crash, tail, block, eagle, ketchup, calf, mole, ring
+b: arm, pilot, maple, screen, chick, bat, pass, robin
+k: seal
+12/05 - 21:04:00 : INFO : Running round
+12/05 - 21:04:00 : INFO : Finding hints for overlap levels
+12/05 - 21:04:00 : INFO : Finding hints for 1 word(s)
+12/05 - 21:05:17 : INFO : SpyMaster initialising...
+12/05 - 21:05:21 : INFO : Loading word model...
+12/05 - 21:05:21 : DEBUG : Loading Wiki 100
+12/05 - 21:05:25 : INFO : Done loading models
+12/05 - 21:05:25 : INFO : Loading game words...
+12/05 - 21:05:25 : INFO : Done loading game words
+12/05 - 21:05:25 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, loch_ness, new_york, scuba_diver)
+12/05 - 21:05:25 : INFO : Loading word model indexer...
+12/05 - 21:05:25 : WARNING : No indexer selected, using default
+12/05 - 21:05:30 : INFO : SpyMaster initialised!
+12/05 - 21:05:30 : INFO : Running round with random teams...
+12/05 - 21:05:30 : DEBUG : Shuffling words
+12/05 - 21:05:30 : DEBUG : Loading team sizes...
+12/05 - 21:05:30 : DEBUG : Team sizes: t:8 - o:8 - b:8 - k:1
+12/05 - 21:05:30 : DEBUG : Generating team words...
+12/05 - 21:05:30 : INFO : Team words:
+t: chest, vet, cloak, tokyo, horse, worm, knight, park
+o: moscow, bolt, pyramid, king, paper, part, fish, row
+b: beach, gas, iron, fence, doctor, web, block, dog
+k: mint
+12/05 - 21:05:30 : INFO : Running round
+12/05 - 21:05:30 : INFO : Finding hints for overlap levels
+12/05 - 21:05:30 : INFO : Finding hints for 1 word(s)
+12/05 - 21:06:49 : INFO : SpyMaster initialising...
+12/05 - 21:06:49 : INFO : Loading word model...
+12/05 - 21:06:49 : DEBUG : Loading Wiki 100
+12/05 - 21:06:53 : INFO : Done loading models
+12/05 - 21:06:53 : INFO : Loading game words...
+12/05 - 21:06:53 : INFO : Done loading game words
+12/05 - 21:06:53 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, loch_ness, new_york, scuba_diver)
+12/05 - 21:06:53 : INFO : Loading word model indexer...
+12/05 - 21:06:53 : WARNING : No indexer selected, using default
+12/05 - 21:06:57 : INFO : SpyMaster initialised!
+12/05 - 21:06:57 : INFO : Running round with random teams...
+12/05 - 21:06:57 : DEBUG : Shuffling words
+12/05 - 21:06:57 : DEBUG : Loading team sizes...
+12/05 - 21:06:57 : DEBUG : Team sizes: t:8 - o:8 - b:8 - k:1
+12/05 - 21:06:57 : DEBUG : Generating team words...
+12/05 - 21:06:57 : INFO : Team words:
+t: jet, helicopter, ice, washington, lab, capital, piano, pyramid
+o: platypus, czech, gold, cloak, leprechaun, genius, moon, casino
+b: soldier, dragon, pie, spy, embassy, shot, skyscraper, worm
+k: plastic
+12/05 - 21:06:57 : INFO : Running round
+12/05 - 21:06:57 : INFO : Finding hints for overlap levels
+12/05 - 21:06:57 : INFO : Finding hints for 1 word(s)
+12/05 - 21:07:28 : INFO : SpyMaster initialising...
+12/05 - 21:07:28 : INFO : Loading word model...
+12/05 - 21:07:28 : DEBUG : Loading Wiki 100
+12/05 - 21:07:32 : INFO : Done loading models
+12/05 - 21:07:32 : INFO : Loading game words...
+12/05 - 21:07:32 : INFO : Done loading game words
+12/05 - 21:07:32 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, loch_ness, new_york, scuba_diver)
+12/05 - 21:07:32 : INFO : Loading word model indexer...
+12/05 - 21:07:32 : WARNING : No indexer selected, using default
+12/05 - 21:07:36 : INFO : SpyMaster initialised!
+12/05 - 21:07:36 : INFO : Running round with random teams...
+12/05 - 21:07:36 : DEBUG : Shuffling words
+12/05 - 21:07:36 : DEBUG : Loading team sizes...
+12/05 - 21:07:36 : DEBUG : Team sizes: t:8 - o:8 - b:8 - k:1
+12/05 - 21:07:36 : DEBUG : Generating team words...
+12/05 - 21:07:36 : INFO : Team words:
+t: boot, tag, rome, chair, engine, wind, whip, match
+o: ball, himalayas, jam, fall, ivory, nurse, thumb, pit
+b: wake, trunk, chest, pitch, greece, shoe, drop, green
+k: table
+12/05 - 21:07:36 : INFO : Running round
+12/05 - 21:07:36 : INFO : Finding hints for overlap levels
+12/05 - 21:07:36 : INFO : Finding hints for 1 word(s)
+12/05 - 21:08:12 : DEBUG : Found 44 legal hints (of 50 searched) for whip: rep.:0.40977 // democrat:0.38676 // sen.:0.33733 // republican:0.32125 // speaker:0.30781 // senator:0.29439 // progressive:0.28103 // chairman:0.27927 // r:0.26712 // nationalist:0.24010 // democratic:0.23793 // dick:0.23307 // democrats:0.22926 // pat:0.22796 // republicans:0.22194 // legislative:0.21886 // senate:0.21491 // politician:0.21036 // moderate:0.20529 // gov.:0.20478 // legislature:0.20425 // liberal:0.20412 // conservative:0.19570 // minority:0.19156 // conservatives:0.18408 // tom:0.18359 // nomination:0.17763 // party:0.17522 // senators:0.17415 // deputy:0.17223 // chancellor:0.16999 // counsel:0.16380 // majority:0.16105 // elected:0.15718 // elect:0.15697 // ma:0.15652 // ken:0.15321 // governor:0.15158 // dole:0.15025 // lieutenant:0.15025 // homeland:0.14948 // attorney:0.14780 // bob:0.14779 // aide:0.14451
+12/05 - 21:08:42 : DEBUG : Words: whip                 Hints: rep.-0.4097748398780823 // democrat-0.3867553472518921 // sen.-0.33733069896698 // republican-0.32125410437583923 // speaker-0.30781063437461853 // senator-0.2943902611732483 // progressive-0.28103458881378174 // chairman-0.2792653441429138 // r-0.2671178877353668 // nationalist-0.24010129272937775 // democratic-0.23793289065361023 // dick-0.2330690622329712 // democrats-0.22926200926303864 // pat-0.22795560956001282 // republicans-0.22193974256515503 // legislative-0.21885620057582855 // senate-0.21490593254566193 // politician-0.21035826206207275 // moderate-0.20529134571552277 // gov.-0.20477858185768127 // legislature-0.2042483687400818 // liberal-0.20412109792232513 // conservative-0.19569939374923706 // minority-0.1915610134601593 // conservatives-0.18407806754112244 // tom-0.18358656764030457 // nomination-0.1776258796453476 // party-0.17522087693214417 // senators-0.17414739727973938 // deputy-0.17223092913627625 // chancellor-0.16999223828315735 // counsel-0.16379663348197937 // majority-0.16105347871780396 // elected-0.15718472003936768 // elect-0.15697282552719116 // ma-0.15652108192443848 // ken-0.1532118022441864 // governor-0.15158206224441528 // dole-0.1502533257007599 // lieutenant-0.15025058388710022 // homeland-0.14948128163814545 // attorney-0.14779973030090332 // bob-0.14778545498847961 // aide-0.1445053219795227
+12/05 - 21:09:14 : INFO : Finding hints for 2 word(s)
+12/05 - 21:10:01 : DEBUG : Found 18 legal hints (of 50 searched) for rome, match: finals:0.49212 // champions:0.47444 // tournament:0.44348 // berlin:0.44015 // maria:0.43098 // defeat:0.42761 // pope:0.42550 // inter:0.41773 // victory:0.41759 // final:0.41350 // defending:0.40821 // draw:0.40757 // defeated:0.40660 // villa:0.40040 // title:0.39694 // soccer:0.39438 // stadium:0.39195 // brazil:0.38672
+12/05 - 21:10:33 : DEBUG : Words: rome|match           Hints: finals-0.49211880564689636 // champions-0.4744429886341095 // tournament-0.44348275661468506 // berlin-0.4401503801345825 // maria-0.4309776723384857 // defeat-0.4276130795478821 // pope-0.42549580335617065 // inter-0.41773417592048645 // victory-0.4175887107849121 // final-0.4135027825832367 // defending-0.4082072377204895 // draw-0.40757080912590027 // defeated-0.4065951704978943 // villa-0.40040040016174316 // title-0.39693504571914673 // soccer-0.3943759799003601 // stadium-0.3919507563114166 // brazil-0.38671594858169556
+12/05 - 21:11:33 : DEBUG : Found 43 legal hints (of 50 searched) for tag, chair: boxing:0.39062 // wrestling:0.38204 // seat:0.35942 // democrat:0.32065 // chairman:0.31650 // sen.:0.30700 // title:0.29265 // trophy:0.29133 // senator:0.28666 // executive:0.28377 // associate:0.28336 // automatic:0.28048 // head:0.27740 // championship:0.27370 // member:0.27083 // interim:0.26667 // assistant:0.26663 // card:0.26621 // appointed:0.25856 // ed:0.25711 // license:0.25663 // rep.:0.25544 // opponent:0.25342 // governor:0.24975 // nomination:0.24854 // arena:0.24711 // vice:0.24649 // presidency:0.24593 // permanent:0.24551 // republican:0.24370 // junior:0.24275 // bill:0.24243 // convention:0.24240 // candidate:0.24118 // award:0.24109 // gov.:0.24063 // sponsored:0.23926 // challenged:0.23917 // representative:0.23835 // athletic:0.23768 // professor:0.23722 // nominated:0.23699 // challenge:0.23625
+12/05 - 21:11:58 : DEBUG : Words: tag|chair            Hints: boxing-0.39061760902404785 // wrestling-0.3820362687110901 // seat-0.3594202995300293 // democrat-0.3206483721733093 // chairman-0.3164970874786377 // sen.-0.30699753761291504 // title-0.2926473021507263 // trophy-0.2913312613964081 // senator-0.2866572141647339 // executive-0.28376734256744385 // associate-0.28336310386657715 // automatic-0.28048157691955566 // head-0.2774047553539276 // championship-0.273697167634964 // member-0.2708323001861572 // interim-0.26666849851608276 // assistant-0.2666313946247101 // card-0.2662143111228943 // appointed-0.25856471061706543 // ed-0.2571133077144623 // license-0.2566322684288025 // rep.-0.2554377317428589 // opponent-0.2534203827381134 // governor-0.249747633934021 // nomination-0.248544380068779 // arena-0.24711459875106812 // vice-0.24648776650428772 // presidency-0.24593400955200195 // permanent-0.24551242589950562 // republican-0.24370141327381134 // junior-0.24274905025959015 // bill-0.24243462085723877 // convention-0.24240103363990784 // candidate-0.24118202924728394 // award-0.24109363555908203 // gov.-0.24062678217887878 // sponsored-0.2392624020576477 // challenged-0.23916950821876526 // representative-0.23834675550460815 // athletic-0.2376781404018402 // professor-0.23722253739833832 // nominated-0.23698872327804565 // challenge-0.23625390231609344
+12/05 - 21:12:30 : INFO : Finding hints for 3 word(s)
+12/05 - 21:13:01 : DEBUG : Found 38 legal hints (of 50 searched) for rome, chair, engine: design:0.46068 // appointed:0.43557 // architecture:0.43425 // chancellor:0.43215 // philosophy:0.40749 // built:0.40286 // founded:0.40272 // charter:0.39970 // architect:0.39924 // mayor:0.39807 // faculty:0.39803 // seat:0.39745 // building:0.39377 // successor:0.38766 // installed:0.38642 // economics:0.38197 // model:0.37967 // assembly:0.37925 // succeeded:0.37795 // professor:0.37641 // louis:0.37195 // studied:0.37164 // bishop:0.36361 // commissioned:0.36313 // board:0.36283 // designed:0.36210 // f.:0.36055 // works:0.35721 // ford:0.35703 // introduced:0.35501 // assumed:0.35143 // replaced:0.35057 // convention:0.34867 // cathedral:0.34634 // subsequently:0.34545 // executive:0.34528 // berlin:0.34324 // developed:0.34280
+12/05 - 21:13:25 : DEBUG : Words: rome|chair|engine    Hints: design-0.46068075299263 // appointed-0.4355663061141968 // architecture-0.4342482089996338 // chancellor-0.4321516156196594 // philosophy-0.4074859619140625 // built-0.402860552072525 // founded-0.40272057056427 // charter-0.3996955156326294 // architect-0.39923644065856934 // mayor-0.39807260036468506 // faculty-0.39803218841552734 // seat-0.3974464535713196 // building-0.39376676082611084 // successor-0.38765615224838257 // installed-0.3864244818687439 // economics-0.38196855783462524 // model-0.3796704411506653 // assembly-0.3792514204978943 // succeeded-0.37794846296310425 // professor-0.3764110803604126 // louis-0.37195348739624023 // studied-0.37164440751075745 // bishop-0.3636060655117035 // commissioned-0.36312955617904663 // board-0.3628292679786682 // designed-0.3620990216732025 // f.-0.3605525493621826 // works-0.3572056293487549 // ford-0.3570280373096466 // introduced-0.35501211881637573 // assumed-0.35143452882766724 // replaced-0.350566029548645 // convention-0.34866735339164734 // cathedral-0.34634482860565186 // subsequently-0.34545212984085083 // executive-0.3452821373939514 // berlin-0.34323516488075256 // developed-0.34279969334602356
+12/05 - 21:13:47 : INFO : Finished making hints
+12/05 - 21:13:47 : DEBUG : Results:
+12/05 - 21:13:47 : DEBUG : Level   | Words                          | Hint            | Score     
+12/05 - 21:13:47 : DEBUG :    -    |               --               |        -        |     --    
+12/05 - 21:13:47 : DEBUG :       1 | whip                           | rep.            | 0.4097748398780823
+12/05 - 21:13:47 : DEBUG :       1 | whip                           | democrat        | 0.3867553472518921
+12/05 - 21:13:47 : DEBUG :       1 | whip                           | sen.            | 0.33733069896698
+12/05 - 21:13:47 : DEBUG :       1 | whip                           | republican      | 0.32125410437583923
+12/05 - 21:13:47 : DEBUG :       1 | whip                           | speaker         | 0.30781063437461853
+12/05 - 21:13:47 : DEBUG :    -    |               --               |        -        |     --    
+12/05 - 21:13:47 : DEBUG :       2 | rome,match                     | finals          | 0.49211880564689636
+12/05 - 21:13:47 : DEBUG :       2 | rome,match                     | champions       | 0.4744429886341095
+12/05 - 21:13:47 : DEBUG :       2 | rome,match                     | tournament      | 0.44348275661468506
+12/05 - 21:13:47 : DEBUG :       2 | rome,match                     | berlin          | 0.4401503801345825
+12/05 - 21:13:47 : DEBUG :       2 | rome,match                     | maria           | 0.4309776723384857
+12/05 - 21:13:47 : DEBUG :    -    |               --               |        -        |     --    
+12/05 - 21:13:47 : DEBUG :       3 | rome,chair,engine              | design          | 0.46068075299263
+12/05 - 21:13:47 : DEBUG :       3 | rome,chair,engine              | appointed       | 0.4355663061141968
+12/05 - 21:13:47 : DEBUG :       3 | rome,chair,engine              | architecture    | 0.4342482089996338
+12/05 - 21:13:47 : DEBUG :       3 | rome,chair,engine              | chancellor      | 0.4321516156196594
+12/05 - 21:13:47 : DEBUG :       3 | rome,chair,engine              | philosophy      | 0.4074859619140625
+12/05 - 21:13:47 : INFO : No out file given
+12/05 - 21:14:16 : INFO : SpyMaster initialising...
+12/05 - 21:14:16 : INFO : Loading word model...
+12/05 - 21:14:16 : DEBUG : Loading Wiki 100
+12/05 - 21:14:20 : INFO : Done loading models
+12/05 - 21:14:20 : INFO : Loading game words...
+12/05 - 21:14:20 : INFO : Done loading game words
+12/05 - 21:14:20 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, loch_ness, new_york, scuba_diver)
+12/05 - 21:14:20 : INFO : Loading word model indexer...
+12/05 - 21:14:20 : WARNING : No indexer selected, using default
+12/05 - 21:14:22 : INFO : SpyMaster initialised!
+12/05 - 21:14:22 : INFO : Running round with random teams...
+12/05 - 21:14:22 : DEBUG : Shuffling words
+12/05 - 21:14:22 : DEBUG : Loading team sizes...
+12/05 - 21:14:22 : DEBUG : Team sizes: t:8 - o:8 - b:8 - k:1
+12/05 - 21:14:22 : DEBUG : Generating team words...
+12/05 - 21:14:22 : INFO : Team words:
+t: beijing, ship, embassy, atlantis, server, round, triangle, bell
+o: foot, luck, web, seal, grace, snow, mouth, dog
+b: marble, stock, platypus, czech, light, shark, calf, moscow
+k: van
+12/05 - 21:14:22 : INFO : Running round
+12/05 - 21:14:22 : INFO : Finding hints for overlap levels
+12/05 - 21:14:22 : INFO : Finding hints for 1 word(s)
+12/05 - 21:14:47 : DEBUG : Found 19 legal hints (of 50 searched) for server: back-end:0.64514 // workstation:0.61960 // virtualization:0.61811 // subsystem:0.60694 // end-user:0.60671 // spreadsheet:0.60050 // client-server:0.59485 // workstations:0.59029 // hyper-v:0.58000 // e-business:0.56249 // peer-to-peer:0.56226 // architectures:0.54982 // ftp:0.54980 // desktop:0.54878 // java-based:0.54791 // implementations:0.54520 // multiprocessor:0.54020 // scalable:0.53858 // desktops:0.53764
+12/05 - 21:14:47 : DEBUG : Words: server               Hints: back-end-0.6451364159584045 // workstation-0.6195998191833496 // virtualization-0.618109405040741 // subsystem-0.606937050819397 // end-user-0.6067124605178833 // spreadsheet-0.6004973649978638 // client-server-0.5948492288589478 // workstations-0.5902853608131409 // hyper-v-0.5800012946128845 // e-business-0.562494695186615 // peer-to-peer-0.5622576475143433 // architectures-0.5498158931732178 // ftp-0.549796998500824 // desktop-0.5487806797027588 // java-based-0.5479113459587097 // implementations-0.5451960563659668 // multiprocessor-0.5402047634124756 // scalable-0.5385820865631104 // desktops-0.537643551826477
+12/05 - 21:14:47 : INFO : Finding hints for 2 word(s)
+12/05 - 21:15:07 : DEBUG : Found 18 legal hints (of 50 searched) for server, bell: cisco:0.57865 // workstations:0.53685 // router:0.52688 // telephony:0.52491 // spreadsheet:0.51791 // microprocessor:0.51692 // processor:0.51379 // architectures:0.51098 // virtualization:0.50606 // software:0.50573 // workstation:0.50553 // mainframe:0.50404 // wireless:0.49904 // implementations:0.49648 // desktop:0.49302 // provider:0.49158 // computing:0.48547 // routers:0.48321
+12/05 - 21:15:07 : DEBUG : Words: server|bell          Hints: cisco-0.5786537528038025 // workstations-0.5368519425392151 // router-0.5268752574920654 // telephony-0.5249050259590149 // spreadsheet-0.5179058313369751 // microprocessor-0.5169161558151245 // processor-0.5137856006622314 // architectures-0.5109785795211792 // virtualization-0.5060635805130005 // software-0.5057287216186523 // workstation-0.5055305361747742 // mainframe-0.5040360689163208 // wireless-0.4990370273590088 // implementations-0.496483713388443 // desktop-0.49301576614379883 // provider-0.4915763735771179 // computing-0.4854736924171448 // routers-0.4832131266593933
+12/05 - 21:15:28 : DEBUG : Found 32 legal hints (of 50 searched) for atlantis, round: shuttle:0.53084 // spacewalk:0.52141 // liftoff:0.49737 // mir:0.48008 // postponed:0.47784 // rescheduled:0.46971 // berth:0.46235 // docked:0.46224 // docking:0.46201 // semifinal:0.46151 // spaceship:0.46107 // orbiter:0.45781 // challenger:0.45253 // showdown:0.45245 // spacecraft:0.44903 // slated:0.44810 // scheduled:0.44768 // quarterfinal:0.44511 // semifinals:0.44253 // best-of-three:0.44015 // cosmonauts:0.43944 // shuttles:0.43583 // astronauts:0.43341 // refueled:0.43172 // spacewalks:0.43041 // blastoff:0.42994 // quarterfinals:0.42594 // semi-finals:0.42552 // rendezvous:0.42423 // semis:0.41748 // postpones:0.41742 // postponement:0.41508
+12/05 - 21:15:28 : DEBUG : Words: atlantis|round       Hints: shuttle-0.5308390855789185 // spacewalk-0.5214133858680725 // liftoff-0.4973716735839844 // mir-0.4800804555416107 // postponed-0.47783994674682617 // rescheduled-0.46970659494400024 // berth-0.46235233545303345 // docked-0.46223562955856323 // docking-0.46201005578041077 // semifinal-0.4615078568458557 // spaceship-0.4610660672187805 // orbiter-0.45780980587005615 // challenger-0.45253250002861023 // showdown-0.45245054364204407 // spacecraft-0.449027955532074 // slated-0.4480951428413391 // scheduled-0.4476836323738098 // quarterfinal-0.4451059103012085 // semifinals-0.4425259828567505 // best-of-three-0.4401467740535736 // cosmonauts-0.4394356906414032 // shuttles-0.43583494424819946 // astronauts-0.4334060549736023 // refueled-0.43171873688697815 // spacewalks-0.43041425943374634 // blastoff-0.42994481325149536 // quarterfinals-0.42594432830810547 // semi-finals-0.4255242347717285 // rendezvous-0.4242306053638458 // semis-0.41747578978538513 // postpones-0.41742420196533203 // postponement-0.4150814414024353
+12/05 - 21:15:28 : INFO : Finding hints for 3 word(s)
+12/05 - 21:16:00 : DEBUG : Found 35 legal hints (of 50 searched) for embassy, server, round: hosting:0.45961 // consulate:0.45868 // consulates:0.45465 // seeding:0.44056 // simultaneous:0.43910 // qualifier:0.43660 // routing:0.43192 // applications:0.43100 // open:0.43099 // semifinals:0.42219 // updates:0.41893 // application:0.41816 // diplomatic:0.41575 // entry:0.41417 // qualifying:0.41160 // conference:0.41033 // qualification:0.40392 // email:0.40333 // semis:0.40316 // advance:0.40052 // query:0.39942 // semifinalist:0.39723 // meetings:0.39600 // ranking:0.39228 // requests:0.39176 // relay:0.39149 // slated:0.39112 // update:0.39076 // peer-to-peer:0.38807 // quarterfinals:0.38761 // smartphone:0.38641 // nationals:0.38533 // spreadsheet:0.38406 // berth:0.38358 // scheduled:0.38351
+12/05 - 21:16:00 : DEBUG : Words: embassy|server|round Hints: hosting-0.4596141278743744 // consulate-0.45868414640426636 // consulates-0.45464909076690674 // seeding-0.4405592978000641 // simultaneous-0.4391007423400879 // qualifier-0.4365997016429901 // routing-0.43191656470298767 // applications-0.43099838495254517 // open-0.4309940040111542 // semifinals-0.4221888482570648 // updates-0.41892802715301514 // application-0.41816267371177673 // diplomatic-0.4157475233078003 // entry-0.41416749358177185 // qualifying-0.4116014838218689 // conference-0.4103313982486725 // qualification-0.4039239287376404 // email-0.40332549810409546 // semis-0.40316304564476013 // advance-0.40052369236946106 // query-0.39942142367362976 // semifinalist-0.39723074436187744 // meetings-0.39599740505218506 // ranking-0.39228355884552 // requests-0.3917560279369354 // relay-0.39148885011672974 // slated-0.3911204934120178 // update-0.3907622694969177 // peer-to-peer-0.3880656361579895 // quarterfinals-0.38761425018310547 // smartphone-0.3864086866378784 // nationals-0.3853263854980469 // spreadsheet-0.38406044244766235 // berth-0.3835824728012085 // scheduled-0.3835068643093109
+12/05 - 21:16:00 : INFO : Finished making hints
+12/05 - 21:16:00 : DEBUG : Results:
+12/05 - 21:16:01 : DEBUG : Level   | Words                          | Hint            | Score     
+12/05 - 21:16:01 : DEBUG :    -    |               --               |        -        |     --    
+12/05 - 21:16:01 : DEBUG :       1 | server                         | back-end        | 0.6451364159584045
+12/05 - 21:16:01 : DEBUG :       1 | server                         | workstation     | 0.6195998191833496
+12/05 - 21:16:01 : DEBUG :       1 | server                         | virtualization  | 0.618109405040741
+12/05 - 21:16:01 : DEBUG :       1 | server                         | subsystem       | 0.606937050819397
+12/05 - 21:16:01 : DEBUG :       1 | server                         | end-user        | 0.6067124605178833
+12/05 - 21:16:01 : DEBUG :    -    |               --               |        -        |     --    
+12/05 - 21:16:01 : DEBUG :       2 | server,bell                    | cisco           | 0.5786537528038025
+12/05 - 21:16:01 : DEBUG :       2 | server,bell                    | workstations    | 0.5368519425392151
+12/05 - 21:16:01 : DEBUG :       2 | atlantis,round                 | shuttle         | 0.5308390855789185
+12/05 - 21:16:01 : DEBUG :       2 | server,bell                    | router          | 0.5268752574920654
+12/05 - 21:16:01 : DEBUG :       2 | server,bell                    | telephony       | 0.5249050259590149
+12/05 - 21:16:01 : DEBUG :    -    |               --               |        -        |     --    
+12/05 - 21:16:01 : DEBUG :       3 | embassy,server,round           | hosting         | 0.4596141278743744
+12/05 - 21:16:01 : DEBUG :       3 | embassy,server,round           | consulate       | 0.45868414640426636
+12/05 - 21:16:01 : DEBUG :       3 | embassy,server,round           | consulates      | 0.45464909076690674
+12/05 - 21:16:01 : DEBUG :       3 | embassy,server,round           | seeding         | 0.4405592978000641
+12/05 - 21:16:01 : DEBUG :       3 | embassy,server,round           | simultaneous    | 0.4391007423400879
+12/05 - 21:16:01 : INFO : No out file given
+12/05 - 22:54:22 : INFO : SpyMaster initialising...
+12/05 - 22:54:22 : INFO : Loading word model...
+12/05 - 22:54:22 : DEBUG : Loading Wiki 100
+12/05 - 22:54:26 : INFO : Done loading models
+12/05 - 22:54:26 : INFO : Loading game words...
+12/05 - 22:54:26 : INFO : Done loading game words
+12/05 - 22:54:26 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, loch_ness, new_york, scuba_diver)
+12/05 - 22:54:26 : INFO : Loading word model indexer...
+12/05 - 22:54:26 : WARNING : No indexer selected, using default
+12/05 - 22:54:29 : INFO : SpyMaster initialised!
+12/05 - 22:54:29 : INFO : Running round with predefined teams...
+12/05 - 22:54:29 : INFO : Team words:
+t: olympus, button, ray, angel, glove
+o: berlin, germany, tail, pipe, slip
+b: foot, ivory, wind, screen, oil, server
+k: ketchup
+12/05 - 22:54:29 : INFO : Running round
+12/05 - 22:54:29 : INFO : Finding hints for overlap levels
+12/05 - 22:54:29 : INFO : Finding hints for 1 word(s)
+12/05 - 22:55:35 : INFO : SpyMaster initialising...
+12/05 - 22:55:35 : INFO : Loading word model...
+12/05 - 22:55:35 : DEBUG : Loading Wiki 100
+12/05 - 22:55:39 : INFO : Done loading models
+12/05 - 22:55:39 : INFO : Loading game words...
+12/05 - 22:55:39 : INFO : Done loading game words
+12/05 - 22:55:39 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, loch_ness, new_york, scuba_diver)
+12/05 - 22:55:39 : INFO : Loading word model indexer...
+12/05 - 22:55:39 : WARNING : No indexer selected, using default
+12/05 - 22:55:42 : INFO : SpyMaster initialised!
+12/05 - 22:55:42 : INFO : Running round with predefined teams...
+12/05 - 22:55:42 : INFO : Team words:
+t: olympus, button, ray, angel, glove
+o: berlin, germany, tail, pipe, slip
+b: foot, ivory, wind, screen, oil, server
+k: ketchup
+12/05 - 22:55:42 : INFO : Running round
+12/05 - 22:55:42 : INFO : Finding hints for overlap levels
+12/05 - 22:55:42 : INFO : Finding hints for 1 word(s)
+12/05 - 22:56:19 : DEBUG : Found 25 legal hints (of 50 searched) for button: click:0.54044 // redial:0.49296 // clicking:0.48026 // brawn:0.47998 // keypad:0.47915 // joystick:0.47439 // dashboard:0.45750 // toggle:0.45432 // clicked:0.45144 // cursor:0.45139 // rewind:0.45093 // toolbar:0.44800 // snooze:0.44665 // shutter:0.43619 // sitter:0.43444 // reset:0.43000 // d-pad:0.42848 // rider:0.42764 // mashing:0.42709 // mode:0.42182 // delete:0.42094 // keyboard:0.41300 // throttle:0.41290 // destruct:0.41201 // lapel:0.40908
+12/05 - 22:56:32 : DEBUG : Words: button               Hints: click-0.5404361486434937 // redial-0.4929555356502533 // clicking-0.48026254773139954 // brawn-0.4799765348434448 // keypad-0.4791519343852997 // joystick-0.4743853807449341 // dashboard-0.45749780535697937 // toggle-0.4543232321739197 // clicked-0.45144250988960266 // cursor-0.4513890743255615 // rewind-0.4509347677230835 // toolbar-0.44799619913101196 // snooze-0.44665324687957764 // shutter-0.4361869990825653 // sitter-0.4344364404678345 // reset-0.4299999475479126 // d-pad-0.42848140001296997 // rider-0.427639365196228 // mashing-0.4270938038825989 // mode-0.42182421684265137 // delete-0.42093831300735474 // keyboard-0.4129963219165802 // throttle-0.4128965735435486 // destruct-0.41201215982437134 // lapel-0.40907523036003113
+12/05 - 22:57:05 : DEBUG : Found 8 legal hints (of 50 searched) for ray: lee:0.49600 // fisher:0.49291 // ed:0.48506 // jay:0.47974 // newton:0.47885 // reeves:0.46840 // bobby:0.46084 // gibbons:0.45905
+12/05 - 22:57:06 : DEBUG : Words: ray                  Hints: lee-0.4959973394870758 // fisher-0.49290576577186584 // ed-0.4850618541240692 // jay-0.4797426462173462 // newton-0.47885268926620483 // reeves-0.4684039354324341 // bobby-0.4608423709869385 // gibbons-0.4590540826320648
+12/05 - 22:57:34 : DEBUG : Found 0 legal hints (of 50 searched) for angel: 
+12/05 - 22:57:34 : DEBUG : Illegal Hints (since all were illegal): gabriel:0.57882 // miguel:0.56930 // ángel:0.56529 // jose:0.54239 // reyes:0.54236 // luis:0.52920 // jaime:0.52908 // jimenez:0.52270 // vicente:0.51143 // enrique:0.51129 // rodriguez:0.51048 // ortiz:0.50735 // cordelia:0.50472 // ramon:0.50234 // lopez:0.50068 // jesus:0.49944 // hernandez:0.49723 // buffy:0.49233 // gonzalez:0.49231 // romero:0.49189 // fernando:0.48964 // angulo:0.48722 // garcia:0.48677 // dolores:0.48446 // rafael:0.48190 // rodrigo:0.48167 // aguilar:0.48155 // mista:0.48152 // angels:0.47815 // alejandro:0.47738 // soledad:0.47208 // gurria:0.47082 // carmen:0.46866 // castillo:0.46787 // carlos:0.46767 // ruben:0.46730 // flores:0.46645 // ignacio:0.46512 // juan:0.46421 // guillermo:0.46393 // rivera:0.46358 // torres:0.45861 // ramos:0.45760 // acebes:0.45759 // diaz:0.45494 // isidoro:0.45482 // joaquin:0.45180 // boreanaz:0.45047 // cordova:0.44959 // manuel:0.44904
+12/05 - 22:58:28 : INFO : SpyMaster initialising...
+12/05 - 22:58:28 : INFO : Loading word model...
+12/05 - 22:58:28 : DEBUG : Loading Wiki 100
+12/05 - 22:58:32 : INFO : Done loading models
+12/05 - 22:58:32 : INFO : Loading game words...
+12/05 - 22:58:32 : INFO : Done loading game words
+12/05 - 22:58:32 : DEBUG : Loaded 396 words, 4 missing (missing word(s): ice_cream, loch_ness, new_york, scuba_diver)
+12/05 - 22:58:32 : INFO : Loading word model indexer...
+12/05 - 22:58:32 : WARNING : No indexer selected, using default
+12/05 - 22:58:36 : INFO : SpyMaster initialised!
+12/05 - 22:58:36 : INFO : Running round with predefined teams...
+12/05 - 22:58:36 : INFO : Team words:
+t: angel
+o: berlin, germany, tail, pipe, slip
+b: foot, ivory, wind, screen, oil, server
+k: ketchup
+12/05 - 22:58:36 : INFO : Running round
+12/05 - 22:58:36 : INFO : Finding hints for overlap levels
+12/05 - 22:58:36 : INFO : Finding hints for 1 word(s)
+12/05 - 23:03:06 : DEBUG : Found 0 legal hints (of 50 searched) for angel: 
+12/05 - 23:03:06 : DEBUG : Illegal Hints (since all were illegal): gabriel:0.57882 // miguel:0.56930 // ángel:0.56529 // jose:0.54239 // reyes:0.54236 // luis:0.52920 // jaime:0.52908 // jimenez:0.52270 // vicente:0.51143 // enrique:0.51129 // rodriguez:0.51048 // ortiz:0.50735 // cordelia:0.50472 // ramon:0.50234 // lopez:0.50068 // jesus:0.49944 // hernandez:0.49723 // buffy:0.49233 // gonzalez:0.49231 // romero:0.49189 // fernando:0.48964 // angulo:0.48722 // garcia:0.48677 // dolores:0.48446 // rafael:0.48190 // rodrigo:0.48167 // aguilar:0.48155 // mista:0.48152 // angels:0.47815 // alejandro:0.47738 // soledad:0.47208 // gurria:0.47082 // carmen:0.46866 // castillo:0.46787 // carlos:0.46767 // ruben:0.46730 // flores:0.46645 // ignacio:0.46512 // juan:0.46421 // guillermo:0.46393 // rivera:0.46358 // torres:0.45861 // ramos:0.45760 // acebes:0.45759 // diaz:0.45494 // isidoro:0.45482 // joaquin:0.45180 // boreanaz:0.45047 // cordova:0.44959 // manuel:0.44904

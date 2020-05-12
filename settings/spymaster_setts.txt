@@ -1,5 +1,9 @@
 max_top_hints:int:5
-max_levels:int:1
+max_levels:int:3
+level_1_limit:int:1
+level_2_limit:int:0
+level_3_limit:int:0
 use_annoy_indexer:bool:false
 model_name:str:glove-wiki-100
-vocab_limit:int:5000
+vocab_limit:int:500000
+game_hint_naive_method:bool:false
